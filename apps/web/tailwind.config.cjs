@@ -1,9 +1,13 @@
-const preset = require("@acme/styles/tailwind-preset");
+const preset = require("@repo/styles/tailwind-preset");
 
-module.exports = {
+/** @type {import("tailwindcss").Config} */
+const config = {
     ...preset,
     content: [
         ...preset.content,
-        "./src/**/*.{ts,tsx}", // app-specific
+        "./app/**/*.{ts,tsx,mdx}", // app-specific
+        "../../packages/ui/**/*.{ts,tsx}", // shared UI
     ],
 };
+
+module.exports = config;

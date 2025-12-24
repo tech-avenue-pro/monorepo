@@ -1,5 +1,7 @@
 @tailwind utilities;
 @import "tailwindcss";
+@source "../../apps/web/**/*.{ts,tsx,mdx}";
+@source "../ui/**/*.{ts,tsx}";
 
 :root {
     /* Base UI Colors */

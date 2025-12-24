@@ -1,9 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import {
-    DSLayoutBackground,
-    backgroundClasses,
-} from "../backgrounds";
+import { DSLayoutBackground, backgroundClasses } from "../backgrounds";
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLElement> {
     children: React.ReactNode;
