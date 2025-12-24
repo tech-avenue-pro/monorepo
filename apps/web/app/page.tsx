@@ -1,7 +1,21 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
-import { DSButton } from "@repo/ui/design-systems/DSButton";
+import {
+    DSButton,
+    DSButtonVariant,
+    DSLinkButton,
+} from "@repo/ui/design-systems/DSButton";
+import StandardNavBar from "@repo/ui/design-systems/navigation-bar/StandardNavBar";
+import {
+    DSTextColor,
+    DSTextVariant,
+    DSTextWeight,
+} from "@repo/ui/design-systems/DSLink";
+import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
+import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
+import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
+import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -21,85 +35,135 @@ const ThemeImage = (props: Props) => {
 
 export default function Home() {
     return (
-        <div className={styles.page}>
-            <main className={styles.main}>
-                <ThemeImage
-                    className={styles.logo}
-                    srcLight="turborepo-dark.svg"
-                    srcDark="turborepo-light.svg"
-                    alt="Turborepo logo"
-                    width={180}
-                    height={38}
-                    priority
-                />
-                <ol>
-                    <li>
-                        Get started by editing{" "}
-                        <code>apps/web/app/page.tsx</code>
-                    </li>
-                    <li>Save and see your changes instantly.</li>
-                </ol>
+        <main className="">
+            <StandardNavBar
+                links={[
+                    {
+                        label: "Pages",
+                        children: [
+                            { label: "Colors", href: "#colors" },
+                            { label: "Buttons", href: "#buttons" },
+                            { label: "Links", href: "#links" },
+                            { label: "Link Buttons", href: "#link-buttons" },
+                        ],
+                    },
+                    {
+                        label: "Colors",
+                        href: "#colors",
+                    },
+                    {
+                        label: "Buttons",
+                        href: "#buttons",
+                    },
+                    {
+                        label: "Links",
+                        href: "#links",
+                    },
+                    {
+                        label: "Link Buttons",
+                        href: "#link-buttons",
+                    },
+                ]}
+                color={DSTextColor.white}
+                hoverColor={DSTextColor.senary}
+                textVariant={DSTextVariant.bodySmall}
+                fontWeight={DSTextWeight.regular}
+                mobileFontWeight={DSTextWeight.regular}
+                mobileTextVariant={DSTextVariant.largerTitle}
+                logoSrc="/tech-avenue-pro.svg"
+                cta={
+                    <DSLinkButton
+                        href="/signup"
+                        variant={DSButtonVariant.primary}
+                        className="h-10"
+                    >
+                        Sign Up
+                    </DSLinkButton>
+                }
+                background={DSLayoutBackground.black}
+                stickyOnScrollOnly={true}
+            />
 
-                <div className={styles.ctas}>
-                    <a
-                        className={styles.primary}
-                        href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-                        target="_blank"
-                        rel="noopener noreferrer"
+            <HeroSection
+                background={DSLayoutBackground.black}
+                className="hero-glow"
+            >
+                <HeroContainer>
+                    <div className="text-left ">
+                        <DSText
+                            as="h1"
+                            variant={DSTextVariant.headline2}
+                            color={DSTextColor.white}
+                            weight={DSTextWeight.bold}
+                            fontStyle={FontStyle.Heading}
+                            className="mb-8 mt-16 md:mt-28"
+                        >
+                            TECH AVENUE PRO
+                        </DSText>
+                        <div className="hero-reveal">
+                            <DSText
+                                as="h2"
+                                variant={DSTextVariant.largestTitle}
+                                color={DSTextColor.white}
+                                weight={DSTextWeight.semiBold}
+                                fontStyle={FontStyle.Heading}
+                                className="mb-12 md:mb-16"
+                            >
+                                We Build Your{" "}
+                                <span className="ds-text-color-senary">
+                                    Brand
+                                </span>{" "}
+                                Online
+                            </DSText>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col slide-up-animation"
+                        style={{ animationDelay: "1s" }}
                     >
-                        <Image
-                            className={styles.logo}
-                            src="/vercel.svg"
-                            alt="Vercel logomark"
-                            width={20}
-                            height={20}
-                        />
-                        Deploy now
-                    </a>
-                    <a
-                        href="https://turborepo.com/docs?utm_source"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.secondary}
-                    >
-                        Read our docs
-                    </a>
-                </div>
-                <Button appName="web" className={styles.secondary}>
-                    Open alert
-                </Button>
-                <DSButton>Design System Button</DSButton>
-            </main>
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/window.svg"
-                        alt="Window icon"
-                        width={16}
-                        height={16}
-                    />
-                    Examples
-                </a>
-                <a
-                    href="https://turborepo.com?utm_source=create-turbo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/globe.svg"
-                        alt="Globe icon"
-                        width={16}
-                        height={16}
-                    />
-                    Go to turborepo.com →
-                </a>
-            </footer>
-        </div>
+                        <div className="flex justify-center">
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.bodyLarge}
+                                color={DSTextColor.whiteVariant1}
+                                className="max-w-2xl text-left mb-12 md:mb-16"
+                            >
+                                From websites to social media and online
+                                bookings — we help your business stand out and
+                                run smarter.
+                            </DSText>
+                        </div>
+                        <div className="flex justify-center">
+                            <DSLinkButton
+                                href="/get-started"
+                                variant={DSButtonVariant.primary}
+                                glow={true}
+                                className="mb-12 md:mb-16"
+                            >
+                                Lets Get in touch
+                            </DSLinkButton>
+                        </div>
+                        <div className="flex justify-center">
+                            <img
+                                src="/hero-image.jpg"
+                                alt="Hero Image"
+                                className="rounded-lg"
+                            />
+                        </div>
+                    </div>
+                </HeroContainer>
+            </HeroSection>
+
+            <div className="mx-auto max-w-3xl space-y-6">
+                <h1 className="text-3xl font-bold text-gray-900">
+                    Next.js + Tailwind Playground
+                </h1>
+
+                <p className="text-gray-600">
+                    This is your sandbox to practice components, layout, and
+                    styling.
+                </p>
+            </div>
+        </main>
     );
 }
