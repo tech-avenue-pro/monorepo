@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import clsx from "clsx";
 
 export enum DSButtonVariant {
@@ -137,7 +136,7 @@ export function DSButton({
                     <span className={clsx(iconBase, children && "mr-2")}>
                         {leftIcon ??
                             (leftIconSrc && (
-                                <Image
+                                <img
                                     src={leftIconSrc}
                                     alt=""
                                     width={iconDimension}
@@ -155,7 +154,7 @@ export function DSButton({
                     <span className={clsx(iconBase, children && "ml-2")}>
                         {rightIcon ??
                             (rightIconSrc && (
-                                <Image
+                                <img
                                     src={rightIconSrc}
                                     alt=""
                                     width={iconDimension}
@@ -217,7 +216,7 @@ export function DSLinkButton({
                 <span className={clsx(iconBase, children && "mr-2")}>
                     {leftIcon ??
                         (leftIconSrc && (
-                            <Image
+                            <img
                                 src={leftIconSrc}
                                 alt=""
                                 width={iconDimension}
@@ -235,7 +234,7 @@ export function DSLinkButton({
                 <span className={clsx(iconBase, children && "ml-2")}>
                     {rightIcon ??
                         (rightIconSrc && (
-                            <Image
+                            <img
                                 src={rightIconSrc}
                                 alt=""
                                 width={iconDimension}
