@@ -49,7 +49,7 @@ const StandardNavBar = ({
     mobileTextVariant,
     fontWeight,
     mobileFontWeight,
-    logoSrc = "/tech-avenue-pro.svg",
+    logoSrc = "/tech-avenue-pro-navbar.png",
     cta,
     background = DSLayoutBackground.accent,
     stickyOnScrollOnly = false,

@@ -70,7 +70,7 @@ export default function Home() {
                 fontWeight={DSTextWeight.regular}
                 mobileFontWeight={DSTextWeight.regular}
                 mobileTextVariant={DSTextVariant.largerTitle}
-                logoSrc="/tech-avenue-pro.svg"
+                logoSrc="icons/tech-avenue-pro-navbar.png"
                 cta={
                     <DSLinkButton
                         href="/signup"

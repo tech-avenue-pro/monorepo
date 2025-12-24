@@ -56,7 +56,7 @@
 }
 
 .logo {
-    height: 3rem; /* 6.4rem@10px = 64px; 4rem@16px = 64px */
+    /* height: 3rem; 6.4rem@10px = 64px; 4rem@16px = 64px */
 }
 .nav-inner {
     display: flex;
@@ -116,7 +116,9 @@
     border-left: 0.15rem solid currentColor;
     border-bottom: 0.15rem solid currentColor;
     transform: rotate(-45deg);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
     opacity: 0.75;
 }
 
@@ -144,7 +146,9 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(0.5rem);
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
     z-index: 2;
 }
 
@@ -223,7 +227,9 @@
         gap: 3rem;
         /* Animation logic */
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out, visibility 0.3s;
+        transition:
+            transform 0.3s ease-in-out,
+            visibility 0.3s;
         background-color: var(--nav-bg-solid, rgba(12, 18, 26, 0.6));
         visibility: hidden;
         pointer-events: none;
