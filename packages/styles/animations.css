@@ -1,0 +1,92 @@
+/* -------------------------------------------------
+   Hero Text Reveal (fade)
+-------------------------------------------------- */
+.hero-reveal {
+    display: inline-block;
+    overflow: hidden;
+    /* Keep these to prevent the "flash" before animation starts */
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+
+    animation: hero-reveal 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation-delay: var(--hero-reveal-delay, 0.1s);
+}
+
+@keyframes hero-reveal {
+    0% {
+        opacity: 0; /* Start invisible */
+        clip-path: inset(0 100% 0 0);
+    }
+    10% {
+        opacity: 1; /* Become visible immediately so the wipe is clean */
+    }
+    100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .hero-reveal {
+        animation: none;
+        opacity: 1;
+        clip-path: none;
+        transform: none;
+    }
+}
+/* -------------------------------------------------
+   Slide up animation
+-------------------------------------------------- */
+.slide-up-animation {
+    opacity: 0;
+    position: relative;
+    transform: translateY(2rem); /* Start slightly below its final position */
+    animation: slide-up 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .slide-up-animation {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* -------------------------------------------------
+   Hero Glow Utility
+   Adds a soft radial light in the center without graphics.
+-------------------------------------------------- */
+.hero-glow {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+.hero-glow::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(
+        circle at center,
+        rgba(51, 201, 242, 0.35) 0%,
+        rgba(51, 201, 242, 0.3) 18%,
+        rgba(32, 59, 98, 0.28) 36%,
+        transparent 60%
+    );
+    filter: blur(90px);
+    opacity: 0.8;
+    z-index: 0;
+    transform: translate3d(0, 0, 0);
+}

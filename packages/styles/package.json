@@ -6,7 +6,8 @@
     "exports": {
         "./tailwind-preset": "./tailwind.preset.cjs",
         "./postcss-config": "./postcss.config.cjs",
-        "./globals.css": "./globals.css"
+        "./globals.css": "./globals.css",
+        "./animations.css": "./animations.css"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

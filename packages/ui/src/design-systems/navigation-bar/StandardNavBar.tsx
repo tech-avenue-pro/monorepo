@@ -3,8 +3,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./navigation.css";
 import clsx from "clsx";
-// import MenuIcon from "@/public/icons/menu-outline.svg";
-// import CloseIcon from "@/public/icons/close-outline.svg";
+import MenuIcon from "../../icons/MenuIcon";
+import CloseIcon from "../../icons/CloseIcon";
 import { DSLayoutBackground, backgroundClasses } from "../DSLayout";
 import { backgroundColorVars } from "../backgrounds";
 import {
@@ -235,7 +235,7 @@ const StandardNavBar = ({
                                             onClick={closeNav}
                                             aria-label="Close menu"
                                         >
-                                            {/* <CloseIcon className="icon-mobile-nav" /> */}
+                                            <CloseIcon className="icon-mobile-nav" />
                                         </button>
                                     </li>
                                     {currentMobileLevel.items.map(
@@ -497,8 +497,14 @@ const StandardNavBar = ({
                             }
                         }}
                     >
-                        {/* <MenuIcon className="icon-mobile-nav open-menu" />
-                        <CloseIcon className="icon-mobile-nav close-menu" /> */}
+                        <MenuIcon
+                            color={DSTextColor.white}
+                            className="icon-mobile-nav open-menu"
+                        />
+                        <CloseIcon
+                            color={DSTextColor.white}
+                            className="icon-mobile-nav close-menu"
+                        />
                     </button>
                 </div>
             </header>
