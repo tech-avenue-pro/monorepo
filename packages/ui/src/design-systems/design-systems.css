@@ -1,0 +1,1077 @@
+/* -------------------------------------------------
+   Import Tailwind
+-------------------------------------------------- */
+@import "tailwindcss";
+/* -------------------------------------------------
+   CSS Variables: Global Color System
+   (Light Mode Defaults)
+-------------------------------------------------- */
+:root {
+    /* Base UI Colors */
+    --default-background: #ffffff;
+    --default-background-variation1: #f9f9f9;
+    --default-background-variation2: #edefef;
+    --default-background-variation3: #d9dbdb;
+
+    /* Primary Brand Colors */
+    --primary: #33c9f2; /* Brand Blue */
+    --primary-lighter: #a6dff0;
+    --primary-darker: #2e7f96;
+    --primary-button-hover: #29a1c2;
+    --darkest-background: #054e63;
+    --lightest-background: #c9ecf6;
+    --lightest-background-shadow: rgba(47, 53, 58, 0.31);
+
+    /* Secondary Colors */
+    --secondary: #203b62;
+    --secondary-lighter: #00658d;
+    --secondary-darker: #142947;
+
+    /* Accent Colors */
+    --accent: #ffb181;
+    --accent-lighter: #fac09c;
+    --accent-darker: #f59153;
+
+    /* Utility Colors */
+    --success: #00775d;
+    --info: #efc349;
+    --critical: #ba2121;
+
+    /* Text Colors */
+    --text-primary: #333;
+    --text-secondary: #444;
+    --text-tertiary: #555;
+    --text-quaternary: #777;
+    --text-quinary: #bbb;
+    --text-senary: var(--primary);
+    --text-septenary: var(--darkest-background);
+    --text-success: var(--success);
+    --text-info: var(--info);
+    --text-critical: var(--critical);
+    --text-accent: var(--accent);
+    --text-white: #fff;
+    --text-white-variation1: #dddddd;
+
+    /* contrast should look dark on light mode */
+    --contrast-bg: #000;
+    --contrast-border: #222;
+    --contrast-text: #fff;
+
+    /* Some theme agnostic colors */
+    --background-white: #ffffff;
+    --background-white-variation-1: #f9f9f9;
+    --background-white-variation-2: #edefef;
+    --background-white-variation-3: #d9dbdb;
+
+    --background-black: #000;
+    --background-black-variation1: #0a0a0a;
+    --background-black-variation2: #222222;
+    --background-black-variation3: #2a2a2a;
+
+    /* Text Colors */
+    --text-gray-3333: #333;
+    --text-gray-4444: #444;
+    --text-gray-5555: #555;
+    --text-gray-7777: #777;
+    --text-gray-bbbb: #bbb;
+}
+
+/* -------------------------------------------------
+   Dark Mode Mapping
+-------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-background: #000;
+        --default-background-variation1: #0a0a0a;
+        --default-background-variation2: #222222;
+        --default-background-variation3: #2a2a2a;
+
+        /* Primary Colors */
+        --primary: #33c9f2;
+        --primary-lighter: #a6dff0;
+        --primary-darker: #29a1c2;
+
+        /* Secondary Colors */
+        --secondary: #203b62;
+        --secondary-lighter: #00658d;
+        --secondary-darker: #142947;
+
+        /* Accent Colors */
+        --accent: #ffb181;
+        --accent-lighter: #f87e72;
+        --accent-darker: #bd4438;
+
+        --success: #00775d;
+        --info: #efc349;
+        --critical: #ba2121;
+
+        /* Text in Dark Mode */
+        --text-primary: #ffffff;
+        --text-secondary: #dddddd;
+        --text-tertiary: #bbbbbb;
+        --text-quaternary: #999999;
+        --text-quinary: #777777;
+        --text-senary: var(--primary);
+        --text-septenary: var(--darkest-background);
+
+        /* contrast should look dark on light mode */
+        --contrast-bg: #fff;
+        --contrast-border: #f8f8f8;
+        --contrast-text: #333333;
+    }
+}
+
+/* -------------------------------------------------
+   Base Styles
+-------------------------------------------------- */
+body {
+    background: var(--default-background);
+    color: var(--text-primary);
+    font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto,
+        Arial, sans-serif;
+}
+
+/* -------------------------------------------------
+   Typography System
+   Design Scale Visual Reference
+
+   Tailwind Font Size Scale:
+   text-xs   = 12px (0.75rem)
+   text-sm   = 14px (0.875rem)
+   text-base = 16px (1rem)
+   text-lg   = 18px (1.125rem)
+   text-xl   = 20px (1.25rem)
+   text-2xl  = 24px (1.5rem)
+   text-3xl  = 30px (1.875rem)
+   text-4xl  = 36px (2.25rem)
+   text-5xl  = 48px (3rem)
+   text-6xl  = 60px (3.75rem)
+   text-7xl  = 72px (4.5rem)
+   text-8xl  = 96px (6rem)
+   text-9xl  = 128px (8rem)
+-------------------------------------------------- */
+
+/* -------------------------------------------------
+   Typography System – Responsive
+   Base (no prefix) = mobile
+   sm: (>= 640px)   = tablet
+   lg: (>= 1024px)  = desktop
+-------------------------------------------------- */
+
+.font-heading {
+    font-family: var(--font-heading), system-ui, -apple-system, Segoe UI, Roboto,
+        Arial, sans-serif;
+}
+.font-body {
+    font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto,
+        Arial, sans-serif;
+}
+
+/* Shared letter-spacing for large titles */
+.ds-text-largest-title,
+.ds-text-larger-title,
+.ds-text-large-title,
+.ds-text-title1,
+.ds-text-title2,
+.ds-text-title3 {
+    letter-spacing: -0.5px;
+}
+
+/* ===============================
+     Display / Hero Titles
+     =============================== */
+
+/* Largest Display Title
+     - Mobile:   36px  (text-4xl)
+     - Tablet:   48px  (text-5xl)
+     - Desktop:  60px  (text-6xl)
+  */
+.ds-text-largest-title {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-medium;
+    line-height: 1.05;
+}
+
+/* Larger Display Title
+     - Mobile:   30px  (text-3xl)
+     - Tablet:   36px  (text-4xl)
+     - Desktop:  48px  (text-5xl)
+  */
+.ds-text-larger-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-medium;
+    line-height: 1.05;
+}
+
+/* Large Title
+     - Mobile:   24px  (text-2xl)
+     - Tablet:   30px  (text-3xl)
+     - Desktop:  36px  (text-4xl)
+  */
+.ds-text-large-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-medium;
+    line-height: 1.05;
+}
+
+/* ===============================
+     Section Titles
+     =============================== */
+
+/* Title 1
+     - Mobile:   24px  (text-2xl)
+     - Tablet:   30px  (text-3xl)
+     - Desktop:  36px  (text-4xl)
+  */
+.ds-text-title1 {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Title 2
+     - Mobile:   20px  (text-xl)
+     - Tablet:   24px  (text-2xl)
+     - Desktop:  30px  (text-3xl)
+  */
+.ds-text-title2 {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Title 3
+     - Mobile:   18px  (text-lg)
+     - Tablet:   20px  (text-xl)
+     - Desktop:  24px  (text-2xl)
+  */
+.ds-text-title3 {
+    @apply text-lg sm:text-xl lg:text-2xl;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* ===============================
+     Headlines
+     =============================== */
+
+/* Headline 1
+     - Mobile:   18px  (text-lg)
+     - Tablet:   20px  (text-xl)
+     - Desktop:  24px  (text-2xl)
+  */
+.ds-text-headline1 {
+    @apply text-lg sm:text-xl lg:text-2xl;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Headline 2
+     - Mobile:   16px  (text-base)
+     - Tablet:   18px  (text-lg)
+     - Desktop:  20px  (text-xl)
+  */
+.ds-text-headline2 {
+    @apply text-base sm:text-lg lg:text-xl;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+/* Headline 3
+     - Mobile:   14px  (text-sm)
+     - Tablet:   16px  (text-base)
+     - Desktop:  18px  (text-lg)
+  */
+.ds-text-headline3 {
+    @apply text-sm sm:text-base lg:text-lg;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+/* ===============================
+     Body Text
+     =============================== */
+
+/* Body Large
+     - Mobile:   18px  (text-lg)
+     - Tablet:   20px  (text-xl)
+     - Desktop:  24px  (text-2xl)
+  */
+.ds-text-body-large {
+    @apply text-lg sm:text-xl lg:text-2xl;
+    line-height: 1.6;
+}
+
+/* Body (Base)
+     - Mobile:   16px  (text-base)
+     - Tablet:   18px  (text-lg)
+     - Desktop:  20px  (text-xl)
+  */
+.ds-text-body,
+.ds-text-body-bold {
+    @apply text-base sm:text-lg lg:text-xl;
+    line-height: 1.6;
+}
+
+/* Body Small
+     - Mobile:   14px  (text-sm)
+     - Tablet:   16px  (text-base)
+     - Desktop:  16px  (text-base)
+  */
+.ds-text-body-small,
+.ds-text-body-small-bold {
+    @apply text-sm sm:text-base;
+    line-height: 1.6;
+}
+
+/* ===============================
+     Caption & Footnote
+     =============================== */
+
+/* Caption
+     - Mobile:   12px  (text-xs)
+     - Tablet:   12px  (text-xs)
+     - Desktop:  14px  (text-sm)
+  */
+.ds-text-caption {
+    @apply text-xs lg:text-sm;
+    line-height: 1.4;
+}
+
+/* Footnote
+     - Mobile:   12px  (text-xs)
+     - Tablet:   12px  (text-xs)
+     - Desktop:  14px  (text-sm)
+  */
+.ds-text-footnote {
+    @apply text-xs lg:text-sm;
+    line-height: 1.3;
+}
+
+/* -------------------------------------------------
+   Font Weights
+-------------------------------------------------- */
+.ds-weight-regular {
+    font-weight: 400;
+}
+.ds-weight-light {
+    font-weight: 300;
+}
+.ds-weight-medium {
+    font-weight: 500;
+}
+.ds-weight-semibold {
+    font-weight: 600;
+}
+.ds-weight-bold {
+    font-weight: 700;
+}
+
+/* -------------------------------------------------
+   Text Color Utilities
+-------------------------------------------------- */
+.ds-text-color-primary {
+    color: var(--text-primary);
+}
+.ds-text-color-secondary {
+    color: var(--text-secondary);
+}
+.ds-text-color-tertiary {
+    color: var(--text-tertiary);
+}
+.ds-text-color-quaternary {
+    color: var(--text-quaternary);
+}
+.ds-text-color-quinary {
+    color: var(--text-quinary);
+}
+.ds-text-color-senary {
+    color: var(--text-senary);
+}
+.ds-text-color-septenary {
+    color: var(--text-septenary);
+}
+.ds-text-color-white {
+    color: var(--text-white);
+}
+.ds-text-color-white-variation1 {
+    color: var(--text-white-variation1);
+}
+.ds-text-color-success {
+    color: var(--text-success);
+}
+.ds-text-color-critical {
+    color: var(--text-critical);
+}
+.ds-text-color-warning {
+    color: var(--text-info);
+}
+.ds-text-color-accent {
+    color: var(--text-accent);
+}
+.ds-text-color-gray-3333 {
+    color: var(--text-gray-3333);
+}
+.ds-text-color-gray-4444 {
+    color: var(--text-gray-4444);
+}
+.ds-text-color-gray-5555 {
+    color: var(--text-gray-5555);
+}
+.ds-text-color-gray-7777 {
+    color: var(--text-gray-7777);
+}
+.ds-text-color-gray-bbbb {
+    color: var(--text-gray-bbbb);
+}
+/* -------------------------------------------------
+   Background Color Utilities
+-------------------------------------------------- */
+.ds-bg-default {
+    /* #ffffff */
+    background-color: var(--default-background);
+}
+.ds-bg-default-variation1 {
+    /* #f9f9f9 */
+    background-color: var(--default-background-variation1);
+}
+.ds-bg-default-variation2 {
+    /* #e6e6e6 */
+    background-color: var(--default-background-variation2);
+}
+.ds-bg-default-variation3 {
+    /* #cccccc */
+    background-color: var(--default-background-variation3);
+}
+.ds-bg-background {
+    /* #ffffff */
+    background-color: var(--background);
+}
+.ds-bg-darkest-background {
+    /* #054e63 */
+    background-color: var(--darkest-background);
+}
+.ds-bg-lightest-background {
+    /* #c9ecf6 */
+    background-color: var(--lightest-background);
+}
+.ds-bg-primary {
+    /* #33c9f2 */
+    background-color: var(--primary);
+}
+.ds-bg-primary-lighter {
+    /* #a6dff0 */
+    background-color: var(--primary-lighter);
+}
+.ds-bg-primary-darker {
+    /* #2e7f96 */
+    background-color: var(--primary-darker);
+}
+.ds-bg-primary-hover {
+    /* #29a1c2 */
+    background-color: var(--primary-button-hover);
+}
+.ds-bg-secondary {
+    /* #203b62 */
+    background-color: var(--secondary);
+}
+.ds-bg-secondary-lighter {
+    /* #00658d */
+    background-color: var(--secondary-lighter);
+}
+.ds-bg-secondary-darker {
+    /* #142947 */
+    background-color: var(--secondary-darker);
+}
+.ds-bg-accent {
+    /* #e35d50 */
+    background-color: var(--accent);
+}
+.ds-bg-accent-lighter {
+    /* #f87e72 */
+    background-color: var(--accent-lighter);
+}
+.ds-bg-accent-darker {
+    /* #bd4438 */
+    background-color: var(--accent-darker);
+}
+.ds-bg-success {
+    /* #00775d */
+    background-color: var(--success);
+}
+.ds-bg-info {
+    /* #efc349 */
+    background-color: var(--info);
+}
+.ds-bg-critical {
+    /* #ba2121 */
+    background-color: var(--critical);
+}
+.ds-bg-transparent {
+    background-color: transparent;
+}
+.ds-bg-white {
+    /* #ffffff */
+    background-color: var(--background-white);
+}
+.ds-bg-white-variation1 {
+    /* #f9f9f9 */
+    background-color: var(--background-white-variation-1);
+}
+.ds-bg-white-variation2 {
+    /* #edefef */
+    background-color: var(--background-white-variation-2);
+}
+.ds-bg-white-variation3 {
+    /* #d9dbdb */
+    background-color: var(--background-white-variation-3);
+}
+.ds-bg-black {
+    /* #000 */
+    background-color: var(--background-black);
+}
+.ds-bg-black-variation1 {
+    /* #0a0a0a */
+    background-color: var(--background-black-variation1);
+}
+.ds-bg-black-variation2 {
+    /* #222222 */
+    background-color: var(--background-black-variation2);
+}
+.ds-bg-black-variation3 {
+    /* #2a2a2a */
+    background-color: var(--background-black-variation3);
+}
+
+/*
+************** 
+Buttons
+**************
+*/
+
+.ds-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    @apply text-base sm:text-[17px] lg:text-lg font-semibold;
+    padding: 1rem 1.5rem;
+    width: auto;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    /* Always put transition on original class/state */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.ds-btn:active {
+    transform: scale(0.95);
+}
+.ds-btn:disabled,
+.ds-btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+    filter: saturate(0.6) brightness(0.95);
+    transform: none;
+    transition: none;
+    pointer-events: none;
+}
+.ds-btn-loading {
+    position: relative;
+}
+.ds-btn-content-hidden {
+    visibility: hidden;
+}
+.ds-btn-spinner {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 9999px;
+    animation: ds-spin 0.8s linear infinite;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+@keyframes ds-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ds-btn-primary {
+    background-color: var(--primary);
+}
+
+.ds-btn-primary-glow {
+    background-color: var(--primary);
+    box-shadow: 0 0 13px 0 var(--primary);
+}
+
+.ds-btn-primary:hover {
+    background-color: var(--primary-button-hover);
+}
+
+.ds-btn-secondary {
+    background-color: var(--secondary);
+}
+.ds-btn-secondary-glow {
+    background-color: var(--secondary);
+    box-shadow: 0 0 13px 0 var(--secondary);
+}
+.ds-btn-secondary:hover {
+    background-color: var(--secondary-lighter);
+}
+
+.ds-btn-accent {
+    background-color: var(--accent);
+}
+.ds-btn-accent-glow {
+    background-color: var(--accent);
+    box-shadow: 0 0 13px 0 var(--accent);
+}
+.ds-btn-accent:hover {
+    background-color: var(--accent-darker);
+}
+
+/* White button */
+.ds-btn-white {
+    background-color: var(--color-white);
+    color: var(--text-gray-3333);
+    border: 1px solid var(--default-background-variation2);
+}
+.ds-btn-white-glow {
+    color: var(--text-gray-3333);
+    box-shadow: 0 0 13px 0 rgba(229, 229, 229, 0.65);
+}
+.ds-btn-white:hover {
+    background-color: var(--background-white-variation-2);
+}
+
+/* Black button */
+.ds-btn-black {
+    background-color: #000000;
+    color: #ffffff;
+}
+.ds-btn-black-glow {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.45);
+}
+.ds-btn-black:hover {
+    background-color: #111111;
+}
+
+/* Outlined button */
+.ds-btn-outlined {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.ds-btn-outlined-glow {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 13px 0 var(--primary);
+}
+.ds-btn-outlined:hover {
+    background-color: rgba(51, 201, 242, 0.08);
+}
+
+.ds-btn-contrast {
+    background-color: var(--contrast-bg);
+    color: var(--contrast-text);
+    border: 1px solid var(--contrast-border);
+}
+
+.ds-btn-contrast-glow {
+    background-color: var(--contrast-bg);
+    color: var(--contrast-text);
+    border: 1px solid var(--contrast-border);
+    box-shadow: 0 0 13px 0 var(--contrast-border);
+}
+
+.ds-btn-contrast:hover {
+    background-color: color-mix(in srgb, var(--contrast-bg) 90%, transparent);
+}
+
+.ds-btn-pill {
+    border-radius: 9999px;
+}
+
+/*
+************** 
+links
+**************
+*/
+
+.ds-link:link,
+.ds-link:visited {
+    --ds-link-color: var(--primary);
+    --ds-link-hover-color: var(--primary-darker);
+    color: var(--ds-link-color);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+}
+
+.ds-link:active,
+.ds-link:hover {
+    color: var(--ds-link-hover-color);
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+.ds-link-glow {
+    text-shadow: 0 0 16px currentColor;
+}
+.ds-link-arrow::after {
+    content: "->";
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: margin 0.15s;
+}
+.ds-link-arrow:hover::after {
+    margin-left: 10px;
+    margin-right: 0;
+}
+/* Allow overriding link colors via text color utility classes */
+.ds-link.ds-text-color-primary {
+    --ds-link-color: var(--text-primary);
+    --ds-link-hover-color: var(--text-tertiary);
+}
+.ds-link.ds-text-color-secondary {
+    --ds-link-color: var(--text-secondary);
+    --ds-link-hover-color: var(--text-secondary);
+}
+.ds-link.ds-text-color-tertiary {
+    --ds-link-color: var(--text-tertiary);
+    --ds-link-hover-color: var(--text-tertiary);
+}
+.ds-link.ds-text-color-quaternary {
+    --ds-link-color: var(--text-quaternary);
+    --ds-link-hover-color: var(--text-quaternary);
+}
+.ds-link.ds-text-color-quinary {
+    --ds-link-color: var(--text-quinary);
+    --ds-link-hover-color: var(--text-quinary);
+}
+.ds-link.ds-text-color-senary {
+    --ds-link-color: var(--text-senary);
+    --ds-link-hover-color: var(--text-senary);
+}
+.ds-link.ds-text-color-septenary {
+    --ds-link-color: var(--text-septenary);
+    --ds-link-hover-color: var(--text-septenary);
+}
+.ds-link.ds-text-color-success {
+    --ds-link-color: var(--text-success);
+    --ds-link-hover-color: var(--text-success);
+}
+.ds-link.ds-text-color-warning {
+    --ds-link-color: var(--text-info);
+    --ds-link-hover-color: color-mix(in srgb, var(--text-info) 80%, black);
+}
+.ds-link.ds-text-color-critical {
+    --ds-link-color: var(--text-critical);
+    --ds-link-hover-color: color-mix(in srgb, var(--text-critical) 90%, black);
+}
+.ds-link.ds-text-color-accent {
+    --ds-link-color: var(--text-accent);
+    --ds-link-hover-color: var(--text-accent);
+}
+.ds-link.ds-text-color-white {
+    --ds-link-color: var(--text-white);
+    --ds-link-hover-color: var(--text-white);
+}
+.ds-link.ds-text-color-white-variation1 {
+    --ds-link-color: var(--text-white-variation1);
+    --ds-link-hover-color: var(--text-white-variation1);
+}
+.ds-link.ds-text-color-gray-3333 {
+    --ds-link-color: var(--text-gray-3333);
+    --ds-link-hover-color: var(--text-gray-3333);
+}
+.ds-link.ds-text-color-gray-4444 {
+    --ds-link-color: var(--text-gray-4444);
+    --ds-link-hover-color: var(--text-gray-4444);
+}
+.ds-link.ds-text-color-gray-5555 {
+    --ds-link-color: var(--text-gray-5555);
+    --ds-link-hover-color: var(--text-gray-5555);
+}
+.ds-link.ds-text-color-gray-7777 {
+    --ds-link-color: var(--text-gray-7777);
+    --ds-link-hover-color: var(--text-gray-7777);
+}
+.ds-link.ds-text-color-gray-bbbb {
+    --ds-link-color: var(--text-gray-bbbb);
+    --ds-link-hover-color: var(--text-gray-bbbb);
+}
+
+.ds-link-btn:link,
+.ds-link-btn:visited {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+/*
+************** 
+input email, pasword, text select and checkbox
+**************
+*/
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: var(--lightest-background);
+    color: var(--text-gray-3333);
+    font-weight: 600;
+    transition: all 0.4s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px 0px var(--primary-lighter);
+}
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: var(--primary-lighter);
+    cursor: pointer;
+}
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+/**  This section will further customize the input fields and checkboxes  **/
+input.text-field {
+    border: 1px solid var(--primary);
+    background-color: #f1f1f1;
+}
+input.text-field:focus {
+    box-shadow: 0 0 10px 0px var(--primary-lighter);
+    background-color: #f1f1f1;
+}
+
+input[type="checkbox"].checkbox-custom {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    background: #fff; /* unchecked */
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"].checkbox-custom:checked {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+input[type="checkbox"].checkbox-custom:focus-visible {
+    outline: 2px solid var(--primary-lighter);
+    outline-offset: 2px;
+}
+
+input[type="checkbox"].checkbox-custom::after {
+    content: "";
+    display: block;
+    width: 0.45rem;
+    height: 0.95rem;
+    border-right: 0.18rem solid #fff;
+    border-bottom: 0.18rem solid #fff;
+    border-left: 0;
+    border-top: 0;
+    transform: translateY(-2px) rotate(45deg);
+    transform-origin: center;
+    opacity: 0;
+}
+
+input[type="checkbox"].checkbox-custom:checked::after {
+    opacity: 1;
+}
+
+/*
+Alerts
+*/
+.ds-alert {
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+.ds-alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #d34501;
+}
+
+.ds-alert-danger-light {
+    /* background-color: #f2dede; */
+    /* border-color: #ebccd1; */
+    color: #fa6c6a;
+    padding: 0;
+    padding-top: 1rem;
+}
+.ds-alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.ds-alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.ds-alert-warning {
+    background-color: #fcf8e3;
+    border-color: #efc349;
+    color: #555;
+}
+
+/***********
+Some common css
+************/
+.visibility-hidden {
+    visibility: hidden;
+}
+.visible-visible {
+    visibility: visible;
+}
+
+.diplay-block {
+    display: block;
+}
+.display-inline {
+    display: inline;
+}
+.display-none {
+    display: none;
+}
+
+/*
+Standard spacing between elements
+*/
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-right-md {
+    margin-right: 3.2rem !important;
+}
+
+.margin-right-lg {
+    margin-right: 4.8rem !important;
+}
+.margin-left-xsm {
+    margin-left: 0.8rem !important;
+}
+.margin-left-sm {
+    margin-left: 1.6rem !important;
+}
+
+.margin-left-md {
+    margin-left: 3.2rem !important;
+}
+
+.margin-left-lg {
+    margin-left: 4.8rem !important;
+}
+
+.margin-top-xsm {
+    margin-top: 0.8rem !important;
+}
+
+.margin-top-sm {
+    margin-top: 1.6rem !important;
+}
+
+.margin-top-md {
+    margin-top: 3.2rem !important;
+}
+
+.margin-top-lg {
+    margin-top: 4.8rem !important;
+}
+.margin-top-xlg {
+    margin-top: 6.4rem !important;
+}
+
+.margin-bottom-xsm {
+    margin-bottom: 0.8rem !important;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 3.2rem !important;
+}
+.margin-bottom-lg {
+    margin-bottom: 4.8rem !important;
+}
+.margin-bottom-xlg {
+    margin-bottom: 6.4rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*
+Grids
+*/
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
