@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import "./navigation.css";
 import clsx from "clsx";
 import MenuIcon from "../../icons/MenuIcon";
 import CloseIcon from "../../icons/CloseIcon";

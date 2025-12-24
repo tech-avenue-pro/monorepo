@@ -7,7 +7,8 @@
         "./tailwind-preset": "./tailwind.preset.cjs",
         "./postcss-config": "./postcss.config.cjs",
         "./globals.css": "./globals.css",
-        "./animations.css": "./animations.css"
+        "./animations.css": "./animations.css",
+        "./navigation.css": "./navigation.css"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
