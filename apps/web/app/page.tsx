@@ -16,6 +16,9 @@ import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
+import ServiceSection from "./HomeView/ServiceSection";
+import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
+import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -128,9 +131,9 @@ export default function Home() {
                                 color={DSTextColor.whiteVariant1}
                                 className="max-w-2xl text-left mb-12 md:mb-16"
                             >
-                                From websites to social media and online
-                                bookings — we help your business stand out and
-                                run smarter.
+                                From premium websites to social media, online
+                                booking, and live queues — we help your business
+                                stand out and run smarter.
                             </DSText>
                         </div>
                         <div className="flex justify-center">
@@ -154,16 +157,11 @@ export default function Home() {
                 </HeroContainer>
             </HeroSection>
 
-            <div className="mx-auto max-w-3xl space-y-6">
-                <h1 className="text-3xl font-bold text-gray-900">
-                    Next.js + Tailwind Playground
-                </h1>
-
-                <p className="text-gray-600">
-                    This is your sandbox to practice components, layout, and
-                    styling.
-                </p>
-            </div>
+            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+                <RegularContainer>
+                    <ServiceSection />
+                </RegularContainer>
+            </RegularSection>
         </main>
     );
 }

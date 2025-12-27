@@ -6,7 +6,7 @@
     "exports": {
         "./tailwind-preset": "./tailwind.preset.cjs",
         "./postcss-config": "./postcss.config.cjs",
-        "./globals.css": "./globals.css",
+        "./design-systems.css": "./design-systems.css",
         "./animations.css": "./animations.css",
         "./navigation.css": "./navigation.css"
     },

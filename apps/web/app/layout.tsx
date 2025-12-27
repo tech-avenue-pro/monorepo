@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import "@repo/styles/globals.css";
+import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
 import "@repo/styles/navigation.css";
 
