@@ -1,11 +1,10 @@
 import { ServiceCard } from "@repo/ui/design-systems/components/ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
-import React from "react";
 
 export default function ServiceSection() {
     return (
         <section className="mx-auto">
-            <div className="flex justify-between mb-16 items-start gap-16">
+            <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largerTitle}
@@ -16,7 +15,7 @@ export default function ServiceSection() {
                 <div className="flex flex-col items-start">
                     <DSText
                         as="h3"
-                        variant={DSTextVariant.title3}
+                        variant={DSTextVariant.title2}
                         className="text-center mb-2"
                     >
                         Everything you need to grow online
