@@ -56,7 +56,9 @@ export default function WhyChooseUs() {
                             >
                                 {reason.description}
                             </DSText>
-                            <hr className="my-4 border-gray-200" />
+                            {reasons.indexOf(reason) !== reasons.length - 1 && (
+                                <hr className="my-4 border-gray-200" />
+                            )}
                         </div>
                     ))}
                 </div>
