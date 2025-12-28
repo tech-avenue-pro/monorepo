@@ -33,7 +33,7 @@ export default function ServiceSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
                 {services.map((service) => (
                     <ServiceCard
-                        key={service.title}
+                        key={service.id}
                         image={
                             <img
                                 src={service.image}
@@ -45,6 +45,7 @@ export default function ServiceSection() {
                         title={service.title}
                         description={service.description}
                         href={service.href}
+                        badge={service.badge}
                         linkTitle={linkTitle}
                     />
                 ))}

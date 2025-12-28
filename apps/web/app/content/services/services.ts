@@ -6,12 +6,14 @@ export interface Services {
 }
 
 export interface Service {
+    id: number;
     title: string;
     description: string;
     image: string;
     srcSet: string;
     alt: string;
     href: string;
+    badge?: string;
 }
 
 export function getServices(): Services {
