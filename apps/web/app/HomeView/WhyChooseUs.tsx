@@ -9,14 +9,14 @@ import {
 export default function WhyChooseUs() {
     const { reasons } = getWhyChooseUs();
     return (
-        <section className="mx-auto">
+        <div className="mx-auto">
             <div className="grid gap-10 md:grid-cols-2">
                 {/* Left */}
                 <div>
                     <DSText
                         as="h2"
                         variant={DSTextVariant.largeTitle}
-                        color={DSTextColor.gray5555}
+                        color={DSTextColor.primary}
                         className="mb-8"
                     >
                         Why Choose Tech Avenue Pro
@@ -24,13 +24,13 @@ export default function WhyChooseUs() {
                     <DSText
                         as="p"
                         variant={DSTextVariant.body}
-                        color={DSTextColor.gray5555}
+                        color={DSTextColor.secondary}
                     >
                         We help businesses build strong digital brands, simplify
                         operations, and grow with confidence.
                     </DSText>
                     <img
-                        className="mt-10 rounded-lg shadow-lg"
+                        className="mt-10 rounded-lg shadow-lg w-full"
                         srcSet="/images/small/why-choose-us/why-choose-us@1x.jpeg 1x, /images/large/why-choose-us/why-choose-us@2x.jpeg 2x /images/large/why-choose-us/why-choose-us@3x.jpeg 3x"
                         alt="Why Choose Us Illustration"
                     />
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
                             <DSText
                                 as="h3"
                                 variant={DSTextVariant.headline2}
-                                color={DSTextColor.septenary}
+                                color={DSTextColor.senary}
                                 className="mb-2"
                             >
                                 {reason.title}
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                             <DSText
                                 as="p"
                                 variant={DSTextVariant.body}
-                                color={DSTextColor.gray5555}
+                                color={DSTextColor.tertiary}
                                 className="mb-4"
                             >
                                 {reason.description}
@@ -61,6 +61,6 @@ export default function WhyChooseUs() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }

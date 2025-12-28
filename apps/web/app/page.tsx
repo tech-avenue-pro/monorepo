@@ -1,4 +1,5 @@
 import Image, { type ImageProps } from "next/image";
+import type { CSSProperties } from "react";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 import {
@@ -21,6 +22,8 @@ import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "./HomeView/HowItWorks";
 import WhyChooseUs from "./HomeView/WhyChooseUs";
+import { FinalCTA } from "./HomeView/FinalCTA";
+import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -169,9 +172,14 @@ export default function Home() {
                     <HowItWorks />
                 </RegularContainer>
             </RegularSection>
-            <RegularSection background={DSLayoutBackground.white}>
+            <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <WhyChooseUs />
+                </RegularContainer>
+            </RegularSection>
+            <RegularSection background={DSLayoutBackground.default}>
+                <RegularContainer>
+                    <FinalCTAWithForm />
                 </RegularContainer>
             </RegularSection>
         </main>

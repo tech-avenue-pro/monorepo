@@ -48,6 +48,7 @@
     --text-accent: var(--accent);
     --text-white: #fff;
     --text-white-variation1: #dddddd;
+    --text-tint-theme: var(--darkest-background);
 
     /* contrast should look dark on light mode */
     --contrast-bg: #000;
@@ -71,6 +72,10 @@
     --text-gray-5555: #555;
     --text-gray-7777: #777;
     --text-gray-bbbb: #bbb;
+
+    /* Input box background color*/
+
+    --text-box-bg: #f1f1f1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,8 +97,8 @@
 
         /* Accent Colors */
         --accent: #ffb181;
-        --accent-lighter: #f87e72;
-        --accent-darker: #bd4438;
+        --accent-lighter: #fac09c;
+        --accent-darker: #f59153;
 
         --success: #00775d;
         --info: #efc349;
@@ -107,11 +112,14 @@
         --text-quinary: #777777;
         --text-senary: var(--primary);
         --text-septenary: var(--darkest-background);
+        --text-tint-theme: var(--primary);
 
         /* contrast should look dark on light mode */
         --contrast-bg: #fff;
         --contrast-border: #f8f8f8;
         --contrast-text: #333333;
+
+        --text-box-bg: #1f1f1f;
     }
 }
 
@@ -848,6 +856,7 @@ input email, pasword, text select and checkbox
 input[type="email"],
 input[type="text"],
 input[type="password"],
+input[type="phone"],
 select {
     width: 100%;
     padding: 0.7rem 0.7rem;
@@ -855,7 +864,7 @@ select {
     border: 1px solid var(--primary);
     border-radius: 8px;
     background-color: var(--lightest-background);
-    color: var(--text-gray-3333);
+    color: var(--text-primary);
     font-weight: 600;
     transition: all 0.4s;
 }
@@ -882,11 +891,11 @@ input[type="radio"] {
 /**  This section will further customize the input fields and checkboxes  **/
 input.text-field {
     border: 1px solid var(--primary);
-    background-color: #f1f1f1;
+    background-color: var(--text-box-bg);
 }
 input.text-field:focus {
     box-shadow: 0 0 10px 0px var(--primary-lighter);
-    background-color: #f1f1f1;
+    background-color: var(--text-box-bg);
 }
 
 input[type="checkbox"].checkbox-custom {
@@ -1086,4 +1095,27 @@ Grids
 
 .ds-grid--center-v {
     align-items: center;
+}
+
+/*** Cool Effects **/
+.ds-border-glow {
+    box-shadow: 0 0 15px 0 var(--primary-lighter);
+}
+
+.ds-border-glow-accent {
+    box-shadow: 0 0 15px 0 var(--accent-darker);
+}
+
+.blur-effect {
+    position: absolute;
+    inset: 0;
+    background-image: var(--blur-bg-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) saturate(120%);
+    transform: scale(1.05);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 0;
+    will-change: filter;
 }
