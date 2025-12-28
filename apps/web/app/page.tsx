@@ -20,6 +20,7 @@ import ServiceSection from "./HomeView/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "./HomeView/HowItWorks";
+import WhyChooseUs from "./HomeView/WhyChooseUs";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -167,6 +168,11 @@ export default function Home() {
             <RegularSection background={DSLayoutBackground.lightestBackground}>
                 <RegularContainer>
                     <HowItWorks />
+                </RegularContainer>
+            </RegularSection>
+            <RegularSection background={DSLayoutBackground.white}>
+                <RegularContainer>
+                    <WhyChooseUs />
                 </RegularContainer>
             </RegularSection>
         </main>

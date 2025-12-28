@@ -1,0 +1,36 @@
+{
+    "sectionTitle": "Why Choose Tech Avenue?",
+    "introText": "We’re more than a digital agency. We partner with businesses to build strong brands, streamline operations, and grow sustainably online.",
+    "reasons": [
+        {
+            "id": 1,
+            "title": "All-in-One Digital Partner",
+            "description": "Websites, marketing, booking, and live queues—everything works together seamlessly."
+        },
+        {
+            "id": 2,
+            "title": "Built for Small & Medium Businesses",
+            "description": "We focus on practical solutions for real-world challenges like walk-ins and no-shows."
+        },
+        {
+            "id": 3,
+            "title": "Premium Quality, Clear Pricing",
+            "description": "High-quality work without enterprise-level costs or hidden fees."
+        },
+        {
+            "id": 4,
+            "title": "Smart Customer Experience",
+            "description": "From first click to appointment or queue—your customers enjoy a smoother journey."
+        },
+        {
+            "id": 5,
+            "title": "Scalable & Future-Ready",
+            "description": "Start small and grow anytime with solutions designed to scale with your business."
+        },
+        {
+            "id": 6,
+            "title": "Real Support, Real People",
+            "description": "Direct communication and reliable support from people who understand your needs."
+        }
+    ]
+}
