@@ -410,6 +410,9 @@ body {
 .ds-text-color-septenary {
     color: var(--text-septenary);
 }
+.ds-text-color-tint-theme {
+    color: var(--text-tint-theme);
+}
 .ds-text-color-white {
     color: var(--text-white);
 }
@@ -788,6 +791,10 @@ links
 .ds-link.ds-text-color-septenary {
     --ds-link-color: var(--text-septenary);
     --ds-link-hover-color: var(--text-septenary);
+}
+.ds-link.ds-text-color-tint-theme {
+    --ds-link-color: var(--text-tint-theme);
+    --ds-link-hover-color: var(--text-tint-theme);
 }
 .ds-link.ds-text-color-success {
     --ds-link-color: var(--text-success);

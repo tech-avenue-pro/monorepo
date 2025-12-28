@@ -137,6 +137,11 @@ export enum DSTextColor {
      */
     septenary = "septenary",
 
+    /**
+     * Themed tint text (varies by color scheme)
+     */
+    tintTheme = "tint-theme",
+
     /** Success text (green) */
     success = "success",
 
@@ -206,6 +211,7 @@ export const colorClasses: Record<DSTextColor, string> = {
     [DSTextColor.quinary]: "ds-text-color-quinary",
     [DSTextColor.senary]: "ds-text-color-senary",
     [DSTextColor.septenary]: "ds-text-color-septenary",
+    [DSTextColor.tintTheme]: "ds-text-color-tint-theme",
     [DSTextColor.success]: "ds-text-color-success",
     [DSTextColor.warning]: "ds-text-color-warning",
     [DSTextColor.critical]: "ds-text-color-critical",
@@ -227,6 +233,7 @@ export const textColorVars: Record<DSTextColor, string> = {
     [DSTextColor.quinary]: "var(--text-quinary)",
     [DSTextColor.senary]: "var(--text-senary)",
     [DSTextColor.septenary]: "var(--text-septenary)",
+    [DSTextColor.tintTheme]: "var(--text-tint-theme)",
     [DSTextColor.success]: "var(--text-success)",
     [DSTextColor.warning]: "var(--text-info)",
     [DSTextColor.critical]: "var(--text-critical)",

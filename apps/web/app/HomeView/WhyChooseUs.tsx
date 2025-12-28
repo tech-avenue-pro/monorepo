@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
                             <DSText
                                 as="h3"
                                 variant={DSTextVariant.headline2}
-                                color={DSTextColor.senary}
+                                color={DSTextColor.tintTheme}
                                 className="mb-2"
                             >
                                 {reason.title}
