@@ -6,7 +6,7 @@ export default function ServiceSection() {
     const { linkTitle, services } = getServices();
 
     return (
-        <section className="mx-auto">
+        <section className="mx-auto max-w-6xl px-4">
             <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
                 <DSText
                     as="h2"
@@ -45,7 +45,7 @@ export default function ServiceSection() {
                         title={service.title}
                         description={service.description}
                         href={service.href}
-                        badge={service.badge}
+                        badge="Availeble Now"
                         linkTitle={linkTitle}
                     />
                 ))}

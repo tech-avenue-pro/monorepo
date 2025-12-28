@@ -19,6 +19,7 @@ import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
 import ServiceSection from "./HomeView/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
+import HowItWorks from "./HomeView/HowItWorks";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -160,6 +161,12 @@ export default function Home() {
             <RegularSection background={DSLayoutBackground.defaultVariation1}>
                 <RegularContainer>
                     <ServiceSection />
+                </RegularContainer>
+            </RegularSection>
+
+            <RegularSection background={DSLayoutBackground.lightestBackground}>
+                <RegularContainer>
+                    <HowItWorks />
                 </RegularContainer>
             </RegularSection>
         </main>

@@ -1,0 +1,19 @@
+{
+    "steps": [
+        {
+            "id": "01",
+            "title": "Tell Us About Your Business",
+            "description": "We learn your business and define the right digital strategy. "
+        },
+        {
+            "id": "02",
+            "title": "We Build & Set Everything Up",
+            "description": "We design, develop, and integrate everything you need. You focus on your business."
+        },
+        {
+            "id": "03",
+            "title": "Launch, Grow & Optimize",
+            "description": "You launch, attract customers, and run smarter. We monitor and optimize performance."
+        }
+    ]
+}
