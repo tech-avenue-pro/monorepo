@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
                     <DSText
                         as="h2"
                         variant={DSTextVariant.largeTitle}
-                        color={DSTextColor.primary}
+                        color={DSTextColor.gray5555}
                         className="mb-8"
                     >
                         Why Choose Tech Avenue Pro
@@ -24,26 +24,39 @@ export default function WhyChooseUs() {
                     <DSText
                         as="p"
                         variant={DSTextVariant.body}
-                        color={DSTextColor.tertiary}
+                        color={DSTextColor.gray5555}
                     >
                         We help businesses build strong digital brands, simplify
                         operations, and grow with confidence.
                     </DSText>
+                    <img
+                        className="mt-10 rounded-lg shadow-lg"
+                        srcSet="/images/small/why-choose-us/why-choose-us@1x.jpeg 1x, /images/large/why-choose-us/why-choose-us@2x.jpeg 2x /images/large/why-choose-us/why-choose-us@3x.jpeg 3x"
+                        alt="Why Choose Us Illustration"
+                    />
                 </div>
 
                 {/* Right */}
-                <div className="grid gap-5 sm:grid-cols-2">
+                <div className="grid gap-5 sm:grid-cols-1">
                     {reasons.map((reason) => (
-                        <div
-                            key={reason.title}
-                            className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm"
-                        >
-                            <h3 className="text-sm font-semibold text-neutral-900">
+                        <div key={reason.title}>
+                            <DSText
+                                as="h3"
+                                variant={DSTextVariant.headline2}
+                                color={DSTextColor.septenary}
+                                className="mb-2"
+                            >
                                 {reason.title}
-                            </h3>
-                            <p className="mt-2 text-sm leading-6 text-neutral-600">
+                            </DSText>
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.body}
+                                color={DSTextColor.gray5555}
+                                className="mb-4"
+                            >
                                 {reason.description}
-                            </p>
+                            </DSText>
+                            <hr className="my-4 border-gray-200" />
                         </div>
                     ))}
                 </div>
