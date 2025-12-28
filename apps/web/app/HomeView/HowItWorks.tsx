@@ -19,20 +19,22 @@ export default function HowItWorks() {
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largerTitle}
-                    color={DSTextColor.primary}
+                    color={DSTextColor.gray3333}
                     className="text-center mb-6 shrink-0"
                 >
                     How It Works
                 </DSText>
-                <DSText
-                    as="h3"
-                    variant={DSTextVariant.body}
-                    color={DSTextColor.primary}
-                    className="text-center mb-6 shrink-0"
-                >
-                    - A simple process designed to get results—without the
-                    complexity.
-                </DSText>
+                <div>
+                    <DSText
+                        as="h3"
+                        variant={DSTextVariant.body}
+                        color={DSTextColor.gray3333}
+                        className=" mb-6 shrink-0 "
+                    >
+                        - A simple process designed to get results — without the
+                        complexity.
+                    </DSText>
+                </div>
             </div>
             <div className="mt-8 grid gap-10 grid-cols-1 md:grid-cols-3">
                 {steps.map((step) => (
@@ -57,7 +59,7 @@ export default function HowItWorks() {
                         <DSText
                             as="p"
                             variant={DSTextVariant.body}
-                            color={DSTextColor.tertiary}
+                            color={DSTextColor.gray4444}
                             className="mt-2"
                         >
                             {step.description}

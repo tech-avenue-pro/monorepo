@@ -133,9 +133,8 @@ export default function Home() {
                                 color={DSTextColor.whiteVariant1}
                                 className="max-w-2xl text-left mb-12 md:mb-16"
                             >
-                                From premium websites to social media, online
-                                booking, and live queues — we help your business
-                                stand out and run smarter.
+                                You focus on running your business. We handle
+                                your growth.
                             </DSText>
                         </div>
                         <div className="flex justify-center">

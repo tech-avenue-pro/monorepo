@@ -24,8 +24,9 @@ export default function ServiceSection() {
                         Everything you need to grow online
                     </DSText>
                     <p className="">
-                        You focus on running your business. We handle your
-                        growth..
+                        From premium websites to social media, online booking,
+                        and live queues — we help your business stand out and
+                        run smarter.
                     </p>
                 </div>
             </div>
