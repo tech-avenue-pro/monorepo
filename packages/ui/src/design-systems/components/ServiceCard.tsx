@@ -10,6 +10,7 @@ export type ServiceCardProps = {
     icon?: React.ReactNode;
     href?: string;
     badge?: string; // e.g. "Popular", "New"
+    linkTitle?: string;
 };
 
 export function ServiceCard({
@@ -19,6 +20,7 @@ export function ServiceCard({
     href,
     image,
     badge,
+    linkTitle,
 }: ServiceCardProps) {
     const CardWrapper: React.ElementType = href ? "a" : "div";
 
@@ -75,7 +77,7 @@ export function ServiceCard({
                             href={href}
                             className="font-semibold"
                         >
-                            Learn more
+                            {linkTitle || "Learn More"}
                         </DSLink>
                     ) : null}
                 </div>

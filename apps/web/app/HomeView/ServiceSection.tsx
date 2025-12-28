@@ -1,7 +1,10 @@
 import { ServiceCard } from "@repo/ui/design-systems/components/ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
+import { getServices } from "../content/services/services";
 
 export default function ServiceSection() {
+    const { linkTitle, services } = getServices();
+
     return (
         <section className="mx-auto">
             <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
@@ -28,89 +31,23 @@ export default function ServiceSection() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/digital-growth/digital-growth.jpeg"
-                            alt="Hero Image"
-                            srcSet="/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x /images/small/digital-growth/digital-growth@3x.jpeg 3x"
-                            className=""
-                        />
-                    }
-                    title="Digital Growth Management"
-                    description="This is our core service. We act as your digital marketing partner, handling everything needed to grow your business online."
-                    href="#marketing"
-                />
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/premium-website/premium-website.jpeg"
-                            srcSet="/images/small/premium-website/premium-website.jpeg 1x, /images/small/premium-website/premium-website.jpeg 2x /images/small/premium-website/premium-website@3x.jpeg 3x"
-                            alt="Hero Image"
-                            className=""
-                        />
-                    }
-                    title="Premium Business Website"
-                    description="Modern, fast, mobile-first websites built to convert visitors into customers."
-                    href="#websites"
-                    badge="Popular"
-                />
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/bookings/bookings.jpeg"
-                            alt="Hero Image"
-                            className=""
-                        />
-                    }
-                    title="Online Booking Solutions"
-                    description="Let customers book appointments 24/7 with confirmations, reminders, and easy scheduling."
-                    href="#booking"
-                />
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/live-queue/live-queue.jpeg"
-                            alt="Hero Image"
-                            className=""
-                        />
-                    }
-                    title="Live Queue"
-                    description="Reduce wait-time frustration with real-time queue updates and smoother customer flow."
-                    href="#queue"
-                    badge="New"
-                />
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/social-media/social-media.jpeg"
-                            alt="Hero Image"
-                            className=""
-                        />
-                    }
-                    title="Social Media Presence Management"
-                    description="We manage your social media so your business stays active, professional, and engaging — without you worrying about what to post."
-                    href="#social-media"
-                />
-
-                <ServiceCard
-                    image={
-                        <img
-                            src="/images/small/google-visibility/google-visibility.jpeg"
-                            alt="Hero Image"
-                            className=""
-                        />
-                    }
-                    title="Google Visibility and Local Search"
-                    description="Most customers discover local businesses through Google. We make sure you show up and look professional when they do."
-                    href="#branding"
-                />
-
-                <ServiceCard
-                    title="Branding & Visual Design"
-                    description="Logos and visuals that make your business look consistent, premium, and memorable."
-                    href="#branding"
-                />
+                {services.map((service) => (
+                    <ServiceCard
+                        key={service.title}
+                        image={
+                            <img
+                                src={service.image}
+                                alt={service.alt}
+                                srcSet={service.srcSet}
+                                className=""
+                            />
+                        }
+                        title={service.title}
+                        description={service.description}
+                        href={service.href}
+                        linkTitle={linkTitle}
+                    />
+                ))}
             </div>
         </section>
     );

@@ -1,5 +1,5 @@
 {
-    "linkTitle": "Learn More",
+    "linkTitle": "Learn More ->",
     "services": [
         {
             "image": "/images/small/digital-growth/digital-growth.jpeg",
@@ -11,15 +11,15 @@
         },
         {
             "image": "/images/small/premium-business-website/premium-business-website.jpeg",
-            "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website.jpeg 2x /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
+            "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website@2x.jpeg 2x /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
             "alt": "Premium Business Website Service Image",
             "title": "Premium Business Website",
             "description": "Modern, fast, mobile-first websites built to convert visitors into customers.",
             "href": "#marketing"
         },
         {
-            "image": "/images/small/premium-business-website/premium-business-website.jpeg",
-            "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website.jpeg 2x /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
+            "image": "/images/small/bookings/bookings.jpeg",
+            "srcSet": "/images/small/bookings/bookings.jpeg 1x, /images/small/bookings/bookings@2x.jpeg 2x /images/small/bookings/bookings@3x.jpeg 3x",
             "alt": "Premium Business Website Service Image",
             "title": "Online Booking Solutions",
             "description": "Let customers book appointments 24/7 with confirmations, reminders, and easy scheduling.",
