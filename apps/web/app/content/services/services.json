@@ -1,0 +1,53 @@
+{
+    "linkTitle": "Learn More",
+    "services": [
+        {
+            "image": "/images/small/digital-growth/digital-growth.jpeg",
+            "srcSet": "/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x /images/small/digital-growth/digital-growth@3x.jpeg 3x",
+            "alt": "Digital Growth Service Image",
+            "title": "Digital Growth Management",
+            "description": "This is our core service. We act as your digital marketing partner, handling everything needed to grow your business online.",
+            "href": "#marketing"
+        },
+        {
+            "image": "/images/small/premium-business-website/premium-business-website.jpeg",
+            "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website.jpeg 2x /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
+            "alt": "Premium Business Website Service Image",
+            "title": "Premium Business Website",
+            "description": "Modern, fast, mobile-first websites built to convert visitors into customers.",
+            "href": "#marketing"
+        },
+        {
+            "image": "/images/small/premium-business-website/premium-business-website.jpeg",
+            "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website.jpeg 2x /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
+            "alt": "Premium Business Website Service Image",
+            "title": "Online Booking Solutions",
+            "description": "Let customers book appointments 24/7 with confirmations, reminders, and easy scheduling.",
+            "href": "#booking"
+        },
+        {
+            "image": "/images/small/live-queue/live-queue.jpeg",
+            "srcSet": "/images/small/live-queue/live-queue.jpeg 1x, /images/small/live-queue/live-queue.jpeg 2x /images/small/live-queue/live-queue@3x.jpeg 3x",
+            "alt": "Live Queue Service Image",
+            "title": "Live Queue",
+            "description": "Reduce wait-time frustration with real-time queue updates and smoother customer flow.",
+            "href": "#queue"
+        },
+        {
+            "image": "/images/small/social-media/social-media.jpeg",
+            "srcSet": "/images/small/social-media/social-media.jpeg 1x, /images/small/social-media/social-media.jpeg 2x /images/small/social-media/social-media@3x.jpeg 3x",
+            "alt": "Social Media Presence Management Service Image",
+            "title": "Social Media Presence Management",
+            "description": "We manage your social media so your business stays active, professional, and engaging — without you worrying about what to post.",
+            "href": "#social-media"
+        },
+        {
+            "image": "/images/small/google-visibility/google-visibility.jpeg",
+            "srcSet": "/images/small/google-visibility/google-visibility.jpeg 1x, /images/small/google-visibility/google-visibility.jpeg 2x /images/small/google-visibility/google-visibility@3x.jpeg 3x",
+            "alt": "Google Visibility and Local Search Service Image",
+            "title": "Google Visibility and Local Search",
+            "description": "Most customers discover local businesses through Google. We make sure you show up and look professional when they do.",
+            "href": "#google-visibility"
+        }
+    ]
+}

@@ -33,6 +33,7 @@ export default function ServiceSection() {
                         <img
                             src="/images/small/digital-growth/digital-growth.jpeg"
                             alt="Hero Image"
+                            srcSet="/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x /images/small/digital-growth/digital-growth@3x.jpeg 3x"
                             className=""
                         />
                     }
@@ -44,6 +45,7 @@ export default function ServiceSection() {
                     image={
                         <img
                             src="/images/small/premium-website/premium-website.jpeg"
+                            srcSet="/images/small/premium-website/premium-website.jpeg 1x, /images/small/premium-website/premium-website.jpeg 2x /images/small/premium-website/premium-website@3x.jpeg 3x"
                             alt="Hero Image"
                             className=""
                         />
