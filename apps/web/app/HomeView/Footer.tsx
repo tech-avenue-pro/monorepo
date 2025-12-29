@@ -49,8 +49,9 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#digital-growth-management"
+                                    showBottomLine={false}
                                 >
-                                    Digital Growth Management
+                                    Digital Growth
                                 </DSLink>
                             </div>
                             <div>
@@ -58,8 +59,9 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#social-media-management"
+                                    showBottomLine={false}
                                 >
-                                    Social Media Management
+                                    Social Media
                                 </DSLink>
                             </div>
                             <div>
@@ -67,8 +69,9 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#premium-business-website"
+                                    showBottomLine={false}
                                 >
-                                    Premium Business Website
+                                    Business Website
                                 </DSLink>
                             </div>
                             <div>
@@ -76,8 +79,9 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#premium-business-website"
+                                    showBottomLine={false}
                                 >
-                                    Google Visibility & Local Search
+                                    Google Visibility
                                 </DSLink>
                             </div>
                         </div>
@@ -95,6 +99,7 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#digital-growth-management"
+                                    showBottomLine={false}
                                 >
                                     Home
                                 </DSLink>
@@ -104,6 +109,7 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#social-media-management"
+                                    showBottomLine={false}
                                 >
                                     How It Works
                                 </DSLink>
@@ -113,6 +119,7 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#premium-business-website"
+                                    showBottomLine={false}
                                 >
                                     Why Choose us
                                 </DSLink>
@@ -132,6 +139,7 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#digital-growth-management"
+                                    showBottomLine={false}
                                 >
                                     Live Queue
                                 </DSLink>
@@ -141,6 +149,7 @@ export default function Footer({
                                     variant={DSTextVariant.bodySmall}
                                     color={DSTextColor.tertiary}
                                     href="#social-media-management"
+                                    showBottomLine={false}
                                 >
                                     Online Appointments
                                 </DSLink>

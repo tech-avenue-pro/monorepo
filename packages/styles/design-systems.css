@@ -750,6 +750,15 @@ links
     border-bottom: 1px solid transparent;
     transition: all 0.3s;
 }
+.ds-link-no-bottom-line:link,
+.ds-link-no-bottom-line:visited {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.ds-link-no-bottom-line:active,
+.ds-link-no-bottom-line:hover {
+    border-bottom: none;
+}
 .ds-link-glow {
     text-shadow: 0 0 16px currentColor;
 }

@@ -19,6 +19,7 @@ interface DSLinkProps
     children: React.ReactNode;
     glow?: boolean;
     arrow?: boolean;
+    showBottomLine?: boolean;
 }
 
 export function DSLink({
@@ -29,6 +30,7 @@ export function DSLink({
     style,
     glow = false,
     arrow = false,
+    showBottomLine = true,
     children,
     ...rest
 }: DSLinkProps) {
@@ -47,6 +49,7 @@ export function DSLink({
                 colorClasses[color],
                 glow && "ds-link-glow",
                 arrow && "ds-link-arrow",
+                !showBottomLine && "ds-link-no-bottom-line",
                 className
             )}
             style={mergedStyle}
