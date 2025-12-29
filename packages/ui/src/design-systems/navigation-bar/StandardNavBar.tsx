@@ -14,6 +14,7 @@ import {
     textColorVars,
     variantClasses,
 } from "../typography";
+import { DSText } from "../DSText";
 
 type NavItem = {
     label: string;
@@ -36,6 +37,7 @@ interface StandardNavBarProps {
     mobileFontWeight?: React.CSSProperties["fontWeight"] | DSTextWeight;
     logoSrc?: string;
     cta?: React.ReactNode;
+    name?: string;
     background?: DSLayoutBackground;
     stickyOnScrollOnly?: boolean;
 }
@@ -50,6 +52,7 @@ const StandardNavBar = ({
     mobileFontWeight,
     logoSrc = "/tech-avenue-pro-navbar.png",
     cta,
+    name,
     background = DSLayoutBackground.accent,
     stickyOnScrollOnly = false,
 }: StandardNavBarProps) => {
@@ -180,9 +183,25 @@ const StandardNavBar = ({
                 style={customBackgroundStyle}
             >
                 <div className="nav-inner">
-                    <a href="#top-of-screen" className="nav-brand">
-                        <img className="logo" src={logoSrc} alt="Navigation" />
-                    </a>
+                    <div className="flex justify-start items-center gap-4">
+                        <a href="#top-of-screen" className="nav-brand">
+                            <img
+                                className="logo"
+                                src={logoSrc}
+                                alt="Navigation"
+                            />
+                        </a>
+                        {name && (
+                            <DSText
+                                variant={DSTextVariant.largeTitle}
+                                color={color}
+                                as="span"
+                                className="nav-brand-name"
+                            >
+                                {name}
+                            </DSText>
+                        )}
+                    </div>
                     <nav className="main-nav">
                         <ul
                             className={clsx(

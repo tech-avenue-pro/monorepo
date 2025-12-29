@@ -24,6 +24,8 @@ import HowItWorks from "./HomeView/HowItWorks";
 import WhyChooseUs from "./HomeView/WhyChooseUs";
 import { FinalCTA } from "./HomeView/FinalCTA";
 import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
+import MainNavBar from "./MainNavBar";
+import Footer from "./HomeView/Footer";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -44,53 +46,7 @@ const ThemeImage = (props: Props) => {
 export default function Home() {
     return (
         <main className="">
-            <StandardNavBar
-                links={[
-                    {
-                        label: "Pages",
-                        children: [
-                            { label: "Colors", href: "#colors" },
-                            { label: "Buttons", href: "#buttons" },
-                            { label: "Links", href: "#links" },
-                            { label: "Link Buttons", href: "#link-buttons" },
-                        ],
-                    },
-                    {
-                        label: "Colors",
-                        href: "#colors",
-                    },
-                    {
-                        label: "Buttons",
-                        href: "#buttons",
-                    },
-                    {
-                        label: "Links",
-                        href: "#links",
-                    },
-                    {
-                        label: "Link Buttons",
-                        href: "#link-buttons",
-                    },
-                ]}
-                color={DSTextColor.white}
-                hoverColor={DSTextColor.senary}
-                textVariant={DSTextVariant.bodySmall}
-                fontWeight={DSTextWeight.regular}
-                mobileFontWeight={DSTextWeight.regular}
-                mobileTextVariant={DSTextVariant.largerTitle}
-                logoSrc="icons/tech-avenue-pro-navbar.png"
-                cta={
-                    <DSLinkButton
-                        href="/signup"
-                        variant={DSButtonVariant.primary}
-                        className="h-10"
-                    >
-                        Sign Up
-                    </DSLinkButton>
-                }
-                background={DSLayoutBackground.black}
-                stickyOnScrollOnly={true}
-            />
+            <MainNavBar />
 
             <HeroSection
                 background={DSLayoutBackground.black}
@@ -180,6 +136,11 @@ export default function Home() {
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <FinalCTAWithForm />
+                </RegularContainer>
+            </RegularSection>
+            <RegularSection background={DSLayoutBackground.default}>
+                <RegularContainer>
+                    <Footer />
                 </RegularContainer>
             </RegularSection>
         </main>
