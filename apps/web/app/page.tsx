@@ -26,6 +26,7 @@ import { FinalCTA } from "./HomeView/FinalCTA";
 import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 import MainNavBar from "./MainNavBar";
 import Footer from "./HomeView/Footer";
+import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -133,11 +134,11 @@ export default function Home() {
                     <WhyChooseUs />
                 </RegularContainer>
             </RegularSection>
-            <RegularSection background={DSLayoutBackground.default}>
+            <SmallSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <FinalCTAWithForm />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <Footer />
