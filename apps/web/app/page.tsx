@@ -27,6 +27,7 @@ import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 import MainNavBar from "./MainNavBar";
 import Footer from "./HomeView/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
+import { getServices } from "./content/services/servicesContent";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -45,6 +46,7 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
+    const services = getServices();
     return (
         <main className="">
             <MainNavBar />
@@ -120,7 +122,7 @@ export default function Home() {
 
             <RegularSection background={DSLayoutBackground.defaultVariation1}>
                 <RegularContainer>
-                    <ServiceSection />
+                    <ServiceSection {...services} />
                 </RegularContainer>
             </RegularSection>
 

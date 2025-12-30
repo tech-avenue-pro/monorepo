@@ -10,7 +10,7 @@ import React from "react";
 export function FinalCTAWithForm() {
     return (
         <div id="contact" className="mx-auto">
-            <div className="rounded-xl ds-border-glow ds-bg-default-variation1 p-4 md:p-12">
+            <div className="rounded-xl ds-border-glow ds-bg-default-variation1 px-5 py-12 md:p-12">
                 <div className="grid gap-10 md:grid-cols-2 md:items-top">
                     <div>
                         <DSText

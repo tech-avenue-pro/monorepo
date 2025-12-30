@@ -1,10 +1,33 @@
 import { ServiceCard } from "@repo/ui/design-systems/components/ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
-import { getServices } from "../content/services/services";
+import { getServices } from "../content/services/servicesContent";
 
-export default function ServiceSection() {
-    const { linkTitle, services } = getServices();
+export interface ServicesContent {
+    sectionTitle: string;
+    sectionTagline: string;
+    sectionTagDescription: string;
+    linkTitle: string;
+    services: ServiceDetailContent[];
+}
 
+export interface ServiceDetailContent {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    srcSet: string;
+    alt: string;
+    href: string;
+    badge?: string;
+}
+
+export default function ServiceSection({
+    sectionTitle,
+    sectionTagline,
+    sectionTagDescription,
+    linkTitle,
+    services,
+}: ServicesContent) {
     return (
         <section className="mx-auto max-w-6xl px-4">
             <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
@@ -13,7 +36,7 @@ export default function ServiceSection() {
                     variant={DSTextVariant.largerTitle}
                     className="text-center mb-6 shrink-0"
                 >
-                    Our Services
+                    {sectionTitle}
                 </DSText>
                 <div className="flex flex-col items-start">
                     <DSText
@@ -21,13 +44,11 @@ export default function ServiceSection() {
                         variant={DSTextVariant.title2}
                         className="text-center mb-2"
                     >
-                        Everything you need to grow online
+                        <span
+                            dangerouslySetInnerHTML={{ __html: sectionTagline }}
+                        />
                     </DSText>
-                    <p className="">
-                        From premium websites to social media, online booking,
-                        and live queues — we help your business stand out and
-                        run smarter.
-                    </p>
+                    <p className="">{sectionTagDescription}</p>
                 </div>
             </div>
 
