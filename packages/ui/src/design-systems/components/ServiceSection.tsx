@@ -1,6 +1,6 @@
 import { ServiceCard } from "@repo/ui/design-systems/components/ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
-import { getServices } from "../content/services/servicesContent";
+import { getServices } from "./servicesContent";
 
 export interface ServicesContent {
     sectionTitle: string;

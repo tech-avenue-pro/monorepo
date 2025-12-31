@@ -13,7 +13,9 @@
         "next-env.d.ts",
         "next.config.js",
         ".next/types/**/*.ts",
-        "tailwind.config.cjs"
+        "tailwind.config.cjs",
+        "../../packages/ui/src/design-systems/components/ServiceSection.tsx",
+        "../../packages/ui/src/design-systems/components/servicesContent.ts"
     ],
     "exclude": ["node_modules"]
 }

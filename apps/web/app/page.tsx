@@ -17,7 +17,7 @@ import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
-import ServiceSection from "./HomeView/ServiceSection";
+import ServiceSection from "@repo/ui/design-systems/components/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "./HomeView/HowItWorks";
@@ -27,7 +27,7 @@ import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 import MainNavBar from "./MainNavBar";
 import Footer from "./HomeView/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
-import { getServices } from "./content/services/servicesContent";
+import { getServices } from "../../../packages/ui/src/design-systems/components/servicesContent";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
