@@ -20,7 +20,7 @@ import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
 import ServiceSection from "@repo/ui/design-systems/components/services/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
-import HowItWorks from "./HomeView/HowItWorks";
+import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
 import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
 import { FinalCTA } from "./HomeView/FinalCTA";
 import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
@@ -32,6 +32,7 @@ import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/He
 import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 import { get } from "http";
 import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
+import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -53,6 +54,7 @@ export default function Home() {
     const services = getServices();
     const heroContent = getHeroSectionContent();
     const whyChooseUs = getWhyChooseUsContent();
+    const howItWorks = getHowItWorksContent();
     return (
         <main className="">
             <MainNavBar />
@@ -74,7 +76,7 @@ export default function Home() {
 
             <RegularSection background={DSLayoutBackground.lightestBackground}>
                 <RegularContainer>
-                    <HowItWorks />
+                    <HowItWorks {...howItWorks} />
                 </RegularContainer>
             </RegularSection>
             <RegularSection background={DSLayoutBackground.default}>

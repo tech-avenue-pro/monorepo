@@ -1,15 +1,6 @@
+import { HowItWorks } from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
 import howItWorksData from "./how-it-works.json";
 
-export interface HowItWorks {
-    steps: HowItWorksStep[];
-}
-
-export interface HowItWorksStep {
-    id: string;
-    title: string;
-    description: string;
-}
-
-export function getHowItWorks(): HowItWorks {
+export function getHowItWorksContent(): HowItWorks {
     return howItWorksData as HowItWorks;
 }

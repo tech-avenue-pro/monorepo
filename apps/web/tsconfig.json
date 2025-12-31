@@ -16,7 +16,8 @@
         "tailwind.config.cjs",
         "../../packages/ui/src/design-systems/components/ServiceSection.tsx",
         "../../packages/ui/src/design-systems/components/servicesContent.ts",
-        "../../packages/ui/src/design-systems/components/why-choose-us/WhyChooseUs.tsx"
+        "../../packages/ui/src/design-systems/components/why-choose-us/WhyChooseUs.tsx",
+        "../../packages/ui/src/design-systems/components/how-it-works/HowItWorks.tsx"
     ],
     "exclude": ["node_modules"]
 }

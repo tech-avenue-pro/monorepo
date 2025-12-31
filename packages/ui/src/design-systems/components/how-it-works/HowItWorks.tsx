@@ -1,5 +1,5 @@
 import React from "react";
-import { getHowItWorks } from "../content/how-it-works/howItWorks";
+import { getHowItWorksContent } from "../../../../../../apps/web/app/content/how-it-works/howItWorks";
 import {
     DSText,
     DSTextColor,
@@ -11,8 +11,19 @@ import {
     DSLinkButton,
 } from "@repo/ui/design-systems/DSButton";
 
-export default function HowItWorks() {
-    const { steps } = getHowItWorks();
+export interface HowItWorks {
+    title: string;
+    description: string;
+    steps: HowItWorksStep[];
+}
+
+export interface HowItWorksStep {
+    id: string;
+    title: string;
+    description: string;
+}
+
+export default function HowItWorks({ title, description, steps }: HowItWorks) {
     return (
         <section className="mx-auto px-4 ">
             <div className="flex flex-start align-top md:justify-between mb-8 items-start gap-1 md:gap-16 flex-col md:flex-row">
@@ -22,7 +33,7 @@ export default function HowItWorks() {
                     color={DSTextColor.gray3333}
                     className="text-center mb-6 shrink-0"
                 >
-                    How It Works
+                    {title}
                 </DSText>
                 <div>
                     <DSText
@@ -31,8 +42,7 @@ export default function HowItWorks() {
                         color={DSTextColor.gray3333}
                         className=" mb-6 shrink-0 "
                     >
-                        - A simple process designed to get results — without the
-                        complexity.
+                        {description}
                     </DSText>
                 </div>
             </div>
