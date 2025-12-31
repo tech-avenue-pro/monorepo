@@ -1,7 +1,7 @@
 import React from "react";
-import { DSText, DSTextVariant } from "../DSText";
-import { DSLink, DSTextColor, DSTextWeight } from "../DSLink";
-import { DSButtonVariant, DSLinkButton } from "../DSButton";
+import { DSText, DSTextVariant } from "../../DSText";
+import { DSLink, DSTextColor, DSTextWeight } from "../../DSLink";
+import { DSButtonVariant, DSLinkButton } from "../../DSButton";
 
 export type ServiceCardProps = {
     image?: React.ReactNode;

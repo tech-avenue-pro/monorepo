@@ -17,7 +17,7 @@ import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
-import ServiceSection from "@repo/ui/design-systems/components/ServiceSection";
+import ServiceSection from "@repo/ui/design-systems/components/services/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "./HomeView/HowItWorks";
@@ -27,7 +27,9 @@ import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 import MainNavBar from "./MainNavBar";
 import Footer from "./HomeView/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
-import { getServices } from "../../../packages/ui/src/design-systems/components/servicesContent";
+import { getServices } from "./content/services/servicesContent";
+import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/HeroSectionTech";
+import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -47,6 +49,7 @@ const ThemeImage = (props: Props) => {
 
 export default function Home() {
     const services = getServices();
+    const heroContent = getHeroSectionContent();
     return (
         <main className="">
             <MainNavBar />
@@ -56,67 +59,7 @@ export default function Home() {
                 className="hero-glow"
             >
                 <HeroContainer>
-                    <div className="text-left ">
-                        <DSText
-                            as="h1"
-                            variant={DSTextVariant.headline2}
-                            color={DSTextColor.white}
-                            weight={DSTextWeight.bold}
-                            fontStyle={FontStyle.Heading}
-                            className="mb-8 mt-16 md:mt-28"
-                        >
-                            TECH AVENUE PRO
-                        </DSText>
-                        <div className="hero-reveal">
-                            <DSText
-                                as="h2"
-                                variant={DSTextVariant.largestTitle}
-                                color={DSTextColor.white}
-                                weight={DSTextWeight.semiBold}
-                                fontStyle={FontStyle.Heading}
-                                className="mb-12 md:mb-16"
-                            >
-                                We Build Your{" "}
-                                <span className="ds-text-color-senary">
-                                    Brand
-                                </span>{" "}
-                                Online
-                            </DSText>
-                        </div>
-                    </div>
-                    <div
-                        className="flex flex-col slide-up-animation"
-                        style={{ animationDelay: "1s" }}
-                    >
-                        <div className="flex justify-center">
-                            <DSText
-                                as="p"
-                                variant={DSTextVariant.bodyLarge}
-                                color={DSTextColor.whiteVariant1}
-                                className="max-w-2xl text-left mb-12 md:mb-16"
-                            >
-                                You focus on running your business. We handle
-                                your growth.
-                            </DSText>
-                        </div>
-                        <div className="flex justify-center">
-                            <DSLinkButton
-                                href="/get-started"
-                                variant={DSButtonVariant.primary}
-                                glow={true}
-                                className="mb-12 md:mb-16"
-                            >
-                                Lets Get in touch
-                            </DSLinkButton>
-                        </div>
-                        <div className="flex justify-center">
-                            <img
-                                src="/hero-image.jpg"
-                                alt="Hero Image"
-                                className="rounded-lg"
-                            />
-                        </div>
-                    </div>
+                    <HeroSectionTech {...heroContent} />
                 </HeroContainer>
             </HeroSection>
 
