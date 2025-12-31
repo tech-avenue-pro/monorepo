@@ -1,6 +1,8 @@
 {
     "sectionTitle": "Why Choose Tech Avenue?",
     "introText": "We’re more than a digital agency. We partner with businesses to build strong brands, streamline operations, and grow sustainably online.",
+    "src": "/images/why-choose-us/why-choose-us-illustration.png",
+    "srcSet": "/images/small/why-choose-us/why-choose-us@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us@3x.jpeg 3x",
     "reasons": [
         {
             "id": 1,

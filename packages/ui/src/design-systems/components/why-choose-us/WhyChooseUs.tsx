@@ -1,13 +1,32 @@
 import React from "react";
-import { getWhyChooseUs } from "../content/why-choose-us/WhyChooseUs";
+import { getWhyChooseUsContent } from "../../../../../../apps/web/app/content/why-choose-us/WhyChooseUs";
 import {
     DSText,
     DSTextColor,
     DSTextVariant,
 } from "@repo/ui/design-systems/DSText";
 
-export default function WhyChooseUs() {
-    const { reasons } = getWhyChooseUs();
+export interface WhyChooseUs {
+    sectionTitle: string;
+    introText: string;
+    src: string;
+    srcSet: string;
+    reasons: Reason[];
+}
+
+export interface Reason {
+    id: number;
+    title: string;
+    description: string;
+}
+
+export default function WhyChooseUs({
+    sectionTitle,
+    introText,
+    src,
+    srcSet,
+    reasons,
+}: WhyChooseUs) {
     return (
         <div className="mx-auto">
             <div className="grid gap-10 md:grid-cols-2">
@@ -19,19 +38,19 @@ export default function WhyChooseUs() {
                         color={DSTextColor.primary}
                         className="mb-8"
                     >
-                        Why Choose Tech Avenue Pro
+                        {sectionTitle}
                     </DSText>
                     <DSText
                         as="p"
                         variant={DSTextVariant.body}
                         color={DSTextColor.secondary}
                     >
-                        We help businesses build strong digital brands, simplify
-                        operations, and grow with confidence.
+                        {introText}
                     </DSText>
                     <img
                         className="mt-10 rounded-lg shadow-lg w-full"
-                        srcSet="/images/small/why-choose-us/why-choose-us@1x.jpeg 1x, /images/large/why-choose-us/why-choose-us@2x.jpeg 2x /images/large/why-choose-us/why-choose-us@3x.jpeg 3x"
+                        src={src}
+                        srcSet={srcSet}
                         alt="Why Choose Us Illustration"
                     />
                 </div>

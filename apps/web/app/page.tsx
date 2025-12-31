@@ -21,7 +21,7 @@ import ServiceSection from "@repo/ui/design-systems/components/services/ServiceS
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "./HomeView/HowItWorks";
-import WhyChooseUs from "./HomeView/WhyChooseUs";
+import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
 import { FinalCTA } from "./HomeView/FinalCTA";
 import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
 import MainNavBar from "./MainNavBar";
@@ -30,6 +30,8 @@ import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import { getServices } from "./content/services/servicesContent";
 import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/HeroSectionTech";
 import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
+import { get } from "http";
+import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -50,6 +52,7 @@ const ThemeImage = (props: Props) => {
 export default function Home() {
     const services = getServices();
     const heroContent = getHeroSectionContent();
+    const whyChooseUs = getWhyChooseUsContent();
     return (
         <main className="">
             <MainNavBar />
@@ -76,7 +79,7 @@ export default function Home() {
             </RegularSection>
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <WhyChooseUs />
+                    <WhyChooseUs {...whyChooseUs} />
                 </RegularContainer>
             </RegularSection>
             <SmallSection background={DSLayoutBackground.default}>
