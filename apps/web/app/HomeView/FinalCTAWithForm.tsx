@@ -41,6 +41,13 @@ export function FinalCTAWithForm() {
                             placeholder="Business name"
                             name="businessName"
                         />
+                        <textarea
+                            className="text-area"
+                            placeholder="Tell us about your business"
+                            name="message"
+                            rows={3}
+                        />
+
                         <input
                             type="text"
                             className="text-field"
@@ -48,10 +55,12 @@ export function FinalCTAWithForm() {
                             name="name"
                         />
                         <input
-                            type="email"
+                            type="text"
                             className="text-field"
                             placeholder="Phone or email"
                             name="contact"
+                            pattern="(^\\+?[0-9()\\s-]{7,}$)|(^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$)"
+                            title="Enter a valid phone number or email"
                         />
                         <DSButton
                             variant={DSButtonVariant.primary}
@@ -59,12 +68,6 @@ export function FinalCTAWithForm() {
                         >
                             Submit
                         </DSButton>
-                        {/* <button
-                            type="submit"
-                            className="mt-2 inline-flex h-11 items-center justify-center rounded-xl bg-neutral-900 px-6 text-sm font-medium text-white hover:bg-neutral-800"
-                        >
-                            Get My Free Plan
-                        </button> */}
                     </form>
                 </div>
             </div>

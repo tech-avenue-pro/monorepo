@@ -873,6 +873,8 @@ input[type="email"],
 input[type="text"],
 input[type="password"],
 input[type="phone"],
+input[type="textarea"],
+input[type="number"],
 select {
     width: 100%;
     padding: 0.7rem 0.7rem;
@@ -912,6 +914,21 @@ input.text-field {
 input.text-field:focus {
     box-shadow: 0 0 10px 0px var(--primary-lighter);
     background-color: var(--text-box-bg);
+}
+textarea.text-area {
+    border: 1px solid var(--primary);
+    background-color: var(--text-box-bg);
+    padding: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-weight: 600;
+    transition: all 0.4s;
+}
+textarea.text-area:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px 0px var(--primary-lighter);
 }
 
 input[type="checkbox"].checkbox-custom {
