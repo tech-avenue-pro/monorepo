@@ -22,8 +22,7 @@ import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
 import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
-import { FinalCTA } from "./HomeView/FinalCTA";
-import { FinalCTAWithForm } from "./HomeView/FinalCTAWithForm";
+
 import MainNavBar from "./MainNavBar";
 import Footer from "./HomeView/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
@@ -33,6 +32,8 @@ import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 import { get } from "http";
 import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
 import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
+import Form from "./HomeView/Form";
+import FinalCTAWithForm from "./HomeView/FinalCTAWithForm";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -86,7 +87,7 @@ export default function Home() {
             </RegularSection>
             <SmallSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <FinalCTAWithForm />
+                    <FinalCTAWithForm form={<Form />} />
                 </RegularContainer>
             </SmallSection>
             <RegularSection background={DSLayoutBackground.default}>
