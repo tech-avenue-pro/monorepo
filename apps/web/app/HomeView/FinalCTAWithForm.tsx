@@ -1,4 +1,3 @@
-import { DSButton, DSButtonVariant } from "@repo/ui/design-systems/DSButton";
 import {
     DSText,
     DSTextColor,
@@ -10,8 +9,18 @@ import React from "react";
 export type FinalCTAFormProps = {
     form: React.ReactNode;
 };
+export interface FinalCTAFormContent {
+    ctaTitle: string;
+    ctaDescription: string;
+}
 
-export default function FinalCTAWithForm({ form }: FinalCTAFormProps) {
+type FinalCTAWithFormProps = FinalCTAFormProps & FinalCTAFormContent;
+
+export default function FinalCTAWithForm({
+    form,
+    ctaTitle,
+    ctaDescription,
+}: FinalCTAWithFormProps) {
     return (
         <div id="contact" className="mx-auto">
             <div className="rounded-xl ds-border-glow ds-bg-default-variation1 px-5 py-12 md:p-12">
@@ -24,7 +33,7 @@ export default function FinalCTAWithForm({ form }: FinalCTAFormProps) {
                             weight={DSTextWeight.bold}
                             className=""
                         >
-                            Ready to grow with Tech Avenue Pro?
+                            {ctaTitle}
                         </DSText>
                         <DSText
                             as="p"
@@ -32,9 +41,7 @@ export default function FinalCTAWithForm({ form }: FinalCTAFormProps) {
                             color={DSTextColor.tertiary}
                             className="mt-6"
                         >
-                            Tell us what you do — we’ll reply with the best
-                            setup (website + marketing + booking/queue) to match
-                            your goals.
+                            {ctaDescription}
                         </DSText>
                     </div>
                     {form}

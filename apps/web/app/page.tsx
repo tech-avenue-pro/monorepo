@@ -34,6 +34,7 @@ import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
 import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
 import Form from "./HomeView/Form";
 import FinalCTAWithForm from "./HomeView/FinalCTAWithForm";
+import { getCTASectionContent } from "./content/cta-section/getCTASectionContent";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -87,7 +88,10 @@ export default function Home() {
             </RegularSection>
             <SmallSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <FinalCTAWithForm form={<Form />} />
+                    <FinalCTAWithForm
+                        form={<Form />}
+                        {...getCTASectionContent()}
+                    />
                 </RegularContainer>
             </SmallSection>
             <RegularSection background={DSLayoutBackground.default}>
