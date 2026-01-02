@@ -33,7 +33,7 @@ import { get } from "http";
 import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
 import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
 import Form from "./HomeView/Form";
-import FinalCTAWithForm from "./HomeView/FinalCTAWithForm";
+import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import { getCTASectionContent } from "./content/cta-section/getCTASectionContent";
 
 type Props = Omit<ImageProps, "src"> & {
