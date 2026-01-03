@@ -9,6 +9,20 @@ import React from "react";
 interface FooterProps {
     logoSrc?: string;
 }
+
+export interface FooterContent {
+    logoSrc?: string;
+    links: {
+        title: string;
+        url: string;
+    }[];
+    copyright: string;
+    socialLinks: {
+        name: string;
+        url: string;
+    }[];
+}
+
 export default function Footer({
     logoSrc = "/icons/tech-avenue-pro-navbar.png",
 }: FooterProps) {
@@ -16,25 +30,70 @@ export default function Footer({
         <footer>
             <div className="mx-auto">
                 <div className="flex flex-col gap-8 sm:flex-col sm:items-left sm:justify-between">
-                    <div className="flex justify-start items-center gap-2">
-                        <a href="#top-of-screen" className="nav-brand">
-                            <img
-                                className="h-6"
-                                src={logoSrc}
-                                alt="Navigation"
-                            />
-                        </a>
-                        <DSText
-                            variant={DSTextVariant.headline1}
-                            as="span"
-                            className="nav-brand-name"
-                            color={DSTextColor.secondary}
-                        >
-                            Tech Avenue Pro
-                        </DSText>
-                    </div>
+                    <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-12">
+                        <div className="flex flex-col gap-4 justify-between">
+                            <div>
+                                {/* Logo */}
+                                <div className="flex justify-start items-start gap-2">
+                                    <a
+                                        href="#top-of-screen"
+                                        className="nav-brand"
+                                    >
+                                        <img
+                                            className="h-6"
+                                            src={logoSrc}
+                                            alt="Navigation"
+                                        />
+                                    </a>
+                                    <DSText
+                                        variant={DSTextVariant.headline1}
+                                        as="span"
+                                        className="nav-brand-name"
+                                        color={DSTextColor.secondary}
+                                    >
+                                        Tech Avenue Pro
+                                    </DSText>
+                                </div>
+                                {/* Social Links */}
+                                <div className="flex gap-8 mt-2">
+                                    <img
+                                        src="/icons/logo-facebook.svg"
+                                        alt="Facebook"
+                                        className="w-6 h-6"
+                                    />
+                                    <img
+                                        src="/icons/logo-instagram.svg"
+                                        alt="Instagram"
+                                        className="w-6 h-6"
+                                    />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-1">
+                                <DSText
+                                    variant={DSTextVariant.bodySmall}
+                                    as="p"
+                                    color={DSTextColor.quaternary}
+                                >
+                                    437-448-3374
+                                </DSText>
+                                <DSText
+                                    variant={DSTextVariant.bodySmall}
+                                    as="p"
+                                    color={DSTextColor.quaternary}
+                                >
+                                    contact@techavenue.pro
+                                </DSText>
+                                <DSText
+                                    variant={DSTextVariant.bodySmall}
+                                    as="p"
+                                    color={DSTextColor.quaternary}
+                                >
+                                    © {new Date().getFullYear()} Tech Avenue
+                                    Pro. All rights reserved.
+                                </DSText>
+                            </div>
+                        </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-12">
                         <div className="flex flex-col gap-4">
                             <DSText
                                 variant={DSTextVariant.headline3}
@@ -155,24 +214,6 @@ export default function Footer({
                                 </DSLink>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className="mt-8 flex flex-col gap-4 border-t border-neutral-800 pt-6 text-xs text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
-                    <p>
-                        © {new Date().getFullYear()} Tech Avenue Pro. All rights
-                        reserved.
-                    </p>
-                    <div className="flex gap-3">
-                        <a href="#" className="hover:text-neutral-300">
-                            Twitter
-                        </a>
-                        <a href="#" className="hover:text-neutral-300">
-                            LinkedIn
-                        </a>
-                        <a href="#" className="hover:text-neutral-300">
-                            GitHub
-                        </a>
                     </div>
                 </div>
             </div>
