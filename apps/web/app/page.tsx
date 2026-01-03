@@ -94,6 +94,7 @@ export default function Home() {
                     />
                 </RegularContainer>
             </SmallSection>
+            <hr className="my-0 border-gray-300" />
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <Footer />
