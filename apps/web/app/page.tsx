@@ -24,7 +24,7 @@ import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWor
 import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
 
 import MainNavBar from "./MainNavBar";
-import Footer from "./HomeView/Footer";
+import Footer from "@repo/ui/design-systems/components/footer/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import { getServices } from "./content/services/servicesContent";
 import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/HeroSectionTech";

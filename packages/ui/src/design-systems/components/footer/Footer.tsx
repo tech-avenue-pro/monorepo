@@ -5,7 +5,7 @@ import {
     DSTextVariant,
 } from "@repo/ui/design-systems/DSText";
 import React from "react";
-import footerContent from "../content/footer-section/footer-content.json";
+import footerContent from "../../../../../../apps/web/app/content/footer-section/footer-content.json";
 
 export interface FooterContent {
     footerTitle: string;

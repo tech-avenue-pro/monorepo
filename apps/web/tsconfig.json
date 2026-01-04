@@ -18,7 +18,8 @@
         "../../packages/ui/src/design-systems/components/servicesContent.ts",
         "../../packages/ui/src/design-systems/components/why-choose-us/WhyChooseUs.tsx",
         "../../packages/ui/src/design-systems/components/how-it-works/HowItWorks.tsx",
-        "../../packages/ui/src/design-systems/components/cta/FinalCTAWithForm.tsx"
+        "../../packages/ui/src/design-systems/components/cta/FinalCTAWithForm.tsx",
+        "../../packages/ui/src/design-systems/components/footer/Footer.tsx"
     ],
     "exclude": ["node_modules"]
 }
