@@ -35,6 +35,7 @@ import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
 import Form from "./HomeView/Form";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import { getCTASectionContent } from "./content/cta-section/getCTASectionContent";
+import { getFooterContent } from "./content/footer-section/getFooterContent";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -97,7 +98,7 @@ export default function Home() {
             <hr className="my-0 border-gray-300" />
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <Footer />
+                    <Footer {...getFooterContent()} />
                 </RegularContainer>
             </RegularSection>
         </main>

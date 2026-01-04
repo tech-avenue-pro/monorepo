@@ -1,0 +1,72 @@
+{
+    "footerTitle": "Tech Avenue Pro",
+    "footerLogo": "/icons/tech-avenue-pro-navbar.png",
+    "socialLinks": [
+        {
+            "logo": "/icons/logo-facebook.svg",
+            "link": "https://www.facebook.com/profile.php?id=61585585133241",
+            "alt": "Facebook Tech Avenue Pro"
+        },
+        {
+            "logo": "/icons/logo-instagram.svg",
+            "link": "https://www.instagram.com/techavenuepro/",
+            "alt": "Instagram Tech Avenue Pro"
+        }
+    ],
+    "phoneNumber": "+1 437-448-3374",
+    "emailAddress": "contact@techavenuepro.com",
+    "copyrightText": "Tech Avenue Pro. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Services",
+            "links": [
+                {
+                    "title": "Digital Growth",
+                    "link": "#digital-growth"
+                },
+                {
+                    "title": "Social Media",
+                    "link": "#social-media"
+                },
+                {
+                    "title": "Business Websites",
+                    "link": "#business-websites"
+                },
+                {
+                    "title": "Google Visibility",
+                    "link": "#google-visibility"
+                }
+            ]
+        },
+        {
+            "title": "Menu",
+            "links": [
+                {
+                    "title": "Home",
+                    "link": "#home"
+                },
+                {
+                    "title": "How It Works",
+                    "link": "#how-it-works"
+                },
+                {
+                    "title": "Why Choose Us",
+                    "link": "#why-choose-us"
+                }
+            ]
+        },
+        {
+            "title": "Operations",
+            "links": [
+                {
+                    "title": "Live Queue",
+                    "link": "#live-queue"
+                },
+                {
+                    "title": "Online Appointments",
+                    "link": "#online-appointments"
+                }
+            ]
+        }
+    ]
+}
