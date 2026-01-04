@@ -60,7 +60,7 @@ export default function HeroSectionTech({
                         as="p"
                         variant={DSTextVariant.bodyLarge}
                         color={DSTextColor.whiteVariant1}
-                        className="max-w-2xl text-left mb-12 md:mb-16"
+                        className="max-w-2xl lg:max-w-3xl text-left mb-12 md:mb-16"
                     >
                         <span
                             dangerouslySetInnerHTML={{ __html: description }}
