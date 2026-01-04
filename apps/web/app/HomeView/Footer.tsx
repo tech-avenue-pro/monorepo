@@ -46,10 +46,10 @@ export default function Footer({
                                         />
                                     </a>
                                     <DSText
-                                        variant={DSTextVariant.headline1}
+                                        variant={DSTextVariant.headline2}
                                         as="span"
                                         className="nav-brand-name"
-                                        color={DSTextColor.secondary}
+                                        color={DSTextColor.tertiary}
                                     >
                                         Tech Avenue Pro
                                     </DSText>
@@ -69,24 +69,30 @@ export default function Footer({
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <DSText
+                                <DSLink
                                     variant={DSTextVariant.bodySmall}
-                                    as="p"
                                     color={DSTextColor.quaternary}
+                                    href="tel:+14374483374"
+                                    className="mt-4"
+                                    showBottomLine={false}
                                 >
                                     437-448-3374
-                                </DSText>
-                                <DSText
+                                </DSLink>
+                                <DSLink
                                     variant={DSTextVariant.bodySmall}
-                                    as="p"
                                     color={DSTextColor.quaternary}
+                                    href="mailto:contact@techavenue.pro"
+                                    className="mt-4"
+                                    showBottomLine={false}
                                 >
                                     contact@techavenue.pro
-                                </DSText>
+                                </DSLink>
+
                                 <DSText
                                     variant={DSTextVariant.bodySmall}
                                     as="p"
                                     color={DSTextColor.quaternary}
+                                    className="mt-4"
                                 >
                                     © {new Date().getFullYear()} Tech Avenue
                                     Pro. All rights reserved.

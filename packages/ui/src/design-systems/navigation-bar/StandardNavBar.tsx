@@ -193,7 +193,7 @@ const StandardNavBar = ({
                         </a>
                         {name && (
                             <DSText
-                                variant={DSTextVariant.largeTitle}
+                                variant={DSTextVariant.headline2}
                                 color={color}
                                 as="span"
                                 className="nav-brand-name"
