@@ -62,7 +62,9 @@ export default function HeroSectionTech({
                         color={DSTextColor.whiteVariant1}
                         className="max-w-2xl text-left mb-12 md:mb-16"
                     >
-                        {description}
+                        <span
+                            dangerouslySetInnerHTML={{ __html: description }}
+                        />
                     </DSText>
                 </div>
                 <div className="flex justify-center">

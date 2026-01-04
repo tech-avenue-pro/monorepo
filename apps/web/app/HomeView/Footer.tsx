@@ -31,7 +31,10 @@ export default function Footer({
             <div className="mx-auto">
                 <div className="flex flex-col gap-8 sm:flex-col sm:items-left sm:justify-between">
                     <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-12">
-                        <div className="flex flex-col gap-4 justify-between">
+                        <div
+                            className="flex flex-col gap-4 justify-between col-span-3 order-last md:col-span-1 md:order-first"
+                            id="footer-logo-section"
+                        >
                             <div>
                                 {/* Logo */}
                                 <div className="flex justify-start items-start gap-2">
