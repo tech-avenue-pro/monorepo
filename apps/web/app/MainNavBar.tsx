@@ -17,7 +17,7 @@ export default function MainNavBar() {
             links={[
                 {
                     label: "Home",
-                    href: "#home",
+                    href: "#hero-section",
                 },
                 {
                     label: "Services",

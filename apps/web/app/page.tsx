@@ -63,6 +63,7 @@ export default function Home() {
             <MainNavBar />
 
             <HeroSection
+                id="hero-section"
                 background={DSLayoutBackground.black}
                 className="hero-glow"
             >
@@ -71,23 +72,35 @@ export default function Home() {
                 </HeroContainer>
             </HeroSection>
 
-            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+            <RegularSection
+                id="services-section"
+                background={DSLayoutBackground.defaultVariation1}
+            >
                 <RegularContainer>
                     <ServiceSection {...services} />
                 </RegularContainer>
             </RegularSection>
 
-            <RegularSection background={DSLayoutBackground.lightestBackground}>
+            <RegularSection
+                id="how-it-works"
+                background={DSLayoutBackground.lightestBackground}
+            >
                 <RegularContainer>
                     <HowItWorks {...howItWorks} />
                 </RegularContainer>
             </RegularSection>
-            <RegularSection background={DSLayoutBackground.default}>
+            <RegularSection
+                id="why-choose-us"
+                background={DSLayoutBackground.default}
+            >
                 <RegularContainer>
                     <WhyChooseUs {...whyChooseUs} />
                 </RegularContainer>
             </RegularSection>
-            <SmallSection background={DSLayoutBackground.default}>
+            <SmallSection
+                id="final-cta-with-form"
+                background={DSLayoutBackground.default}
+            >
                 <RegularContainer>
                     <FinalCTAWithForm
                         form={<Form />}
