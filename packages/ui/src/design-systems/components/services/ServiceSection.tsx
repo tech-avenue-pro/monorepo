@@ -1,6 +1,4 @@
- "use client";
-
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { ServiceCard } from "./ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
 
@@ -31,29 +29,6 @@ export default function ServiceSection({
     linkTitle,
     services,
 }: ServicesContent) {
-    const gridRef = useRef<HTMLDivElement | null>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        if (!gridRef.current || isVisible) {
-            return;
-        }
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
-        );
-
-        observer.observe(gridRef.current);
-
-        return () => observer.disconnect();
-    }, [isVisible]);
-
     return (
         <section className="mx-auto max-w-6xl px-4">
             <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
@@ -78,13 +53,7 @@ export default function ServiceSection({
                 </div>
             </div>
 
-            <div
-                ref={gridRef}
-                className={[
-                    "service-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16",
-                    isVisible ? "service-grid--visible" : "",
-                ].join(" ")}
-            >
+            <div className="service-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
                 {services.map((service) => {
                     const href = service.slug
                         ? `/services/${service.slug}`
