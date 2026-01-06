@@ -52,24 +52,30 @@ export default function ServiceSection({
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
-                {services.map((service) => (
-                    <ServiceCard
-                        key={service.id}
-                        image={
-                            <img
-                                src={service.image}
-                                alt={service.alt}
-                                srcSet={service.srcSet}
-                                className=""
-                            />
-                        }
-                        title={service.title}
-                        description={service.description}
-                        href={service.href}
-                        badge="Availeble Now"
-                        linkTitle={linkTitle}
-                    />
-                ))}
+                {services.map((service) => {
+                    const href = service.slug
+                        ? `/services/${service.slug}`
+                        : service.href;
+
+                    return (
+                        <ServiceCard
+                            key={service.id}
+                            image={
+                                <img
+                                    src={service.image}
+                                    alt={service.alt}
+                                    srcSet={service.srcSet}
+                                    className=""
+                                />
+                            }
+                            title={service.title}
+                            description={service.description}
+                            href={href}
+                            badge="Availeble Now"
+                            linkTitle={linkTitle}
+                        />
+                    );
+                })}
             </div>
         </section>
     );
