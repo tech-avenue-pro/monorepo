@@ -12,6 +12,7 @@ export interface ServicesContent {
 export interface ServiceDetailContent {
     id: number;
     title: string;
+    slug?: string;
     description: string;
     image: string;
     srcSet: string;
