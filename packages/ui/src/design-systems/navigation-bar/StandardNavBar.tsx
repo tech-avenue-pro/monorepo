@@ -78,9 +78,9 @@ const StandardNavBar = ({
 
         if (cssVar) {
             style["--nav-bg-color"] =
-                `color-mix(in srgb, ${cssVar} 60%, transparent)`;
+                `color-mix(in srgb, ${cssVar} 40%, transparent)`;
             style["--nav-bg-overlay"] =
-                `color-mix(in srgb, ${cssVar} 45%, transparent)`;
+                `color-mix(in srgb, ${cssVar} 35%, transparent)`;
             style["--nav-bg-solid"] = cssVar;
         }
 

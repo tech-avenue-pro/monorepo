@@ -762,6 +762,7 @@ links
 .ds-link-no-bottom-line:active,
 .ds-link-no-bottom-line:hover {
     border-bottom: none;
+    color: var(--text-senary);
 }
 .ds-link-glow {
     text-shadow: 0 0 16px currentColor;
