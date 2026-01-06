@@ -18,7 +18,7 @@ export default function RegularSection({
         <section
             className={clsx(
                 backgroundClasses[background],
-                "py-24 px-0",
+                "py-24 px-0 section-anchor",
                 className
             )}
             {...rest}

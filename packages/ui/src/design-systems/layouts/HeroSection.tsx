@@ -18,7 +18,7 @@ export default function HeroSection({
         <section
             className={clsx(
                 backgroundClasses[background],
-                "pb-16 md:pb-24  text-center hero-section",
+                "pb-16 md:pb-24  text-center hero-section section-anchor",
                 className
             )}
             {...rest}

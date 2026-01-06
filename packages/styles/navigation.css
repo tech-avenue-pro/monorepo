@@ -37,6 +37,9 @@
     backdrop-filter: blur(22px) saturate(140%);
     -webkit-backdrop-filter: blur(22px) saturate(140%);
 }
+.section-anchor {
+    scroll-margin-top: 4rem; /* set to your navbar height */
+}
 
 .nav-open {
     position: fixed;

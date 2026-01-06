@@ -18,7 +18,7 @@ export default function SmallSection({
         <section
             className={clsx(
                 backgroundClasses[background],
-                "py-12 px-0",
+                "py-12 px-0 section-anchor",
                 className
             )}
             {...rest}
