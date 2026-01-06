@@ -6,6 +6,7 @@
     "services": [
         {
             "id": 1,
+            "slug": "digital-growth-management",
             "image": "/images/small/digital-growth/digital-growth.jpeg",
             "srcSet": "/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x, /images/small/digital-growth/digital-growth@3x.jpeg 3x",
             "alt": "Digital Growth Service Image",
@@ -15,6 +16,7 @@
         },
         {
             "id": 2,
+            "slug": "premium-business-website",
             "image": "/images/small/premium-business-website/premium-business-website.jpeg",
             "srcSet": "/images/small/premium-business-website/premium-business-website.jpeg 1x, /images/small/premium-business-website/premium-business-website@2x.jpeg 2x, /images/small/premium-business-website/premium-business-website@3x.jpeg 3x",
             "alt": "Premium Business Website Service Image",
@@ -24,6 +26,7 @@
         },
         {
             "id": 3,
+            "slug": "online-booking-solutions",
             "image": "/images/small/bookings/bookings.jpeg",
             "srcSet": "/images/small/bookings/bookings.jpeg 1x, /images/small/bookings/bookings@2x.jpeg 2x, /images/small/bookings/bookings@3x.jpeg 3x",
             "alt": "Premium Business Website Service Image",
@@ -33,6 +36,7 @@
         },
         {
             "id": 4,
+            "slug": "live-queue",
             "image": "/images/small/live-queue/live-queue.jpeg",
             "srcSet": "/images/small/live-queue/live-queue.jpeg 1x, /images/small/live-queue/live-queue@2x.jpeg 2x, /images/small/live-queue/live-queue@3x.jpeg 3x",
             "alt": "Live Queue Service Image",
@@ -42,6 +46,7 @@
         },
         {
             "id": 5,
+            "slug": "social-media-presence-management",
             "image": "/images/small/social-media/social-media.jpeg",
             "srcSet": "/images/small/social-media/social-media.jpeg 1x, /images/small/social-media/social-media@2x.jpeg 2x, /images/small/social-media/social-media@3x.jpeg 3x",
             "alt": "Social Media Presence Management Service Image",
@@ -51,6 +56,7 @@
         },
         {
             "id": 6,
+            "slug": "google-visibility-and-local-search",
             "image": "/images/small/google-visibility/google-visibility.jpeg",
             "srcSet": "/images/small/google-visibility/google-visibility.jpeg 1x, /images/small/google-visibility/google-visibility@2x.jpeg 2x, /images/small/google-visibility/google-visibility@3x.jpeg 3x",
             "alt": "Google Visibility and Local Search Service Image",
