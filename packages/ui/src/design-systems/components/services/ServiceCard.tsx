@@ -28,13 +28,13 @@ export function ServiceCard({
         <CardWrapper
             href={href}
             className={[
-                " group relative block rounded-2xl border border-gray-200 ds-bg-default shadow-sm",
+                "service-card group relative block rounded-2xl border border-gray-200 ds-bg-default shadow-sm",
                 "transition hover:-translate-y-0.5 hover:shadow-md",
                 "focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
             ].join(" ")}
         >
             {image && (
-                <div className="mb-4 overflow-hidden h-44 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
+                <div className="service-card-image mb-4 overflow-hidden h-44 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
                     {image}
                 </div>
             )}
