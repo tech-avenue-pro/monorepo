@@ -9,7 +9,9 @@ export type DSMotionVariant =
     | "fade-in"
     | "scale-in"
     | "slide-right"
-    | "slide-left";
+    | "slide-left"
+    | "none"
+    | "random";
 
 export interface DSMotionProps {
     children: React.ReactNode;
@@ -28,7 +30,10 @@ export interface DSMotionProps {
     trigger?: "self" | "parent";
 }
 
-const variants: Record<DSMotionVariant, Variants> = {
+const variants: Record<
+    Exclude<DSMotionVariant, "none" | "random">,
+    Variants
+> = {
     "fade-up": {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 1, y: 0 },
@@ -70,7 +75,8 @@ export function DSMotion({
     const shouldReduceMotion = useReducedMotion();
     const hasIntersectionObserver =
         typeof window !== "undefined" && "IntersectionObserver" in window;
-    const shouldAnimate = !shouldReduceMotion && hasIntersectionObserver;
+    const shouldAnimate =
+        !shouldReduceMotion && hasIntersectionObserver && variant !== "none";
 
     if (!shouldAnimate) {
         const Tag = as as any;
@@ -84,7 +90,18 @@ export function DSMotion({
     const Component = (motion as any).create
         ? (motion as any).create(as)
         : (motion as any)(as);
-    const selectedVariant = variants[variant];
+
+    const [randomVariant] = React.useState(() => {
+        const keys = Object.keys(variants) as Array<
+            Exclude<DSMotionVariant, "none" | "random">
+        >;
+        return keys[Math.floor(Math.random() * keys.length)];
+    });
+
+    const selectedVariant =
+        variant === "random"
+            ? variants[randomVariant]
+            : variants[variant as Exclude<DSMotionVariant, "none" | "random">];
     const isSelfTriggered = trigger === "self";
 
     return (
