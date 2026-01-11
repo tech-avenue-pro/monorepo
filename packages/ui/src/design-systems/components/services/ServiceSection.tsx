@@ -3,7 +3,6 @@
 import React from "react";
 import { ServiceCard } from "./ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
-import { ServiceCardMotion } from "./ServiceCardMotion";
 import { DSMotion } from "../../DSMotion";
 
 export interface ServicesContent {
