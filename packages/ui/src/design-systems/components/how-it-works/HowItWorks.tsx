@@ -10,6 +10,7 @@ import {
     DSButtonVariant,
     DSLinkButton,
 } from "@repo/ui/design-systems/DSButton";
+import { DSMotion } from "../../DSMotion";
 
 export interface HowItWorks {
     title: string;
@@ -26,11 +27,14 @@ export interface HowItWorksStep {
 export default function HowItWorks({ title, description, steps }: HowItWorks) {
     return (
         <section className="mx-auto px-4 ">
-            <div className="flex flex-start align-top md:justify-between mb-8 items-start gap-1 md:gap-16 flex-col md:flex-row">
+            <DSMotion
+                variant="fade-up"
+                className="flex flex-start align-top md:justify-between mb-8 items-start gap-1 md:gap-16 flex-col md:flex-row"
+            >
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largerTitle}
-                    color={DSTextColor.gray3333}
+                    color={DSTextColor.primary}
                     className="text-center mb-6 shrink-0"
                 >
                     {title}
@@ -39,13 +43,13 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
                     <DSText
                         as="h3"
                         variant={DSTextVariant.body}
-                        color={DSTextColor.gray3333}
+                        color={DSTextColor.tertiary}
                         className=" mb-6 shrink-0 "
                     >
                         {description}
                     </DSText>
                 </div>
-            </div>
+            </DSMotion>
             <div className="mt-8 grid gap-10 grid-cols-1 md:grid-cols-3">
                 {steps.map((step) => (
                     <div key={step.id}>
@@ -60,7 +64,7 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
                         <DSText
                             as="h3"
                             variant={DSTextVariant.headline1}
-                            color={DSTextColor.septenary}
+                            color={DSTextColor.tintTheme}
                             weight={DSTextWeight.bold}
                             className="mt-4"
                         >
@@ -69,7 +73,7 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
                         <DSText
                             as="p"
                             variant={DSTextVariant.body}
-                            color={DSTextColor.gray4444}
+                            color={DSTextColor.quaternary}
                             className="mt-2"
                         >
                             {step.description}

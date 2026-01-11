@@ -1,0 +1,206 @@
+/* -------------------------------------------------
+   Professional Gradient Backgrounds
+-------------------------------------------------- */
+
+/* 1. Brand Gradient (Linear) */
+.ds-bg-gradient-brand {
+    background: linear-gradient(
+        135deg,
+        var(--secondary) 0%,
+        var(--primary) 100%
+    );
+}
+
+/* 2. Deep Ocean (Dark & Professional) */
+.ds-bg-gradient-deep-ocean {
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* 3. Clean Slate (Light & Minimal) */
+.ds-bg-gradient-clean-slate {
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    color: var(--text-primary);
+}
+
+/* 4. Midnight City (Dark Purple/Blue) */
+.ds-bg-gradient-midnight {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+
+/* 5. Sunset Glow (Accent) */
+.ds-bg-gradient-sunset {
+    background: linear-gradient(to right, #ffb181, #f59153);
+    color: white;
+}
+
+/* -------------------------------------------------
+   Lighting & Blur Effects
+-------------------------------------------------- */
+
+/* 6. Spotlight (Radial Light on Dark) */
+.ds-bg-spotlight {
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(51, 201, 242, 0.15) 0%,
+            rgba(0, 0, 0, 0) 60%
+        ),
+        var(--default-background);
+}
+
+/* 7. Ambient Blur Mesh (Subtle moving colors feel) */
+.ds-bg-ambient-mesh {
+    background-color: var(--default-background);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(51, 201, 242, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(32, 59, 98, 0.1) 0px, transparent 50%),
+        radial-gradient(
+            at 100% 100%,
+            rgba(255, 177, 129, 0.1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 0% 100%,
+            rgba(51, 201, 242, 0.05) 0px,
+            transparent 50%
+        );
+}
+
+/* 8. Glassmorphism Overlay (Blur) */
+.ds-bg-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode adjustment for glass */
+@media (prefers-color-scheme: dark) {
+    .ds-bg-glass {
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* 9. Neon Glow Border (Lighting Effect) */
+.ds-bg-neon-border {
+    position: relative;
+    background: var(--default-background);
+    z-index: 1;
+}
+
+.ds-bg-neon-border::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    background: linear-gradient(
+        45deg,
+        var(--primary),
+        var(--accent),
+        var(--secondary)
+    );
+    filter: blur(10px);
+    opacity: 0.7;
+    border-radius: inherit;
+}
+
+/* 10. Backgrounds with light coming from corners */
+.ds-bg-light-top-left {
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
+.ds-bg-light-top-right {
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
+.ds-bg-light-bottom-left {
+    background:
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
+.ds-bg-light-bottom-right {
+    background:
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
+/* Mixed corners (Primary Top-Left, Accent Bottom-Right) */
+.ds-bg-light-corners-mixed {
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            color-mix(in srgb, var(--primary) 20%, transparent) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            color-mix(in srgb, var(--accent) 20%, transparent) 0%,
+            transparent 40%
+        ),
+        var(--default-background);
+}
+
+.ds-bg-light-corners-mixed-reversed {
+    background:
+        radial-gradient(
+            circle at 0% 100%,
+            color-mix(in srgb, var(--primary) 20%, transparent) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 0%,
+            color-mix(in srgb, var(--accent) 20%, transparent) 0%,
+            transparent 40%
+        ),
+        var(--default-background);
+}
+
+/* Four corners subtle glow */
+.ds-bg-light-four-corners {
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(51, 201, 242, 0.15) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(51, 201, 242, 0.15) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(51, 201, 242, 0.15) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(51, 201, 242, 0.15) 0%,
+            transparent 35%
+        ),
+        var(--default-background);
+}

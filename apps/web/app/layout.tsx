@@ -4,6 +4,7 @@ import "./globals.css";
 import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
 import "@repo/styles/navigation.css";
+import "@repo/styles/backgrounds.css";
 
 const archivo = Archivo({
     variable: "--font-heading",

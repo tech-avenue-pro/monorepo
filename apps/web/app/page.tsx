@@ -83,7 +83,7 @@ export default function Home() {
 
             <RegularSection
                 id="how-it-works"
-                background={DSLayoutBackground.lightestBackground}
+                className="ds-bg-light-corners-mixed"
             >
                 <RegularContainer>
                     <HowItWorks {...howItWorks} />
