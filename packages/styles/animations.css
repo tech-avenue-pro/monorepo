@@ -90,3 +90,73 @@
     z-index: 0;
     transform: translate3d(0, 0, 0);
 }
+
+/* -------------------------------------------------
+   Pro Text Animations
+-------------------------------------------------- */
+
+/* 1. Pro Fade Up - Clean, professional entry for headers/body */
+.pro-fade-up {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: proFadeUp 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) forwards; /* smooth ease-out */
+    animation-delay: var(--anim-delay, 0s);
+    will-change: transform, opacity;
+}
+
+@keyframes proFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Pro Blur In - Modern, sophisticated reveal */
+.pro-blur-in {
+    opacity: 0;
+    filter: blur(12px);
+    transform: scale(0.97);
+    animation: proBlurIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; /* easeOutExpo */
+    animation-delay: var(--anim-delay, 0s);
+    will-change: transform, opacity, filter;
+}
+
+@keyframes proBlurIn {
+    from {
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(0.97);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .pro-fade-up,
+    .pro-blur-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+/* -------------------------------------------------
+   Scroll Trigger Utility
+   Add .paused-until-view to your animated element, then add .in-view via JS
+-------------------------------------------------- */
+.paused-until-view {
+    animation-play-state: paused;
+}
+
+.paused-until-view.in-view {
+    animation-play-state: running;
+}
