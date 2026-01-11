@@ -100,7 +100,7 @@ export function DSMotion({
 
     const selectedVariant =
         variant === "random"
-            ? variants[randomVariant]
+            ? variants[randomVariant || "fade-up"]
             : variants[variant as Exclude<DSMotionVariant, "none" | "random">];
     const isSelfTriggered = trigger === "self";
 
