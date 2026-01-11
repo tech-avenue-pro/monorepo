@@ -63,12 +63,12 @@ export default function MainNavBar() {
             ]}
             color={DSTextColor.white}
             hoverColor={DSTextColor.senary}
-            textVariant={DSTextVariant.bodySmall}
+            textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.regular}
             mobileFontWeight={DSTextWeight.regular}
             mobileTextVariant={DSTextVariant.largerTitle}
             logoSrc="icons/tech-avenue-pro-navbar.png"
-            name="Tech Avenue Pro"
+            name=""
             background={DSLayoutBackground.black}
             stickyOnScrollOnly={true}
         />
