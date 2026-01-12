@@ -1,0 +1,90 @@
+{
+    "slug": "google-visibility",
+    "navTitle": "Google Visibility",
+    "hero": {
+        "title": "Get Found on Google When It Matters",
+        "summary": "Improve your Google and Maps presence so customers find you at the right moment.",
+        "primaryCta": {
+            "label": "Improve My Google Presence",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "See Services", "href": "/#services" },
+        "image": {
+            "src": "/images/services/google-visibility.png",
+            "alt": "Google search and maps visibility"
+        }
+    },
+    "problem": {
+        "title": "What This Solves",
+        "items": [
+            "Low search rankings",
+            "Poor Google Maps visibility",
+            "Weak local SEO"
+        ]
+    },
+    "deliverables": {
+        "title": "What We Deliver",
+        "items": [
+            "Google Business Profile optimization",
+            "Local SEO setup",
+            "Review strategy guidance",
+            "Search visibility improvements",
+            "Ongoing optimization"
+        ]
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Optimize Profile",
+                "description": "We fix categories, services, photos, and details."
+            },
+            {
+                "number": "02",
+                "title": "Local SEO Setup",
+                "description": "We strengthen local search signals."
+            },
+            {
+                "number": "03",
+                "title": "Build Trust",
+                "description": "We help you earn and manage reviews."
+            }
+        ]
+    },
+    "whoItsFor": {
+        "title": "Who It’s For",
+        "tags": [
+            "Local service businesses",
+            "Clinics & salons",
+            "Competitive areas"
+        ]
+    },
+    "whyChooseUs": {
+        "title": "Why Tech Avenue Pro",
+        "items": [
+            {
+                "title": "Local-First Focus",
+                "description": "Maps and local intent come first."
+            },
+            {
+                "title": "Clean Foundations",
+                "description": "Profile and website aligned."
+            },
+            {
+                "title": "Trust Signals",
+                "description": "Reviews and consistency that convert."
+            },
+            {
+                "title": "Sustainable Results",
+                "description": "Long-term visibility improvements."
+            }
+        ]
+    },
+    "finalCta": {
+        "title": "Want more calls from Google?",
+        "summary": "Let’s strengthen your visibility where customers are searching.",
+        "primaryCta": { "label": "Book a Consultation", "href": "/contact" },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

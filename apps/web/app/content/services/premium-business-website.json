@@ -1,0 +1,90 @@
+{
+    "slug": "premium-business-website",
+    "navTitle": "Premium Business Website",
+    "hero": {
+        "title": "Premium Websites Built to Convert",
+        "summary": "Fast, modern, mobile-first websites designed to build trust and turn visitors into customers.",
+        "primaryCta": {
+            "label": "Request a Website Quote",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "View All Services", "href": "/#services" },
+        "image": {
+            "src": "/images/services/premium-website.png",
+            "alt": "Modern responsive business website"
+        }
+    },
+    "problem": {
+        "title": "What This Solves",
+        "items": [
+            "Outdated or slow websites",
+            "Low conversion rates",
+            "Poor mobile experience"
+        ]
+    },
+    "deliverables": {
+        "title": "What We Deliver",
+        "items": [
+            "Custom UI/UX design",
+            "Mobile-first responsive layouts",
+            "Fast performance and SEO-ready structure",
+            "Clear calls-to-action",
+            "Booking and contact integrations"
+        ]
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Design",
+                "description": "We design a layout aligned with your brand and goals."
+            },
+            {
+                "number": "02",
+                "title": "Build",
+                "description": "We develop, test, and optimize for performance."
+            },
+            {
+                "number": "03",
+                "title": "Launch",
+                "description": "We go live and refine for conversions."
+            }
+        ]
+    },
+    "whoItsFor": {
+        "title": "Who It’s For",
+        "tags": [
+            "New businesses",
+            "Rebranding companies",
+            "Lead-focused businesses"
+        ]
+    },
+    "whyChooseUs": {
+        "title": "Why Tech Avenue Pro",
+        "items": [
+            {
+                "title": "Premium Design",
+                "description": "Professional look that builds instant trust."
+            },
+            {
+                "title": "Conversion-Focused",
+                "description": "Designed to drive inquiries and bookings."
+            },
+            {
+                "title": "Fast & Secure",
+                "description": "Optimized for speed and reliability."
+            },
+            {
+                "title": "Scalable Foundation",
+                "description": "Easy to expand as your business grows."
+            }
+        ]
+    },
+    "finalCta": {
+        "title": "Want a website that actually converts?",
+        "summary": "Let’s design a premium website that works for your business.",
+        "primaryCta": { "label": "Request a Quote", "href": "/contact" },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

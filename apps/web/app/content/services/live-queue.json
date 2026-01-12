@@ -1,0 +1,83 @@
+{
+    "slug": "live-queue",
+    "navTitle": "Live Queue",
+    "hero": {
+        "title": "Live Queue Management Made Simple",
+        "summary": "Reduce waiting chaos with real-time queue visibility for customers and staff.",
+        "primaryCta": { "label": "Explore Live Queue", "href": "/contact" },
+        "secondaryCta": { "label": "See Services", "href": "/#services" },
+        "image": {
+            "src": "/images/services/live-queue.png",
+            "alt": "Live queue dashboard"
+        }
+    },
+    "problem": {
+        "title": "What This Solves",
+        "items": [
+            "Long wait frustration",
+            "Overcrowded waiting areas",
+            "Staff overload"
+        ]
+    },
+    "deliverables": {
+        "title": "What We Deliver",
+        "items": [
+            "Real-time queue tracking",
+            "QR-based customer check-in",
+            "Live wait-time updates",
+            "Staff queue control dashboard",
+            "Walk-in flow optimization"
+        ]
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Join Queue",
+                "description": "Customers check in using QR or staff assistance."
+            },
+            {
+                "number": "02",
+                "title": "Manage Flow",
+                "description": "Staff controls priorities and queue order."
+            },
+            {
+                "number": "03",
+                "title": "Live Updates",
+                "description": "Customers see real-time status updates."
+            }
+        ]
+    },
+    "whoItsFor": {
+        "title": "Who It’s For",
+        "tags": ["Clinics", "Restaurants", "Walk-in heavy businesses"]
+    },
+    "whyChooseUs": {
+        "title": "Why Tech Avenue Pro",
+        "items": [
+            {
+                "title": "Happier Customers",
+                "description": "Clear wait times reduce frustration."
+            },
+            {
+                "title": "Smoother Operations",
+                "description": "Less crowd and manual coordination."
+            },
+            {
+                "title": "Modern Experience",
+                "description": "Professional, digital-first queue system."
+            },
+            {
+                "title": "Works with Booking",
+                "description": "Appointments and walk-ins together."
+            }
+        ]
+    },
+    "finalCta": {
+        "title": "Modernize your waiting experience",
+        "summary": "Let’s make waiting smarter for your customers and staff.",
+        "primaryCta": { "label": "Book a Consultation", "href": "/contact" },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

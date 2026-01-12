@@ -1,0 +1,79 @@
+{
+    "slug": "online-appointments",
+    "navTitle": "Online Appointments",
+    "hero": {
+        "title": "Smart Online Appointment Booking",
+        "summary": "Let customers book 24/7 while reducing no-shows and admin work.",
+        "primaryCta": { "label": "Set Up Online Booking", "href": "/contact" },
+        "secondaryCta": { "label": "See Services", "href": "/#services" },
+        "image": {
+            "src": "/images/large/online-appointments.jpeg",
+            "alt": "Online appointment booking interface"
+        }
+    },
+    "problem": {
+        "title": "What This Solves",
+        "items": ["Missed calls", "Manual scheduling", "Appointment confusion"]
+    },
+    "deliverables": {
+        "title": "What We Deliver",
+        "items": [
+            "24/7 online booking",
+            "Automated confirmations and reminders",
+            "Staff availability management",
+            "Appointment and walk-in balance",
+            "Mobile-friendly booking flow"
+        ]
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Configure",
+                "description": "We set services, timing, and staff availability."
+            },
+            {
+                "number": "02",
+                "title": "Integrate",
+                "description": "Booking is embedded into your website."
+            },
+            {
+                "number": "03",
+                "title": "Go Live",
+                "description": "Customers start booking instantly."
+            }
+        ]
+    },
+    "whoItsFor": {
+        "title": "Who It’s For",
+        "tags": ["Clinics", "Salons & spas", "Service businesses"]
+    },
+    "whyChooseUs": {
+        "title": "Why Tech Avenue Pro",
+        "items": [
+            {
+                "title": "Fewer No-Shows",
+                "description": "Automated reminders improve attendance."
+            },
+            {
+                "title": "Less Admin Work",
+                "description": "Customers self-book, staff saves time."
+            },
+            {
+                "title": "Better Experience",
+                "description": "Simple, professional booking flow."
+            },
+            {
+                "title": "Scales Easily",
+                "description": "Add staff and services anytime."
+            }
+        ]
+    },
+    "finalCta": {
+        "title": "Stop missing bookings",
+        "summary": "Let’s set up an appointment system that works around the clock.",
+        "primaryCta": { "label": "Book a Consultation", "href": "/contact" },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

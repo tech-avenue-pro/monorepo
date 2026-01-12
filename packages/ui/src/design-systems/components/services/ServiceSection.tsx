@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { ServiceCard } from "./ServiceCard";
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
 import { DSMotion } from "../../DSMotion";
