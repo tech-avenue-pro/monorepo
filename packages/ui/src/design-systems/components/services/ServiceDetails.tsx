@@ -46,7 +46,7 @@ export function ServiceDetails({
             {/* HERO */}
             <HeroSection
                 background={DSLayoutBackground.defaultVariation1}
-                className="h-screen"
+                className="lg:h-screen ds-bg-light-corners-mixed"
             >
                 <HeroContainer className="h-full ds-bg-light-corners-mixed">
                     <div className="grid gap-10 lg:grid-cols-2 md:items-center h-full">
@@ -54,9 +54,9 @@ export function ServiceDetails({
                             <DSMotion variant="fade-up" delay={0.5}>
                                 <DSText
                                     as="h1"
-                                    variant={DSTextVariant.largerTitle}
+                                    variant={DSTextVariant.largestTitle}
                                     color={DSTextColor.primary}
-                                    className="text-center mb-6 md:text-left"
+                                    className="mb-6 text-left"
                                     fontStyle={FontStyle.Heading}
                                 >
                                     {service.hero.title}
@@ -73,7 +73,7 @@ export function ServiceDetails({
                                 </DSText>
                             </DSMotion>
 
-                            <div className="mt-7 flex flex-col gap-4  sm:flex-row mt-16">
+                            <div className="flex flex-col gap-4  sm:flex-row mt-16 ">
                                 <DSLinkButton
                                     variant={DSButtonVariant.primary}
                                     href={service.hero.primaryCta.href}
@@ -90,14 +90,19 @@ export function ServiceDetails({
                                 </DSLinkButton>
                             </div>
                         </div>
-                        <DSMotion variant="slide-left" delay={0.5} duration={2}>
-                            <div className="relative overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 p-2">
+                        <DSMotion
+                            variant="slide-left"
+                            delay={0.5}
+                            duration={2}
+                            className="h-full"
+                        >
+                            <div className="hidden lg:block relative h-full overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 p-2">
                                 <Image
                                     src={service.hero.image.src}
                                     alt={service.hero.image.alt}
                                     width={1200}
                                     height={1000}
-                                    className="h-auto w-full rounded-2xl object-fill"
+                                    className="h-full w-full rounded-2xl object-cover"
                                     priority
                                 />
                             </div>
@@ -105,7 +110,14 @@ export function ServiceDetails({
                     </div>
                 </HeroContainer>
             </HeroSection>
-
+            <Image
+                src={service.hero.image.src}
+                alt={service.hero.image.alt}
+                width={1200}
+                height={1000}
+                className="lg:hidden h-full w-full object-cover"
+                priority
+            />
             {/* PROBLEM + DELIVERABLES */}
             <section className="mt-16 grid gap-8 md:grid-cols-2">
                 <div className="rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
