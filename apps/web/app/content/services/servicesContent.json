@@ -7,8 +7,8 @@
         {
             "id": 1,
             "slug": "digital-growth-management",
-            "image": "/images/large/digital-growth.jpeg",
-            "srcSet": "/images/large/digital-growth.jpeg 1x, /images/large/digital-growth.jpeg 2x, /images/large/digital-growth.jpeg 3x",
+            "image": "/images/small/digital-growth/digital-growth.jpeg",
+            "srcSet": "/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x, /images/small/digital-growth/digital-growth@3x.jpeg 3x",
             "alt": "Digital Growth Service Image",
             "title": "Digital Growth Management",
             "description": "This is our core service. We act as your digital marketing partner, handling everything needed to grow your business online.",
