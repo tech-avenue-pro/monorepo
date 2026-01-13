@@ -34,7 +34,7 @@ export function ServiceCard({
             ].join(" ")}
         >
             {image && (
-                <div className="mb-4 overflow-hidden h-44 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
+                <div className="mb-4 overflow-hidden h-48 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
                     {image}
                 </div>
             )}
