@@ -78,11 +78,34 @@ export default function HeroSectionTech({
                     </DSLinkButton>
                 </div>
                 <div className="flex justify-center">
-                    <img
-                        src="/hero-image.jpg"
-                        alt="Hero Image"
-                        className="rounded-lg"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width: 1024px)"
+                            srcSet="
+                                /hero-image-lg@1x.jpg 1x,
+                                /hero-image-lg@2x.jpg 2x,
+                                /hero-image-lg@3x.jpg 3x
+                            "
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcSet="
+                                /hero-image-md@1x.jpg 1x,
+                                /hero-image-md@2x.jpg 2x,
+                                /hero-image-md@3x.jpg 3x
+                            "
+                        />
+                        <img
+                            src="/hero-image-sm@1x.jpg"
+                            srcSet="
+                                /hero-image-sm@1x.jpg 1x,
+                                /hero-image-sm@2x.jpg 2x,
+                                /hero-image-sm@3x.jpg 3x
+                            "
+                            alt="Hero Image"
+                            className="rounded-lg"
+                        />
+                    </picture>
                 </div>
             </div>
         </React.Fragment>
