@@ -29,12 +29,20 @@ export type ServiceDetailPageContent = {
 };
 
 import Image from "next/image";
-import { DSText, DSTextColor, DSTextVariant, FontStyle } from "../../DSText";
+import {
+    DSText,
+    DSTextColor,
+    DSTextVariant,
+    DSTextWeight,
+    FontStyle,
+} from "../../DSText";
 import HeroSection from "../../layouts/HeroSection";
 import HeroContainer from "../../layouts/HeroContainer";
 import { DSLayoutBackground } from "../../backgrounds";
 import { DSMotion } from "../../DSMotion";
 import { DSButtonVariant, DSLinkButton } from "../../DSButton";
+import RegularSection from "../../layouts/RegularSection";
+import RegularContainer from "../../layouts/RegularContainer";
 
 export function ServiceDetails({
     service,
@@ -96,7 +104,7 @@ export function ServiceDetails({
                             duration={2}
                             className="h-full"
                         >
-                            <div className="hidden lg:block relative h-full overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 p-2">
+                            <div className="hidden lg:block relative h-full overflow-hidden rounded-3xl  p-2">
                                 <Image
                                     src={service.hero.image.src}
                                     alt={service.hero.image.alt}
@@ -119,61 +127,61 @@ export function ServiceDetails({
                 priority
             />
             {/* PROBLEM + DELIVERABLES */}
-            <section className="mt-16 grid gap-8 md:grid-cols-2">
-                <div className="rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
-                    <h2 className="text-lg font-semibold text-neutral-900">
-                        {service.problem.title}
-                    </h2>
-                    <ul className="mt-4 space-y-2 text-sm leading-6 text-neutral-600">
-                        {service.problem.items.map((item) => (
-                            <li key={item} className="flex gap-2">
-                                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neutral-900" />
-                                <span>{item}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
-                    <h2 className="text-lg font-semibold text-neutral-900">
-                        {service.deliverables.title}
-                    </h2>
-                    <ul className="mt-4 space-y-2 text-sm leading-6 text-neutral-600">
-                        {service.deliverables.items.map((item) => (
-                            <li key={item} className="flex gap-2">
-                                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-neutral-900" />
-                                <span>{item}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
 
             {/* HOW IT WORKS */}
-            <section className="mt-16">
-                <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
-                    {service.howItWorks.title}
-                </h2>
-
-                <div className="mt-8 grid gap-5 md:grid-cols-3">
-                    {service.howItWorks.steps.map((step) => (
-                        <div
-                            key={step.number}
-                            className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+            <RegularSection>
+                <RegularContainer>
+                    <div className="mt-16">
+                        <DSText
+                            as="h2"
+                            variant={DSTextVariant.largeTitle}
+                            color={DSTextColor.primary}
+                            className="text-left"
+                            fontStyle={FontStyle.Heading}
                         >
-                            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-neutral-900 text-sm font-semibold text-white">
-                                {step.number}
-                            </div>
-                            <h3 className="text-base font-semibold text-neutral-900">
-                                {step.title}
-                            </h3>
-                            <p className="mt-2 text-sm leading-6 text-neutral-600">
-                                {step.description}
-                            </p>
+                            {service.howItWorks.title}
+                        </DSText>
+
+                        <div className="mt-8 grid gap-5 md:grid-cols-3">
+                            {service.howItWorks.steps.map((step) => (
+                                <div
+                                    key={step.number}
+                                    className="rounded-3xl border ds-bg-default p-6 shadow-sm"
+                                >
+                                    <div className=" flex items-center justify-end">
+                                        <DSText
+                                            as="span"
+                                            variant={DSTextVariant.largestTitle}
+                                            color={DSTextColor.quaternary}
+                                            weight={DSTextWeight.semiBold}
+                                            fontStyle={FontStyle.Heading}
+                                        >
+                                            {step.number}
+                                        </DSText>
+                                    </div>
+                                    <DSText
+                                        as="h3"
+                                        variant={DSTextVariant.headline1}
+                                        color={DSTextColor.primary}
+                                        fontStyle={FontStyle.Heading}
+                                        weight={DSTextWeight.bold}
+                                    >
+                                        {step.title}
+                                    </DSText>
+                                    <DSText
+                                        as="p"
+                                        variant={DSTextVariant.body}
+                                        color={DSTextColor.secondary}
+                                        className="mt-4"
+                                    >
+                                        {step.description}
+                                    </DSText>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-            </section>
+                    </div>
+                </RegularContainer>
+            </RegularSection>
 
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">

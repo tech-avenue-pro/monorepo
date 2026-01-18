@@ -33,22 +33,32 @@
         ]
     },
     "howItWorks": {
-        "title": "How It Works",
+        "title": "How we help your business",
         "steps": [
             {
                 "number": "01",
-                "title": "Audit & Discovery",
-                "description": "We review your current presence, goals, and opportunities."
+                "title": "Business and Audience Market Research",
+                "description": "We start by understanding your business, audience, and goals. This includes market research, competitor analysis, and selecting the right ad platforms to ensure every dollar is spent strategically."
             },
             {
                 "number": "02",
-                "title": "Growth Plan",
-                "description": "We create a clear, actionable growth roadmap."
+                "title": "Targeting and Campaign Planning",
+                "description": "We identify high-intent keywords and audience segments, then design a campaign structure that maximizes reach, relevance, and return on investment."
             },
             {
                 "number": "03",
-                "title": "Execute & Optimize",
-                "description": "We implement, measure, and improve continuously."
+                "title": "Ad Creation and Messaging",
+                "description": "Our team creates compelling ad copy and visuals tailored to each platform, with clear calls-to-action designed to drive clicks and conversions."
+            },
+            {
+                "number": "04",
+                "title": "Launch, Tracking and Optimization",
+                "description": "Once live, we continuously monitor performance, track conversions, and refine targeting, bids, and creatives to improve results over time."
+            },
+            {
+                "number": "05",
+                "title": "Reporting and Growth",
+                "description": "You receive clear, easy-to-understand reports showing what’s working, what’s improving, and how we can scale your campaigns for continued growth."
             }
         ]
     },
