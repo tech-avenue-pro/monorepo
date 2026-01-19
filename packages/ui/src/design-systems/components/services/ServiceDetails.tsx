@@ -25,6 +25,14 @@ export type ServiceDetailPageContent = {
         description: string;
         items: string[];
     };
+    stats: {
+        title: string;
+        description: string;
+        items: {
+            number: string;
+            description: string;
+        }[];
+    };
     finalCta: {
         title: string;
         summary: string;
@@ -48,6 +56,7 @@ import { DSMotion } from "../../DSMotion";
 import { DSButtonVariant, DSLinkButton } from "../../DSButton";
 import RegularSection from "../../layouts/RegularSection";
 import RegularContainer from "../../layouts/RegularContainer";
+import { desc } from "framer-motion/client";
 
 export function ServiceDetails({
     service,
@@ -206,10 +215,10 @@ export function ServiceDetails({
                         <DSText
                             as="h3"
                             variant={DSTextVariant.body}
-                            weight={DSTextWeight.semiBold}
-                            color={DSTextColor.primary}
+                            weight={DSTextWeight.medium}
+                            color={DSTextColor.tertiary}
                             fontStyle={FontStyle.Body}
-                            className="mt-4 max-w-2xl text-left"
+                            className="mt-6 max-w-2xl text-left"
                         >
                             <span
                                 dangerouslySetInnerHTML={{
@@ -224,7 +233,7 @@ export function ServiceDetails({
                                     <DSText
                                         as="p"
                                         variant={DSTextVariant.body}
-                                        color={DSTextColor.primary}
+                                        color={DSTextColor.tertiary}
                                         fontStyle={FontStyle.Body}
                                     >
                                         {item}
@@ -235,6 +244,42 @@ export function ServiceDetails({
                     </div>
                 </RegularContainer>
             </RegularSection>
+            {/* Stats and Data */}
+            <RegularSection>
+                <RegularContainer>
+                    <div className="max-w-2xl">
+                        <DSText
+                            as="h2"
+                            variant={DSTextVariant.largeTitle}
+                            weight={DSTextWeight.semiBold}
+                            color={DSTextColor.primary}
+                            fontStyle={FontStyle.Heading}
+                            className=""
+                        >
+                            {service.stats.title}
+                        </DSText>
+                        <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+                            {service.stats.description}
+                        </p>
+                    </div>
+                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-gray-900 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4 dark:text-white">
+                        {service.stats.items.map((stat) => (
+                            <div
+                                key={stat.number}
+                                className="flex flex-col gap-y-3 border-l border-gray-900/15 pl-6 dark:border-white/10"
+                            >
+                                <dt className="text-sm/6">
+                                    {stat.description}
+                                </dt>
+                                <dd className="order-first text-3xl font-semibold tracking-tight">
+                                    {stat.number}
+                                </dd>
+                            </div>
+                        ))}
+                    </dl>
+                </RegularContainer>
+            </RegularSection>
+
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-neutral-900">

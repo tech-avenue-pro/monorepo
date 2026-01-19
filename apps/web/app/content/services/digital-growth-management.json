@@ -102,6 +102,32 @@
             "Build trust through reviews, content, and social presence"
         ]
     },
+    "stats": {
+        "title": "Digital Marketing by the Numbers",
+        "description": "The impact of digital marketing is clear — here are some key statistics that show why it’s essential for business growth:",
+        "items": [
+            {
+                "number": "80%",
+                "description": "of consumers research online before making a purchase."
+            },
+            {
+                "number": "5x",
+                "description": "more leads generated through digital marketing strategies"
+            },
+            {
+                "number": "76%",
+                "description": "of “near me” searches lead to visits"
+            },
+            {
+                "number": "93%",
+                "description": "of people trust online reviews"
+            },
+            {
+                "number": "60%",
+                "description": "of small businesses invest in digital marketing to grow"
+            }
+        ]
+    },
     "finalCta": {
         "title": "Ready to grow with Tech Avenue Pro?",
         "summary": "Let’s build a smarter digital system that drives consistent growth.",
