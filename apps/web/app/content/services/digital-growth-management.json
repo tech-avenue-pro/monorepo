@@ -91,6 +91,17 @@
             }
         ]
     },
+    "whyItWorks": {
+        "title": "Why Digital Marketing Works",
+        "description": "Businesses that invest in digital marketing grow <span class=\"ds-text-color-critical\">faster</span>, reach the <span class=\"ds-text-color-success\">right audience</span>, and see <span class=\"ds-text-color-tint-theme\">measurable results.</span>",
+        "items": [
+            "Generate more qualified leads with data-driven campaigns",
+            "Reach customers exactly when they are searching",
+            "Spend smarter with measurable ROI and full transparency",
+            "Capture mobile and local customers instantly",
+            "Build trust through reviews, content, and social presence"
+        ]
+    },
     "finalCta": {
         "title": "Ready to grow with Tech Avenue Pro?",
         "summary": "Let’s build a smarter digital system that drives consistent growth.",

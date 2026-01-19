@@ -148,6 +148,28 @@
         var(--default-background);
 }
 
+/* Light from left */
+.ds-bg-light-left {
+    background:
+        radial-gradient(
+            circle at 0% 50%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
+/* Light from right */
+.ds-bg-light-right {
+    background:
+        radial-gradient(
+            circle at 100% 50%,
+            rgba(51, 201, 242, 0.25) 0%,
+            transparent 50%
+        ),
+        var(--default-background);
+}
+
 /* Mixed corners (Primary Top-Left, Accent Bottom-Right) */
 .ds-bg-light-corners-mixed {
     background:

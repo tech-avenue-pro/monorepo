@@ -20,6 +20,11 @@ export type ServiceDetailPageContent = {
         title: string;
         items: { title: string; description: string }[];
     };
+    whyItWorks: {
+        title: string;
+        description: string;
+        items: string[];
+    };
     finalCta: {
         title: string;
         summary: string;
@@ -131,7 +136,7 @@ export function ServiceDetails({
             {/* HOW IT WORKS */}
             <RegularSection>
                 <RegularContainer>
-                    <div className="mt-16">
+                    <div className="">
                         <DSText
                             as="h2"
                             variant={DSTextVariant.largeTitle}
@@ -142,7 +147,7 @@ export function ServiceDetails({
                             {service.howItWorks.title}
                         </DSText>
 
-                        <div className="mt-8 grid gap-5 md:grid-cols-3">
+                        <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                             {service.howItWorks.steps.map((step) => (
                                 <div
                                     key={step.number}
@@ -152,7 +157,7 @@ export function ServiceDetails({
                                         <DSText
                                             as="span"
                                             variant={DSTextVariant.largestTitle}
-                                            color={DSTextColor.quaternary}
+                                            color={DSTextColor.quinary}
                                             weight={DSTextWeight.semiBold}
                                             fontStyle={FontStyle.Heading}
                                         >
@@ -182,7 +187,54 @@ export function ServiceDetails({
                     </div>
                 </RegularContainer>
             </RegularSection>
+            {/* Why Digital Marketing Works */}
+            <RegularSection>
+                <RegularContainer>
+                    <div className="rounded-3xl border border-neutral-200 p-12 shadow-sm ds-bg-light-right">
+                        <DSText
+                            as="h2"
+                            variant={DSTextVariant.largeTitle}
+                            color={DSTextColor.primary}
+                            fontStyle={FontStyle.Heading}
+                        >
+                            <span
+                                dangerouslySetInnerHTML={{
+                                    __html: service.whyItWorks.title,
+                                }}
+                            />
+                        </DSText>
+                        <DSText
+                            as="h3"
+                            variant={DSTextVariant.body}
+                            weight={DSTextWeight.semiBold}
+                            color={DSTextColor.primary}
+                            fontStyle={FontStyle.Body}
+                            className="mt-4 max-w-2xl text-left"
+                        >
+                            <span
+                                dangerouslySetInnerHTML={{
+                                    __html: service.whyItWorks.description,
+                                }}
+                            />
+                        </DSText>
 
+                        <div className="mt-8 flex flex-col gap-4">
+                            {service.whyItWorks.items.map((item) => (
+                                <li>
+                                    <DSText
+                                        as="p"
+                                        variant={DSTextVariant.body}
+                                        color={DSTextColor.primary}
+                                        fontStyle={FontStyle.Body}
+                                    >
+                                        {item}
+                                    </DSText>
+                                </li>
+                            ))}
+                        </div>
+                    </div>
+                </RegularContainer>
+            </RegularSection>
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-neutral-900">
