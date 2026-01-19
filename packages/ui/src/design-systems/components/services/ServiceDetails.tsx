@@ -230,7 +230,15 @@ export function ServiceDetails({
                                     {stat.description}
                                 </dt>
                                 <dd className="order-first text-3xl font-semibold tracking-tight">
-                                    {stat.number}
+                                    <DSText
+                                        as="span"
+                                        variant={DSTextVariant.largerTitle}
+                                        color={DSTextColor.tintTheme}
+                                        weight={DSTextWeight.bold}
+                                        fontStyle={FontStyle.Heading}
+                                    >
+                                        {stat.number}
+                                    </DSText>
                                 </dd>
                             </div>
                         ))}
