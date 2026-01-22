@@ -57,6 +57,7 @@ import { DSButtonVariant, DSLinkButton } from "../../DSButton";
 import RegularSection from "../../layouts/RegularSection";
 import RegularContainer from "../../layouts/RegularContainer";
 import { desc } from "framer-motion/client";
+import { Odometer } from "../../Odometer";
 
 export function ServiceDetails({
     service,
@@ -264,8 +265,13 @@ export function ServiceDetails({
                                         color={DSTextColor.tintTheme}
                                         weight={DSTextWeight.bold}
                                         fontStyle={FontStyle.Heading}
+                                        className="number-scramble"
                                     >
-                                        {stat.number}
+                                        <Odometer
+                                            value={parseFloat(stat.number)}
+                                            className=""
+                                        />
+                                        {stat.number.slice(-1)}
                                     </DSText>
                                 </dd>
                             </div>
