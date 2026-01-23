@@ -158,8 +158,11 @@ export function ServiceDetails({
                 priority
             />
 
-            {/* HOW IT WORKS */}
-            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+            {/* What We Do */}
+            <RegularSection
+                background={DSLayoutBackground.defaultVariation1}
+                id="what-we-do"
+            >
                 <RegularContainer>
                     <div className="">
                         <DSMotion variant="fade-up" delay={0.3} duration={0.5}>
@@ -350,14 +353,14 @@ export function ServiceDetails({
 
             {/* WHY CHOOSE US */}
 
-            <SmallSection
+            <RegularSection
                 id="why-choose-us"
                 background={DSLayoutBackground.default}
             >
                 <RegularContainer>
                     <WhyChooseUs {...whyChooseUsContent} />
                 </RegularContainer>
-            </SmallSection>
+            </RegularSection>
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-neutral-900">

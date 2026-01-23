@@ -1,5 +1,6 @@
 import { DSButton, DSButtonVariant } from "@repo/ui/design-systems/DSButton";
 import React from "react";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function Form() {
     return (
@@ -31,9 +32,10 @@ export default function Form() {
                 pattern="(^\\+?[0-9()\\s-]{7,}$)|(^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$)"
                 title="Enter a valid phone number or email"
             />
-            <DSButton variant={DSButtonVariant.primary} className="mt-6">
-                Submit
-            </DSButton>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <DSButton variant={DSButtonVariant.primary}>Submit</DSButton>
+                <WhatsAppButton phone="14374483374" />
+            </div>
         </form>
     );
 }

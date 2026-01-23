@@ -11,13 +11,13 @@ import {
 import StandardNavBar from "@repo/ui/design-systems/navigation-bar/StandardNavBar";
 import React from "react";
 
-export default function MainNavBar() {
+export default function SecondaryNavBar() {
     return (
         <StandardNavBar
             links={[
                 {
                     label: "Home",
-                    href: "#hero-section",
+                    href: "/",
                 },
                 {
                     label: "Services",
@@ -45,8 +45,8 @@ export default function MainNavBar() {
                     ],
                 },
                 {
-                    label: "How It Works",
-                    href: "#how-it-works",
+                    label: "What we do",
+                    href: "#what-we-do",
                 },
                 {
                     label: "Why Choose Us",
@@ -67,8 +67,8 @@ export default function MainNavBar() {
             fontWeight={DSTextWeight.regular}
             mobileFontWeight={DSTextWeight.regular}
             mobileTextVariant={DSTextVariant.largeTitle}
-            logoSrc="icons/tech-avenue-pro-navbar.png"
-            name=""
+            logoSrc="../icons/tech-avenue-pro-navbar.png"
+            name="Tech Avenue Pro"
             background={DSLayoutBackground.black}
             stickyOnScrollOnly={true}
         />

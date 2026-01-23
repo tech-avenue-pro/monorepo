@@ -3,6 +3,7 @@ import React from "react";
 import { getServiceBySlug } from "../../content/services/servicesContent";
 import { ServiceDetails } from "@repo/ui/design-systems/components/services/ServiceDetails";
 import MainNavBar from "../../MainNavBar";
+import SecondaryNavBar from "../../SecondaryNavBar";
 
 interface ServicePageProps {
     params: Promise<{ slug: string }>;
@@ -13,7 +14,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
     const service = getServiceBySlug(slug);
     return (
         <React.Fragment>
-            <MainNavBar />
+            <SecondaryNavBar />
             <ServiceDetails service={service} />
         </React.Fragment>
     );
