@@ -30,7 +30,7 @@ import { getServices } from "./content/services/servicesContent";
 import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/HeroSectionTech";
 import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 import { get } from "http";
-import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUs";
+import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUsContent";
 import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
 import Form from "./HomeView/Form";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";

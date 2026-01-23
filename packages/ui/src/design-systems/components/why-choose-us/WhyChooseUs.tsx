@@ -6,7 +6,7 @@ import {
     DSTextWeight,
 } from "@repo/ui/design-systems/DSText";
 
-export interface WhyChooseUs {
+export interface WhyChooseUsContent {
     sectionTitle: string;
     introText: string;
     src: string;
@@ -26,7 +26,7 @@ export default function WhyChooseUs({
     src,
     srcSet,
     reasons,
-}: WhyChooseUs) {
+}: WhyChooseUsContent) {
     return (
         <div className="mx-auto">
             <div className="grid gap-10 md:grid-cols-2">

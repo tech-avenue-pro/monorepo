@@ -1,4 +1,18 @@
+import HeroSection from "../../layouts/HeroSection";
+import HeroContainer from "../../layouts/HeroContainer";
+import { DSLayoutBackground } from "../../backgrounds";
+import { DSMotion } from "../../DSMotion";
+import { DSButtonVariant, DSLinkButton } from "../../DSButton";
+import RegularSection from "../../layouts/RegularSection";
+import RegularContainer from "../../layouts/RegularContainer";
+import { desc } from "framer-motion/client";
+import { Odometer } from "../../Odometer";
+import WhyChooseUs, {
+    WhyChooseUsContent,
+} from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
+import SmallSection from "../../layouts/SmallSection";
 export type CTA = { label: string; href: string };
+
 export type ServiceDetailPageContent = {
     slug: string;
     navTitle: string;
@@ -16,10 +30,7 @@ export type ServiceDetailPageContent = {
         steps: { number: string; title: string; description: string }[];
     };
     whoItsFor: { title: string; tags: string[] };
-    whyChooseUs: {
-        title: string;
-        items: { title: string; description: string }[];
-    };
+    whyChooseUs: WhyChooseUsContent;
     whyItWorks: {
         title: string;
         description: string;
@@ -49,24 +60,12 @@ import {
     DSTextWeight,
     FontStyle,
 } from "../../DSText";
-import HeroSection from "../../layouts/HeroSection";
-import HeroContainer from "../../layouts/HeroContainer";
-import { DSLayoutBackground } from "../../backgrounds";
-import { DSMotion } from "../../DSMotion";
-import { DSButtonVariant, DSLinkButton } from "../../DSButton";
-import RegularSection from "../../layouts/RegularSection";
-import RegularContainer from "../../layouts/RegularContainer";
-import { desc } from "framer-motion/client";
-import { Odometer } from "../../Odometer";
-import { getWhyChooseUsDMContent } from "../../../../../../apps/web/app/content/why-choose-us/WhyChooseUs";
-import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
-import SmallSection from "../../layouts/SmallSection";
+
 export function ServiceDetails({
     service,
 }: {
     service: ServiceDetailPageContent;
 }) {
-    const whyChooseUsContent = getWhyChooseUsDMContent();
     return (
         <main>
             {/* HERO */}
@@ -358,7 +357,7 @@ export function ServiceDetails({
                 background={DSLayoutBackground.default}
             >
                 <RegularContainer>
-                    <WhyChooseUs {...whyChooseUsContent} />
+                    <WhyChooseUs {...service.whyChooseUs} />
                 </RegularContainer>
             </RegularSection>
 

@@ -74,35 +74,35 @@
         ]
     },
     "whyChooseUs": {
-        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Digital Marketing?</span>",
-        "introText": "We don’t just market your business — we build the systems that grow it.",
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Premium Websites?</span>",
+        "introText": "We build premium websites that look world-class and convert visitors into leads.",
         "src": "/images/why-choose-us/why-choose-us-illustration.png",
         "srcSet": "/images/small/why-choose-us/why-choose-us-dm@1x.png 1x, /images/small/why-choose-us/why-choose-us-dm@2x.png 2x, /images/small/why-choose-us/why-choose-us-dm@3x.png 3x",
         "reasons": [
             {
                 "id": 1,
-                "title": "Built for Small & Medium Businesses",
-                "description": "We specialize in helping local and growing businesses. Every strategy is practical, affordable, and focused on real results."
+                "title": "Strategy Before Design",
+                "description": "We start with your goals and audience so every section supports conversions."
             },
             {
                 "id": 2,
-                "title": "Premium Design That Builds Trust",
-                "description": "Our in-house designers handle branding, logos, and social media creatives that make your business look credible, professional, and consistent across all platforms."
+                "title": "Premium Visual Execution",
+                "description": "High-end layouts, typography, and imagery that build instant credibility."
             },
             {
                 "id": 3,
-                "title": "Marketing + Technology Under One Roof",
-                "description": "From premium websites to online appointments and LiveQueue, everything works together to convert leads into customers."
+                "title": "Conversion-Focused Copy",
+                "description": "Clear, persuasive messaging that turns visitors into inquiries."
             },
             {
                 "id": 4,
-                "title": "Local & Industry-Focused Expertise",
-                "description": "We understand how customers search, decide, and book locally. Our strategies are optimized for real-world behavior, not generic marketing templates."
+                "title": "Performance + SEO Built In",
+                "description": "Fast load times, clean structure, and search-ready foundations from day one."
             },
             {
                 "id": 5,
-                "title": "Clear Communication & Transparency",
-                "description": "You’ll always know what’s running, how it’s performing, and what’s next. Clear reporting and honest insights."
+                "title": "Long-Term Flexibility",
+                "description": "A scalable system that makes it easy to add services, landing pages, and updates."
             }
         ]
     },
