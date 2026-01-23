@@ -171,41 +171,51 @@ export function ServiceDetails({
                                 {service.howItWorks.title}
                             </DSText>
                         </DSMotion>
+
                         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                             {service.howItWorks.steps.map((step) => (
-                                <div
-                                    key={step.number}
-                                    className="rounded-3xl border ds-bg-default p-6 shadow-sm"
+                                <DSMotion
+                                    variant="fade-up"
+                                    delay={0.5}
+                                    duration={0.5}
                                 >
-                                    <div className=" flex items-center justify-end">
+                                    <div
+                                        key={step.number}
+                                        className="rounded-3xl border ds-bg-default p-6 shadow-sm"
+                                    >
+                                        <div className=" flex items-center justify-end">
+                                            <DSText
+                                                as="span"
+                                                variant={
+                                                    DSTextVariant.largestTitle
+                                                }
+                                                color={DSTextColor.quinary}
+                                                weight={DSTextWeight.semiBold}
+                                                fontStyle={FontStyle.Heading}
+                                            >
+                                                {step.number}
+                                            </DSText>
+                                        </div>
                                         <DSText
-                                            as="span"
-                                            variant={DSTextVariant.largestTitle}
-                                            color={DSTextColor.quinary}
-                                            weight={DSTextWeight.semiBold}
+                                            as="h3"
+                                            variant={DSTextVariant.headline1}
+                                            color={DSTextColor.primary}
                                             fontStyle={FontStyle.Heading}
+                                            weight={DSTextWeight.bold}
+                                            className="mt-4"
                                         >
-                                            {step.number}
+                                            {step.title}
+                                        </DSText>
+                                        <DSText
+                                            as="p"
+                                            variant={DSTextVariant.body}
+                                            color={DSTextColor.secondary}
+                                            className="mt-4"
+                                        >
+                                            {step.description}
                                         </DSText>
                                     </div>
-                                    <DSText
-                                        as="h3"
-                                        variant={DSTextVariant.headline1}
-                                        color={DSTextColor.primary}
-                                        fontStyle={FontStyle.Heading}
-                                        weight={DSTextWeight.bold}
-                                    >
-                                        {step.title}
-                                    </DSText>
-                                    <DSText
-                                        as="p"
-                                        variant={DSTextVariant.body}
-                                        color={DSTextColor.secondary}
-                                        className="mt-4"
-                                    >
-                                        {step.description}
-                                    </DSText>
-                                </div>
+                                </DSMotion>
                             ))}
                         </div>
                     </div>
@@ -335,6 +345,38 @@ export function ServiceDetails({
                 </RegularContainer>
             </RegularSection>
 
+            {/* WHY CHOOSE US */}
+
+            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+                <RegularContainer>
+                    <DSText
+                        as="h2"
+                        variant={DSTextVariant.largeTitle}
+                        weight={DSTextWeight.bold}
+                        color={DSTextColor.primary}
+                        fontStyle={FontStyle.Heading}
+                        className="text-left"
+                    >
+                        {service.whyChooseUs.title}
+                    </DSText>
+
+                    <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                        {service.whyChooseUs.items.map((item) => (
+                            <div
+                                key={item.title}
+                                className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+                            >
+                                <h3 className="text-sm font-semibold text-neutral-900">
+                                    {item.title}
+                                </h3>
+                                <p className="mt-2 text-sm leading-6 text-neutral-600">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </RegularContainer>
+            </RegularSection>
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-neutral-900">
@@ -351,29 +393,6 @@ export function ServiceDetails({
                     ))}
                 </div>
             </section>
-
-            {/* WHY CHOOSE US */}
-            <section className="mt-16">
-                <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
-                    {service.whyChooseUs.title}
-                </h2>
-                <div className="mt-8 grid gap-5 sm:grid-cols-2">
-                    {service.whyChooseUs.items.map((item) => (
-                        <div
-                            key={item.title}
-                            className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-                        >
-                            <h3 className="text-sm font-semibold text-neutral-900">
-                                {item.title}
-                            </h3>
-                            <p className="mt-2 text-sm leading-6 text-neutral-600">
-                                {item.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
             {/* FINAL CTA */}
             <section className="mt-16">
                 <div className="rounded-3xl border border-neutral-200 bg-neutral-900 p-8 text-white shadow-sm md:p-12">
