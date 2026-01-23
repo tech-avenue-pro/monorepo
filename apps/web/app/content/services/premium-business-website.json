@@ -2,89 +2,131 @@
     "slug": "premium-business-website",
     "navTitle": "Premium Business Website",
     "hero": {
-        "title": "Premium Websites Built to Convert",
-        "summary": "Fast, modern, mobile-first websites designed to build trust and turn visitors into customers.",
+        "title": "Premium Business Websites Built to Convert",
+        "summary": "Launch a high-performance website that reflects your brand, builds trust, and drives leads. We handle strategy, design, copy, and build so your site works as your best salesperson.",
         "primaryCta": {
-            "label": "Request a Website Quote",
+            "label": "Book a Free Consultation",
             "href": "/contact"
         },
-        "secondaryCta": { "label": "View All Services", "href": "/#services" },
+        "secondaryCta": {
+            "label": "See Our Services",
+            "href": "/#services"
+        },
         "image": {
-            "src": "/images/services/premium-website.png",
-            "alt": "Modern responsive business website"
+            "src": "/images/large/premium-business-website.jpeg",
+            "alt": "Premium business website on desktop and mobile"
         }
     },
-    "problem": {
-        "title": "What This Solves",
-        "items": [
-            "Outdated or slow websites",
-            "Low conversion rates",
-            "Poor mobile experience"
-        ]
-    },
-    "deliverables": {
-        "title": "What We Deliver",
-        "items": [
-            "Custom UI/UX design",
-            "Mobile-first responsive layouts",
-            "Fast performance and SEO-ready structure",
-            "Clear calls-to-action",
-            "Booking and contact integrations"
-        ]
-    },
-    "howItWorks": {
-        "title": "How It Works",
+    "howWeHelp": {
+        "title": "How we help your business",
         "steps": [
             {
                 "number": "01",
-                "title": "Design",
-                "description": "We design a layout aligned with your brand and goals."
+                "title": "Discovery and Brand Positioning",
+                "description": "We align on your goals, audience, and offers, then translate your value into a clear website strategy and messaging."
             },
             {
                 "number": "02",
-                "title": "Build",
-                "description": "We develop, test, and optimize for performance."
+                "title": "Site Architecture and Content Planning",
+                "description": "We map the user journey, define the page structure, and plan content that guides visitors to take action."
             },
             {
                 "number": "03",
-                "title": "Launch",
-                "description": "We go live and refine for conversions."
+                "title": "Premium Visual Design",
+                "description": "We craft a modern, polished design system that matches your brand and builds trust at every scroll."
+            },
+            {
+                "number": "04",
+                "title": "High-Performance Build",
+                "description": "We develop a fast, responsive site with clean code, SEO fundamentals, and analytics built in."
+            },
+            {
+                "number": "05",
+                "title": "Launch and Optimization",
+                "description": "After launch, we refine copy, visuals, and calls-to-action based on real user behavior."
             }
         ]
     },
-    "whoItsFor": {
-        "title": "Who It’s For",
-        "tags": [
-            "New businesses",
-            "Rebranding companies",
-            "Lead-focused businesses"
+    "stats": {
+        "title": "Websites That Drive Results",
+        "description": "A premium website improves trust, conversions, and visibility. These numbers show why it matters:",
+        "items": [
+            {
+                "number": "75%",
+                "description": "of users judge credibility based on website design"
+            },
+            {
+                "number": "3x",
+                "description": "higher conversion rates with clear messaging and layout"
+            },
+            {
+                "number": "88%",
+                "description": "of visitors won’t return after a poor site experience"
+            },
+            {
+                "number": "50%",
+                "description": "of traffic comes from mobile devices"
+            },
+            {
+                "number": "2s",
+                "description": "faster load time can improve engagement and SEO"
+            }
         ]
     },
     "whyChooseUs": {
-        "title": "Why Tech Avenue Pro",
-        "items": [
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Digital Marketing?</span>",
+        "introText": "We don’t just market your business — we build the systems that grow it.",
+        "src": "/images/why-choose-us/why-choose-us-illustration.png",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-dm@1x.png 1x, /images/small/why-choose-us/why-choose-us-dm@2x.png 2x, /images/small/why-choose-us/why-choose-us-dm@3x.png 3x",
+        "reasons": [
             {
-                "title": "Premium Design",
-                "description": "Professional look that builds instant trust."
+                "id": 1,
+                "title": "Built for Small & Medium Businesses",
+                "description": "We specialize in helping local and growing businesses. Every strategy is practical, affordable, and focused on real results."
             },
             {
-                "title": "Conversion-Focused",
-                "description": "Designed to drive inquiries and bookings."
+                "id": 2,
+                "title": "Premium Design That Builds Trust",
+                "description": "Our in-house designers handle branding, logos, and social media creatives that make your business look credible, professional, and consistent across all platforms."
             },
             {
-                "title": "Fast & Secure",
-                "description": "Optimized for speed and reliability."
+                "id": 3,
+                "title": "Marketing + Technology Under One Roof",
+                "description": "From premium websites to online appointments and LiveQueue, everything works together to convert leads into customers."
             },
             {
-                "title": "Scalable Foundation",
-                "description": "Easy to expand as your business grows."
+                "id": 4,
+                "title": "Local & Industry-Focused Expertise",
+                "description": "We understand how customers search, decide, and book locally. Our strategies are optimized for real-world behavior, not generic marketing templates."
+            },
+            {
+                "id": 5,
+                "title": "Clear Communication & Transparency",
+                "description": "You’ll always know what’s running, how it’s performing, and what’s next. Clear reporting and honest insights."
             }
         ]
     },
+    "whyItWorks": {
+        "title": "Why a Premium Website Works",
+        "description": "A premium website turns visitors into customers by building <span class=\"ds-text-color-success\">trust</span>, improving <span class=\"ds-text-color-tint-theme\">conversion</span>, and elevating your <span class=\"ds-text-color-critical\">brand presence</span>.",
+        "items": [
+            "Make a strong first impression within seconds",
+            "Guide visitors with clear, conversion-focused content",
+            "Rank better with SEO-ready structure and speed",
+            "Increase leads with smart calls-to-action",
+            "Support marketing campaigns with a high-performing landing hub"
+        ]
+    },
     "finalCta": {
-        "title": "Want a website that actually converts?",
-        "summary": "Let’s design a premium website that works for your business.",
-        "primaryCta": { "label": "Request a Quote", "href": "/contact" },
-        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+        "title": "Ready to launch your premium website?",
+        "summary": "Let’s build a website that looks world-class and drives real results.",
+        "primaryCta": {
+            "label": "Book a Free Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": {
+            "label": "WhatsApp Us",
+            "href": "https://wa.me/"
+        }
     }
 }

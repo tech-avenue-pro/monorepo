@@ -14,25 +14,7 @@
             "alt": "Digital growth strategy dashboard"
         }
     },
-    "problem": {
-        "title": "What This Solves",
-        "items": [
-            "Scattered tools and vendors",
-            "No clear growth strategy",
-            "Marketing without measurable results"
-        ]
-    },
-    "deliverables": {
-        "title": "What We Deliver",
-        "items": [
-            "Digital growth strategy and roadmap",
-            "Website and marketing alignment",
-            "Conversion optimization",
-            "Performance tracking and reporting",
-            "Continuous improvements"
-        ]
-    },
-    "howItWorks": {
+    "howWeHelp": {
         "title": "How we help your business",
         "steps": [
             {
@@ -62,46 +44,6 @@
             }
         ]
     },
-    "whoItsFor": {
-        "title": "Who It’s For",
-        "tags": [
-            "Small & medium businesses",
-            "Clinics & service providers",
-            "Growing brands"
-        ]
-    },
-    "whyChooseUs": {
-        "title": "Why Tech Avenue Pro",
-        "items": [
-            {
-                "title": "All-in-One Partner",
-                "description": "Strategy, website, marketing, and systems working together."
-            },
-            {
-                "title": "Practical Approach",
-                "description": "Built for real-world businesses, not enterprise complexity."
-            },
-            {
-                "title": "Measured Results",
-                "description": "Focused on outcomes, not vanity metrics."
-            },
-            {
-                "title": "Real Support",
-                "description": "Direct communication with a team that understands your business."
-            }
-        ]
-    },
-    "whyItWorks": {
-        "title": "Why Digital Marketing Works",
-        "description": "Businesses that invest in digital marketing grow <span class=\"ds-text-color-critical\">faster</span>, reach the <span class=\"ds-text-color-success\">right audience</span>, and see <span class=\"ds-text-color-tint-theme\">measurable results.</span>",
-        "items": [
-            "Generate more qualified leads with data-driven campaigns",
-            "Reach customers exactly when they are searching",
-            "Spend smarter with measurable ROI and full transparency",
-            "Capture mobile and local customers instantly",
-            "Build trust through reviews, content, and social presence"
-        ]
-    },
     "stats": {
         "title": "Digital Marketing by the Numbers",
         "description": "The impact of digital marketing is clear — here are some key statistics that show why it’s essential for business growth:",
@@ -126,6 +68,51 @@
                 "number": "60%",
                 "description": "of small businesses invest in digital marketing to grow"
             }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Digital Marketing?</span>",
+        "introText": "We don’t just market your business — we build the systems that grow it.",
+        "src": "/images/why-choose-us/why-choose-us-illustration.png",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-dm@1x.png 1x, /images/small/why-choose-us/why-choose-us-dm@2x.png 2x, /images/small/why-choose-us/why-choose-us-dm@3x.png 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Built for Small & Medium Businesses",
+                "description": "We specialize in helping local and growing businesses. Every strategy is practical, affordable, and focused on real results."
+            },
+            {
+                "id": 2,
+                "title": "Premium Design That Builds Trust",
+                "description": "Our in-house designers handle branding, logos, and social media creatives that make your business look credible, professional, and consistent across all platforms."
+            },
+            {
+                "id": 3,
+                "title": "Marketing + Technology Under One Roof",
+                "description": "From premium websites to online appointments and LiveQueue, everything works together to convert leads into customers."
+            },
+            {
+                "id": 4,
+                "title": "Local & Industry-Focused Expertise",
+                "description": "We understand how customers search, decide, and book locally. Our strategies are optimized for real-world behavior, not generic marketing templates."
+            },
+            {
+                "id": 5,
+                "title": "Clear Communication & Transparency",
+                "description": "You’ll always know what’s running, how it’s performing, and what’s next. Clear reporting and honest insights."
+            }
+        ]
+    },
+
+    "whyItWorks": {
+        "title": "Why Digital Marketing Works",
+        "description": "Businesses that invest in digital marketing grow <span class=\"ds-text-color-critical\">faster</span>, reach the <span class=\"ds-text-color-success\">right audience</span>, and see <span class=\"ds-text-color-tint-theme\">measurable results.</span>",
+        "items": [
+            "Generate more qualified leads with data-driven campaigns",
+            "Reach customers exactly when they are searching",
+            "Spend smarter with measurable ROI and full transparency",
+            "Capture mobile and local customers instantly",
+            "Build trust through reviews, content, and social presence"
         ]
     },
     "finalCta": {

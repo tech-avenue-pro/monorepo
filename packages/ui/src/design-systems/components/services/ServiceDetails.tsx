@@ -11,7 +11,7 @@ export type ServiceDetailPageContent = {
     };
     problem: { title: string; items: string[] };
     deliverables: { title: string; items: string[] };
-    howItWorks: {
+    howWeHelp: {
         title: string;
         steps: { number: string; title: string; description: string }[];
     };
@@ -174,12 +174,12 @@ export function ServiceDetails({
                                 className="text-left"
                                 fontStyle={FontStyle.Heading}
                             >
-                                {service.howItWorks.title}
+                                {service.howWeHelp.title}
                             </DSText>
                         </DSMotion>
 
                         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                            {service.howItWorks.steps.map((step) => (
+                            {service.howWeHelp.steps.map((step) => (
                                 <DSMotion
                                     variant="fade-up"
                                     delay={0.5}
@@ -361,22 +361,7 @@ export function ServiceDetails({
                     <WhyChooseUs {...whyChooseUsContent} />
                 </RegularContainer>
             </RegularSection>
-            {/* WHO IT'S FOR */}
-            <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
-                <h2 className="text-lg font-semibold text-neutral-900">
-                    {service.whoItsFor.title}
-                </h2>
-                <div className="mt-4 flex flex-wrap gap-2">
-                    {service.whoItsFor.tags.map((tag) => (
-                        <span
-                            key={tag}
-                            className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-700"
-                        >
-                            {tag}
-                        </span>
-                    ))}
-                </div>
-            </section>
+
             {/* FINAL CTA */}
             <section className="mt-16">
                 <div className="rounded-3xl border border-neutral-200 bg-neutral-900 p-8 text-white shadow-sm md:p-12">
