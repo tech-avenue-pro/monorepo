@@ -58,12 +58,15 @@ import RegularSection from "../../layouts/RegularSection";
 import RegularContainer from "../../layouts/RegularContainer";
 import { desc } from "framer-motion/client";
 import { Odometer } from "../../Odometer";
-
+import { getWhyChooseUsDMContent } from "../../../../../../apps/web/app/content/why-choose-us/WhyChooseUs";
+import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
+import SmallSection from "../../layouts/SmallSection";
 export function ServiceDetails({
     service,
 }: {
     service: ServiceDetailPageContent;
 }) {
+    const whyChooseUsContent = getWhyChooseUsDMContent();
     return (
         <main>
             {/* HERO */}
@@ -156,7 +159,7 @@ export function ServiceDetails({
             />
 
             {/* HOW IT WORKS */}
-            <RegularSection>
+            <RegularSection background={DSLayoutBackground.defaultVariation1}>
                 <RegularContainer>
                     <div className="">
                         <DSMotion variant="fade-up" delay={0.3} duration={0.5}>
@@ -222,7 +225,7 @@ export function ServiceDetails({
                 </RegularContainer>
             </RegularSection>
             {/* Stats and Data */}
-            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+            <RegularSection>
                 <RegularContainer>
                     <div className="max-w-2xl">
                         <DSMotion
@@ -290,7 +293,7 @@ export function ServiceDetails({
                 </RegularContainer>
             </RegularSection>
             {/* Why Digital Marketing Works */}
-            <RegularSection>
+            <SmallSection>
                 <RegularContainer>
                     <div className="rounded-3xl border border-neutral-200 p-12 shadow-sm ds-bg-light-right">
                         <DSMotion variant="fade-up" delay={0.3} duration={0.3}>
@@ -343,40 +346,18 @@ export function ServiceDetails({
                         </DSMotion>
                     </div>
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
 
             {/* WHY CHOOSE US */}
 
-            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+            <SmallSection
+                id="why-choose-us"
+                background={DSLayoutBackground.default}
+            >
                 <RegularContainer>
-                    <DSText
-                        as="h2"
-                        variant={DSTextVariant.largeTitle}
-                        weight={DSTextWeight.bold}
-                        color={DSTextColor.primary}
-                        fontStyle={FontStyle.Heading}
-                        className="text-left"
-                    >
-                        {service.whyChooseUs.title}
-                    </DSText>
-
-                    <div className="mt-8 grid gap-5 sm:grid-cols-2">
-                        {service.whyChooseUs.items.map((item) => (
-                            <div
-                                key={item.title}
-                                className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-                            >
-                                <h3 className="text-sm font-semibold text-neutral-900">
-                                    {item.title}
-                                </h3>
-                                <p className="mt-2 text-sm leading-6 text-neutral-600">
-                                    {item.description}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+                    <WhyChooseUs {...whyChooseUsContent} />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
             {/* WHO IT'S FOR */}
             <section className="mt-16 rounded-3xl border border-neutral-200 bg-white p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-neutral-900">

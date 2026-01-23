@@ -1,9 +1,9 @@
 import React from "react";
-import { getWhyChooseUsContent } from "../../../../../../apps/web/app/content/why-choose-us/WhyChooseUs";
 import {
     DSText,
     DSTextColor,
     DSTextVariant,
+    DSTextWeight,
 } from "@repo/ui/design-systems/DSText";
 
 export interface WhyChooseUs {
@@ -36,9 +36,12 @@ export default function WhyChooseUs({
                         as="h2"
                         variant={DSTextVariant.largeTitle}
                         color={DSTextColor.primary}
+                        weight={DSTextWeight.bold}
                         className="mb-8"
                     >
-                        {sectionTitle}
+                        <span
+                            dangerouslySetInnerHTML={{ __html: sectionTitle }}
+                        />
                     </DSText>
                     <DSText
                         as="p"
