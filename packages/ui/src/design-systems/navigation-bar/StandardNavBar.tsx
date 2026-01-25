@@ -30,6 +30,7 @@ type MobileMenuLevel = {
 interface StandardNavBarProps {
     links: NavItem[];
     color?: DSTextColor;
+    startingColor?: DSTextColor;
     hoverColor?: DSTextColor;
     textVariant?: DSTextVariant;
     mobileTextVariant?: DSTextVariant;
@@ -46,6 +47,7 @@ interface StandardNavBarProps {
 const StandardNavBar = ({
     links,
     color,
+    startingColor,
     hoverColor,
     textVariant,
     mobileTextVariant,
@@ -76,6 +78,7 @@ const StandardNavBar = ({
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
     const activeBackground = isSticky ? background : startingBackground;
+    const activeColor = isSticky ? color : startingColor ?? color;
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
         const style: React.CSSProperties & Record<string, string> = {};
@@ -92,12 +95,12 @@ const StandardNavBar = ({
             style["--nav-hover-color"] = textColorVars[hoverColor];
         }
 
-        if (color) {
-            style["--nav-icon-color"] = textColorVars[color];
+        if (activeColor) {
+            style["--nav-icon-color"] = textColorVars[activeColor];
         }
 
         return Object.keys(style).length ? style : undefined;
-    }, [activeBackground, hoverColor, color]);
+    }, [activeBackground, hoverColor, activeColor]);
     const clearCloseTimeout = () => {
         if (closeTimeoutRef.current !== null) {
             window.clearTimeout(closeTimeoutRef.current);
@@ -210,7 +213,7 @@ const StandardNavBar = ({
                         {name && (
                             <DSText
                                 variant={DSTextVariant.headline2}
-                                color={color}
+                                color={activeColor}
                                 as="span"
                                 className="nav-brand-name"
                             >
@@ -290,9 +293,9 @@ const StandardNavBar = ({
                                                         <a
                                                             className={clsx(
                                                                 "main-nav-link",
-                                                                color &&
+                                                                activeColor &&
                                                                     colorClasses[
-                                                                        color
+                                                                        activeColor
                                                                     ],
                                                                 currentTextClassName
                                                             )}
@@ -319,9 +322,9 @@ const StandardNavBar = ({
                                                         className={clsx(
                                                             "main-nav-link",
                                                             "dropdown-toggle",
-                                                            color &&
+                                                            activeColor &&
                                                                 colorClasses[
-                                                                    color
+                                                                    activeColor
                                                                 ],
                                                             currentTextClassName
                                                         )}
@@ -372,15 +375,15 @@ const StandardNavBar = ({
                                                     >
                                                         <a
                                                             className={clsx(
-                                                                "main-nav-link",
-                                                                color &&
-                                                                    colorClasses[
-                                                                        color
-                                                                    ],
-                                                                currentTextClassName
-                                                            )}
-                                                            style={textStyle}
-                                                            href={href ?? "#"}
+                                                            "main-nav-link",
+                                                            activeColor &&
+                                                                colorClasses[
+                                                                    activeColor
+                                                                ],
+                                                            currentTextClassName
+                                                        )}
+                                                        style={textStyle}
+                                                        href={href ?? "#"}
                                                             onClick={closeNav}
                                                         >
                                                             {label}
@@ -419,9 +422,9 @@ const StandardNavBar = ({
                                                         className={clsx(
                                                             "main-nav-link",
                                                             "dropdown-toggle",
-                                                            color &&
+                                                            activeColor &&
                                                                 colorClasses[
-                                                                    color
+                                                                    activeColor
                                                                 ],
                                                             currentTextClassName
                                                         )}
@@ -480,9 +483,9 @@ const StandardNavBar = ({
                                                                         <a
                                                                             className={clsx(
                                                                                 "dropdown-link",
-                                                                                color &&
+                                                                                activeColor &&
                                                                                     colorClasses[
-                                                                                        color
+                                                                                        activeColor
                                                                                     ],
                                                                                 currentTextClassName
                                                                             )}
