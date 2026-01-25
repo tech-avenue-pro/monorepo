@@ -39,6 +39,7 @@ interface StandardNavBarProps {
     cta?: React.ReactNode;
     name?: string;
     background?: DSLayoutBackground;
+    startingBackground?: DSLayoutBackground;
     stickyOnScrollOnly?: boolean;
 }
 
@@ -53,10 +54,12 @@ const StandardNavBar = ({
     logoSrc = "/tech-avenue-pro-navbar.png",
     cta,
     name,
-    background = DSLayoutBackground.accent,
+    background = DSLayoutBackground.transparent,
+    startingBackground = DSLayoutBackground.default,
     stickyOnScrollOnly = false,
 }: StandardNavBarProps) => {
     const [nav, setNav] = useState("");
+    const [isSticky, setIsSticky] = useState(!stickyOnScrollOnly);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [mobileMenuDirection, setMobileMenuDirection] = useState<
         "forward" | "back"
@@ -72,8 +75,9 @@ const StandardNavBar = ({
         rootMobileLevel,
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
+    const activeBackground = isSticky ? background : startingBackground;
     const customBackgroundStyle = useMemo(() => {
-        const cssVar = backgroundColorVars[background];
+        const cssVar = backgroundColorVars[activeBackground];
         const style: React.CSSProperties & Record<string, string> = {};
 
         if (cssVar) {
@@ -93,7 +97,7 @@ const StandardNavBar = ({
         }
 
         return Object.keys(style).length ? style : undefined;
-    }, [background, hoverColor, color]);
+    }, [activeBackground, hoverColor, color]);
     const clearCloseTimeout = () => {
         if (closeTimeoutRef.current !== null) {
             window.clearTimeout(closeTimeoutRef.current);
@@ -145,6 +149,7 @@ const StandardNavBar = ({
     useEffect(() => {
         if (!stickyOnScrollOnly) {
             document.body.classList.add("sticky");
+            setIsSticky(true);
             return;
         }
 
@@ -159,7 +164,9 @@ const StandardNavBar = ({
                     return;
                 }
 
-                document.body.classList.toggle("sticky", !entry.isIntersecting);
+                const shouldStick = !entry.isIntersecting;
+                document.body.classList.toggle("sticky", shouldStick);
+                setIsSticky(shouldStick);
             },
             {
                 root: null,
@@ -173,13 +180,22 @@ const StandardNavBar = ({
         return () => {
             observer.disconnect();
             document.body.classList.remove("sticky");
+            setIsSticky(false);
         };
     }, [stickyOnScrollOnly]);
+
+    const shouldShowBackground = !stickyOnScrollOnly || isSticky;
 
     return (
         <React.Fragment>
             <header
-                className={` header px-4 md:px-8 ${nav} ${backgroundClasses[background]}`}
+                className={clsx(
+                    "header px-4 md:px-8",
+                    nav,
+                    shouldShowBackground
+                        ? backgroundClasses[background]
+                        : backgroundClasses[startingBackground]
+                )}
                 style={customBackgroundStyle}
             >
                 <div className="nav-inner">
