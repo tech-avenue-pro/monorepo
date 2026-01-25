@@ -54,7 +54,7 @@ const StandardNavBar = ({
     logoSrc = "/tech-avenue-pro-navbar.png",
     cta,
     name,
-    background = DSLayoutBackground.transparent,
+    background = DSLayoutBackground.default,
     startingBackground = DSLayoutBackground.default,
     stickyOnScrollOnly = false,
 }: StandardNavBarProps) => {
