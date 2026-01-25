@@ -1,7 +1,12 @@
 "use client";
 
 import { ServiceCard } from "./ServiceCard";
-import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
+import {
+    DSText,
+    DSTextVariant,
+    DSTextWeight,
+    FontStyle,
+} from "@repo/ui/design-systems/DSText";
 import { DSMotion } from "../../DSMotion";
 
 export interface ServicesContent {
@@ -38,11 +43,14 @@ export default function ServiceSection({
                     <DSText
                         as="h2"
                         variant={DSTextVariant.largerTitle}
-                        className="text-center mb-6 shrink-0"
+                        weight={DSTextWeight.semiBold}
+                        className="text-left mb-6 shrink-0 whitespace-nowrap"
+                        fontStyle={FontStyle.Heading}
                     >
                         {sectionTitle}
                     </DSText>
                 </DSMotion>
+
                 <DSMotion
                     variant="slide-left"
                     delay={1}
@@ -52,7 +60,7 @@ export default function ServiceSection({
                     <DSText
                         as="h3"
                         variant={DSTextVariant.title2}
-                        className="text-center mb-2"
+                        className="text-left mb-4"
                     >
                         <span
                             dangerouslySetInnerHTML={{ __html: sectionTagline }}
