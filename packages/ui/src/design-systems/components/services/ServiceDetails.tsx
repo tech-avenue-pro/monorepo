@@ -70,8 +70,8 @@ export function ServiceDetails({
         <main>
             {/* HERO */}
             <HeroSection
-                background={DSLayoutBackground.default}
-                className="lg:h-screen hero-glow"
+                background={DSLayoutBackground.lightestBackground}
+                className="lg:h-screen"
             >
                 <HeroContainer className="h-full">
                     <div className="grid gap-10 lg:grid-cols-2 md:items-center h-full">
@@ -141,7 +141,7 @@ export function ServiceDetails({
                                     width={1200}
                                     height={1000}
                                     className="h-full w-full rounded-2xl object-cover"
-                                    priority
+                                    preload
                                 />
                             </div>
                         </DSMotion>

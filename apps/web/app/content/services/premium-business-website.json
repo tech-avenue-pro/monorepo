@@ -22,24 +22,25 @@
         "steps": [
             {
                 "number": "01",
-                "title": "Discovery and Brand Positioning",
-                "description": "We align on your goals, audience, and offers, then translate your value into a clear website strategy and messaging."
-            },
-            {
-                "number": "02",
-                "title": "Site Architecture and Content Planning",
-                "description": "We map the user journey, define the page structure, and plan content that guides visitors to take action."
-            },
-            {
-                "number": "03",
                 "title": "Premium Visual Design",
                 "description": "We craft a modern, polished design system that matches your brand and builds trust at every scroll."
             },
             {
-                "number": "04",
+                "number": "02",
                 "title": "High-Performance Build",
                 "description": "We develop a fast, responsive site with clean code, SEO fundamentals, and analytics built in."
             },
+            {
+                "number": "03",
+                "title": "Discovery and Brand Positioning",
+                "description": "We align on your goals, audience, and offers, then translate your value into a clear website strategy and messaging."
+            },
+            {
+                "number": "04",
+                "title": "Site Architecture and Content Planning",
+                "description": "We map the user journey, define the page structure, and plan content that guides visitors to take action."
+            },
+
             {
                 "number": "05",
                 "title": "Launch and Optimization",

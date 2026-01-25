@@ -7,7 +7,7 @@
     position: relative;
     margin-bottom: 0rem; /* 8rem@10px = 80px; 5rem@16px = 80px */
     isolation: isolate;
-    z-index: 10;
+    z-index: 50;
 }
 .sticky .header::before {
     content: "";
@@ -30,7 +30,7 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 50;
     height: 4rem; /* matches header */
     /* box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3); /* 1rem@10px=10px => 0.625rem@16px=10px; 2rem@10px=20px =>1.25rem@16px=20px */
     background-color: var(--nav-bg-color, rgba(12, 18, 26, 0.6));
@@ -46,7 +46,7 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 50;
     height: 4rem; /* matches header */
     /* box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3); /* 1rem@10px=10px => 0.625rem@16px=10px; 2rem@10px=20px =>1.25rem@16px=20px */
 }

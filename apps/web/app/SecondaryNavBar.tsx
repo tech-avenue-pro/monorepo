@@ -61,15 +61,17 @@ export default function SecondaryNavBar() {
                     href: "#online-appointments",
                 },
             ]}
-            color={DSTextColor.white}
+            color={DSTextColor.primary}
+            startingColor={DSTextColor.gray3333}
             hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
-            fontWeight={DSTextWeight.regular}
+            fontWeight={DSTextWeight.medium}
             mobileFontWeight={DSTextWeight.regular}
             mobileTextVariant={DSTextVariant.largeTitle}
             logoSrc="../icons/tech-avenue-pro-navbar.png"
             name="Tech Avenue Pro"
-            background={DSLayoutBackground.black}
+            background={DSLayoutBackground.default}
+            startingBackground={DSLayoutBackground.lightestBackground}
             stickyOnScrollOnly={true}
         />
     );
