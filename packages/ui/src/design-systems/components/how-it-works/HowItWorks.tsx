@@ -34,6 +34,7 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largerTitle}
+                    weight={DSTextWeight.bold}
                     color={DSTextColor.primary}
                     className="text-center mb-6 shrink-0"
                 >
@@ -53,31 +54,33 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
             <div className="mt-8 grid gap-10 grid-cols-1 md:grid-cols-3">
                 {steps.map((step) => (
                     <div key={step.id}>
-                        <DSText
-                            as="p"
-                            variant={DSTextVariant.largestTitle}
-                            color={DSTextColor.quinary}
-                            weight="bold"
-                        >
-                            {step.id}
-                        </DSText>
-                        <DSText
-                            as="h3"
-                            variant={DSTextVariant.headline1}
-                            color={DSTextColor.tintTheme}
-                            weight={DSTextWeight.bold}
-                            className="mt-4"
-                        >
-                            {step.title}
-                        </DSText>
-                        <DSText
-                            as="p"
-                            variant={DSTextVariant.body}
-                            color={DSTextColor.quaternary}
-                            className="mt-2"
-                        >
-                            {step.description}
-                        </DSText>
+                        <DSMotion variant="fade-up" delay={0.5} duration={0.5}>
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.largestTitle}
+                                color={DSTextColor.quinary}
+                                weight="bold"
+                            >
+                                {step.id}
+                            </DSText>
+                            <DSText
+                                as="h3"
+                                variant={DSTextVariant.headline1}
+                                color={DSTextColor.tintTheme}
+                                weight={DSTextWeight.bold}
+                                className="mt-4"
+                            >
+                                {step.title}
+                            </DSText>
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.body}
+                                color={DSTextColor.quaternary}
+                                className="mt-2"
+                            >
+                                {step.description}
+                            </DSText>
+                        </DSMotion>
                     </div>
                 ))}
             </div>

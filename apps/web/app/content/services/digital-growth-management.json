@@ -11,6 +11,12 @@
         "secondaryCta": { "label": "See Our Services", "href": "/#services" },
         "image": {
             "src": "/images/large/digital-growth.jpeg",
+            "srcSet": "/images/large/digital-growth/digital-growth@1x.jpeg 1x, /images/large/digital-growth/digital-growth@2x.jpeg 2x",
+            "alt": "Digital growth strategy dashboard"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/digital-growth.jpeg",
+            "srcSet": "/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth@2x.jpeg 2x, /images/small/digital-growth/digital-growth@3x.jpeg 3x",
             "alt": "Digital growth strategy dashboard"
         }
     },

@@ -5,7 +5,7 @@ import { DSMotion } from "../../DSMotion";
 import { DSButtonVariant, DSLinkButton } from "../../DSButton";
 import RegularSection from "../../layouts/RegularSection";
 import RegularContainer from "../../layouts/RegularContainer";
-import { desc } from "framer-motion/client";
+import { desc, s } from "framer-motion/client";
 import { Odometer } from "../../Odometer";
 import WhyChooseUs, {
     WhyChooseUsContent,
@@ -16,12 +16,16 @@ export type CTA = { label: string; href: string };
 export type ServiceDetailPageContent = {
     slug: string;
     navTitle: string;
+    seoTitle?: string;
+    seoDescription?: string;
+    name: string;
     hero: {
         title: string;
         summary: string;
         primaryCta: CTA;
         secondaryCta: CTA;
-        image: { src: string; alt: string };
+        image: { src: string; srcSet: string; alt: string };
+        smallScreenImage: { src: string; srcSet: string; alt: string };
     };
     problem: { title: string; items: string[] };
     deliverables: { title: string; items: string[] };
@@ -52,7 +56,6 @@ export type ServiceDetailPageContent = {
     };
 };
 
-import Image from "next/image";
 import {
     DSText,
     DSTextColor,
@@ -135,26 +138,30 @@ export function ServiceDetails({
                             className="h-full"
                         >
                             <div className="hidden lg:block relative h-full overflow-hidden rounded-3xl  p-2">
-                                <Image
+                                <img
                                     src={service.hero.image.src}
+                                    srcSet={service.hero.image.srcSet}
                                     alt={service.hero.image.alt}
                                     width={1200}
                                     height={1000}
                                     className="h-full w-full rounded-2xl object-cover"
-                                    preload
+                                    loading="eager"
+                                    decoding="async"
                                 />
                             </div>
                         </DSMotion>
                     </div>
                 </HeroContainer>
             </HeroSection>
-            <Image
+            <img
                 src={service.hero.image.src}
+                srcSet={service.hero.image.srcSet}
                 alt={service.hero.image.alt}
                 width={1200}
                 height={1000}
                 className="lg:hidden h-full w-full object-cover"
-                priority
+                loading="eager"
+                decoding="async"
             />
 
             {/* What We Do */}
