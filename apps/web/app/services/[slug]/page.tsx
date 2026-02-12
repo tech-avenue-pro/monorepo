@@ -18,6 +18,7 @@ export async function generateMetadata({
 }: ServicePageProps): Promise<Metadata> {
     const { slug } = await params;
     const service: ServiceDetailPageContent = getServiceBySlug(slug);
+    const url = `https://techavenue.pro/services/${slug}`;
 
     return {
         title: service.seoTitle ?? service.navTitle ?? "Tech Avenue Pro",
@@ -25,6 +26,19 @@ export async function generateMetadata({
             service.seoDescription ??
             service.hero.summary ??
             "Your digital partner for innovative tech solutions.",
+        openGraph: {
+            title: service.seoTitle ?? service.navTitle ?? "Tech Avenue Pro",
+            description:
+                service.seoDescription ??
+                service.hero.summary ??
+                "Your digital partner for innovative tech solutions.",
+            url,
+            siteName: "Tech Avenue Pro",
+            type: "website",
+            images: [
+                { url: service.hero.image.src, alt: service.hero.image.alt },
+            ],
+        },
     };
 }
 
