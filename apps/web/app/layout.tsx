@@ -21,6 +21,19 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: "Tech Avenue Pro",
     description: "Your digital partner for innovative tech solutions.",
+    openGraph: {
+        title: "Tech Avenue Pro",
+        description: "Your digital partner for innovative tech solutions.",
+        url: "https://techavenue.pro",
+        siteName: "Tech Avenue Pro",
+        type: "website",
+        images: [
+            {
+                url: "/images/hero-image/hero-image-lg@3x.jpg",
+                alt: "Tech Avenue Pro",
+            },
+        ],
+    },
 };
 
 export default function RootLayout({
