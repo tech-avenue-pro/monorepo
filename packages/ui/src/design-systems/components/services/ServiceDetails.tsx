@@ -367,33 +367,6 @@ export function ServiceDetails({
                     <WhyChooseUs {...service.whyChooseUs} />
                 </RegularContainer>
             </RegularSection>
-
-            {/* FINAL CTA */}
-            <section className="mt-16">
-                <div className="rounded-3xl border border-neutral-200 bg-neutral-900 p-8 text-white shadow-sm md:p-12">
-                    <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-                        {service.finalCta.title}
-                    </h2>
-                    <p className="mt-3 max-w-2xl text-sm leading-6 text-white/80 md:text-base">
-                        {service.finalCta.summary}
-                    </p>
-
-                    <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                        <a
-                            href={service.finalCta.primaryCta.href}
-                            className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-medium text-neutral-900 hover:bg-white/90"
-                        >
-                            {service.finalCta.primaryCta.label}
-                        </a>
-                        <a
-                            href={service.finalCta.secondaryCta.href}
-                            className="inline-flex items-center justify-center rounded-xl border border-white/25 bg-transparent px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
-                        >
-                            {service.finalCta.secondaryCta.label}
-                        </a>
-                    </div>
-                </div>
-            </section>
         </main>
     );
 }

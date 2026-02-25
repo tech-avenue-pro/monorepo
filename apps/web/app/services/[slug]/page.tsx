@@ -8,6 +8,11 @@ import {
 import MainNavBar from "../../MainNavBar";
 import SecondaryNavBar from "../../SecondaryNavBar";
 import { Metadata } from "next";
+import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
+import { DSLayoutBackground } from "../../../../../packages/ui/src/design-systems/backgrounds";
+import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
+import Footer from "@repo/ui/design-systems/components/footer/Footer";
+import { getFooterContent } from "../../content/footer-section/getFooterContent";
 
 interface ServicePageProps {
     params: Promise<{ slug: string }>;
@@ -49,6 +54,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <React.Fragment>
             <SecondaryNavBar />
             <ServiceDetails service={service} />
+            <hr className="my-0 border-gray-300" />
+            <RegularSection background={DSLayoutBackground.default}>
+                <RegularContainer>
+                    <Footer {...getFooterContent()} />
+                </RegularContainer>
+            </RegularSection>
         </React.Fragment>
     );
 }

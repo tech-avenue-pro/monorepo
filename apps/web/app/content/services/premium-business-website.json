@@ -77,8 +77,8 @@
     "whyChooseUs": {
         "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Premium Websites?</span>",
         "introText": "We build premium websites that look world-class and convert visitors into leads.",
-        "src": "/images/why-choose-us/why-choose-us-illustration.png",
-        "srcSet": "/images/small/why-choose-us/why-choose-us-dm@1x.png 1x, /images/small/why-choose-us/why-choose-us-dm@2x.png 2x, /images/small/why-choose-us/why-choose-us-dm@3x.png 3x",
+        "src": "/images/why-choose-us/why-choose-us-website@1x.jpeg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-website@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us-website@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us-website@3x.jpeg 3x",
         "reasons": [
             {
                 "id": 1,
