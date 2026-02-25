@@ -65,9 +65,9 @@ export function DSMotion({
     className,
     as = "div",
     variant = "fade-up",
-    delay = 0.3,
+    delay = 0.2,
     duration = 0.8,
-    viewportAmount = 0.3,
+    viewportAmount = 0.2,
     once = true,
     style,
     trigger = "self",
@@ -141,7 +141,7 @@ export function DSStagger({
     as = "div",
     delay = 0,
     staggerDelay = 0.1,
-    viewportAmount = 0.3,
+    viewportAmount = 0.2,
     once = true,
 }: DSStaggerProps) {
     const shouldReduceMotion = useReducedMotion();

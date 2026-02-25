@@ -24,23 +24,23 @@ export default function SecondaryNavBar() {
                     children: [
                         {
                             label: "Digital Growth Management",
-                            href: "#digital-growth-management",
+                            href: "/services/digital-growth-management",
                         },
                         {
-                            label: "Premium Business Websites",
-                            href: "#premium-business-websites",
+                            label: "Premium Business Website",
+                            href: "/services/premium-business-website",
                         },
                         {
                             label: "Online Booking Solutions",
-                            href: "#online-booking-solutions",
+                            href: "/services/online-booking-solutions",
                         },
                         {
                             label: "Social Media Presence Management",
-                            href: "#link-buttons",
+                            href: "/services/social-media-presence-management",
                         },
                         {
                             label: "Google Visibility and Local Search",
-                            href: "#google-visibility-and-local-search",
+                            href: "/services/google-visibility-and-local-search",
                         },
                     ],
                 },

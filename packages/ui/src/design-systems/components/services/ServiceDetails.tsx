@@ -87,7 +87,7 @@ export function ServiceDetails({
                                 <DSText
                                     as="h1"
                                     variant={DSTextVariant.largestTitle}
-                                    color={DSTextColor.primary}
+                                    color={DSTextColor.gray3333}
                                     className="mb-6 text-left"
                                     fontStyle={FontStyle.Heading}
                                 >
@@ -102,7 +102,7 @@ export function ServiceDetails({
                                 <DSText
                                     as="p"
                                     variant={DSTextVariant.body}
-                                    color={DSTextColor.tertiary}
+                                    color={DSTextColor.gray4444}
                                     className="text-center mb-6 md:text-left"
                                 >
                                     {service.hero.summary}
