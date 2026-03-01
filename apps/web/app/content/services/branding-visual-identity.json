@@ -1,0 +1,132 @@
+{
+    "slug": "branding-visual-identity",
+    "navTitle": "Branding & Visual Identity",
+    "hero": {
+        "title": "Branding & Visual Identity That Feels Premium",
+        "summary": "We create a clean, consistent brand identity so your business looks professional everywhere, from your website to social media and print assets.",
+        "primaryCta": {
+            "label": "Get a Branding Quote",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "See Our Services", "href": "/#services" },
+        "image": {
+            "src": "/images/large/brand-visual/brand-visual@1x.jpeg",
+            "srcSet": "/images/large/brand-visual/brand-visual@1x.jpeg 1x, /images/large/brand-visual/brand-visual@2x.jpeg 2x",
+            "alt": "Brand identity kit with logo, colors, typography, and social templates"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/brand-visual/brand-visual@1x.jpeg",
+            "srcSet": "/images/small/brand-visual/brand-visual@1x.jpeg 1x, /images/small/brand-visual/brand-visual@2x.jpeg 2x, /images/small/brand-visual/brand-visual@3x.jpeg 3x",
+            "alt": "Brand identity kit with logo, colors, typography, and social templates"
+        }
+    },
+    "howWeHelp": {
+        "title": "How we help your business",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Discover Your Brand",
+                "description": "We learn your business, audience, goals, and style preferences to define a clear visual direction that reflects your quality."
+            },
+            {
+                "number": "02",
+                "title": "Design the Identity",
+                "description": "We create or refine your logo, choose brand colors and typography, and build a consistent visual system you can scale."
+            },
+            {
+                "number": "03",
+                "title": "Build Brand Assets",
+                "description": "We design practical assets like social templates and core marketing materials so your team can publish consistently."
+            },
+            {
+                "number": "04",
+                "title": "Create Brand Guidelines",
+                "description": "You get a simple, practical style guide that covers logo usage, colors, typography, and design rules for every channel."
+            },
+            {
+                "number": "05",
+                "title": "Apply Across Channels",
+                "description": "We help implement your new identity across website and social platforms so customers see one clear, premium brand."
+            }
+        ]
+    },
+    "stats": {
+        "title": "Branding by the Numbers",
+        "description": "Strong visual identity has measurable impact on trust, recognition, and conversion:",
+        "items": [
+            {
+                "number": "75%",
+                "description": "of consumers judge business credibility by visual design."
+            },
+            {
+                "number": "3.5x",
+                "description": "higher brand visibility with consistent brand presentation."
+            },
+            {
+                "number": "80%",
+                "description": "of customers are more likely to trust brands with a professional look."
+            },
+            {
+                "number": "23%",
+                "description": "average revenue lift from consistent branding across channels."
+            },
+            {
+                "number": "60%",
+                "description": "faster recognition when colors, fonts, and style stay consistent."
+            }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Branding & Visual Identity?</span>",
+        "introText": "We build brand identities that look premium and work in the real world, not just in mockups.",
+        "src": "/images/small/why-choose-us/why-choose-us-branding@1x.jpeg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-branding@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us-branding@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us-branding@3x.jpeg 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Brand + Website + Marketing Together",
+                "description": "We align your brand identity with your website and marketing so everything feels consistent."
+            },
+            {
+                "id": 2,
+                "title": "Clean, Modern Design",
+                "description": "We focus on simple, premium visuals that build trust quickly."
+            },
+            {
+                "id": 3,
+                "title": "Practical Deliverables",
+                "description": "You get assets you’ll actually use—templates, guidelines, and files that make execution easy."
+            },
+            {
+                "id": 4,
+                "title": "Ready for Growth",
+                "description": "A solid identity makes every ad, post, and webpage look more professional and effective."
+            },
+            {
+                "id": 5,
+                "title": "Designed for Real Businesses",
+                "description": "Our branding systems are built for local and growing businesses that need speed, clarity, and consistency."
+            }
+        ]
+    },
+    "whyItWorks": {
+        "title": "Why Branding & Visual Identity Works",
+        "description": "A clear identity helps your business look <span class=\"ds-text-color-critical\">professional</span>, stay <span class=\"ds-text-color-success\">consistent</span>, and become <span class=\"ds-text-color-tint-theme\">instantly recognizable.</span>",
+        "items": [
+            "Build trust faster with a polished and consistent look",
+            "Stand out from competitors with distinct visual direction",
+            "Make social posts, ads, and website design feel unified",
+            "Improve customer recall through repeatable brand elements",
+            "Give your team a clear system to design and communicate better"
+        ]
+    },
+    "finalCta": {
+        "title": "Want a brand that looks as premium as your service?",
+        "summary": "Let’s create a clean visual identity that customers recognize and trust—online and offline.",
+        "primaryCta": {
+            "label": "Book a Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

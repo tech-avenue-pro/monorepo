@@ -6,13 +6,13 @@
     "services": [
         {
             "id": 1,
-            "slug": "digital-growth-management",
+            "slug": "digital-marketing-ads",
             "image": "/images/small/digital-growth/digital-growth.jpeg",
             "srcSet": "/images/small/digital-growth/digital-growth.jpeg 1x, /images/small/digital-growth/digital-growth.jpeg 2x, /images/small/digital-growth/digital-growth@3x.jpeg 3x",
-            "alt": "Digital Growth Service Image",
-            "title": "Digital Growth Management",
+            "alt": "Digital Marketng & Ads ServiceImage",
+            "title": "Digital Marketng & Ads",
             "description": "This is our core service. We act as your digital marketing partner, handling everything needed to grow your business online.",
-            "href": "/services/digital-growth-management"
+            "href": "/services/digital-marketing-ads"
         },
         {
             "id": 2,
@@ -63,6 +63,16 @@
             "title": "Google Visibility and Local Search",
             "description": "Most customers discover local businesses through Google. We make sure you show up and look professional when they do.",
             "href": "/services/google-visibility-and-local-search"
+        },
+        {
+            "id": 7,
+            "slug": "branding-visual-identity",
+            "image": "/images/small/brand-visual/brand-visual@3x.jpeg",
+            "srcSet": "/images/small/brand-visual/brand-visual.jpeg 1x, /images/small/brand-visual/brand-visual@2x.jpeg 2x, /images/small/brand-visual/brand-visual@3x.jpeg 3x",
+            "alt": "Branding & Visual Identity Service Image",
+            "title": "Branding & Visual Identity",
+            "description": "We create a clean, consistent brand identity—logo, colors, typography, and templates—so your business looks professional everywhere.",
+            "href": "/services/branding-visual-identity"
         }
     ]
 }

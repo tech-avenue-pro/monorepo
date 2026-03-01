@@ -23,16 +23,20 @@ export default function MainNavBar() {
                     label: "Services",
                     children: [
                         {
-                            label: "Digital Growth Management",
-                            href: "/services/digital-growth-management",
+                            label: "Digital Marketing & Ads",
+                            href: "/services/digital-marketing-ads",
                         },
                         {
                             label: "Premium Business Website",
                             href: "/services/premium-business-website",
                         },
                         {
+                            label: "Branding & Visual Identity",
+                            href: "/services/branding-visual-identity",
+                        },
+                        {
                             label: "Online Booking Solutions",
-                            href: "/services/online-booking-solutions",
+                            href: "/services/online-appointments",
                         },
                         {
                             label: "Social Media Presence Management",

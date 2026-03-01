@@ -1,0 +1,132 @@
+{
+    "slug": "google-visibility-and-local-search",
+    "navTitle": "Google Visibility and Local Search",
+    "hero": {
+        "title": "Google Visibility and Local Search That Drives Real Leads",
+        "summary": "We optimize your Google presence so nearby customers can find your business faster, trust your profile, and contact or visit you with confidence.",
+        "primaryCta": {
+            "label": "Improve My Google Visibility",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "See Our Services", "href": "/#services" },
+        "image": {
+            "src": "/images/small/google-visibility/google-visibility.jpeg",
+            "srcSet": "/images/small/google-visibility/google-visibility.jpeg 1x, /images/small/google-visibility/google-visibility@2x.jpeg 2x",
+            "alt": "Google Business Profile and local search visibility dashboard"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/google-visibility/google-visibility.jpeg",
+            "srcSet": "/images/small/google-visibility/google-visibility.jpeg 1x, /images/small/google-visibility/google-visibility@2x.jpeg 2x, /images/small/google-visibility/google-visibility@3x.jpeg 3x",
+            "alt": "Google Business Profile and local search visibility dashboard"
+        }
+    },
+    "howWeHelp": {
+        "title": "How we help your business",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Audit Your Local Presence",
+                "description": "We review your Google Business Profile, local listings, keywords, competitors, and current ranking signals to identify visibility gaps."
+            },
+            {
+                "number": "02",
+                "title": "Optimize Your Google Business Profile",
+                "description": "We improve profile categories, services, descriptions, photos, contact info, and business details to increase trust and ranking relevance."
+            },
+            {
+                "number": "03",
+                "title": "Local SEO Content and Keywords",
+                "description": "We align your website and profile with high-intent local search terms so your business appears for the right customer searches."
+            },
+            {
+                "number": "04",
+                "title": "Reputation and Review Strategy",
+                "description": "We set up a practical review flow and response process to improve ratings, credibility, and conversion from profile views."
+            },
+            {
+                "number": "05",
+                "title": "Track and Improve Visibility",
+                "description": "We monitor calls, direction requests, website clicks, and local ranking performance, then continuously refine for stronger results."
+            }
+        ]
+    },
+    "stats": {
+        "title": "Local Search by the Numbers",
+        "description": "Google visibility has direct impact on local discovery and lead generation:",
+        "items": [
+            {
+                "number": "46%",
+                "description": "of all Google searches have local intent."
+            },
+            {
+                "number": "76%",
+                "description": "of nearby searches result in a visit within a day."
+            },
+            {
+                "number": "88%",
+                "description": "of consumers trust businesses with strong review profiles."
+            },
+            {
+                "number": "5x",
+                "description": "more profile actions from fully optimized business listings."
+            },
+            {
+                "number": "70%",
+                "description": "of mobile users contact businesses directly from search results."
+            }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Google Visibility & Local Search?</span>",
+        "introText": "We combine local SEO strategy, profile optimization, and conversion-focused execution so customers find and choose your business.",
+        "src": "/images/small/why-choose-us/why-choose-us-local-business@1x.jpeg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-local-business@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us-local-business@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us-local-business@3x.jpeg 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Local Search Expertise",
+                "description": "We focus on how real local customers search, compare, and choose businesses near them."
+            },
+            {
+                "id": 2,
+                "title": "Profile + Website Alignment",
+                "description": "Your Google Business Profile and website are optimized together for stronger relevance and conversion."
+            },
+            {
+                "id": 3,
+                "title": "Reputation Growth Systems",
+                "description": "We implement practical review and response processes that strengthen trust and improve local ranking signals."
+            },
+            {
+                "id": 4,
+                "title": "Clear Reporting",
+                "description": "You get transparent insights into visibility, calls, profile actions, and where growth is coming from."
+            },
+            {
+                "id": 5,
+                "title": "Built for Service Businesses",
+                "description": "Our systems are tailored for local service businesses that need consistent inbound leads, not vanity metrics."
+            }
+        ]
+    },
+    "whyItWorks": {
+        "title": "Why Google Visibility and Local Search Works",
+        "description": "Strong local visibility helps your business get <span class=\"ds-text-color-critical\">found faster</span>, earn <span class=\"ds-text-color-success\">customer trust</span>, and drive <span class=\"ds-text-color-tint-theme\">qualified local leads.</span>",
+        "items": [
+            "Appear in local searches when customers are ready to buy",
+            "Convert profile views into calls, messages, and visits",
+            "Build credibility through ratings, reviews, and complete profiles",
+            "Capture nearby mobile users with high purchase intent",
+            "Create compounding growth with ongoing local SEO improvements"
+        ]
+    },
+    "finalCta": {
+        "title": "Ready to show up where customers are searching?",
+        "summary": "Let’s optimize your Google visibility so more local customers can discover and choose your business.",
+        "primaryCta": {
+            "label": "Book a Free Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}

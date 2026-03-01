@@ -1,8 +1,8 @@
 {
-    "slug": "digital-growth-management",
-    "navTitle": "Digital Growth Management",
+    "slug": "digital-marketing-ads",
+    "navTitle": "Digital Marketing & Ads",
     "hero": {
-        "title": "Digital Growth Management for Modern Businesses",
+        "title": "Digital Marketing & Ads for Modern Businesses",
         "summary": "Increase your brand awareness digitally. We manage your entire digital growth journey — strategy, execution, and optimization — so your business grows consistently, not randomly.",
         "primaryCta": {
             "label": "Book a Free Consultation",
@@ -36,7 +36,7 @@
             {
                 "number": "03",
                 "title": "Ad Creation and Messaging",
-                "description": "Our team creates compelling ad copy and visuals tailored to each platform, with clear calls-to-action designed to drive clicks and conversions."
+                "description": "Our team creates compelling ad content and visuals tailored to each platform, with clear calls-to-action designed to drive clicks and conversions."
             },
             {
                 "number": "04",

@@ -1,79 +1,132 @@
 {
     "slug": "online-appointments",
-    "navTitle": "Online Appointments",
+    "navTitle": "Online Booking Solutions",
     "hero": {
-        "title": "Smart Online Appointment Booking",
-        "summary": "Let customers book 24/7 while reducing no-shows and admin work.",
-        "primaryCta": { "label": "Set Up Online Booking", "href": "/contact" },
-        "secondaryCta": { "label": "See Services", "href": "/#services" },
+        "title": "Online Booking Systems for Modern Businesses",
+        "summary": "We build and integrate appointment booking systems directly into your website so customers can book anytime, and your team spends less time on manual scheduling.",
+        "primaryCta": {
+            "label": "Set Up Online Booking",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "See Our Services", "href": "/#services" },
         "image": {
-            "src": "/images/large/online-appointments.jpeg",
+            "src": "/images/large/online-appointments/online-appointments@1x.jpeg",
+            "srcSet": "/images/large/online-appointments/online-appointments@1x.jpeg 1x, /images/large/online-appointments/online-appointments@2x.jpeg 2x",
+            "alt": "Online appointment booking interface"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/bookings/bookings.jpeg",
+            "srcSet": "/images/small/bookings/bookings.jpeg 1x, /images/small/bookings/bookings@2x.jpeg 2x, /images/small/bookings/bookings@3x.jpeg 3x",
             "alt": "Online appointment booking interface"
         }
     },
-    "problem": {
-        "title": "What This Solves",
-        "items": ["Missed calls", "Manual scheduling", "Appointment confusion"]
-    },
-    "deliverables": {
-        "title": "What We Deliver",
-        "items": [
-            "24/7 online booking",
-            "Automated confirmations and reminders",
-            "Staff availability management",
-            "Appointment and walk-in balance",
-            "Mobile-friendly booking flow"
-        ]
-    },
-    "howItWorks": {
-        "title": "How It Works",
+    "howWeHelp": {
+        "title": "How we help your business",
         "steps": [
             {
                 "number": "01",
-                "title": "Configure",
-                "description": "We set services, timing, and staff availability."
+                "title": "Map Your Booking Workflow",
+                "description": "We define your services, durations, staff schedules, buffers, and rules so the booking flow matches how your business actually operates."
             },
             {
                 "number": "02",
-                "title": "Integrate",
-                "description": "Booking is embedded into your website."
+                "title": "Build and Integrate on Website",
+                "description": "We integrate the booking system directly into your website so customers can book from service pages without calling or messaging."
             },
             {
                 "number": "03",
-                "title": "Go Live",
-                "description": "Customers start booking instantly."
+                "title": "Automate Confirmations and Reminders",
+                "description": "We configure confirmations, reminder notifications, and rescheduling flows to reduce no-shows and improve customer attendance."
+            },
+            {
+                "number": "04",
+                "title": "Sync Team Availability",
+                "description": "We organize calendars and staff availability to prevent double bookings, scheduling clashes, and back-and-forth admin work."
+            },
+            {
+                "number": "05",
+                "title": "Launch and Optimize",
+                "description": "After go-live, we monitor the booking journey and refine form fields, steps, and timing to improve completion rates."
             }
         ]
     },
-    "whoItsFor": {
-        "title": "Who It’s For",
-        "tags": ["Clinics", "Salons & spas", "Service businesses"]
-    },
-    "whyChooseUs": {
-        "title": "Why Tech Avenue Pro",
+    "stats": {
+        "title": "Online Booking by the Numbers",
+        "description": "A proper booking system improves operational efficiency and customer experience:",
         "items": [
             {
-                "title": "Fewer No-Shows",
-                "description": "Automated reminders improve attendance."
+                "number": "24/7",
+                "description": "booking availability even when your team is offline."
             },
             {
-                "title": "Less Admin Work",
-                "description": "Customers self-book, staff saves time."
+                "number": "40%",
+                "description": "fewer inbound scheduling calls when online booking is active."
             },
             {
-                "title": "Better Experience",
-                "description": "Simple, professional booking flow."
+                "number": "30%",
+                "description": "average reduction in no-shows with automated reminders."
             },
             {
-                "title": "Scales Easily",
-                "description": "Add staff and services anytime."
+                "number": "2x",
+                "description": "faster booking process compared to manual coordination."
+            },
+            {
+                "number": "90%",
+                "description": "of customers prefer booking online when given the option."
             }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Online Booking Solutions?</span>",
+        "introText": "We do more than add a booking button. We build booking systems that reduce admin load and improve customer flow.",
+        "src": "/images/small/why-choose-us/why-choose-us-website@1x.jpeg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-website@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us-website@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us-website@3x.jpeg 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Built Around Your Operations",
+                "description": "We customize booking rules, service duration, staff slots, and lead times based on your exact workflow."
+            },
+            {
+                "id": 2,
+                "title": "Website-First Integration",
+                "description": "Your booking flow is embedded directly into your website for a seamless customer experience and better conversion."
+            },
+            {
+                "id": 3,
+                "title": "No-Show Reduction Setup",
+                "description": "We configure confirmations and reminders to keep appointments organized and reduce missed sessions."
+            },
+            {
+                "id": 4,
+                "title": "Less Manual Scheduling",
+                "description": "Customers self-book and self-reschedule, freeing your staff from repetitive scheduling tasks."
+            },
+            {
+                "id": 5,
+                "title": "Growth-Ready Foundation",
+                "description": "As your business grows, the system scales with more services, locations, and team members."
+            }
+        ]
+    },
+    "whyItWorks": {
+        "title": "Why Online Booking Works",
+        "description": "Businesses with online booking systems get <span class=\"ds-text-color-critical\">more confirmed appointments</span>, better <span class=\"ds-text-color-success\">time management</span>, and a smoother <span class=\"ds-text-color-tint-theme\">customer experience.</span>",
+        "items": [
+            "Capture bookings 24/7 directly from your website",
+            "Reduce missed calls and manual coordination overhead",
+            "Minimize no-shows with automated reminders",
+            "Improve customer trust with a professional booking flow",
+            "Keep schedules organized with real-time availability"
         ]
     },
     "finalCta": {
-        "title": "Stop missing bookings",
-        "summary": "Let’s set up an appointment system that works around the clock.",
-        "primaryCta": { "label": "Book a Consultation", "href": "/contact" },
+        "title": "Ready to stop losing appointments?",
+        "summary": "Let’s build a website booking system that works 24/7 for your business.",
+        "primaryCta": {
+            "label": "Book a Consultation",
+            "href": "/contact"
+        },
         "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
     }
 }

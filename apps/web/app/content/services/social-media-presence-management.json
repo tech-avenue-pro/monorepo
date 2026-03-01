@@ -1,0 +1,132 @@
+{
+    "slug": "social-media-presence-management",
+    "navTitle": "Social Media Presence Management",
+    "hero": {
+        "title": "Social Media Presence Management That Builds Trust",
+        "summary": "We manage your social media presence with strategy, content, design, and scheduling so your business stays active, professional, and visible to the right audience.",
+        "primaryCta": {
+            "label": "Get a Social Media Plan",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "See Our Services", "href": "/#services" },
+        "image": {
+            "src": "/images/small/social-media/social-media.jpeg",
+            "srcSet": "/images/small/social-media/social-media.jpeg 1x, /images/small/social-media/social-media@2x.jpeg 2x",
+            "alt": "Social media content planning and brand management"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/social-media/social-media.jpeg",
+            "srcSet": "/images/small/social-media/social-media.jpeg 1x, /images/small/social-media/social-media@2x.jpeg 2x, /images/small/social-media/social-media@3x.jpeg 3x",
+            "alt": "Social media content planning and brand management"
+        }
+    },
+    "howWeHelp": {
+        "title": "How we help your business",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Audit and Strategy Setup",
+                "description": "We review your current social presence, audience, and competitors, then define a clear monthly strategy tied to business goals."
+            },
+            {
+                "number": "02",
+                "title": "Content Planning and Calendars",
+                "description": "We build structured content calendars with post themes, offers, educational topics, and brand storytelling."
+            },
+            {
+                "number": "03",
+                "title": "Creative Design and Copywriting",
+                "description": "Our team designs branded visuals and writes captions that match your voice while encouraging engagement and action."
+            },
+            {
+                "number": "04",
+                "title": "Publishing and Community Management",
+                "description": "We schedule posts consistently and manage interactions so your profiles stay active, responsive, and professional."
+            },
+            {
+                "number": "05",
+                "title": "Reporting and Optimization",
+                "description": "You receive clear monthly performance insights, and we refine content based on what drives reach, engagement, and leads."
+            }
+        ]
+    },
+    "stats": {
+        "title": "Social Media by the Numbers",
+        "description": "Consistent social media management creates measurable business impact:",
+        "items": [
+            {
+                "number": "78%",
+                "description": "of consumers check social profiles before trusting a business."
+            },
+            {
+                "number": "2x",
+                "description": "higher engagement when branding and posting stay consistent."
+            },
+            {
+                "number": "71%",
+                "description": "of buyers are influenced by social media before making decisions."
+            },
+            {
+                "number": "60%",
+                "description": "of small businesses generate leads directly from social platforms."
+            },
+            {
+                "number": "3x",
+                "description": "faster brand recall with consistent visual identity and messaging."
+            }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Social Media Presence Management?</span>",
+        "introText": "We combine strategy, creative design, and consistent execution to turn social media into a reliable growth channel.",
+        "src": "/images/small/why-choose-us/why-choose-us-branding@1x.jpeg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-branding@1x.jpeg 1x, /images/small/why-choose-us/why-choose-us-branding@2x.jpeg 2x, /images/small/why-choose-us/why-choose-us-branding@3x.jpeg 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Content with Business Purpose",
+                "description": "Every post is planned to support your goals, from visibility and trust to engagement and lead generation."
+            },
+            {
+                "id": 2,
+                "title": "Branded, Premium Visuals",
+                "description": "We design clean, professional creatives that make your business look credible across all social channels."
+            },
+            {
+                "id": 3,
+                "title": "Consistent Monthly Execution",
+                "description": "We handle planning, creation, scheduling, and optimization so your profiles never go inactive."
+            },
+            {
+                "id": 4,
+                "title": "Data-Led Improvements",
+                "description": "Monthly insights guide what we scale, what we improve, and how we increase performance over time."
+            },
+            {
+                "id": 5,
+                "title": "Integrated with Website and Marketing",
+                "description": "Your social content aligns with your website and campaigns for a unified customer journey."
+            }
+        ]
+    },
+    "whyItWorks": {
+        "title": "Why Social Media Presence Management Works",
+        "description": "Consistent management helps businesses stay <span class=\"ds-text-color-critical\">visible</span>, build <span class=\"ds-text-color-success\">trust</span>, and generate <span class=\"ds-text-color-tint-theme\">steady leads.</span>",
+        "items": [
+            "Keep your brand active and professional every week",
+            "Build trust with consistent content and messaging",
+            "Increase engagement through strategic post planning",
+            "Support lead generation with clear calls to action",
+            "Turn social channels into long-term business assets"
+        ]
+    },
+    "finalCta": {
+        "title": "Ready to grow your social presence professionally?",
+        "summary": "Let’s manage your social media with a clear strategy that keeps your business visible and trusted.",
+        "primaryCta": {
+            "label": "Book a Free Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+    }
+}
