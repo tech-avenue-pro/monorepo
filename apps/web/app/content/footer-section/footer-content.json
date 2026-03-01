@@ -43,7 +43,7 @@
             "links": [
                 {
                     "title": "Home",
-                    "link": "#home"
+                    "link": "/"
                 },
                 {
                     "title": "How It Works",
