@@ -13,6 +13,10 @@ import { DSLayoutBackground } from "../../../../../packages/ui/src/design-system
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
 import { getFooterContent } from "../../content/footer-section/getFooterContent";
+import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
+import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
+import Form from "../../HomeView/Form";
+import { getCTASectionContent } from "../../content/cta-section/getCTASectionContent";
 
 interface ServicePageProps {
     params: Promise<{ slug: string }>;
@@ -60,6 +64,17 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     <Footer {...getFooterContent()} />
                 </RegularContainer>
             </RegularSection>
+            <SmallSection
+                id="cta-section"
+                background={DSLayoutBackground.default}
+            >
+                <RegularContainer>
+                    <FinalCTAWithForm
+                        form={<Form />}
+                        {...getCTASectionContent()}
+                    />
+                </RegularContainer>
+            </SmallSection>
         </React.Fragment>
     );
 }
