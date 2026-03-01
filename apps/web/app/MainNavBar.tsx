@@ -61,8 +61,8 @@ export default function MainNavBar() {
                     href: "#live-queue",
                 },
                 {
-                    label: "Online Appointments",
-                    href: "#online-appointments",
+                    label: "Our Clients",
+                    href: "#our-clients",
                 },
             ]}
             color={DSTextColor.primary}

@@ -6,7 +6,7 @@
         "summary": "We create a clean, consistent brand identity so your business looks professional everywhere, from your website to social media and print assets.",
         "primaryCta": {
             "label": "Get a Branding Quote",
-            "href": "/contact"
+            "href": "#cta-section"
         },
         "secondaryCta": { "label": "See Our Services", "href": "/#services" },
         "image": {

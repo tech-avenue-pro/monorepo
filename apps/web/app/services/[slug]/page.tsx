@@ -58,12 +58,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <React.Fragment>
             <SecondaryNavBar />
             <ServiceDetails service={service} />
-            <hr className="my-0 border-gray-300" />
-            <RegularSection background={DSLayoutBackground.default}>
-                <RegularContainer>
-                    <Footer {...getFooterContent()} />
-                </RegularContainer>
-            </RegularSection>
             <SmallSection
                 id="cta-section"
                 background={DSLayoutBackground.default}
@@ -75,6 +69,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     />
                 </RegularContainer>
             </SmallSection>
+            <hr className="my-0 border-gray-300" />
+            <RegularSection background={DSLayoutBackground.default}>
+                <RegularContainer>
+                    <Footer {...getFooterContent()} />
+                </RegularContainer>
+            </RegularSection>
         </React.Fragment>
     );
 }
