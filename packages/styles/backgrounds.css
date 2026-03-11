@@ -112,7 +112,7 @@
     background:
         radial-gradient(
             circle at 0% 0%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);
@@ -122,7 +122,7 @@
     background:
         radial-gradient(
             circle at 100% 0%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);
@@ -132,7 +132,7 @@
     background:
         radial-gradient(
             circle at 0% 100%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);
@@ -142,7 +142,7 @@
     background:
         radial-gradient(
             circle at 100% 100%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);
@@ -153,7 +153,7 @@
     background:
         radial-gradient(
             circle at 0% 50%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);
@@ -164,7 +164,7 @@
     background:
         radial-gradient(
             circle at 100% 50%,
-            rgba(51, 201, 242, 0.25) 0%,
+            rgba(51, 201, 242, 0.18) 0%,
             transparent 50%
         ),
         var(--default-background);

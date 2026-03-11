@@ -89,6 +89,8 @@
         --primary: #33c9f2;
         --primary-lighter: #a6dff0;
         --primary-darker: #29a1c2;
+        --lightest-background: #0f3f4b;
+        --lightest-background-shadow: rgba(47, 53, 58, 0.31);
 
         /* Secondary Colors */
         --secondary: #203b62;
@@ -216,22 +218,22 @@ body {
 }
 
 /* Larger Display Title
-     - Mobile:   30px  (text-3xl)
-     - Tablet:   36px  (text-4xl)
+     - Mobile:   32px  (text-3xl)
+     - Tablet:   40px  (text-4xl)
      - Desktop:  48px  (text-5xl)
   */
 .ds-text-larger-title {
-    @apply text-3xl sm:text-4xl lg:text-5xl font-medium;
+    @apply text-[2rem] sm:text-[2.5rem] lg:text-5xl font-medium;
     line-height: 1.05;
 }
 
 /* Large Title
-     - Mobile:   24px  (text-2xl)
-     - Tablet:   30px  (text-3xl)
+     - Mobile:   28px  (text-2xl)
+     - Tablet:   32px  (text-3xl)
      - Desktop:  36px  (text-4xl)
   */
 .ds-text-large-title {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-medium;
+    @apply text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] font-medium;
     line-height: 1.05;
 }
 
@@ -240,35 +242,35 @@ body {
      =============================== */
 
 /* Title 1
-     - Mobile:   24px  (text-2xl)
-     - Tablet:   30px  (text-3xl)
+     - Mobile:   28px  (text-2xl)
+     - Tablet:   32px  (text-3xl)
      - Desktop:  36px  (text-4xl)
   */
 .ds-text-title1 {
-    @apply text-2xl sm:text-3xl lg:text-4xl;
+    @apply text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem];
     font-weight: 400;
     line-height: 1.2;
 }
 
 /* Title 2
-     - Mobile:   20px  (text-xl)
-     - Tablet:   24px  (text-2xl)
+     - Mobile:   22px  (text-xl)
+     - Tablet:   26px  (text-2xl)
      - Desktop:  30px  (text-3xl)
   */
 .ds-text-title2 {
-    @apply text-xl sm:text-2xl lg:text-3xl;
+    @apply text-[1.375rem] sm:text-[1.625rem] lg:text-[1.875rem];
     font-weight: 500;
     line-height: 1.2;
 }
 
 /* Title 3
-     - Mobile:   18px  (text-lg)
-     - Tablet:   20px  (text-xl)
+     - Mobile:   20px  (text-lg)
+     - Tablet:   22px  (text-xl)
      - Desktop:  24px  (text-2xl)
   */
 .ds-text-title3 {
-    @apply text-lg sm:text-xl lg:text-2xl;
-    font-weight: 600;
+    @apply text-[1.25rem] sm:text-[1.375rem] lg:text-[1.5rem];
+    font-weight: 500;
     line-height: 1.2;
 }
 
@@ -277,23 +279,23 @@ body {
      =============================== */
 
 /* Headline 1
-     - Mobile:   18px  (text-lg)
-     - Tablet:   20px  (text-xl)
+     - Mobile:   20px  (text-lg)
+     - Tablet:   22px  (text-xl)
      - Desktop:  24px  (text-2xl)
   */
 .ds-text-headline1 {
-    @apply text-lg sm:text-xl lg:text-2xl;
-    font-weight: 500;
+    @apply text-[1.25rem] sm:text-[1.375rem] lg:text-[1.5rem];
+    font-weight: 600;
     line-height: 1.2;
 }
 
 /* Headline 2
-     - Mobile:   16px  (text-base)
+     - Mobile:   18px  (text-base)
      - Tablet:   18px  (text-lg)
      - Desktop:  20px  (text-xl)
   */
 .ds-text-headline2 {
-    @apply text-base sm:text-lg lg:text-xl;
+    @apply text-[1.125rem] sm:text-[1.125rem] lg:text-[1.25rem];
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
@@ -301,11 +303,11 @@ body {
 
 /* Headline 3
      - Mobile:   14px  (text-sm)
-     - Tablet:   16px  (text-base)
+     - Tablet:   17px  (text-base)
      - Desktop:  18px  (text-lg)
   */
 .ds-text-headline3 {
-    @apply text-sm sm:text-base lg:text-lg;
+    @apply text-[0.875rem] sm:text-[1.0625rem] lg:text-[1.125rem];
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0;
@@ -317,33 +319,33 @@ body {
 
 /* Body Large
      - Mobile:   18px  (text-lg)
-     - Tablet:   20px  (text-xl)
+     - Tablet:   18px  (text-xl)
      - Desktop:  24px  (text-2xl)
   */
 .ds-text-body-large {
-    @apply text-lg sm:text-xl lg:text-2xl;
+    @apply text-[1.125rem] sm:text-[1.125rem] lg:text-[1.5rem];
     line-height: 1.6;
 }
 
 /* Body (Base)
      - Mobile:   16px  (text-base)
-     - Tablet:   18px  (text-lg)
-     - Desktop:  20px  (text-xl)
+     - Tablet:   17px  (text-lg)
+     - Desktop:  18px  (text-xl)
   */
 .ds-text-body,
 .ds-text-body-bold {
-    @apply text-base sm:text-lg lg:text-xl;
+    @apply text-[1rem] sm:text-[1.0625rem] lg:text-[1.125rem];
     line-height: 1.6;
 }
 
 /* Body Small
      - Mobile:   14px  (text-sm)
-     - Tablet:   16px  (text-base)
+     - Tablet:   15px  (text-base)
      - Desktop:  16px  (text-base)
   */
 .ds-text-body-small,
 .ds-text-body-small-bold {
-    @apply text-sm sm:text-base;
+    @apply text-[0.875rem] sm:text-[0.9375rem] lg:text-[1rem];
     line-height: 1.6;
 }
 
@@ -353,21 +355,21 @@ body {
 
 /* Caption
      - Mobile:   12px  (text-xs)
-     - Tablet:   12px  (text-xs)
+     - Tablet:   13px  (text-xs)
      - Desktop:  14px  (text-sm)
   */
 .ds-text-caption {
-    @apply text-xs lg:text-sm;
+    @apply text-[0.75rem] sm:text-[0.8125rem] lg:text-[0.875rem];
     line-height: 1.4;
 }
 
 /* Footnote
-     - Mobile:   12px  (text-xs)
+     - Mobile:   11px  (text-xs)
      - Tablet:   12px  (text-xs)
-     - Desktop:  14px  (text-sm)
+     - Desktop:  13px  (text-sm)
   */
 .ds-text-footnote {
-    @apply text-xs lg:text-sm;
+    @apply text-[0.6875rem] sm:text-[0.75rem] lg:text-[0.8125rem];
     line-height: 1.3;
 }
 
@@ -430,7 +432,7 @@ body {
     color: var(--text-critical);
 }
 .ds-text-color-warning {
-    color: var(--text-info);
+    color: var(--text-warning);
 }
 .ds-text-color-accent {
     color: var(--text-accent);
@@ -1156,4 +1158,10 @@ Grids
     z-index: 0;
     border-radius: 0;
     will-change: filter;
+}
+
+.sidebar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
 }

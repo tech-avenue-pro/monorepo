@@ -66,7 +66,7 @@ export default function SecondaryNavBar() {
                 },
             ]}
             color={DSTextColor.primary}
-            startingColor={DSTextColor.gray3333}
+            startingColor={DSTextColor.primary}
             hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.medium}
