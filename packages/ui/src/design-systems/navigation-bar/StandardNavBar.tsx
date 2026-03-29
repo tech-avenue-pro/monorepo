@@ -71,14 +71,14 @@ const StandardNavBar = ({
             title: "Menu",
             items: links,
         }),
-        [links]
+        [links],
     );
     const [mobileMenuStack, setMobileMenuStack] = useState<MobileMenuLevel[]>([
         rootMobileLevel,
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
     const activeBackground = isSticky ? background : startingBackground;
-    const activeColor = isSticky ? color : startingColor ?? color;
+    const activeColor = isSticky ? color : (startingColor ?? color);
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
         const style: React.CSSProperties & Record<string, string> = {};
@@ -175,7 +175,7 @@ const StandardNavBar = ({
                 root: null,
                 threshold: 0,
                 rootMargin: "-48px",
-            }
+            },
         );
 
         observer.observe(heroSection);
@@ -192,18 +192,26 @@ const StandardNavBar = ({
     return (
         <React.Fragment>
             <header
+                id="top-of-screen"
                 className={clsx(
                     "header px-4 md:px-8",
                     nav,
                     shouldShowBackground
                         ? backgroundClasses[background]
-                        : backgroundClasses[startingBackground]
+                        : backgroundClasses[startingBackground],
                 )}
                 style={customBackgroundStyle}
             >
                 <div className="nav-inner">
                     <div className="flex justify-start items-center gap-4">
-                        <a href="#top-of-screen" className="nav-brand">
+                        <a
+                            href="#top-of-screen"
+                            className="nav-brand"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
+                        >
                             <img
                                 className="logo"
                                 src={logoSrc}
@@ -229,7 +237,7 @@ const StandardNavBar = ({
                                 isMobileNavOpen &&
                                     (mobileMenuDirection === "forward"
                                         ? "mobile-menu-forward"
-                                        : "mobile-menu-back")
+                                        : "mobile-menu-back"),
                             )}
                             key={
                                 isMobileNavOpen
@@ -245,7 +253,7 @@ const StandardNavBar = ({
                                             className={clsx(
                                                 "mobile-back-button",
                                                 !canGoBack &&
-                                                    "mobile-back-button--hidden"
+                                                    "mobile-back-button--hidden",
                                             )}
                                             onClick={() => {
                                                 if (!canGoBack) {
@@ -255,7 +263,7 @@ const StandardNavBar = ({
                                                 setMobileMenuStack((prev) =>
                                                     prev.length > 1
                                                         ? prev.slice(0, -1)
-                                                        : prev
+                                                        : prev,
                                                 );
                                             }}
                                             aria-label="Back"
@@ -297,7 +305,7 @@ const StandardNavBar = ({
                                                                     colorClasses[
                                                                         activeColor
                                                                     ],
-                                                                currentTextClassName
+                                                                currentTextClassName,
                                                             )}
                                                             style={textStyle}
                                                             href={href ?? "#"}
@@ -314,7 +322,7 @@ const StandardNavBar = ({
                                                     key={itemId}
                                                     className={clsx(
                                                         "nav-item",
-                                                        "has-children"
+                                                        "has-children",
                                                     )}
                                                 >
                                                     <button
@@ -326,12 +334,12 @@ const StandardNavBar = ({
                                                                 colorClasses[
                                                                     activeColor
                                                                 ],
-                                                            currentTextClassName
+                                                            currentTextClassName,
                                                         )}
                                                         style={textStyle}
                                                         onClick={() => {
                                                             setMobileMenuDirection(
-                                                                "forward"
+                                                                "forward",
                                                             );
                                                             setMobileMenuStack(
                                                                 (prev) => [
@@ -340,7 +348,7 @@ const StandardNavBar = ({
                                                                         title: label,
                                                                         items: children,
                                                                     },
-                                                                ]
+                                                                ],
                                                             );
                                                         }}
                                                     >
@@ -348,7 +356,7 @@ const StandardNavBar = ({
                                                     </button>
                                                 </li>
                                             );
-                                        }
+                                        },
                                     )}
                                     {cta ? (
                                         <li className="nav-cta-item">{cta}</li>
@@ -375,15 +383,15 @@ const StandardNavBar = ({
                                                     >
                                                         <a
                                                             className={clsx(
-                                                            "main-nav-link",
-                                                            activeColor &&
-                                                                colorClasses[
-                                                                    activeColor
-                                                                ],
-                                                            currentTextClassName
-                                                        )}
-                                                        style={textStyle}
-                                                        href={href ?? "#"}
+                                                                "main-nav-link",
+                                                                activeColor &&
+                                                                    colorClasses[
+                                                                        activeColor
+                                                                    ],
+                                                                currentTextClassName,
+                                                            )}
+                                                            style={textStyle}
+                                                            href={href ?? "#"}
                                                             onClick={closeNav}
                                                         >
                                                             {label}
@@ -401,7 +409,7 @@ const StandardNavBar = ({
                                                         {
                                                             "show-dropdown":
                                                                 isOpen,
-                                                        }
+                                                        },
                                                     )}
                                                     onMouseEnter={() => {
                                                         if (isMobileNavOpen) {
@@ -426,7 +434,7 @@ const StandardNavBar = ({
                                                                 colorClasses[
                                                                     activeColor
                                                                 ],
-                                                            currentTextClassName
+                                                            currentTextClassName,
                                                         )}
                                                         style={textStyle}
                                                         onClick={() =>
@@ -435,7 +443,7 @@ const StandardNavBar = ({
                                                                     prev ===
                                                                     itemId
                                                                         ? null
-                                                                        : itemId
+                                                                        : itemId,
                                                             )
                                                         }
                                                         aria-expanded={isOpen}
@@ -457,7 +465,7 @@ const StandardNavBar = ({
                                                             }
                                                             clearCloseTimeout();
                                                             setOpenDropdown(
-                                                                itemId
+                                                                itemId,
                                                             );
                                                         }}
                                                         onMouseLeave={() => {
@@ -467,7 +475,7 @@ const StandardNavBar = ({
                                                                 return;
                                                             }
                                                             scheduleClose(
-                                                                itemId
+                                                                itemId,
                                                             );
                                                         }}
                                                     >
@@ -487,7 +495,7 @@ const StandardNavBar = ({
                                                                                     colorClasses[
                                                                                         activeColor
                                                                                     ],
-                                                                                currentTextClassName
+                                                                                currentTextClassName,
                                                                             )}
                                                                             style={
                                                                                 textStyle
@@ -507,12 +515,12 @@ const StandardNavBar = ({
                                                                         </a>
                                                                     </li>
                                                                 );
-                                                            }
+                                                            },
                                                         )}
                                                     </ul>
                                                 </li>
                                             );
-                                        }
+                                        },
                                     )}
                                     {cta ? (
                                         <li className="nav-cta-item">{cta}</li>
@@ -545,7 +553,7 @@ const StandardNavBar = ({
                     </button>
                 </div>
             </header>
-            <div className="navigation-margin-bottom" id="top-of-screen"></div>
+            <div className="navigation-margin-bottom"></div>
         </React.Fragment>
     );
 };
