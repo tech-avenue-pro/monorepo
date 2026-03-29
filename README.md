@@ -1,3 +1,7 @@
+# local dev environment
+
+- run by pnpm run dev
+
 # Turborepo starter
 
 This Turborepo starter is maintained by the Turborepo core team.
