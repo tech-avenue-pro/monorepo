@@ -4,28 +4,9 @@ import {
     DSTextColor,
     DSTextVariant,
 } from "@repo/ui/design-systems/DSText";
-import React from "react";
-import footerContent from "../../../../../../apps/web/app/content/footer-section/footer-content.json";
+import { FooterContent } from "./footer-content";
 
-export interface FooterContent {
-    footerTitle: string;
-    footerLogo: string;
-    socialLinks: {
-        logo: string;
-        link: string;
-        alt: string;
-    }[];
-    phoneNumber: string;
-    emailAddress: string;
-    copyrightText: string;
-    footerLinks: {
-        title: string;
-        links: {
-            title: string;
-            link: string;
-        }[];
-    }[];
-}
+export type { FooterContent };
 
 export default function Footer({
     footerTitle,
