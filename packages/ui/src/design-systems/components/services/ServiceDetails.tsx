@@ -74,7 +74,7 @@ export function ServiceDetails({
             {/* HERO */}
             <HeroSection
                 background={DSLayoutBackground.lightestBackground}
-                className="lg:h-screen"
+                className="lg:h-[calc(100vh-4rem)]"
             >
                 <HeroContainer className="h-full">
                     <div className="grid gap-10 lg:grid-cols-2 md:items-center h-full">
