@@ -2,82 +2,137 @@
     "slug": "live-queue",
     "navTitle": "Live Queue",
     "hero": {
-        "title": "Live Queue Management Made Simple",
-        "summary": "Reduce waiting chaos with real-time queue visibility for customers and staff.",
-        "primaryCta": { "label": "Explore Live Queue", "href": "/contact" },
-        "secondaryCta": { "label": "See Services", "href": "/#services" },
+        "title": "Live Queue Management for Modern Businesses",
+        "summary": "Eliminate waiting chaos and give customers real-time visibility. We set up and manage your live queue system so your business runs smoother, staff stay focused, and customers leave happier.",
+        "primaryCta": {
+            "label": "Book a Free Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": {
+            "label": "See Our Services",
+            "href": "/#services"
+        },
         "image": {
-            "src": "/images/services/live-queue.png",
-            "alt": "Live queue dashboard"
+            "src": "/images/large/live-queue/live-queue@2x.jpg",
+            "srcSet": "/images/large/live-queue/live-queue@1x.jpg 1x, /images/large/live-queue/live-queue@2x.jpg 2x",
+            "alt": "Live queue management dashboard"
+        },
+        "smallScreenImage": {
+            "src": "/images/small/live-queue/live-queue.jpeg",
+            "srcSet": "/images/small/live-queue/live-queue.jpeg 1x, /images/small/live-queue/live-queue@2x.jpeg 2x, /images/small/live-queue/live-queue@3x.jpeg 3x",
+            "alt": "Live queue management dashboard"
         }
     },
-    "problem": {
-        "title": "What This Solves",
-        "items": [
-            "Long wait frustration",
-            "Overcrowded waiting areas",
-            "Staff overload"
-        ]
-    },
-    "deliverables": {
-        "title": "What We Deliver",
-        "items": [
-            "Real-time queue tracking",
-            "QR-based customer check-in",
-            "Live wait-time updates",
-            "Staff queue control dashboard",
-            "Walk-in flow optimization"
-        ]
-    },
-    "howItWorks": {
-        "title": "How It Works",
+    "howWeHelp": {
+        "title": "How we help your business",
         "steps": [
             {
                 "number": "01",
-                "title": "Join Queue",
-                "description": "Customers check in using QR or staff assistance."
+                "title": "Understand Your Walk-in Flow",
+                "description": "We start by mapping how customers arrive, wait, and get served — identifying bottlenecks and opportunities to streamline your queue experience."
             },
             {
                 "number": "02",
-                "title": "Manage Flow",
-                "description": "Staff controls priorities and queue order."
+                "title": "Setup and Configuration",
+                "description": "We configure your live queue system with QR check-in, staff dashboard, and wait-time displays — fully tailored to your business type and volume."
             },
             {
                 "number": "03",
-                "title": "Live Updates",
-                "description": "Customers see real-time status updates."
+                "title": "Customer Communication",
+                "description": "Customers receive real-time updates on their position and estimated wait so they can relax instead of crowding your entrance."
+            },
+            {
+                "number": "04",
+                "title": "Staff Training and Launch",
+                "description": "We train your team to manage the queue dashboard confidently and go live with minimal disruption to your existing operations."
+            },
+            {
+                "number": "05",
+                "title": "Monitoring and Optimization",
+                "description": "After launch, we track queue performance and make adjustments to reduce peak-hour strain and improve average service time."
             }
         ]
     },
-    "whoItsFor": {
-        "title": "Who It’s For",
-        "tags": ["Clinics", "Restaurants", "Walk-in heavy businesses"]
-    },
-    "whyChooseUs": {
-        "title": "Why Tech Avenue Pro",
+    "stats": {
+        "title": "Live Queue by the Numbers",
+        "description": "The data is clear — businesses that adopt digital queue management see real improvements in customer satisfaction and operational efficiency:",
         "items": [
             {
-                "title": "Happier Customers",
-                "description": "Clear wait times reduce frustration."
+                "number": "35%",
+                "description": "reduction in perceived wait time with real-time updates"
             },
             {
-                "title": "Smoother Operations",
-                "description": "Less crowd and manual coordination."
+                "number": "60%",
+                "description": "of customers abandon a visit due to long or uncertain waits"
             },
             {
-                "title": "Modern Experience",
-                "description": "Professional, digital-first queue system."
+                "number": "4x",
+                "description": "faster service flow with organized queue management"
             },
             {
-                "title": "Works with Booking",
-                "description": "Appointments and walk-ins together."
+                "number": "80%",
+                "description": "of customers prefer businesses with digital check-in options"
+            },
+            {
+                "number": "25%",
+                "description": "increase in customer satisfaction scores after queue digitization"
             }
+        ]
+    },
+    "whyChooseUs": {
+        "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Live Queue?</span>",
+        "introText": "We don't just install a queue tool — we build a smoother customer experience from the ground up.",
+        "src": "/images/why-choose-us/why-choose-us-illustration.png",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-lq@1x.png 1x, /images/small/why-choose-us/why-choose-us-lq@2x.png 2x, /images/small/why-choose-us/why-choose-us-lq@3x.png 3x",
+        "reasons": [
+            {
+                "id": 1,
+                "title": "Built for Walk-in Heavy Businesses",
+                "description": "Clinics, salons, restaurants, and service counters — we understand how walk-in traffic works and design queue systems that actually fit your environment."
+            },
+            {
+                "id": 2,
+                "title": "Integrates with Online Appointments",
+                "description": "LiveQueue works alongside our booking system so scheduled appointments and walk-ins are managed together in one seamless flow."
+            },
+            {
+                "id": 3,
+                "title": "Customers Know Where They Stand",
+                "description": "Real-time position updates and estimated wait times eliminate uncertainty and reduce complaints at the front desk."
+            },
+            {
+                "id": 4,
+                "title": "Simple for Staff to Manage",
+                "description": "Your team gets a clean, intuitive dashboard to call customers, reorder the queue, and handle priority cases without confusion."
+            },
+            {
+                "id": 5,
+                "title": "Full Setup and Ongoing Support",
+                "description": "We handle the entire setup, train your staff, and remain available to optimize and support your system as your business grows."
+            }
+        ]
+    },
+    "whyItWorks": {
+        "title": "Why Live Queue Works",
+        "description": "Businesses that digitize their queue experience retain more customers, <span class=\"ds-text-color-critical\">reduce walkouts</span>, and run <span class=\"ds-text-color-success\">smoother operations</span> every <span class=\"ds-text-color-tint-theme\">single day.</span>",
+        "items": [
+            "Reduce customer walkouts caused by uncertainty and long perceived waits",
+            "Free up staff from manually managing crowds and answering wait-time questions",
+            "Create a professional, organized experience that builds customer trust",
+            "Handle peak hours confidently without overwhelming your team",
+            "Integrate walk-ins and booked appointments in one unified flow"
         ]
     },
     "finalCta": {
-        "title": "Modernize your waiting experience",
-        "summary": "Let’s make waiting smarter for your customers and staff.",
-        "primaryCta": { "label": "Book a Consultation", "href": "/contact" },
-        "secondaryCta": { "label": "WhatsApp Us", "href": "https://wa.me/" }
+        "title": "Ready to modernize your waiting experience?",
+        "summary": "Let's build a smarter queue system that keeps customers happy and your operations running smoothly.",
+        "primaryCta": {
+            "label": "Book a Free Consultation",
+            "href": "/contact"
+        },
+        "secondaryCta": {
+            "label": "WhatsApp Us",
+            "href": "https://wa.me/"
+        }
     }
 }

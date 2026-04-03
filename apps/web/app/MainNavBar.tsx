@@ -58,11 +58,7 @@ export default function MainNavBar() {
                 },
                 {
                     label: "Live Queue",
-                    href: "#live-queue",
-                },
-                {
-                    label: "Our Clients",
-                    href: "#our-clients",
+                    href: "/services/live-queue",
                 },
             ]}
             color={DSTextColor.primary}

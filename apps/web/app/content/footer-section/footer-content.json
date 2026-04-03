@@ -47,11 +47,11 @@
                 },
                 {
                     "title": "How It Works",
-                    "link": "#how-it-works"
+                    "link": "/#how-it-works"
                 },
                 {
                     "title": "Why Choose Us",
-                    "link": "#why-choose-us"
+                    "link": "/#why-choose-us"
                 }
             ]
         },
@@ -60,11 +60,11 @@
             "links": [
                 {
                     "title": "Live Queue",
-                    "link": "#live-queue"
+                    "link": "/services/live-queue"
                 },
                 {
                     "title": "Online Appointments",
-                    "link": "#online-appointments"
+                    "link": "/services/online-appointments"
                 }
             ]
         }
