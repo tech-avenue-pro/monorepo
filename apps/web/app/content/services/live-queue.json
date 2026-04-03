@@ -13,8 +13,8 @@
             "href": "/#services"
         },
         "image": {
-            "src": "/images/large/live-queue/live-queue@2x.jpg",
-            "srcSet": "/images/large/live-queue/live-queue@1x.jpg 1x, /images/large/live-queue/live-queue@2x.jpg 2x",
+            "src": "/images/large/live-queue/live-queue@2x.jpeg",
+            "srcSet": "/images/large/live-queue/live-queue@1x.jpeg 1x, /images/large/live-queue/live-queue@2x.jpeg 2x",
             "alt": "Live queue management dashboard"
         },
         "smallScreenImage": {
@@ -82,8 +82,8 @@
     "whyChooseUs": {
         "sectionTitle": "Why Choose Us for <br /> <span class=\"ds-text-color-accent leading-normal\">Live Queue?</span>",
         "introText": "We don't just install a queue tool — we build a smoother customer experience from the ground up.",
-        "src": "/images/why-choose-us/why-choose-us-illustration.png",
-        "srcSet": "/images/small/why-choose-us/why-choose-us-lq@1x.png 1x, /images/small/why-choose-us/why-choose-us-lq@2x.png 2x, /images/small/why-choose-us/why-choose-us-lq@3x.png 3x",
+        "src": "/images/why-choose-us/why-choose-us-live-queue@1x.jpg",
+        "srcSet": "/images/small/why-choose-us/why-choose-us-live-queue@1x.jpg 1x, /images/small/why-choose-us/why-choose-us-live-queue@2x.jpg 2x, /images/small/why-choose-us/why-choose-us-live-queue@3x.jpg 3x",
         "reasons": [
             {
                 "id": 1,
