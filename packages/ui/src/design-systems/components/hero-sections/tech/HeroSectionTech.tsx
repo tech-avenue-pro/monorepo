@@ -5,16 +5,9 @@ import {
     DSTextVariant,
     DSTextWeight,
     FontStyle,
-} from "../../DSText";
-import { DSButtonVariant, DSLinkButton } from "../../DSButton";
-
-export interface HeroSectionContent {
-    smallTitle?: string;
-    title: string;
-    description: string;
-    ctaText: string;
-    ctaLink: string;
-}
+} from "../../../DSText";
+import { DSButtonVariant, DSLinkButton } from "../../../DSButton";
+import { HeroSectionTechContent } from "./hero-section-tech-content";
 
 export default function HeroSectionTech({
     smallTitle,
@@ -22,7 +15,7 @@ export default function HeroSectionTech({
     description,
     ctaText,
     ctaLink,
-}: HeroSectionContent) {
+}: HeroSectionTechContent) {
     return (
         <React.Fragment>
             <div className="text-left ">

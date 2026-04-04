@@ -5,20 +5,9 @@ import {
     DSTextVariant,
     DSTextWeight,
 } from "@repo/ui/design-systems/DSText";
+import { WhyChooseUsContent, Reason } from "./why-choose-us";
 
-export interface WhyChooseUsContent {
-    sectionTitle: string;
-    introText: string;
-    src: string;
-    srcSet: string;
-    reasons: Reason[];
-}
-
-export interface Reason {
-    id: number;
-    title: string;
-    description: string;
-}
+export type { WhyChooseUsContent, Reason };
 
 export default function WhyChooseUs({
     sectionTitle,

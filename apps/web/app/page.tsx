@@ -27,7 +27,7 @@ import MainNavBar from "./MainNavBar";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import { getServices } from "./content/services/servicesContent";
-import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/HeroSectionTech";
+import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/tech/HeroSectionTech";
 import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 import { get } from "http";
 import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUsContent";
