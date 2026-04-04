@@ -1,5 +1,4 @@
 import React from "react";
-import { getHowItWorksContent } from "../../../../../../apps/web/app/content/how-it-works/howItWorks";
 import {
     DSText,
     DSTextColor,
@@ -11,20 +10,17 @@ import {
     DSLinkButton,
 } from "@repo/ui/design-systems/DSButton";
 import { DSMotion } from "../../DSMotion";
+import type { HowItWorks, HowItWorksStep } from "./how-it-works";
 
-export interface HowItWorks {
-    title: string;
-    description: string;
-    steps: HowItWorksStep[];
-}
+export type { HowItWorks, HowItWorksStep };
 
-export interface HowItWorksStep {
-    id: string;
-    title: string;
-    description: string;
-}
-
-export default function HowItWorks({ title, description, steps }: HowItWorks) {
+export default function HowItWorks({
+    title,
+    description,
+    buttonTitle,
+    buttonLink,
+    steps,
+}: HowItWorks) {
     return (
         <section className="mx-auto px-4 ">
             <DSMotion
@@ -85,14 +81,16 @@ export default function HowItWorks({ title, description, steps }: HowItWorks) {
                 ))}
             </div>
 
-            <div className="mt-10">
-                <DSLinkButton
-                    variant={DSButtonVariant.secondary}
-                    href="/contact"
-                >
-                    Book a Free Consultation
-                </DSLinkButton>
-            </div>
+            {buttonTitle && (
+                <div className="mt-10">
+                    <DSLinkButton
+                        variant={DSButtonVariant.secondary}
+                        href={buttonLink}
+                    >
+                        {buttonTitle}
+                    </DSLinkButton>
+                </div>
+            )}
         </section>
     );
 }

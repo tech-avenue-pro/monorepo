@@ -30,8 +30,8 @@ import { getServices } from "./content/services/servicesContent";
 import HeroSectionTech from "@repo/ui/design-systems/components/hero-sections/tech/HeroSectionTech";
 import { getHeroSectionContent } from "./content/hero-section/getHeroContent";
 import { get } from "http";
-import { getWhyChooseUsContent } from "./content/why-choose-us/WhyChooseUsContent";
-import { getHowItWorksContent } from "./content/how-it-works/howItWorks";
+import { getWhyChooseUsContent } from "./content/why-choose-us/getWhyChooseUsContent";
+import { getHowItWorksContent } from "./content/how-it-works/getHowItWorksContent";
 import Form from "./HomeView/Form";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import { getCTASectionContent } from "./content/cta-section/getCTASectionContent";
@@ -58,6 +58,7 @@ export default function Home() {
     const heroContent = getHeroSectionContent();
     const whyChooseUs = getWhyChooseUsContent();
     const howItWorks = getHowItWorksContent();
+    const footer = getFooterContent();
     return (
         <main className="">
             <MainNavBar />
@@ -111,7 +112,7 @@ export default function Home() {
             <hr className="my-0 border-gray-300" />
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <Footer {...getFooterContent()} />
+                    <Footer {...footer} />
                 </RegularContainer>
             </RegularSection>
         </main>
