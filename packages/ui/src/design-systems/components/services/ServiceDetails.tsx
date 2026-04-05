@@ -28,11 +28,7 @@ export type ServiceDetailPageContent = {
     };
     whoItsFor: { title: string; tags: string[] };
     whyChooseUs: WhyChooseUsContent;
-    whyItWorks: {
-        title: string;
-        description: string;
-        items: string[];
-    };
+    whyItWorks: WhyItWorksContent;
     stats: {
         title: string;
         description: string;
@@ -58,6 +54,8 @@ import {
 } from "../../DSText";
 import { HeroSectionRightVisualContent } from "../hero-sections/right-visual/hero-section-right-visual-content";
 import HeroSectionRightVisual from "../hero-sections/right-visual/HeroSectionRightVisual";
+import { WhyItWorksContent } from "../why-it-works/why-it-works-content";
+import WhyItWorks from "../why-it-works/WhyItWorks";
 
 export function ServiceDetails({
     service,
@@ -226,56 +224,7 @@ export function ServiceDetails({
             {/* Why Digital Marketing Works */}
             <SmallSection>
                 <RegularContainer>
-                    <div className="rounded-3xl border border-neutral-200 p-12 shadow-sm ds-bg-light-right">
-                        <DSMotion variant="fade-up" delay={0.3} duration={0.3}>
-                            <DSText
-                                as="h2"
-                                variant={DSTextVariant.largeTitle}
-                                weight={DSTextWeight.bold}
-                                color={DSTextColor.primary}
-                                fontStyle={FontStyle.Heading}
-                            >
-                                <span
-                                    dangerouslySetInnerHTML={{
-                                        __html: service.whyItWorks.title,
-                                    }}
-                                />
-                            </DSText>
-                        </DSMotion>
-
-                        <DSMotion variant="fade-in" delay={0.5} duration={0.5}>
-                            <DSText
-                                as="p"
-                                variant={DSTextVariant.body}
-                                weight={DSTextWeight.light}
-                                color={DSTextColor.tertiary}
-                                fontStyle={FontStyle.Body}
-                                className="mt-6 max-w-2xl text-left"
-                            >
-                                <span
-                                    dangerouslySetInnerHTML={{
-                                        __html: service.whyItWorks.description,
-                                    }}
-                                />
-                            </DSText>
-                        </DSMotion>
-                        <DSMotion variant="slide-left" delay={0.7} duration={1}>
-                            <div className="mt-8 flex flex-col gap-4">
-                                {service.whyItWorks.items.map((item) => (
-                                    <li>
-                                        <DSText
-                                            as="p"
-                                            variant={DSTextVariant.body}
-                                            color={DSTextColor.secondary}
-                                            fontStyle={FontStyle.Body}
-                                        >
-                                            {item}
-                                        </DSText>
-                                    </li>
-                                ))}
-                            </div>
-                        </DSMotion>
-                    </div>
+                    <WhyItWorks {...service.whyItWorks} />
                 </RegularContainer>
             </SmallSection>
 
