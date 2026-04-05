@@ -6,13 +6,13 @@ import {
 } from "@repo/ui/design-systems/DSText";
 import React from "react";
 
+import type { FinalCTAFormContent } from "./final-cta-form-content";
+
+export type { FinalCTAFormContent };
+
 export type FinalCTAFormProps = {
     form: React.ReactNode;
 };
-export interface FinalCTAFormContent {
-    ctaTitle: string;
-    ctaDescription: string;
-}
 
 type FinalCTAWithFormProps = FinalCTAFormProps & FinalCTAFormContent;
 
