@@ -3,7 +3,7 @@
 import {
     ServiceCardTopVisual,
     ServiceCardTopVisualContent,
-} from "./service-card-top-viaual/ServiceCardTopVisual";
+} from "./service-card-top-visual/ServiceCardTopVisual";
 import {
     DSText,
     DSTextVariant,
