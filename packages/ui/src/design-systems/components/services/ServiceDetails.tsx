@@ -50,7 +50,7 @@ import HeroSectionRightVisual from "../hero-sections/right-visual/HeroSectionRig
 import { WhyItWorksContent } from "../why-it-works/why-it-works-content";
 import WhyItWorks from "../why-it-works/WhyItWorks";
 import { StatsContent } from "../stats/stats-content";
-import StatsView from "../../../../../../apps/web/node_modules/@repo/ui/src/design-systems/components/stats/StatsView";
+import StatsView from "../stats/StatsView";
 
 export function ServiceDetails({
     service,
@@ -152,34 +152,6 @@ export function ServiceDetails({
             <RegularSection>
                 <RegularContainer>
                     <StatsView {...service.stats} />
-                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-gray-900 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4 dark:text-white">
-                        {service.stats.items.map((stat) => (
-                            <div
-                                key={stat.number}
-                                className="flex flex-col gap-y-3 border-l border-gray-900/15 pl-6 dark:border-white/10"
-                            >
-                                <dt className="text-sm/6">
-                                    {stat.description}
-                                </dt>
-                                <dd className="order-first text-3xl font-semibold tracking-tight">
-                                    <DSText
-                                        as="span"
-                                        variant={DSTextVariant.largerTitle}
-                                        color={DSTextColor.tintTheme}
-                                        weight={DSTextWeight.bold}
-                                        fontStyle={FontStyle.Heading}
-                                        className="number-scramble"
-                                    >
-                                        <Odometer
-                                            value={parseFloat(stat.number)}
-                                            className=""
-                                        />
-                                        {stat.number.slice(-1)}
-                                    </DSText>
-                                </dd>
-                            </div>
-                        ))}
-                    </dl>
                 </RegularContainer>
             </RegularSection>
             {/* Why Digital Marketing Works */}
