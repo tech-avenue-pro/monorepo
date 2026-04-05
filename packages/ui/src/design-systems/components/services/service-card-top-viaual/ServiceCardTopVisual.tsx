@@ -1,27 +1,20 @@
 import React from "react";
-import { DSText, DSTextVariant } from "../../DSText";
-import { DSLink, DSTextColor, DSTextWeight } from "../../DSLink";
-import { DSButtonVariant, DSLinkButton } from "../../DSButton";
+import { DSText, DSTextVariant } from "../../../DSText";
+import { DSLink, DSTextColor, DSTextWeight } from "../../../DSLink";
+import type { ServiceCardTopVisualContent } from "./service-card-to-visual-content";
 
-export type ServiceCardProps = {
-    image?: React.ReactNode;
-    title: string;
-    description: string;
-    icon?: React.ReactNode;
-    href?: string;
-    badge?: string; // e.g. "Popular", "New"
-    linkTitle?: string;
-};
+export type { ServiceCardTopVisualContent };
 
-export function ServiceCard({
+export function ServiceCardTopVisual({
     title,
     description,
-    icon,
     href,
     image,
+    srcSet,
+    alt,
     badge,
     linkTitle,
-}: ServiceCardProps) {
+}: ServiceCardTopVisualContent) {
     const CardWrapper: React.ElementType = href ? "a" : "div";
 
     return (
@@ -35,7 +28,7 @@ export function ServiceCard({
         >
             {image && (
                 <div className="mb-4 overflow-hidden h-48 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
-                    {image}
+                    <img src={image} alt={alt || ""} srcSet={srcSet || ""} />
                 </div>
             )}
 
@@ -46,12 +39,6 @@ export function ServiceCard({
             ) : null}
 
             <div className="flex items-start gap-4 p-4">
-                {icon ? (
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
-                        {icon}
-                    </div>
-                ) : null}
-
                 <div className="min-w-0">
                     <DSText
                         as="h3"

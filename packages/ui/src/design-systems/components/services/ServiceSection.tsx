@@ -1,6 +1,9 @@
 "use client";
 
-import { ServiceCard } from "./ServiceCard";
+import {
+    ServiceCardTopVisual,
+    ServiceCardTopVisualContent,
+} from "./service-card-top-viaual/ServiceCardTopVisual";
 import {
     DSText,
     DSTextVariant,
@@ -8,26 +11,7 @@ import {
     FontStyle,
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion } from "../../DSMotion";
-
-export interface ServicesContent {
-    sectionTitle: string;
-    sectionTagline: string;
-    sectionTagDescription: string;
-    linkTitle: string;
-    services: ServiceDetailContent[];
-}
-
-export interface ServiceDetailContent {
-    id: number;
-    title: string;
-    slug?: string;
-    description: string;
-    image: string;
-    srcSet: string;
-    alt: string;
-    href: string;
-    badge?: string;
-}
+import { ServiceSectionContent } from "./service-section-content";
 
 export default function ServiceSection({
     sectionTitle,
@@ -35,7 +19,7 @@ export default function ServiceSection({
     sectionTagDescription,
     linkTitle,
     services,
-}: ServicesContent) {
+}: ServiceSectionContent) {
     return (
         <section className="mx-auto max-w-6xl px-4">
             <div className="flex flex-start align-top md:justify-between mb-16 items-start gap-1 md:gap-16 flex-col md:flex-row">
@@ -77,21 +61,21 @@ export default function ServiceSection({
                         : service.href;
 
                     return (
-                        <DSMotion variant="fade-up" delay={0.3}>
-                            <ServiceCard
-                                image={
-                                    <img
-                                        src={service.image}
-                                        alt={service.alt}
-                                        srcSet={service.srcSet}
-                                        className=""
-                                    />
-                                }
+                        <DSMotion
+                            variant="fade-up"
+                            delay={0.3}
+                            key={service.id}
+                        >
+                            <ServiceCardTopVisual
+                                id={service.id}
+                                image={service.image}
+                                srcSet={service.srcSet}
+                                alt={service.alt}
                                 title={service.title}
                                 description={service.description}
                                 href={href}
-                                badge="Availeble Now"
-                                linkTitle={linkTitle}
+                                linkTitle={service.linkTitle}
+                                badge={service.badge}
                             />
                         </DSMotion>
                     );
