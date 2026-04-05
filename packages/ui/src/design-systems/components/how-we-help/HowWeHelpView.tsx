@@ -8,6 +8,7 @@ import {
     FontStyle,
 } from "../../DSText";
 import { DSText } from "../../DSText";
+import ServiceCardTopNumber from "../services/service-card-top-number/ServiceCardTopNumber";
 
 export default function HowWeHelpView(howWeHelp: HowWeHelpContent) {
     return (
@@ -27,42 +28,7 @@ export default function HowWeHelpView(howWeHelp: HowWeHelpContent) {
 
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {howWeHelp.steps.map((step) => (
-                    <DSMotion variant="fade-up" delay={0.5} duration={0.5}>
-                        <div
-                            key={step.number}
-                            className="rounded-3xl border ds-bg-default p-6 shadow-sm"
-                        >
-                            <div className=" flex items-center justify-end">
-                                <DSText
-                                    as="span"
-                                    variant={DSTextVariant.largestTitle}
-                                    color={DSTextColor.quinary}
-                                    weight={DSTextWeight.semiBold}
-                                    fontStyle={FontStyle.Heading}
-                                >
-                                    {step.number}
-                                </DSText>
-                            </div>
-                            <DSText
-                                as="h3"
-                                variant={DSTextVariant.headline1}
-                                color={DSTextColor.primary}
-                                fontStyle={FontStyle.Heading}
-                                weight={DSTextWeight.bold}
-                                className="mt-4"
-                            >
-                                {step.title}
-                            </DSText>
-                            <DSText
-                                as="p"
-                                variant={DSTextVariant.body}
-                                color={DSTextColor.secondary}
-                                className="mt-4"
-                            >
-                                {step.description}
-                            </DSText>
-                        </div>
-                    </DSMotion>
+                    <ServiceCardTopNumber key={step.number} {...step} />
                 ))}
             </div>
         </div>

@@ -24,7 +24,7 @@ export type ServiceDetailPageContent = {
     deliverables: { title: string; items: string[] };
     howWeHelp: {
         title: string;
-        steps: { number: string; title: string; description: string }[];
+        steps: ServiceCardTopNumberContent[];
     };
     whoItsFor: { title: string; tags: string[] };
     whyChooseUs: WhyChooseUsContent;
@@ -52,6 +52,7 @@ import WhyItWorks from "../why-it-works/WhyItWorks";
 import { StatsContent } from "../stats/stats-content";
 import StatsView from "../stats/StatsView";
 import HowWeHelpView from "../how-we-help/HowWeHelpView";
+import { ServiceCardTopNumberContent } from "./service-card-top-number/service-card-top-number-content";
 
 export function ServiceDetails({
     service,
