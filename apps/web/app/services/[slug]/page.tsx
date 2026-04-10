@@ -1,10 +1,7 @@
 import { DSText, DSTextVariant } from "@repo/ui/design-systems/DSText";
 import React from "react";
 import { getServiceBySlug } from "../../content/services/servicesContent";
-import {
-    ServiceDetailPageContent,
-    ServiceDetails,
-} from "@repo/ui/design-systems/components/services/ServiceDetails";
+
 import MainNavBar from "../../MainNavBar";
 import SecondaryNavBar from "../../SecondaryNavBar";
 import { Metadata } from "next";
@@ -17,6 +14,8 @@ import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import Form from "../../HomeView/Form";
 import { getCTASectionContent } from "../../content/cta-section/getCTASectionContent";
+import { ServiceDetails } from "@repo/ui/design-systems/components/services/service-detail-page/ServiceDetails";
+import { ServiceDetailPageContent } from "@repo/ui/design-systems/components/services/service-detail-page/service-detail-page-content.ts";
 
 interface ServicePageProps {
     params: Promise<{ slug: string }>;

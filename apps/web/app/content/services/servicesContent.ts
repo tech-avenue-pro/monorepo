@@ -1,4 +1,4 @@
-import { ServiceDetailPageContent } from "@repo/ui/design-systems/components/services/ServiceDetails";
+import { ServiceDetailPageContent } from "@repo/ui/design-systems/components/services/service-detail-page/service-detail-page-content.ts";
 import servicesData from "./servicesContent.json";
 import { ServiceSectionContent } from "@repo/ui/design-systems/components/services/ServiceSection/service-section-content.ts";
 
