@@ -17,7 +17,7 @@ import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import { DSText, FontStyle } from "@repo/ui/design-systems/DSText";
-import ServiceSection from "@repo/ui/design-systems/components/services/ServiceSection";
+import ServiceSection from "@repo/ui/design-systems/components/services/ServiceSection/ServiceSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";

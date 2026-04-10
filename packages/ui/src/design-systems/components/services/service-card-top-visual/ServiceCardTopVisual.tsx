@@ -1,7 +1,7 @@
 import React from "react";
 import { DSText, DSTextVariant } from "../../../DSText";
 import { DSLink, DSTextColor, DSTextWeight } from "../../../DSLink";
-import type { ServiceCardTopVisualContent } from "./service-card-to-visual-content";
+import type { ServiceCardTopVisualContent } from "./service-card-top-visual-content";
 
 export type { ServiceCardTopVisualContent };
 

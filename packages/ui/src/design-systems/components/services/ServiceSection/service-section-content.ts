@@ -1,4 +1,4 @@
-import { ServiceCardTopVisualContent } from "./service-card-top-viaual/service-card-to-visual-content";
+import { ServiceCardTopVisualContent } from "../service-card-top-visual/service-card-top-visual-content";
 
 export interface ServiceSectionContent {
     sectionTitle: string;

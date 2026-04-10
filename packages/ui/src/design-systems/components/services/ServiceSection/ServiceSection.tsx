@@ -1,16 +1,13 @@
 "use client";
 
-import {
-    ServiceCardTopVisual,
-    ServiceCardTopVisualContent,
-} from "./service-card-top-visual/ServiceCardTopVisual";
+import { ServiceCardTopVisual } from "../service-card-top-visual/ServiceCardTopVisual";
 import {
     DSText,
     DSTextVariant,
     DSTextWeight,
     FontStyle,
 } from "@repo/ui/design-systems/DSText";
-import { DSMotion } from "../../DSMotion";
+import { DSMotion } from "../../../DSMotion";
 import { ServiceSectionContent } from "./service-section-content";
 
 export default function ServiceSection({
@@ -64,6 +61,7 @@ export default function ServiceSection({
                         <DSMotion
                             variant="fade-up"
                             delay={0.3}
+                            duration={0.3}
                             key={service.id}
                         >
                             <ServiceCardTopVisual
