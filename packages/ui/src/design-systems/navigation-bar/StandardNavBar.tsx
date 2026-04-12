@@ -247,7 +247,13 @@ const StandardNavBar = ({
                         >
                             {isMobileNavOpen ? (
                                 <React.Fragment>
-                                    <li className="mobile-submenu-header">
+                                    <li
+                                        className={clsx(
+                                            "mobile-submenu-header",
+                                            activeColor &&
+                                                colorClasses[activeColor],
+                                        )}
+                                    >
                                         <button
                                             type="button"
                                             className={clsx(

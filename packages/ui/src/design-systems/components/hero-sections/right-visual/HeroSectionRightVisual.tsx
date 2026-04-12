@@ -26,7 +26,7 @@ export default function HeroSectionRightVisual(
                         as="p"
                         variant={DSTextVariant.body}
                         color={DSTextColor.secondary}
-                        className="text-center mb-6 md:text-left"
+                        className="text-left mb-6"
                     >
                         {content.summary}
                     </DSText>
