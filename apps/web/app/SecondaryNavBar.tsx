@@ -70,8 +70,8 @@ export default function SecondaryNavBar() {
             hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.medium}
-            mobileFontWeight={DSTextWeight.regular}
-            mobileTextVariant={DSTextVariant.largeTitle}
+            mobileFontWeight={DSTextWeight.medium}
+            mobileTextVariant={DSTextVariant.title2}
             logoSrc="../icons/tech-avenue-pro-navbar.png"
             name="Tech Avenue Pro"
             background={DSLayoutBackground.default}
