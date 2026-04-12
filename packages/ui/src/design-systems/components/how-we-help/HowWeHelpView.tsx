@@ -9,28 +9,15 @@ import {
 } from "../../DSText";
 import { DSText } from "../../DSText";
 import ServiceCardTopNumber from "../services/service-card-top-number/ServiceCardTopNumber";
+import ServceCardTopNumberCollection from "../services/service-card-top-number/ServceCardTopNumberCollection";
+import SectionTitleView from "../section-title/standard/SectionTitleView";
 
 export default function HowWeHelpView(howWeHelp: HowWeHelpContent) {
     return (
         <div className="">
-            <DSMotion variant="fade-up" delay={0.3} duration={0.5}>
-                <DSText
-                    as="h2"
-                    variant={DSTextVariant.largeTitle}
-                    color={DSTextColor.primary}
-                    weight={DSTextWeight.bold}
-                    className="text-left"
-                    fontStyle={FontStyle.Heading}
-                >
-                    {howWeHelp.title}
-                </DSText>
-            </DSMotion>
+            <SectionTitleView title={howWeHelp.title} />
 
-            <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                {howWeHelp.steps.map((step) => (
-                    <ServiceCardTopNumber key={step.number} {...step} />
-                ))}
-            </div>
+            <ServceCardTopNumberCollection collection={howWeHelp.steps} />
         </div>
     );
 }

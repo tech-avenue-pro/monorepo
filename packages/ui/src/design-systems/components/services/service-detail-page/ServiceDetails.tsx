@@ -12,7 +12,8 @@ import { ServiceDetailPageContent } from "./service-detail-page-content";
 import HeroSectionRightVisual from "../../hero-sections/right-visual/HeroSectionRightVisual";
 import WhyItWorks from "../../why-it-works/WhyItWorks";
 import StatsView from "../../stats/StatsView";
-import HowWeHelpView from "../../how-we-help/HowWeHelpView";
+import SectionTitleView from "../../section-title/standard/SectionTitleView";
+import ServceCardTopNumberCollection from "../service-card-top-number/ServceCardTopNumberCollection";
 
 export function ServiceDetails({
     service,
@@ -47,7 +48,12 @@ export function ServiceDetails({
                 id="what-we-do"
             >
                 <RegularContainer>
-                    <HowWeHelpView {...service.howWeHelp} />
+                    <div className="flex flex-col gap-14">
+                        <SectionTitleView title={service.howWeHelp.title} />
+                        <ServceCardTopNumberCollection
+                            collection={service.howWeHelp.steps}
+                        />
+                    </div>
                 </RegularContainer>
             </RegularSection>
             {/* Stats and Data */}
