@@ -9,7 +9,10 @@ import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import { DSLayoutBackground } from "../../../../../packages/ui/src/design-systems/backgrounds";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
-import { getFooterContent } from "../../content/footer-section/getFooterContent";
+import {
+    getFooterContent,
+    getSecondaryFooterContent,
+} from "../../content/footer-section/getFooterContent";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import Form from "../../HomeView/Form";
@@ -71,7 +74,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <hr className="my-0 border-gray-300" />
             <RegularSection background={DSLayoutBackground.default}>
                 <RegularContainer>
-                    <Footer {...getFooterContent()} />
+                    <Footer {...getSecondaryFooterContent()} />
                 </RegularContainer>
             </RegularSection>
         </React.Fragment>

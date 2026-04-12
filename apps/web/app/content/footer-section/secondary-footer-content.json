@@ -1,0 +1,72 @@
+{
+    "footerTitle": "Tech Avenue Pro",
+    "footerLogo": "/icons/tech-avenue-pro-navbar.png",
+    "socialLinks": [
+        {
+            "logo": "/icons/logo-facebook.svg",
+            "link": "https://www.facebook.com/profile.php?id=61585585133241",
+            "alt": "Facebook Tech Avenue Pro"
+        },
+        {
+            "logo": "/icons/logo-instagram.svg",
+            "link": "https://www.instagram.com/techavenuepro/",
+            "alt": "Instagram Tech Avenue Pro"
+        }
+    ],
+    "phoneNumber": "+1 437-448-3374",
+    "emailAddress": "contact@techavenue.pro",
+    "copyrightText": "Tech Avenue Pro. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Services",
+            "links": [
+                {
+                    "title": "Digital Marketing & Ads",
+                    "link": "/services/digital-marketing-ads"
+                },
+                {
+                    "title": "Social Media Presence Management",
+                    "link": "/services/social-media-presence-management"
+                },
+                {
+                    "title": "Business Websites",
+                    "link": "/services/premium-business-website"
+                },
+                {
+                    "title": "Google Visibility",
+                    "link": "/services/google-visibility-and-local-search"
+                }
+            ]
+        },
+        {
+            "title": "Menu",
+            "links": [
+                {
+                    "title": "Home",
+                    "link": "/"
+                },
+                {
+                    "title": "How We Help",
+                    "link": "#how-we-help"
+                },
+                {
+                    "title": "Why Choose Us",
+                    "link": "#why-choose-us"
+                }
+            ]
+        },
+        {
+            "title": "Operations",
+            "links": [
+                {
+                    "title": "Live Queue",
+                    "link": "/services/live-queue"
+                },
+                {
+                    "title": "Online Appointments",
+                    "link": "/services/online-appointments"
+                }
+            ]
+        }
+    ]
+}

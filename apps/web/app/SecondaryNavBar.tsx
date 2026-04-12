@@ -49,8 +49,8 @@ export default function SecondaryNavBar() {
                     ],
                 },
                 {
-                    label: "What we do",
-                    href: "#what-we-do",
+                    label: "How We Help",
+                    href: "#how-we-help",
                 },
                 {
                     label: "Why Choose Us",
@@ -58,11 +58,11 @@ export default function SecondaryNavBar() {
                 },
                 {
                     label: "Live Queue",
-                    href: "#live-queue",
+                    href: "/services/live-queue",
                 },
                 {
                     label: "Online Appointments",
-                    href: "#online-appointments",
+                    href: "/services/online-appointments",
                 },
             ]}
             color={DSTextColor.primary}

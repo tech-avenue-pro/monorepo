@@ -4,3 +4,8 @@ export function getFooterContent(): FooterContent {
     const footerData = require("./footer-content.json");
     return footerData as FooterContent;
 }
+
+export function getSecondaryFooterContent(): FooterContent {
+    const footerData = require("./secondary-footer-content.json");
+    return footerData as FooterContent;
+}

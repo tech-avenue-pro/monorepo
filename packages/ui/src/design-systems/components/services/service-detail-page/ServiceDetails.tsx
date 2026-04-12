@@ -45,7 +45,7 @@ export function ServiceDetails({
             {/* How We Help */}
             <RegularSection
                 background={DSLayoutBackground.defaultVariation1}
-                id="what-we-do"
+                id="how-we-help"
             >
                 <RegularContainer>
                     <div className="flex flex-col gap-14">
