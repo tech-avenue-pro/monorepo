@@ -66,7 +66,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             >
                 <RegularContainer>
                     <FinalCTAWithForm
-                        form={<Form />}
+                        form={<Form email="ali.zaffar@gmail.com" />}
                         {...getCTASectionContent()}
                     />
                 </RegularContainer>

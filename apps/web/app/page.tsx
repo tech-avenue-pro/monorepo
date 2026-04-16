@@ -104,7 +104,7 @@ export default function Home() {
             >
                 <RegularContainer>
                     <FinalCTAWithForm
-                        form={<Form />}
+                        form={<Form email="ali.zaffar@gmail.com" />}
                         {...getCTASectionContent()}
                     />
                 </RegularContainer>
