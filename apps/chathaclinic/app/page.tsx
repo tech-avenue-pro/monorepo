@@ -84,6 +84,7 @@ export default function Home() {
                     <Footer {...footer} />
                 </RegularContainer>
             </RegularSection>
+            <FloatingWhatsAppButton phoneNumber="+923009464923" />
         </main>
     );
 }
