@@ -14,11 +14,24 @@ import {
 
 export type { LocationsSectionContent, LocationItemContent };
 
-function LocationCard({ name, address, phone, mapLink, schedule }: LocationItemContent) {
+function LocationCard({
+    name,
+    address,
+    phone,
+    mapLink,
+    schedule,
+}: LocationItemContent) {
     const cleanPhone = phone.replace(/\s+/g, "");
     return (
         <DSMotion variant="fade-up">
-            <div className="rounded-2xl p-8 h-full ds-bg-defaultVariation1 border border-gray-100 shadow-sm">
+            <div
+                className="rounded-2xl p-8 h-full border border-gray-200"
+                style={{
+                    background: "rgba(255,255,255,0.45)",
+                    backdropFilter: "blur(16px)",
+                    WebkitBackdropFilter: "blur(16px)",
+                }}
+            >
                 <div className="flex items-start gap-3 mb-5">
                     <svg
                         className="w-6 h-6 mt-1 shrink-0 ds-text-color-tintTheme"
@@ -107,7 +120,11 @@ function LocationCard({ name, address, phone, mapLink, schedule }: LocationItemC
                                 stroke="currentColor"
                                 strokeWidth={1.8}
                             >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"
+                                />
                             </svg>
                             <DSText
                                 as="span"
@@ -120,7 +137,10 @@ function LocationCard({ name, address, phone, mapLink, schedule }: LocationItemC
                         </div>
                         <div className="flex flex-col gap-1">
                             {schedule.map(({ day, hours, closed }) => (
-                                <div key={day} className="flex justify-between items-center">
+                                <div
+                                    key={day}
+                                    className="flex justify-between items-center"
+                                >
                                     <DSText
                                         as="span"
                                         variant={DSTextVariant.bodySmall}
@@ -131,8 +151,16 @@ function LocationCard({ name, address, phone, mapLink, schedule }: LocationItemC
                                     <DSText
                                         as="span"
                                         variant={DSTextVariant.bodySmall}
-                                        color={closed ? DSTextColor.secondary : DSTextColor.primary}
-                                        weight={closed ? undefined : DSTextWeight.medium}
+                                        color={
+                                            closed
+                                                ? DSTextColor.secondary
+                                                : DSTextColor.primary
+                                        }
+                                        weight={
+                                            closed
+                                                ? undefined
+                                                : DSTextWeight.medium
+                                        }
                                     >
                                         {hours}
                                     </DSText>
