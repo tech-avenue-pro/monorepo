@@ -39,7 +39,7 @@ export default function MainNavBar() {
             fontWeight={DSTextWeight.medium}
             mobileFontWeight={DSTextWeight.medium}
             mobileTextVariant={DSTextVariant.title2}
-            logoSrc="icons/chatha-clinic-logo.png"
+            logoSrc="icons/icon-40.png"
             name="Chatha Children Clinic"
             background={DSLayoutBackground.default}
             startingBackground={DSLayoutBackground.primaryLighter}
