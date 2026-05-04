@@ -33,8 +33,8 @@ export default function MainNavBar() {
                 },
             ]}
             color={DSTextColor.primary}
-            startingColor={DSTextColor.tintTheme}
-            hoverColor={DSTextColor.tintTheme}
+            startingColor={DSTextColor.primary}
+            hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.medium}
             mobileFontWeight={DSTextWeight.medium}

@@ -21,7 +21,7 @@
     --accent-darker: #10b981;
 
     /* tintTheme = primary color used for inline highlights, links */
-    --text-tint-theme: var(--accent);
+    --text-tint-theme: var(--darkest-background);
     --text-senary: var(--primary);
 }
 

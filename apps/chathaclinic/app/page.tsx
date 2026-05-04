@@ -11,6 +11,7 @@ import LocationsSection from "@repo/ui/design-systems/components/locations/Locat
 import ExperienceSection from "@repo/ui/design-systems/components/experience/ExperienceSection";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
 
+import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
 import MainNavBar from "./MainNavBar";
 import { getHeroContent } from "./content/hero-section/getHeroContent";
 import { getAboutContent } from "./content/about/getAboutContent";
@@ -83,6 +84,7 @@ export default function Home() {
                     <Footer {...footer} />
                 </RegularContainer>
             </RegularSection>
+            <FloatingWhatsAppButton phoneNumber="+923009464923" />
         </main>
     );
 }
