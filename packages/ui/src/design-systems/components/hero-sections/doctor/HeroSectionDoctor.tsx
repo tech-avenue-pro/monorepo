@@ -16,7 +16,7 @@ export default function HeroSectionDoctor(content: HeroSectionDoctorContent) {
             <DSMotion variant="fade-up" delay={0.55} duration={0.4}>
                 <DSText
                     as="h1"
-                    variant={DSTextVariant.largestTitle}
+                    variant={DSTextVariant.largerTitle}
                     color={DSTextColor.primary}
                     weight={DSTextWeight.bold}
                     fontStyle={FontStyle.Heading}

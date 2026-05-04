@@ -3,16 +3,34 @@
     "sectionDescription": "Visit Dr. Chatha at either of our two clinic locations in Lahore.",
     "locations": [
         {
-            "name": "Rewaz Gardens Clinic",
-            "address": "L 5, Awami Flats\nRewaz Gardens\nOpposite Mentor School\nLahore, Pakistan",
-            "phone": "0300-9464923",
-            "mapLink": ""
-        },
-        {
             "name": "DHA Phase 7 Clinic",
             "address": "2166, U Street 43\nDHA Phase 7\nLahore, Pakistan",
             "phone": "0300-9464923",
-            "mapLink": ""
+            "mapLink": "https://maps.app.goo.gl/JMVkhsiW8rcPdpWU8",
+            "schedule": [
+                { "day": "Monday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Tuesday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Wednesday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Thursday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Friday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Saturday", "hours": "10:00 AM – 2:00 PM" },
+                { "day": "Sunday", "hours": "Closed", "closed": true }
+            ]
+        },
+        {
+            "name": "Rewaz Gardens Clinic",
+            "address": "L 5, Awami Flats\nRewaz Gardens\nOpposite Mentor School\nLahore, Pakistan",
+            "phone": "0300-9464923",
+            "mapLink": "https://maps.app.goo.gl/2Uvb9CLLRFtWicNg8",
+            "schedule": [
+                { "day": "Monday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Tuesday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Wednesday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Thursday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Friday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Saturday", "hours": "5:00 PM – 10:00 PM" },
+                { "day": "Sunday", "hours": "Closed", "closed": true }
+            ]
         }
     ]
 }

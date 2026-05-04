@@ -23,7 +23,7 @@
             ]
         },
         {
-            "title": "Specializations",
+            "title": "Specialty",
             "links": [
                 {
                     "title": "Infectious Diseases",
@@ -36,6 +36,15 @@
                 {
                     "title": "Digestive Conditions",
                     "link": "#specializations-section"
+                }
+            ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenuepro.com"
                 }
             ]
         }
