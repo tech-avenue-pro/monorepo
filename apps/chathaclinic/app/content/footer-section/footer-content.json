@@ -38,6 +38,15 @@
                     "link": "#specializations-section"
                 }
             ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenuepro.com"
+                }
+            ]
         }
     ]
 }
