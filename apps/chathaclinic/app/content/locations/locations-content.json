@@ -1,0 +1,18 @@
+{
+    "sectionTitle": "Clinic Locations",
+    "sectionDescription": "Visit Dr. Chatha at either of our two clinic locations in Lahore.",
+    "locations": [
+        {
+            "name": "Rewaz Gardens Clinic",
+            "address": "L 5, Awami Flats\nRewaz Gardens\nOpposite Mentor School\nLahore, Pakistan",
+            "phone": "0300-9464923",
+            "mapLink": ""
+        },
+        {
+            "name": "DHA Phase 7 Clinic",
+            "address": "2166, U Street 43\nDHA Phase 7\nLahore, Pakistan",
+            "phone": "0300-9464923",
+            "mapLink": ""
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "footerTitle": "Chatha Children Clinic",
+    "footerLogo": "/icons/chatha-clinic-logo.png",
+    "socialLinks": [],
+    "phoneNumber": "0300-9464923",
+    "emailAddress": "",
+    "copyrightText": "Chatha Children Clinic. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Navigation",
+            "links": [
+                { "title": "Home", "link": "#hero-section" },
+                { "title": "About", "link": "#about-section" },
+                { "title": "Specializations", "link": "#specializations-section" },
+                { "title": "Locations", "link": "#locations-section" },
+                { "title": "Experience & Education", "link": "#experience-section" }
+            ]
+        },
+        {
+            "title": "Specializations",
+            "links": [
+                { "title": "Infectious Diseases", "link": "#specializations-section" },
+                { "title": "Allergies & Asthma", "link": "#specializations-section" },
+                { "title": "Digestive Conditions", "link": "#specializations-section" }
+            ]
+        }
+    ]
+}

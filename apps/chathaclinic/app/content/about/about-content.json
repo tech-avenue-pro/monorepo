@@ -1,0 +1,28 @@
+{
+    "sectionTitle": "About <span class=\"ds-text-color-tintTheme\">Dr. Nadeem Chatha</span>",
+    "introText": "With over two decades of dedicated service in pediatrics, Dr. Nadeem Chatha has built a reputation for excellence and compassionate care. His holistic approach to child health focuses not just on treating illness, but on fostering long-term wellbeing for every patient. He has positively impacted the lives of numerous families across Lahore, earning the trust of the community through consistent, high-quality care.",
+    "src": "/images/doctor-nadeem.webp",
+    "srcSet": "/images/doctor-nadeem.webp",
+    "reasons": [
+        {
+            "id": 1,
+            "title": "20+ Years of Experience",
+            "description": "Over two decades of clinical practice in pediatrics across leading hospitals and his own clinic, bringing unmatched depth of knowledge."
+        },
+        {
+            "id": 2,
+            "title": "Holistic Patient Care",
+            "description": "A whole-child approach to health that considers physical, emotional, and developmental wellbeing — not just symptoms."
+        },
+        {
+            "id": 3,
+            "title": "Trusted by Families",
+            "description": "Thousands of families across Lahore have entrusted their children's health to Dr. Chatha, reflecting the community's confidence in his care."
+        },
+        {
+            "id": 4,
+            "title": "Specialized Expertise",
+            "description": "Deep specialization in infectious diseases, allergies, asthma, and digestive conditions in children."
+        }
+    ]
+}

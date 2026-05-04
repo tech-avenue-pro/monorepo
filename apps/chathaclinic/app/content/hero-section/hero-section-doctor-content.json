@@ -1,0 +1,18 @@
+{
+    "badge": "Consultant Pediatrician",
+    "name": "Dr. Nadeem Chatha",
+    "specialty": "MBBS — Pediatrics Specialist",
+    "description": "Dr. Nadeem is a widely respected pediatrician recognized for his remarkable commitment to promoting the health and welfare of children",
+    "primaryCta": {
+        "label": "Our Locations",
+        "href": "#locations-section"
+    },
+    "secondaryCta": {
+        "label": "Call Now: 0300-9464923",
+        "href": "tel:03009464923"
+    },
+    "image": {
+        "src": "/images/chatha-clinic-hero-image.webp",
+        "alt": "Dr. Nadeem Chatha — Consultant Pediatrician"
+    }
+}

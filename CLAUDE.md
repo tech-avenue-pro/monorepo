@@ -9,7 +9,8 @@ Shared code lives in `packages/`.
 ```
 monorepo/
 ├── apps/
-│   └── web/          # First website (techavenue.pro)
+│   ├── web/          # First website (techavenue.pro) — port 3000
+│   └── chathaclinic/ # Second website (chathaclinic.com) — port 3001
 ├── packages/
 │   ├── ui/           # Shared React component library (@repo/ui)
 │   ├── styles/       # Shared CSS files & Tailwind preset (@repo/styles)
@@ -66,6 +67,10 @@ Located in `components/`. Each component has its own folder:
 | `why-it-works/` | `WhyItWorks` | `WhyItWorksContent` |
 | `section-title/standard/` | `SectionTitleView` | — |
 | `section-title/split-messages/` | `SectionTitleSplitMessageView` | `SectionTitleSplitContent` |
+| `hero-sections/doctor/` | `HeroSectionDoctor` | `HeroSectionDoctorContent` |
+| `specializations/` | `SpecializationsSection` | `SpecializationsSectionContent` |
+| `locations/` | `LocationsSection` | `LocationsSectionContent` |
+| `experience/` | `ExperienceSection` | `ExperienceSectionContent` |
 
 Navigation: `navigation-bar/StandardNavBar.tsx`
 
