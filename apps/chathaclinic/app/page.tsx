@@ -61,7 +61,7 @@ export default function Home() {
 
             <RegularSection
                 id="locations-section"
-                background={DSLayoutBackground.default}
+                className="ds-bg-light-corners-mixed"
             >
                 <RegularContainer>
                     <LocationsSection {...locations} />
@@ -84,7 +84,6 @@ export default function Home() {
                     <Footer {...footer} />
                 </RegularContainer>
             </RegularSection>
-            <FloatingWhatsAppButton phoneNumber="+923009464923" />
         </main>
     );
 }

@@ -14,7 +14,7 @@ import {
 
 export type { LocationsSectionContent, LocationItemContent };
 
-function LocationCard({ name, address, phone, mapLink }: LocationItemContent) {
+function LocationCard({ name, address, phone, mapLink, schedule }: LocationItemContent) {
     const cleanPhone = phone.replace(/\s+/g, "");
     return (
         <DSMotion variant="fade-up">
@@ -95,6 +95,51 @@ function LocationCard({ name, address, phone, mapLink }: LocationItemContent) {
                             View on map →
                         </DSText>
                     </a>
+                )}
+
+                {schedule && schedule.length > 0 && (
+                    <div className="mt-6 pt-5 border-t border-gray-200">
+                        <div className="flex items-center gap-2 mb-3">
+                            <svg
+                                className="w-4 h-4 shrink-0 ds-text-color-tintTheme"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={1.8}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                            </svg>
+                            <DSText
+                                as="span"
+                                variant={DSTextVariant.bodySmall}
+                                color={DSTextColor.primary}
+                                weight={DSTextWeight.semiBold}
+                            >
+                                Clinic Hours
+                            </DSText>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            {schedule.map(({ day, hours, closed }) => (
+                                <div key={day} className="flex justify-between items-center">
+                                    <DSText
+                                        as="span"
+                                        variant={DSTextVariant.bodySmall}
+                                        color={DSTextColor.secondary}
+                                    >
+                                        {day}
+                                    </DSText>
+                                    <DSText
+                                        as="span"
+                                        variant={DSTextVariant.bodySmall}
+                                        color={closed ? DSTextColor.secondary : DSTextColor.primary}
+                                        weight={closed ? undefined : DSTextWeight.medium}
+                                    >
+                                        {hours}
+                                    </DSText>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 )}
             </div>
         </DSMotion>
