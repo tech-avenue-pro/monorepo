@@ -1,0 +1,21 @@
+{
+    "sectionTitle": "Areas of Specialization",
+    "sectionDescription": "Dr. Chatha provides expert care across a range of pediatric conditions, ensuring every child receives accurate diagnosis and effective treatment.",
+    "items": [
+        {
+            "icon": "/icons/infectious.png",
+            "title": "Infectious Diseases",
+            "description": "Diagnosis and treatment of viral, bacterial, and fungal infections in children, including fever management and preventive care."
+        },
+        {
+            "icon": "/icons/allergies.png",
+            "title": "Allergies & Asthma",
+            "description": "Comprehensive management of allergic reactions, asthma, and immune-related conditions to help children breathe and live comfortably."
+        },
+        {
+            "icon": "/icons/digestive.png",
+            "title": "Digestive System Conditions",
+            "description": "Expert care for pediatric digestive disorders including Crohn's disease, celiac disease, and other gastrointestinal conditions."
+        }
+    ]
+}

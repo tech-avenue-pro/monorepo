@@ -1,0 +1,63 @@
+/*
+  Chatha Children Clinic — color overrides
+  Redefines only the CSS variables that differ from the shared design system.
+  This file is imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light; /* tells browser UI (scrollbars, inputs) to stay light */
+
+    /* Brand primary: medical teal */
+    --primary: #15cce0;
+    --primary-lighter: #cafaff;
+    --primary-darker: #0e6f8a;
+    --primary-button-hover: #0779a0;
+    --darkest-background: #064e63;
+    --lightest-background: #e0f5fa;
+
+    /* Accent: soft warm green */
+    --accent: #34d399;
+    --accent-lighter: #6ee7b7;
+    --accent-darker: #10b981;
+
+    /* tintTheme = primary color used for inline highlights, links */
+    --text-tint-theme: var(--darkest-background);
+    --text-senary: var(--primary);
+}
+
+/* ── Opt out of dark mode ──────────────────────────────────────────────────
+   Resets every variable that design-systems.css changes in its dark block.
+   theme.css loads last, so these win the cascade on dark-mode OS settings.
+   ─────────────────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Backgrounds → stay white/light */
+        --default-background: #ffffff;
+        --default-background-variation1: #f9f9f9;
+        --default-background-variation2: #edefef;
+        --default-background-variation3: #d9dbdb;
+        --lightest-background: #e0f5fa;
+
+        /* Brand colors → keep chatha light-mode values */
+        --primary: #15cce0;
+        --primary-lighter: #cafaff;
+        --primary-darker: #0e6f8a;
+        --text-tint-theme: var(--darkest-background);
+        --text-senary: var(--primary);
+
+        /* Text → stay dark-on-light */
+        --text-primary: #333;
+        --text-secondary: #444;
+        --text-tertiary: #555;
+        --text-quaternary: #777;
+        --text-quinary: #bbb;
+
+        /* Contrast button → stay dark */
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        /* Input background → stay light */
+        --text-box-bg: #f1f1f1;
+    }
+}

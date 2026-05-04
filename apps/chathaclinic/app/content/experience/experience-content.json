@@ -1,0 +1,33 @@
+{
+    "experienceTitle": "Professional Experience",
+    "experience": [
+        {
+            "period": "1995 — Present",
+            "role": "Founder & Consultant Pediatrician",
+            "institution": "Chatha Children Clinic, Lahore"
+        },
+        {
+            "period": "2004 - 2008",
+            "role": "Consultant Pediatrician",
+            "institution": "Shalimar Hospital, Lahore"
+        },
+        {
+            "period": "1998 - 2004",
+            "role": "Consultant Pediatrician",
+            "institution": "Surayya Azeem Hospital, Lahore"
+        },
+        {
+            "period": "1995 - 1998",
+            "role": "Consultant Pediatrician",
+            "institution": "Fatima Memorial Hospital, Lahore"
+        }
+    ],
+    "educationTitle": "Education & Qualifications",
+    "education": [
+        {
+            "degree": "MBBS — Pediatrics",
+            "institution": "Punjab Medical University",
+            "period": "1988 — 1994"
+        }
+    ]
+}
