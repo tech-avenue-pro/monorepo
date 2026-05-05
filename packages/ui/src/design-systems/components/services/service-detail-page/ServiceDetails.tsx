@@ -24,7 +24,7 @@ export function ServiceDetails({
         <main>
             {/* HERO */}
             <HeroSection
-                background={DSLayoutBackground.lightestBackground}
+                background={DSLayoutBackground.primary}
                 className="lg:h-[calc(100vh-4rem)]"
             >
                 <HeroContainer className="h-full">

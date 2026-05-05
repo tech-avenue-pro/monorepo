@@ -17,6 +17,7 @@ import MainNavBar from "../MainNavBar";
 import MenuCategorySection from "./MenuCategorySection";
 import { getFooterContent } from "../content/footer-section/getFooterContent";
 import menuData from "../content/menu/menu-data.json";
+import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 
 export default function MenuPage() {
     const footer = getFooterContent();
@@ -25,7 +26,7 @@ export default function MenuPage() {
         <main>
             <MainNavBar />
 
-            <HeroSection
+            <SmallSection
                 id="hero-section"
                 background={DSLayoutBackground.default}
             >
@@ -38,7 +39,7 @@ export default function MenuPage() {
                             weight={DSTextWeight.semiBold}
                             className="mb-3 uppercase tracking-widest"
                         >
-                            Fresh & Handcrafted
+                            Fresh & Home made
                         </DSText>
                         <DSText
                             as="h1"
@@ -53,7 +54,7 @@ export default function MenuPage() {
                             as="p"
                             variant={DSTextVariant.body}
                             color={DSTextColor.secondary}
-                            className="max-w-2xl mx-auto"
+                            className="max-w-2xl mx-auto text-left"
                         >
                             Every item on our menu is made from scratch with
                             quality ingredients. Order individually for a la
@@ -61,21 +62,21 @@ export default function MenuPage() {
                         </DSText>
                     </DSMotion>
                 </HeroContainer>
-            </HeroSection>
+            </SmallSection>
 
-            <RegularSection background={DSLayoutBackground.defaultVariation1}>
+            <SmallSection background={DSLayoutBackground.defaultVariation1}>
                 <RegularContainer>
                     <MenuCategorySection categories={menuData.categories} />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
 
             <hr className="my-0 border-gray-300" />
 
-            <RegularSection background={DSLayoutBackground.default}>
+            <SmallSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <Footer {...footer} />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
 
             <FloatingWhatsAppButton phoneNumber="+923288288897" />
         </main>

@@ -1,6 +1,6 @@
 import heroData from "./hero-content.json";
-import { HeroSectionTechContent } from "@repo/ui/design-systems/components/hero-sections/tech/hero-section-tech-content.ts";
+import { HeroSectionBackgroundVisualContent } from "@repo/ui/design-systems/components/hero-sections/background-visual/hero-section-background-visual-content.ts";
 
-export function getHeroContent(): HeroSectionTechContent {
-    return heroData as HeroSectionTechContent;
+export function getHeroContent(): HeroSectionBackgroundVisualContent {
+    return heroData as HeroSectionBackgroundVisualContent;
 }

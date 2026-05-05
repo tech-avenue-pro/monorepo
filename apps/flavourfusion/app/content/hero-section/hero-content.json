@@ -1,7 +1,11 @@
 {
-    "smallTitle": "Premium Home Catering — Lahore",
-    "title": "Flavour Fusion — Catering, Reimagined",
-    "description": "Distinct flavours. Thoughtful presentation. Elevated experiences for small parties — from intimate gatherings to curated Iftar spreads.",
-    "ctaText": "Book via WhatsApp",
-    "ctaLink": "https://wa.me/923288288897"
+    "smallTitle": "Home base Chef | Orders are accepted at least a day in advance.",
+    "title": "Catering, Reimagined",
+    "description": "Distinct flavours. Thoughtful presentation. Elevated experiences for small gatherings and special occasions.",
+    "primaryCtaText": "Book via WhatsApp",
+    "primaryCtaLink": "https://wa.me/923288288897",
+    "secondaryCtaText": "View Menu",
+    "secondaryCtaLink": "/menu",
+    "backgroundImage": "/images/hero-background.png",
+    "backgroundImageAlt": "Flavour Fusion catering spread"
 }

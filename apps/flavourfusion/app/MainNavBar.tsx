@@ -25,7 +25,7 @@ export default function MainNavBar() {
                 },
             ]}
             color={DSTextColor.primary}
-            startingColor={DSTextColor.primary}
+            startingColor={DSTextColor.white}
             hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.medium}
@@ -34,7 +34,7 @@ export default function MainNavBar() {
             logoSrc="/icons/logo-40.png"
             name="Flavour Fusion"
             background={DSLayoutBackground.default}
-            startingBackground={DSLayoutBackground.default}
+            startingBackground={DSLayoutBackground.blackVariation1}
             stickyOnScrollOnly={true}
         />
     );
