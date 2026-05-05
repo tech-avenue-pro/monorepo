@@ -1,0 +1,53 @@
+/*
+  Flavour Fusion — color overrides
+  Warm amber/terracotta palette for a premium catering brand.
+  Imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light;
+
+    /* Brand primary: warm terracotta */
+    --primary: #C2692A;
+    --primary-lighter: #FDEBD8;
+    --primary-darker: #8B3A10;
+    --primary-button-hover: #A0531E;
+    --darkest-background: #5A2008;
+    --lightest-background: #FEF8F2;
+
+    /* Accent: golden amber */
+    --accent: #E8A020;
+    --accent-lighter: #F5C96A;
+    --accent-darker: #B87D10;
+
+    --text-tint-theme: var(--darkest-background);
+    --text-senary: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-background: #ffffff;
+        --default-background-variation1: #faf8f5;
+        --default-background-variation2: #f2ede6;
+        --default-background-variation3: #e8dfd4;
+        --lightest-background: #FEF8F2;
+
+        --primary: #C2692A;
+        --primary-lighter: #FDEBD8;
+        --primary-darker: #8B3A10;
+        --text-tint-theme: var(--darkest-background);
+        --text-senary: var(--primary);
+
+        --text-primary: #333;
+        --text-secondary: #444;
+        --text-tertiary: #555;
+        --text-quaternary: #777;
+        --text-quinary: #bbb;
+
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        --text-box-bg: #f1f1f1;
+    }
+}
