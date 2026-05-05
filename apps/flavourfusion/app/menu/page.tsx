@@ -27,7 +27,7 @@ export default function MenuPage() {
 
             <HeroSection
                 id="hero-section"
-                background={DSLayoutBackground.primaryLighter}
+                background={DSLayoutBackground.default}
             >
                 <HeroContainer>
                     <DSMotion variant="fade-up" className="text-center py-8">
@@ -56,14 +56,14 @@ export default function MenuPage() {
                             className="max-w-2xl mx-auto"
                         >
                             Every item on our menu is made from scratch with
-                            quality ingredients. Order individually for a
-                            la carte catering, or choose a curated package.
+                            quality ingredients. Order individually for a la
+                            carte catering, or choose a curated package.
                         </DSText>
                     </DSMotion>
                 </HeroContainer>
             </HeroSection>
 
-            <RegularSection background={DSLayoutBackground.default}>
+            <RegularSection background={DSLayoutBackground.defaultVariation1}>
                 <RegularContainer>
                     <MenuCategorySection categories={menuData.categories} />
                 </RegularContainer>

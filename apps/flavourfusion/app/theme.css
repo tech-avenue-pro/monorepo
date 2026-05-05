@@ -8,17 +8,22 @@
     color-scheme: light;
 
     /* Brand primary: warm terracotta */
-    --primary: #C2692A;
-    --primary-lighter: #FDEBD8;
-    --primary-darker: #8B3A10;
-    --primary-button-hover: #A0531E;
-    --darkest-background: #5A2008;
-    --lightest-background: #FEF8F2;
+    --primary: #fc8a8a;
+    --primary-lighter: #f9b8b8;
+    --primary-darker: #fb6161;
+    --primary-button-hover: #fb6161;
+    --darkest-background: #fb6161;
+    --lightest-background: #fef8f2;
+
+    /* Secondary Colors */
+    --secondary: #c2692a;
+    --secondary-lighter: #fdf2e9;
+    --secondary-darker: #8b3a10;
 
     /* Accent: golden amber */
-    --accent: #E8A020;
-    --accent-lighter: #F5C96A;
-    --accent-darker: #B87D10;
+    --accent: #e8a020;
+    --accent-lighter: #f5c96a;
+    --accent-darker: #b87d10;
 
     --text-tint-theme: var(--darkest-background);
     --text-senary: var(--primary);
@@ -30,11 +35,11 @@
         --default-background-variation1: #faf8f5;
         --default-background-variation2: #f2ede6;
         --default-background-variation3: #e8dfd4;
-        --lightest-background: #FEF8F2;
+        --lightest-background: #fef8f2;
 
-        --primary: #C2692A;
-        --primary-lighter: #FDEBD8;
-        --primary-darker: #8B3A10;
+        --primary: #c2692a;
+        --primary-lighter: #fdebd8;
+        --primary-darker: #8b3a10;
         --text-tint-theme: var(--darkest-background);
         --text-senary: var(--primary);
 

@@ -9,11 +9,17 @@ import {
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion, DSStagger } from "@repo/ui/design-systems/DSMotion";
 
+interface MenuItemVariant {
+    label: string;
+    price: string;
+}
+
 interface MenuItem {
     name: string;
-    price: string;
+    price?: string;
     description: string;
     image: string;
+    variants?: MenuItemVariant[];
 }
 
 interface Category {
@@ -63,7 +69,7 @@ export default function MenuCategorySection({ categories }: Props) {
     return (
         <div>
             {/* Category Tabs */}
-            <div className="sticky top-16 z-10 bg-white/90 backdrop-blur-sm border-b border-gray-100 -mx-4 md:-mx-8 px-4 md:px-8 py-4 mb-10">
+            <div className="sticky top-16 z-10 backdrop-blur-sm border-b border-gray-100 -mx-4 md:-mx-8 px-4 md:px-8 py-4 mb-10">
                 <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
                     {categories.map((cat) => (
                         <button
@@ -73,7 +79,7 @@ export default function MenuCategorySection({ categories }: Props) {
                             className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                                 activeCategory === cat.category
                                     ? "bg-[var(--primary)] text-white"
-                                    : "bg-[var(--primary-lighter)] text-[var(--primary-darker)] hover:bg-[var(--primary)] hover:text-white"
+                                    : "bg-[var(--secondary-lighter)] text-[var(--secondary-darker)] hover:bg-[var(--secondary)] hover:text-white"
                             }`}
                         >
                             {cat.category}
@@ -83,11 +89,7 @@ export default function MenuCategorySection({ categories }: Props) {
             </div>
 
             {/* Active Category Title */}
-            <DSMotion
-                key={activeCategory}
-                variant="fade-in"
-                className="mb-8"
-            >
+            <DSMotion key={activeCategory} variant="fade-in" className="mb-8">
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largeTitle}
@@ -123,18 +125,32 @@ export default function MenuCategorySection({ categories }: Props) {
                                 >
                                     {item.name}
                                 </DSText>
-                                <span className="shrink-0 bg-[var(--primary-lighter)] text-[var(--primary-darker)] text-xs font-semibold px-3 py-1 rounded-full border border-[var(--primary)] border-opacity-30">
-                                    {item.price}
-                                </span>
+                                {!item.variants && item.price && (
+                                    <span className="shrink-0 bg-[var(--secondary-lighter)] text-[var(--primary-darker)] text-xs font-semibold px-3 py-1 rounded-full border border-[var(--primary)] border-opacity-30">
+                                        {item.price}
+                                    </span>
+                                )}
                             </div>
                             <DSText
                                 as="p"
                                 variant={DSTextVariant.caption}
                                 color={DSTextColor.tertiary}
-                                className="flex-1"
+                                className="flex-1 mb-3"
                             >
                                 {item.description}
                             </DSText>
+                            {item.variants && (
+                                <div className="flex flex-wrap gap-2 mt-auto">
+                                    {item.variants.map((v) => (
+                                        <span
+                                            key={v.label}
+                                            className="bg-[var(--primary-lighter)] text-[var(--primary-darker)] text-xs font-semibold px-3 py-1.5 rounded-full border border-[var(--primary)] border-opacity-30"
+                                        >
+                                            {v.label} — {v.price}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     </DSMotion>
                 ))}
@@ -158,7 +174,7 @@ export default function MenuCategorySection({ categories }: Props) {
                     as="p"
                     variant={DSTextVariant.body}
                     color={DSTextColor.secondary}
-                    className="mb-6 max-w-lg mx-auto"
+                    className="mb-6 max-w-lg mx-audivo"
                 >
                     Reach out via WhatsApp to place an order or discuss a custom
                     catering package for your event.

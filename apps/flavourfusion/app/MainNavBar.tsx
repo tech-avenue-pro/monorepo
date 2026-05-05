@@ -31,10 +31,10 @@ export default function MainNavBar() {
             fontWeight={DSTextWeight.medium}
             mobileFontWeight={DSTextWeight.medium}
             mobileTextVariant={DSTextVariant.title2}
-            logoSrc="/icons/logo.png"
+            logoSrc="/icons/logo-40.png"
             name="Flavour Fusion"
             background={DSLayoutBackground.default}
-            startingBackground={DSLayoutBackground.primaryLighter}
+            startingBackground={DSLayoutBackground.default}
             stickyOnScrollOnly={true}
         />
     );
