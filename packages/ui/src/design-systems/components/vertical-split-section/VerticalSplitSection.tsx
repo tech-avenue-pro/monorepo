@@ -18,7 +18,7 @@ export default function VerticalSplitSection({
     isImageOnLeft = true,
 }: VerticalSplitSectionContent) {
     return (
-        <div className="grid lg:grid-cols-2 lg:min-h-150">
+        <div className="grid lg:grid-cols-2 lg:min-h-150 rounded-2xl overflow-hidden">
             {/* Text — top on mobile/tablet, position on desktop follows isImageOnLeft */}
             <DSMotion
                 variant="slide-left"
@@ -56,17 +56,17 @@ export default function VerticalSplitSection({
 
             {/* Image — bottom on mobile/tablet, position on desktop follows isImageOnLeft */}
             <div
-                className={`relative overflow-hidden rounded-2xl aspect-3/4 lg:aspect-auto order-2 ${
-                    isImageOnLeft
-                        ? "lg:order-1 lg:rounded-r-none lg:rounded-l-2xl"
-                        : "lg:order-2 lg:rounded-l-none lg:rounded-r-2xl"
+                className={`relative aspect-3/4 lg:aspect-auto order-2 ${
+                    isImageOnLeft ? "lg:order-1" : "lg:order-2"
                 }`}
             >
-                <img
-                    src={image}
-                    alt={title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                />
+                <div className="absolute inset-4 lg:inset-6 overflow-hidden rounded-2xl">
+                    <img
+                        src={image}
+                        alt={title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
+                </div>
             </div>
         </div>
     );

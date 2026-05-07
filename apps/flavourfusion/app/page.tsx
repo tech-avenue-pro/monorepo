@@ -46,13 +46,20 @@ export default function Home() {
 
             <RegularSection
                 id="how-it-works-section"
-                background={DSLayoutBackground.primaryLighter}
+                background={DSLayoutBackground.default}
             >
                 <RegularContainer>
                     <HowItWorks {...howItWorks} />
                 </RegularContainer>
             </RegularSection>
-
+            <RegularSection
+                id="why-choose-us-section"
+                background={DSLayoutBackground.primaryLighter}
+            >
+                <RegularContainer>
+                    <VerticalSplitSection {...whyChooseUs} />
+                </RegularContainer>
+            </RegularSection>
             <RegularSection
                 id="catering-packages-section"
                 background={DSLayoutBackground.defaultVariation1}
@@ -61,7 +68,6 @@ export default function Home() {
                     <CateringPackages />
                 </RegularContainer>
             </RegularSection>
-
             <ZeroSection
                 id="why-choose-us-section"
                 background={DSLayoutBackground.secondaryDarker}
