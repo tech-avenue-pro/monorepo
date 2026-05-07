@@ -2,5 +2,6 @@
     "image": "/images/why-choose-us.webp",
     "caption": "Why Choose us",
     "title": "Designed Around Your Gathering",
-    "description": "At Flavour Fusion, we design catering around the way you host. From curated menus to precise execution, every detail is considered so your gathering feels refined, relaxed, and memorable. It’s a personalized approach created for hosts who value quality."
+    "description": "At Flavour Fusion, we design catering around the way you host. From curated menus to precise execution, every detail is considered so your gathering feels refined, relaxed, and memorable. It’s a personalized approach created for hosts who value quality.",
+    "isImageOnLeft": true
 }

@@ -3,4 +3,5 @@ export interface WhyChooseUsVerticalSplitContent {
     caption: string;
     title: string;
     description: string;
+    isImageOnLeft?: boolean;
 }

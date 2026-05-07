@@ -15,13 +15,14 @@ export default function WhyChooseUsVerticalSplit({
     caption,
     title,
     description,
+    isImageOnLeft = true,
 }: WhyChooseUsVerticalSplitContent) {
     return (
         <div className="grid lg:grid-cols-2 lg:min-h-150">
-            {/* Text — top on mobile/tablet, right column on desktop */}
+            {/* Text — top on mobile/tablet, position on desktop follows isImageOnLeft */}
             <DSMotion
                 variant="slide-left"
-                className="flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 order-1 lg:order-2"
+                className={`flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 order-1 ${isImageOnLeft ? "lg:order-2" : "lg:order-1"}`}
             >
                 <DSText
                     as="p"
@@ -53,8 +54,14 @@ export default function WhyChooseUsVerticalSplit({
                 </DSText>
             </DSMotion>
 
-            {/* Image — bottom on mobile/tablet, left column on desktop */}
-            <div className="relative overflow-hidden rounded-2xl lg:rounded-r-none lg:rounded-l-2xl aspect-3/4 lg:aspect-auto order-2 lg:order-1">
+            {/* Image — bottom on mobile/tablet, position on desktop follows isImageOnLeft */}
+            <div
+                className={`relative overflow-hidden rounded-2xl aspect-3/4 lg:aspect-auto order-2 ${
+                    isImageOnLeft
+                        ? "lg:order-1 lg:rounded-r-none lg:rounded-l-2xl"
+                        : "lg:order-2 lg:rounded-l-none lg:rounded-r-2xl"
+                }`}
+            >
                 <img
                     src={image}
                     alt={title}
