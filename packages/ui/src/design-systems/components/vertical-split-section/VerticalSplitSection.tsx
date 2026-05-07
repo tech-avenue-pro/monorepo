@@ -6,17 +6,17 @@ import {
     DSTextWeight,
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion } from "../../DSMotion";
-import { WhyChooseUsVerticalSplitContent } from "./why-choose-us-vertical-split-content";
+import { VerticalSplitSectionContent } from "./vertical-split-section-content";
 
-export type { WhyChooseUsVerticalSplitContent };
+export type { VerticalSplitSectionContent };
 
-export default function WhyChooseUsVerticalSplit({
+export default function VerticalSplitSection({
     image,
     caption,
     title,
     description,
     isImageOnLeft = true,
-}: WhyChooseUsVerticalSplitContent) {
+}: VerticalSplitSectionContent) {
     return (
         <div className="grid lg:grid-cols-2 lg:min-h-150">
             {/* Text — top on mobile/tablet, position on desktop follows isImageOnLeft */}

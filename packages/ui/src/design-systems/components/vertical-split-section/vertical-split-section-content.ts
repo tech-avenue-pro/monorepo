@@ -1,4 +1,4 @@
-export interface WhyChooseUsVerticalSplitContent {
+export interface VerticalSplitSectionContent {
     image: string;
     caption: string;
     title: string;

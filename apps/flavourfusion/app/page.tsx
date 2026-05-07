@@ -6,7 +6,7 @@ import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero-sections/background-visual/HeroSectionBackgroundVisual";
 import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
-import WhyChooseUsVerticalSplit from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUsVerticalSplit";
+import VerticalSplitSection from "@repo/ui/design-systems/components/vertical-split-section/VerticalSplitSection";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
 import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
 
@@ -15,14 +15,14 @@ import CateringPackages from "./CateringPackages";
 import Testimonials from "./Testimonials";
 import { getHeroContent } from "./content/hero-section/getHeroContent";
 import { getHowItWorksContent } from "./content/how-it-works/getHowItWorksContent";
-import { getWhyChooseUsContent } from "./content/why-choose-us/getWhyChooseUsContent";
+import { getVerticalSplitSectionContent } from "./content/vertical-split-section/getVerticalSplitSectionContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
 import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
 
 export default function Home() {
     const hero = getHeroContent();
     const howItWorks = getHowItWorksContent();
-    const whyChooseUs = getWhyChooseUsContent();
+    const whyChooseUs = getVerticalSplitSectionContent();
     const footer = getFooterContent();
 
     return (
@@ -61,7 +61,7 @@ export default function Home() {
                 background={DSLayoutBackground.secondaryDarker}
             >
                 <RegularContainer>
-                    <WhyChooseUsVerticalSplit {...whyChooseUs} />
+                    <VerticalSplitSection {...whyChooseUs} />
                 </RegularContainer>
             </ZeroSection>
 
