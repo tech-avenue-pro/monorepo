@@ -1,6 +1,6 @@
-import whyChooseUsData from "./why-choose-us.json";
-import { WhyChooseUsContent } from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
+import whyChooseUsData from "./why-choose-us-content.json";
+import { WhyChooseUsVerticalSplitContent } from "@repo/ui/design-systems/components/why-choose-us/why-choose-us-vertical-split-content.ts";
 
-export function getWhyChooseUsContent(): WhyChooseUsContent {
-    return whyChooseUsData as WhyChooseUsContent;
+export function getWhyChooseUsContent(): WhyChooseUsVerticalSplitContent {
+    return whyChooseUsData as WhyChooseUsVerticalSplitContent;
 }

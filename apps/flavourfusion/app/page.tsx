@@ -1,9 +1,12 @@
 import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
+import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
+import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
+import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero-sections/background-visual/HeroSectionBackgroundVisual";
 import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
-import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
+import WhyChooseUsVerticalSplit from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUsVerticalSplit";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
 import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
 
@@ -14,10 +17,7 @@ import { getHeroContent } from "./content/hero-section/getHeroContent";
 import { getHowItWorksContent } from "./content/how-it-works/getHowItWorksContent";
 import { getWhyChooseUsContent } from "./content/why-choose-us/getWhyChooseUsContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
-import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
-import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
-import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
-import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
+import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
 
 export default function Home() {
     const hero = getHeroContent();
@@ -32,7 +32,7 @@ export default function Home() {
             <HeroSection id="hero-section" className="lg:h-[calc(100vh)]">
                 <BackgroundImageContainer
                     imageSrc="/images/hero-background.webp"
-                    imageAlt="..."
+                    imageAlt="Flavour Fusion catering spread"
                 >
                     <HeroSectionBackgroundVisual {...hero} />
                 </BackgroundImageContainer>
@@ -56,14 +56,14 @@ export default function Home() {
                 </RegularContainer>
             </RegularSection>
 
-            <RegularSection
+            <SmallSection
                 id="why-choose-us-section"
-                background={DSLayoutBackground.primaryLighter}
+                background={DSLayoutBackground.secondaryDarker}
             >
                 <RegularContainer>
-                    <WhyChooseUs {...whyChooseUs} />
+                    <WhyChooseUsVerticalSplit {...whyChooseUs} />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
 
             <RegularSection
                 id="testimonials-section"
