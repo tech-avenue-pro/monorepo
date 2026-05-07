@@ -38,7 +38,7 @@ export function HeroSectionFullScreen({
         <section
             className={clsx(
                 backgroundClasses[background],
-                "pb-16 md:pb-24 lg:pb-0 lg:h-[calc(100vh-4rem)] text-center hero-section section-anchor",
+                "pb-0  lg:h-[calc(100vh-4rem)] text-center hero-section section-anchor",
                 className,
             )}
             {...rest}
