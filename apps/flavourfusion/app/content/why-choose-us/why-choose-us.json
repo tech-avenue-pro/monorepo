@@ -1,8 +1,8 @@
 {
     "sectionTitle": "Why Choose <span class=\"ds-text-color-tintTheme\">Flavour Fusion</span>",
     "introText": "We believe extraordinary food doesn't require a grand venue — it requires care, craft, and intention. Every dish we serve is made with quality ingredients, refined technique, and a genuine love for the art of food. Your gathering deserves more than ordinary catering.",
-    "src": "/images/why-choose-us.jpg",
-    "srcSet": "/images/why-choose-us.jpg",
+    "src": "/images/why-choose-us.webp",
+    "srcSet": "/images/why-choose-us.webp",
     "reasons": [
         {
             "id": 1,

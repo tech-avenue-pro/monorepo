@@ -6,6 +6,4 @@ export interface HeroSectionBackgroundVisualContent {
     primaryCtaLink: string;
     secondaryCtaText: string;
     secondaryCtaLink: string;
-    backgroundImage: string;
-    backgroundImageAlt?: string;
 }

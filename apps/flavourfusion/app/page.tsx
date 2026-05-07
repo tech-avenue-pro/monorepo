@@ -17,6 +17,7 @@ import { getFooterContent } from "./content/footer-section/getFooterContent";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
+import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
 
 export default function Home() {
     const hero = getHeroContent();
@@ -29,7 +30,12 @@ export default function Home() {
             <MainNavBar />
 
             <HeroSection id="hero-section" className="lg:h-[calc(100vh)]">
-                <HeroSectionBackgroundVisual {...hero} />
+                <BackgroundImageContainer
+                    imageSrc="/images/hero-background.webp"
+                    imageAlt="..."
+                >
+                    <HeroSectionBackgroundVisual {...hero} />
+                </BackgroundImageContainer>
             </HeroSection>
 
             <SmallSection
@@ -52,7 +58,7 @@ export default function Home() {
 
             <RegularSection
                 id="why-choose-us-section"
-                background={DSLayoutBackground.default}
+                background={DSLayoutBackground.primaryLighter}
             >
                 <RegularContainer>
                     <WhyChooseUs {...whyChooseUs} />

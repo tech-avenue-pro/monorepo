@@ -20,33 +20,10 @@ export default function HeroSectionBackgroundVisual({
     primaryCtaLink,
     secondaryCtaText,
     secondaryCtaLink,
-    backgroundImage,
-    backgroundImageAlt = "",
 }: HeroSectionBackgroundVisualContent) {
     return (
-        <div
-            className="relative h-full flex items-center justify-center overflow-hidden hero-section section-anchor"
-            aria-label={backgroundImageAlt}
-        >
-            {/* Background image */}
-            <img
-                src={backgroundImage}
-                alt={backgroundImageAlt}
-                aria-hidden="true"
-                className="absolute inset-0 w-full h-full object-cover"
-            />
-
-            {/* Radial gradient overlay: transparent at centre, 30% black at edges */}
-            <div
-                className="absolute inset-0"
-                style={{
-                    background:
-                        "radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.30) 100%)",
-                }}
-            />
-
-            {/* Content */}
-            <div className="relative z-10 text-left px-6 py-20 md:py-28 max-w-3xl mx-auto">
+        <div className="flex items-center justify-center h-full px-6 py-20 md:py-28">
+            <div className="text-center max-w-3xl mx-auto">
                 {smallTitle?.trim() ? (
                     <DSMotion variant="fade-in">
                         <DSText
