@@ -18,8 +18,28 @@ export default function HeroSection({
         <section
             className={clsx(
                 backgroundClasses[background],
-                "pb-16 md:pb-24  text-center hero-section section-anchor",
-                className
+                "pb-16 md:pb-24 text-center hero-section section-anchor",
+                className,
+            )}
+            {...rest}
+        >
+            {children}
+        </section>
+    );
+}
+
+export function HeroSectionFullScreen({
+    children,
+    background = DSLayoutBackground.default,
+    className,
+    ...rest
+}: HeroSectionProps) {
+    return (
+        <section
+            className={clsx(
+                backgroundClasses[background],
+                "pb-16 md:pb-24 lg:pb-0 lg:h-[calc(100vh-4rem)] text-center hero-section section-anchor",
+                className,
             )}
             {...rest}
         >

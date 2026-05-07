@@ -1,5 +1,7 @@
 import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
-import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
+import HeroSection, {
+    HeroSectionFullScreen,
+} from "@repo/ui/design-systems/layouts/HeroSection";
 import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
@@ -29,23 +31,27 @@ export default function Home() {
         <main>
             <MainNavBar />
 
-            <HeroSection id="hero-section" className="lg:h-[calc(100vh)]">
+            <HeroSectionFullScreen
+                id="hero-section"
+                className="lg:h-[calc(100vh)]"
+            >
                 <BackgroundImageContainer
                     imageSrc="/images/hero-background.webp"
                     imageAlt="Flavour Fusion catering spread"
+                    className="h-full"
                 >
                     <HeroSectionBackgroundVisual {...hero} />
                 </BackgroundImageContainer>
-            </HeroSection>
+            </HeroSectionFullScreen>
 
-            <SmallSection
+            <RegularSection
                 id="how-it-works-section"
-                background={DSLayoutBackground.default}
+                background={DSLayoutBackground.primaryLighter}
             >
                 <RegularContainer>
                     <HowItWorks {...howItWorks} />
                 </RegularContainer>
-            </SmallSection>
+            </RegularSection>
 
             <RegularSection
                 id="catering-packages-section"
