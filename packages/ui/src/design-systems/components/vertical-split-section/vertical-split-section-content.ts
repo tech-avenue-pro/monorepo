@@ -4,4 +4,6 @@ export interface VerticalSplitSectionContent {
     title: string;
     description: string;
     isImageOnLeft?: boolean;
+    isImageRounded?: boolean;
+    isLightBackground?: boolean;
 }

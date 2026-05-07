@@ -17,14 +17,16 @@ import CateringPackages from "./CateringPackages";
 import Testimonials from "./Testimonials";
 import { getHeroContent } from "./content/hero-section/getHeroContent";
 import { getHowItWorksContent } from "./content/how-it-works/getHowItWorksContent";
-import { getVerticalSplitSectionContent } from "./content/vertical-split-section/getVerticalSplitSectionContent";
+import { getVerticalSplitWhyChooseUsContent } from "./content/vertical-split-section/getVerticalSplitWhyChooseUsContent";
+import { getVerticalSplitWhatWeDoContent } from "./content/vertical-split-section/getVerticalSplitWhatWeDoContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
 import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
 
 export default function Home() {
     const hero = getHeroContent();
     const howItWorks = getHowItWorksContent();
-    const whyChooseUs = getVerticalSplitSectionContent();
+    const whyChooseUs = getVerticalSplitWhyChooseUsContent();
+    const whatWeDo = getVerticalSplitWhatWeDoContent();
     const footer = getFooterContent();
 
     return (
@@ -52,14 +54,14 @@ export default function Home() {
                     <HowItWorks {...howItWorks} />
                 </RegularContainer>
             </RegularSection>
-            <RegularSection
-                id="why-choose-us-section"
+            <SmallSection
+                id="what-we-do-section"
                 background={DSLayoutBackground.primaryLighter}
             >
                 <RegularContainer>
-                    <VerticalSplitSection {...whyChooseUs} />
+                    <VerticalSplitSection {...whatWeDo} />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
             <RegularSection
                 id="catering-packages-section"
                 background={DSLayoutBackground.defaultVariation1}

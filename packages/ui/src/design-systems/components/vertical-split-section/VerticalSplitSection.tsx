@@ -16,18 +16,30 @@ export default function VerticalSplitSection({
     title,
     description,
     isImageOnLeft = true,
+    isImageRounded = false,
+    isLightBackground = false,
 }: VerticalSplitSectionContent) {
+    const captionColor = isLightBackground
+        ? DSTextColor.secondary
+        : DSTextColor.white;
+    const titleColor = isLightBackground
+        ? DSTextColor.primary
+        : DSTextColor.white;
+    const bodyColor = isLightBackground
+        ? DSTextColor.secondary
+        : DSTextColor.white;
+
     return (
-        <div className="grid lg:grid-cols-2 lg:min-h-150 rounded-2xl overflow-hidden">
+        <div className="grid lg:grid-cols-2 lg:min-h-150  overflow-hidden">
             {/* Text — top on mobile/tablet, position on desktop follows isImageOnLeft */}
             <DSMotion
                 variant="slide-left"
-                className={`flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 order-1 ${isImageOnLeft ? "lg:order-2" : "lg:order-1"}`}
+                className={`flex flex-col justify-center py-12 md:py-16 lg:px-16 lg:py-20 order-1 ${isImageOnLeft ? "lg:order-2" : "lg:order-1"}`}
             >
                 <DSText
                     as="p"
                     variant={DSTextVariant.bodyLarge}
-                    color={DSTextColor.white}
+                    color={captionColor}
                     weight={DSTextWeight.semiBold}
                     className="mb-4 uppercase tracking-widest"
                 >
@@ -37,7 +49,7 @@ export default function VerticalSplitSection({
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largestTitle}
-                    color={DSTextColor.white}
+                    color={titleColor}
                     weight={DSTextWeight.bold}
                     className="mb-6"
                 >
@@ -46,11 +58,11 @@ export default function VerticalSplitSection({
 
                 <DSText
                     as="p"
-                    variant={DSTextVariant.bodyLarge}
-                    color={DSTextColor.white}
+                    variant={DSTextVariant.body}
+                    color={bodyColor}
                     className="leading-relaxed"
                 >
-                    {description}
+                    <span dangerouslySetInnerHTML={{ __html: description }} />
                 </DSText>
             </DSMotion>
 
@@ -60,13 +72,21 @@ export default function VerticalSplitSection({
                     isImageOnLeft ? "lg:order-1" : "lg:order-2"
                 }`}
             >
-                <div className="absolute inset-4 lg:inset-6 overflow-hidden rounded-2xl">
+                {isImageRounded ? (
+                    <div className="absolute inset-4 lg:inset-10 overflow-hidden rounded-2xl">
+                        <img
+                            src={image}
+                            alt={title}
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+                ) : (
                     <img
                         src={image}
                         alt={title}
                         className="absolute inset-0 w-full h-full object-cover"
                     />
-                </div>
+                )}
             </div>
         </div>
     );
