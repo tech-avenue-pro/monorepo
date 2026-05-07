@@ -56,14 +56,14 @@ export default function Home() {
                 </RegularContainer>
             </RegularSection>
 
-            <SmallSection
+            <ZeroSection
                 id="why-choose-us-section"
                 background={DSLayoutBackground.secondaryDarker}
             >
                 <RegularContainer>
                     <WhyChooseUsVerticalSplit {...whyChooseUs} />
                 </RegularContainer>
-            </SmallSection>
+            </ZeroSection>
 
             <RegularSection
                 id="testimonials-section"

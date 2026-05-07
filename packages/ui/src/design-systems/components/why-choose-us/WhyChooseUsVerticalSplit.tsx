@@ -17,20 +17,11 @@ export default function WhyChooseUsVerticalSplit({
     description,
 }: WhyChooseUsVerticalSplitContent) {
     return (
-        <div className="grid md:grid-cols-2 min-h-[480px] md:min-h-[600px]">
-            {/* Left — full-height image */}
-            <div className="relative overflow-hidden rounded-2xl md:rounded-r-none md:rounded-l-2xl min-h-[300px]">
-                <img
-                    src={image}
-                    alt={title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                />
-            </div>
-
-            {/* Right — text */}
+        <div className="grid lg:grid-cols-2 lg:min-h-150">
+            {/* Text — top on mobile/tablet, right column on desktop */}
             <DSMotion
                 variant="slide-left"
-                className="flex flex-col justify-center px-8 py-12 md:px-12 md:py-16"
+                className="flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 order-1 lg:order-2"
             >
                 <DSText
                     as="p"
@@ -55,12 +46,21 @@ export default function WhyChooseUsVerticalSplit({
                 <DSText
                     as="p"
                     variant={DSTextVariant.bodyLarge}
-                    color={DSTextColor.whiteVariant1}
+                    color={DSTextColor.white}
                     className="leading-relaxed"
                 >
                     {description}
                 </DSText>
             </DSMotion>
+
+            {/* Image — bottom on mobile/tablet, left column on desktop */}
+            <div className="relative overflow-hidden rounded-2xl lg:rounded-r-none lg:rounded-l-2xl aspect-3/4 lg:aspect-auto order-2 lg:order-1">
+                <img
+                    src={image}
+                    alt={title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
+            </div>
         </div>
     );
 }
