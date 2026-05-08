@@ -19,13 +19,14 @@ import { getFooterContent } from "../content/footer-section/getFooterContent";
 import menuData from "../content/menu/menu-data.json";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
+import SecondaryNavBar from "../SecondaryNavBar";
 
 export default function MenuPage() {
     const footer = getFooterContent();
 
     return (
         <main>
-            <MainNavBar />
+            <SecondaryNavBar />
 
             <ZeroSection
                 id="hero-section"

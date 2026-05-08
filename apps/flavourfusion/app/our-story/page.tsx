@@ -22,6 +22,7 @@ import VerticalSplitSection from "@repo/ui/design-systems/components/vertical-sp
 import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import WhyChooseUs from "@repo/ui/design-systems/components/why-choose-us/WhyChooseUs";
+import SecondaryNavBar from "../SecondaryNavBar";
 
 export default function OurStoryPage() {
     const footer = getFooterContent();
@@ -31,7 +32,7 @@ export default function OurStoryPage() {
 
     return (
         <main>
-            <MainNavBar />
+            <SecondaryNavBar />
 
             <SmallSection
                 id="hero-section"
