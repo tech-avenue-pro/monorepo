@@ -25,7 +25,7 @@
     --accent-lighter: #f5c96a;
     --accent-darker: #b87d10;
 
-    --text-tint-theme: var(--darkest-background);
+    --text-tint-theme: var(--secondary-darker);
     --text-senary: var(--primary);
 }
 
