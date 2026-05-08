@@ -174,7 +174,7 @@ export default function MenuCategorySection({ categories }: Props) {
                     as="p"
                     variant={DSTextVariant.body}
                     color={DSTextColor.secondary}
-                    className="mb-6 max-w-lg mx-audivo"
+                    className="mb-6 max-w-lg mx-auto"
                 >
                     Reach out via WhatsApp to place an order or discuss a custom
                     catering package for your event.

@@ -18,6 +18,7 @@ import MenuCategorySection from "./MenuCategorySection";
 import { getFooterContent } from "../content/footer-section/getFooterContent";
 import menuData from "../content/menu/menu-data.json";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
+import ZeroSection from "@repo/ui/design-systems/layouts/ZeroSection";
 
 export default function MenuPage() {
     const footer = getFooterContent();
@@ -26,7 +27,7 @@ export default function MenuPage() {
         <main>
             <MainNavBar />
 
-            <SmallSection
+            <ZeroSection
                 id="hero-section"
                 background={DSLayoutBackground.default}
             >
@@ -62,9 +63,9 @@ export default function MenuPage() {
                         </DSText>
                     </DSMotion>
                 </HeroContainer>
-            </SmallSection>
+            </ZeroSection>
 
-            <SmallSection background={DSLayoutBackground.defaultVariation1}>
+            <SmallSection background={DSLayoutBackground.default}>
                 <RegularContainer>
                     <MenuCategorySection categories={menuData.categories} />
                 </RegularContainer>

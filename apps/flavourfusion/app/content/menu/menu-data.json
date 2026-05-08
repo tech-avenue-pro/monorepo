@@ -1,23 +1,6 @@
 {
     "categories": [
         {
-            "category": "Burgers",
-            "items": [
-                {
-                    "name": "Crispy Fried Chicken Burger",
-                    "price": "Rs.600/-",
-                    "description": "Soft bun with crispy chicken patties, coated in buttermilk, corn starch, and a blend of flavorful spices.",
-                    "image": "/images/menu/crispy-fried-chicken-burger.webp"
-                },
-                {
-                    "name": "Buttermilk Chicken Burger",
-                    "price": "Rs.600/-",
-                    "description": "Soft bun filled with tender chicken patties, layered with garlic mayo, mustard, and a rich blend of sauces.",
-                    "image": "/images/menu/buttermilk-chicken-burger.webp"
-                }
-            ]
-        },
-        {
             "category": "Chicken",
             "items": [
                 {
@@ -58,6 +41,23 @@
                         { "label": "6 piece", "price": "Rs.1500/-" },
                         { "label": "12 piece", "price": "Rs.2500/-" }
                     ]
+                }
+            ]
+        },
+        {
+            "category": "Burgers",
+            "items": [
+                {
+                    "name": "Crispy Fried Chicken Burger",
+                    "price": "Rs.600/-",
+                    "description": "Soft bun with crispy chicken patties, coated in buttermilk, corn starch, and a blend of flavorful spices.",
+                    "image": "/images/menu/crispy-fried-chicken-burger.webp"
+                },
+                {
+                    "name": "Buttermilk Chicken Burger",
+                    "price": "Rs.600/-",
+                    "description": "Soft bun filled with tender chicken patties, layered with garlic mayo, mustard, and a rich blend of sauces.",
+                    "image": "/images/menu/buttermilk-chicken-burger.webp"
                 }
             ]
         },

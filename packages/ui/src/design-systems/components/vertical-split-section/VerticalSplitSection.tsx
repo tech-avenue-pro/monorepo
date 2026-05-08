@@ -73,7 +73,7 @@ export default function VerticalSplitSection({
                 }`}
             >
                 {isImageRounded ? (
-                    <div className="absolute inset-4 lg:inset-10 overflow-hidden rounded-2xl">
+                    <div className="absolute inset-4 lg:inset-y-10 inset-x-0 overflow-hidden rounded-lg">
                         <img
                             src={image}
                             alt={title}
@@ -84,7 +84,7 @@ export default function VerticalSplitSection({
                     <img
                         src={image}
                         alt={title}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="pb-8 lg:pb-0 absolute inset-0 w-full h-full object-cover"
                     />
                 )}
             </div>
