@@ -1,0 +1,23 @@
+{
+    "title": "How It Works",
+    "description": "We keep it personal and flexible. Every menu is designed around your gathering — reach out, tell us about your event, and we'll handle the rest.",
+    "buttonTitle": "Get in Touch",
+    "buttonLink": "https://wa.me/923288288897",
+    "steps": [
+        {
+            "id": "1",
+            "title": "Reach Out",
+            "description": "Contact us via WhatsApp to discuss your event, guest count, and any preferences. We accommodate gatherings from as few as 5 guests."
+        },
+        {
+            "id": "2",
+            "title": "Customise Your Menu",
+            "description": "Choose from our curated catering packages or request a tailored menu. We scale portions and options to fit your event perfectly."
+        },
+        {
+            "id": "3",
+            "title": "Enjoy the Experience",
+            "description": "Sit back while we bring refined, home-crafted food directly to your gathering — professionally prepared and beautifully presented."
+        }
+    ]
+}

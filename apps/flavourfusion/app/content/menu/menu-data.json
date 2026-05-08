@@ -1,0 +1,143 @@
+{
+    "categories": [
+        {
+            "category": "Chicken",
+            "items": [
+                {
+                    "name": "Parmesan Chicken",
+                    "price": "Rs.1800/-",
+                    "description": "One serving of crumb-coated chicken, served with creamy white sauce and vegetables.",
+                    "image": "/images/menu/parmesan-chicken.webp"
+                },
+                {
+                    "name": "Chicken Steak",
+                    "price": "Rs.1500/-",
+                    "description": "Grilled chicken cooked with spices and served with white sauce, mashed potatoes, and vegetables.",
+                    "image": "/images/menu/chicken-steak.webp"
+                },
+                {
+                    "name": "Chicken Nuggets",
+                    "description": "Seasoned chicken mince, coated in corn starch and egg for a crisp finish.",
+                    "image": "/images/menu/chicken-nuggets.webp",
+                    "variants": [
+                        { "label": "6 piece", "price": "Rs.1000/-" },
+                        { "label": "12 piece", "price": "Rs.1500/-" }
+                    ]
+                },
+                {
+                    "name": "Fried Chicken",
+                    "description": "Gently cooked on low heat and finished with a crisp crumb coating.",
+                    "image": "/images/menu/fried-chicken.webp",
+                    "variants": [
+                        { "label": "6 piece", "price": "Rs.1500/-" },
+                        { "label": "12 piece", "price": "Rs.2500/-" }
+                    ]
+                },
+                {
+                    "name": "Roasted Chicken",
+                    "description": "Marinated in aromatic desi spices for a tender, juicy finish.",
+                    "image": "/images/menu/roasted-chicken.webp",
+                    "variants": [
+                        { "label": "6 piece", "price": "Rs.1500/-" },
+                        { "label": "12 piece", "price": "Rs.2500/-" }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Burgers",
+            "items": [
+                {
+                    "name": "Crispy Fried Chicken Burger",
+                    "price": "Rs.600/-",
+                    "description": "Soft bun with crispy chicken patties, coated in buttermilk, corn starch, and a blend of flavorful spices.",
+                    "image": "/images/menu/crispy-fried-chicken-burger.webp"
+                },
+                {
+                    "name": "Buttermilk Chicken Burger",
+                    "price": "Rs.600/-",
+                    "description": "Soft bun filled with tender chicken patties, layered with garlic mayo, mustard, and a rich blend of sauces.",
+                    "image": "/images/menu/buttermilk-chicken-burger.webp"
+                }
+            ]
+        },
+        {
+            "category": "Sandwiches",
+            "items": [
+                {
+                    "name": "Club Sandwich",
+                    "price": "Rs.500/-",
+                    "description": "Layered with creamy chicken spread, egg, and fresh vegetables.",
+                    "image": "/images/menu/club-sandwich.webp"
+                },
+                {
+                    "name": "Restaurant Style Club Sandwich",
+                    "price": "Rs.650/-",
+                    "description": "Layered with grilled chicken, egg, cheese, cucumber, and fresh tomatoes.",
+                    "image": "/images/menu/restaurant-club-sandwich.webp"
+                },
+                {
+                    "name": "Chicken Sandwich",
+                    "price": "Rs.250/-",
+                    "description": "Freshly made chicken sandwiches, loaded with crisp vegetables.",
+                    "image": "/images/menu/chicken-sandwich.webp"
+                },
+                {
+                    "name": "Egg Sandwich",
+                    "price": "Rs.200/-",
+                    "description": "Creamy egg spread blended with butter and mayonnaise.",
+                    "image": "/images/menu/egg-sandwich.webp"
+                },
+                {
+                    "name": "Box of Assorted Sandwiches",
+                    "price": "Rs.2000/-",
+                    "description": "Egg, chicken, cucumber, and cream cheese sandwiches.",
+                    "image": "/images/menu/assorted-sandwiches.webp"
+                }
+            ]
+        },
+        {
+            "category": "Signature Baked Dishes",
+            "items": [
+                {
+                    "name": "Lasagne - Large",
+                    "price": "Rs.3000/-",
+                    "description": "Tender chicken in rich gravy, finished with a flavorful sauce and melted cheese.",
+                    "image": "/images/menu/lasagne.webp"
+                },
+                {
+                    "name": "Poptie - Large",
+                    "price": "Rs.3000/-",
+                    "description": "A rich blend of mushroom, chicken, and corn in creamy white sauce, finished with a golden puff pastry topping.",
+                    "image": "/images/menu/poptie.webp"
+                }
+            ]
+        },
+        {
+            "category": "Other Items",
+            "items": [
+                {
+                    "name": "Paratha Roll",
+                    "price": "Rs.350/-",
+                    "description": "Filled with tender BBQ chicken and fresh mint chutney.",
+                    "image": "/images/menu/paratha-roll.webp"
+                },
+                {
+                    "name": "Shawarma",
+                    "price": "Rs.350/-",
+                    "description": "Tender grilled chicken layered with creamy garlic mayo sauce and tangy pickled vegetables.",
+                    "image": "/images/menu/shawarma.webp"
+                },
+                {
+                    "name": "Potato Croquettes",
+                    "description": "A rich blend of potatoes, chicken, and mushrooms in a creamy sauce.",
+                    "image": "/images/menu/potato-croquettes.webp",
+                    "variants": [
+                        { "label": "Small", "price": "Rs.100/-" },
+                        { "label": "Large", "price": "Rs.150/-" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

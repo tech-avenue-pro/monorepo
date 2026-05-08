@@ -1,0 +1,37 @@
+{
+    "footerTitle": "Flavour Fusion",
+    "footerLogo": "/icons/logo-40.png",
+    "socialLinks": [],
+    "phoneNumber": "+92 328-8288897",
+    "emailAddress": "flavourfusion2020@gmail.com",
+    "copyrightText": "Flavour Fusion. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Navigation",
+            "links": [
+                { "title": "Home", "link": "/" },
+                { "title": "Menu", "link": "/menu" },
+                { "title": "Our Story", "link": "/our-story" }
+            ]
+        },
+        {
+            "title": "Contact",
+            "links": [
+                {
+                    "title": "WhatsApp Us",
+                    "link": "https://wa.me/923288288897"
+                },
+                { "title": "Imperial Gardens, Lahore", "link": "#" }
+            ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenue.pro"
+                }
+            ]
+        }
+    ]
+}
