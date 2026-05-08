@@ -18,6 +18,7 @@ export default function VerticalSplitSection({
     isImageOnLeft = true,
     isImageRounded = false,
     isLightBackground = false,
+    isLandscapeImage = false,
 }: VerticalSplitSectionContent) {
     const captionColor = isLightBackground
         ? DSTextColor.secondary
@@ -68,7 +69,7 @@ export default function VerticalSplitSection({
 
             {/* Image — bottom on mobile/tablet, position on desktop follows isImageOnLeft */}
             <div
-                className={`relative aspect-3/4 lg:aspect-auto order-2 ${
+                className={`relative ${isLandscapeImage ? "aspect-4/3" : "aspect-3/4"} lg:aspect-auto order-2 ${
                     isImageOnLeft ? "lg:order-1" : "lg:order-2"
                 }`}
             >

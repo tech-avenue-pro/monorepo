@@ -5,5 +5,6 @@
     "description": "Our catering services are designed for refined gatherings, beginning with a minimum order for 5 guests. Whether you’re hosting a small private party or a larger celebration, our menus can be easily customized and scaled to suit your needs.\n\nContact us to explore menu options, finalize your requirements, and confirm availability. From there, our team handles everything with precision — so you can focus on hosting while we deliver a seamless culinary experience.",
     "isImageOnLeft": false,
     "isImageRounded": true,
-    "isLightBackground": true
+    "isLightBackground": true,
+    "isLandscapeImage": true
 }
