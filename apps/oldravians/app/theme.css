@@ -1,0 +1,58 @@
+/*
+  Old Ravians Academy — color overrides
+  Deep navy and gold palette for a trusted educational brand.
+  Imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light;
+
+    /* Brand primary: deep navy blue */
+    --primary: #1e40af;
+    --primary-lighter: #dbeafe;
+    --primary-darker: #1e3a8a;
+    --primary-button-hover: #1d4ed8;
+    --darkest-background: #1e3a8a;
+    --lightest-background: #f0f7ff;
+
+    /* Secondary: teal */
+    --secondary: #0d9488;
+    --secondary-lighter: #ccfbf1;
+    --secondary-darker: #0f766e;
+
+    /* Accent: gold/amber */
+    --accent: #d97706;
+    --accent-lighter: #fef3c7;
+    --accent-darker: #b45309;
+
+    --text-tint-theme: var(--primary-darker);
+    --text-senary: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-background: #ffffff;
+        --default-background-variation1: #f8faff;
+        --default-background-variation2: #eef3ff;
+        --default-background-variation3: #e0eaff;
+        --lightest-background: #f0f7ff;
+
+        --primary: #2563eb;
+        --primary-lighter: #dbeafe;
+        --primary-darker: #1e3a8a;
+        --text-tint-theme: var(--darkest-background);
+        --text-senary: var(--primary);
+
+        --text-primary: #1a1a2e;
+        --text-secondary: #333;
+        --text-tertiary: #555;
+        --text-quaternary: #777;
+        --text-quinary: #bbb;
+
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        --text-box-bg: #f1f1f1;
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "title": "How It Works",
+    "description": "Getting started with Old Ravians Academy is simple. Browse our courses, get in touch, and start learning — all from the comfort of your home.",
+    "buttonTitle": "Call Now",
+    "buttonLink": "tel:03009408983",
+    "steps": [
+        {
+            "id": "1",
+            "title": "Discover",
+            "description": "Browse our course listings and find a subject and level that matches your academic requirements and schedule."
+        },
+        {
+            "id": "2",
+            "title": "Phone Call",
+            "description": "Our team will contact you to evaluate your needs, clarify procedures, and match you with the right teacher and class."
+        },
+        {
+            "id": "3",
+            "title": "Join on Google Meet",
+            "description": "You'll receive a Google Meet link for your scheduled class. Attend live sessions with expert teachers from anywhere."
+        }
+    ]
+}

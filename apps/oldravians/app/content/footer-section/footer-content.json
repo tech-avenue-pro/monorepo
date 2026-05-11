@@ -1,0 +1,44 @@
+{
+    "footerTitle": "Old Ravians Academy",
+    "footerLogo": "/icons/logo-60.png",
+    "socialLinks": [
+        {
+            "logo": "/icons/facebook.svg",
+            "link": "https://www.facebook.com/oldravians",
+            "alt": "Facebook"
+        }
+    ],
+    "phoneNumber": "0300 9408983",
+    "emailAddress": "info@oldravians.com",
+    "copyrightText": "Old Ravians Academy. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Navigation",
+            "links": [
+                { "title": "Home", "link": "/" },
+                { "title": "Courses", "link": "#courses" },
+                { "title": "Our Services", "link": "#services" },
+                { "title": "How It Works", "link": "#how-it-works" }
+            ]
+        },
+        {
+            "title": "Contact",
+            "links": [
+                { "title": "0300 9408983", "link": "tel:03009408983" },
+                {
+                    "title": "572 L Block Khayaban-e-Amin, Lahore",
+                    "link": "#location"
+                }
+            ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenue.pro"
+                }
+            ]
+        }
+    ]
+}
