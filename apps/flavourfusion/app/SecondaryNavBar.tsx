@@ -7,7 +7,7 @@ import {
 import StandardNavBar from "@repo/ui/design-systems/navigation-bar/StandardNavBar";
 import React from "react";
 
-export default function MainNavBar() {
+export default function SecondaryNavBar() {
     return (
         <StandardNavBar
             links={[
@@ -25,7 +25,7 @@ export default function MainNavBar() {
                 },
             ]}
             color={DSTextColor.primary}
-            startingColor={DSTextColor.white}
+            startingColor={DSTextColor.primary}
             hoverColor={DSTextColor.senary}
             textVariant={DSTextVariant.caption}
             fontWeight={DSTextWeight.medium}
@@ -34,8 +34,8 @@ export default function MainNavBar() {
             logoSrc="/icons/logo-60.png"
             name="Flavour Fusion"
             background={DSLayoutBackground.default}
-            startingBackground={DSLayoutBackground.blackVariation1}
-            stickyOnScrollOnly={true}
+            startingBackground={DSLayoutBackground.default}
+            stickyOnScrollOnly={false}
         />
     );
 }

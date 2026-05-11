@@ -6,4 +6,5 @@ export interface VerticalSplitSectionContent {
     isImageOnLeft?: boolean;
     isImageRounded?: boolean;
     isLightBackground?: boolean;
+    isLandscapeImage?: boolean;
 }
