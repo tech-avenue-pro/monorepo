@@ -3,11 +3,13 @@
 interface FloatingWhatsAppButtonProps {
     phoneNumber: string;
     message?: string;
+    onClick?: () => void;
 }
 
 export default function FloatingWhatsAppButton({
     phoneNumber,
     message = "",
+    onClick,
 }: FloatingWhatsAppButtonProps) {
     const cleaned = phoneNumber.replace(/[^+\d]/g, "");
     const href = `https://wa.me/${cleaned}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
@@ -17,6 +19,7 @@ export default function FloatingWhatsAppButton({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={onClick}
             aria-label="Chat on WhatsApp"
             style={{
                 position: "fixed",

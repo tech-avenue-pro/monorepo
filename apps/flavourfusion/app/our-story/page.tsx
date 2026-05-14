@@ -12,7 +12,7 @@ import {
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion, DSStagger } from "@repo/ui/design-systems/DSMotion";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
-import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
+import { TrackedWhatsAppButton, TrackedWhatsAppAnchor } from "../WhatsAppTracking";
 import MainNavBar from "../MainNavBar";
 import { getFooterContent } from "../content/footer-section/getFooterContent";
 import { getWhyChooseUsContent } from "../content/why-choose-us/getWhyChooseUsContent";
@@ -131,12 +131,12 @@ export default function OurStoryPage() {
                             Reach out today and let&apos;s build your perfect
                             menu.
                         </DSText>
-                        <a
+                        <TrackedWhatsAppAnchor
                             href="https://wa.me/923288288897"
                             className="inline-block bg-[var(--primary)] hover:bg-[var(--primary-darker)] text-white font-semibold px-8 py-3 rounded-full transition-colors"
                         >
                             Get in Touch via WhatsApp
-                        </a>
+                        </TrackedWhatsAppAnchor>
                     </DSMotion>
                 </RegularContainer>
             </RegularSection>
@@ -149,7 +149,7 @@ export default function OurStoryPage() {
                 </RegularContainer>
             </RegularSection>
 
-            <FloatingWhatsAppButton phoneNumber="+923288288897" />
+            <TrackedWhatsAppButton phoneNumber="+923288288897" />
         </main>
     );
 }

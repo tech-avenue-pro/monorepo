@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { trackWhatsAppConversion } from "../WhatsAppTracking";
 import {
     DSText,
     DSTextColor,
@@ -181,7 +182,10 @@ export default function MenuCategorySection({ categories }: Props) {
                 </DSText>
                 <a
                     href="https://wa.me/923288288897"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-[var(--primary)] hover:bg-[var(--primary-darker)] text-white font-semibold px-8 py-3 rounded-full transition-colors"
+                    onClick={trackWhatsAppConversion}
                 >
                     Order via WhatsApp
                 </a>

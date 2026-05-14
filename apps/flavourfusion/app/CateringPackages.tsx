@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { trackWhatsAppConversion } from "./WhatsAppTracking";
 import {
     DSText,
     DSTextColor,
@@ -128,7 +131,10 @@ export default function CateringPackages() {
                                         : DSButtonVariant.secondary
                                 }
                                 href="https://wa.me/923288288897"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="w-full text-center"
+                                onClick={trackWhatsAppConversion}
                             >
                                 Book Now
                             </DSLinkButton>

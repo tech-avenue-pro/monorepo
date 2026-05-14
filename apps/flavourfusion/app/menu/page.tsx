@@ -12,7 +12,7 @@ import {
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion, DSStagger } from "@repo/ui/design-systems/DSMotion";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
-import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
+import { TrackedWhatsAppButton } from "../WhatsAppTracking";
 import MainNavBar from "../MainNavBar";
 import MenuCategorySection from "./MenuCategorySection";
 import { getFooterContent } from "../content/footer-section/getFooterContent";
@@ -80,7 +80,7 @@ export default function MenuPage() {
                 </RegularContainer>
             </SmallSection>
 
-            <FloatingWhatsAppButton phoneNumber="+923288288897" />
+            <TrackedWhatsAppButton phoneNumber="+923288288897" />
         </main>
     );
 }

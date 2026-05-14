@@ -10,7 +10,7 @@ import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero
 import HowItWorks from "@repo/ui/design-systems/components/how-it-works/HowItWorks";
 import VerticalSplitSection from "@repo/ui/design-systems/components/vertical-split-section/VerticalSplitSection";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
-import FloatingWhatsAppButton from "@repo/ui/design-systems/components/floating-whatsapp/FloatingWhatsAppButton";
+import { TrackedWhatsAppButton } from "./WhatsAppTracking";
 
 import MainNavBar from "./MainNavBar";
 import CateringPackages from "./CateringPackages";
@@ -96,7 +96,7 @@ export default function Home() {
                 </RegularContainer>
             </RegularSection>
 
-            <FloatingWhatsAppButton phoneNumber="+923288288897" />
+            <TrackedWhatsAppButton phoneNumber="+923288288897" />
         </main>
     );
 }
