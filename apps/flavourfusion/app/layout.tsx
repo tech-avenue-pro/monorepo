@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
@@ -44,6 +45,18 @@ export default function RootLayout({
                 className={`${poppins.variable} ${inter.variable} antialiased ds-bg-default`}
             >
                 {children}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-18155770179"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-ads-config" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'AW-18155770179');
+                    `}
+                </Script>
             </body>
         </html>
     );
