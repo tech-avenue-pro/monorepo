@@ -1,5 +1,5 @@
 import React from "react";
-import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
+import { DSLayout, DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
 import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
@@ -30,7 +30,8 @@ export default function MenuPage() {
 
             <ZeroSection
                 id="hero-section"
-                background={DSLayoutBackground.default}
+                background={DSLayoutBackground.defaultVariation2}
+                className="py-12"
             >
                 <HeroContainer>
                     <DSMotion variant="fade-up" className="text-center py-8">
@@ -52,18 +53,56 @@ export default function MenuPage() {
                         >
                             Our Menu
                         </DSText>
+                    </DSMotion>
+                </HeroContainer>
+            </ZeroSection>
+            <ZeroSection>
+                <RegularContainer>
+                    <div className="ds-bg-secondary-darker w-full  rounded-2xl px-6 py-8 flex flex-col gap-4">
+                        <DSText
+                            as="h2"
+                            variant={DSTextVariant.largeTitle}
+                            weight={DSTextWeight.bold}
+                            color={DSTextColor.white}
+                        >
+                            Clasic Fusion
+                        </DSText>
                         <DSText
                             as="p"
                             variant={DSTextVariant.body}
-                            color={DSTextColor.secondary}
-                            className="max-w-2xl mx-auto text-left"
+                            weight={DSTextWeight.regular}
+                            color={DSTextColor.white}
+                            className="p-1 max-w-xl hidden md:block"
                         >
-                            Every item on our menu is made from scratch with
-                            quality ingredients. Order individually for a la
-                            carte catering, or choose a curated package.
+                            Minimum order of 15 people. <br />
+                            Perfect for office lunches, family gatherings, or
+                            any occasion where you want to impress without the
+                            hassle of cooking.
                         </DSText>
-                    </DSMotion>
-                </HeroContainer>
+                        <ul className="flex flex-col gap-2">
+                            {[
+                                "15 Crispy Chicken Burgers",
+                                "10 Sliders",
+                                "5 Sandwiches",
+                                "1 plate — Rice and Chicken",
+                            ].map((item) => (
+                                <li
+                                    key={item}
+                                    className="flex items-center gap-2"
+                                >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                                    <DSText
+                                        as="span"
+                                        variant={DSTextVariant.body}
+                                        color={DSTextColor.white}
+                                    >
+                                        {item}
+                                    </DSText>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </RegularContainer>
             </ZeroSection>
 
             <SmallSection background={DSLayoutBackground.default}>
