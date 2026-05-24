@@ -30,11 +30,11 @@ export default function MenuPage() {
 
             <ZeroSection
                 id="hero-section"
-                background={DSLayoutBackground.defaultVariation2}
+                background={DSLayoutBackground.default}
                 className="py-12"
             >
                 <HeroContainer>
-                    <DSMotion variant="fade-up" className="text-center py-8">
+                    <DSMotion variant="fade-up" className="text-center pt-8">
                         <DSText
                             as="p"
                             variant={DSTextVariant.caption}
@@ -58,7 +58,7 @@ export default function MenuPage() {
             </ZeroSection>
             <ZeroSection>
                 <RegularContainer>
-                    <div className="ds-bg-secondary-darker w-full  rounded-2xl px-6 py-8 flex flex-col gap-4">
+                    <div className="ds-bg-primary-darker w-full  rounded-2xl px-6 py-8 flex flex-col gap-4">
                         <DSText
                             as="h2"
                             variant={DSTextVariant.largeTitle}
