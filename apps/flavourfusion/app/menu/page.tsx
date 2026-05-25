@@ -12,7 +12,10 @@ import {
 } from "@repo/ui/design-systems/DSText";
 import { DSMotion, DSStagger } from "@repo/ui/design-systems/DSMotion";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
-import { TrackedWhatsAppButton } from "../WhatsAppTracking";
+import {
+    TrackedWhatsAppButton,
+    TrackedWhatsAppAnchor,
+} from "../WhatsAppTracking";
 import MainNavBar from "../MainNavBar";
 import MenuCategorySection from "./MenuCategorySection";
 import { getFooterContent } from "../content/footer-section/getFooterContent";
@@ -58,49 +61,87 @@ export default function MenuPage() {
             </ZeroSection>
             <ZeroSection>
                 <RegularContainer>
-                    <div className="ds-bg-primary-darker w-full  rounded-2xl px-6 py-8 flex flex-col gap-4">
-                        <DSText
-                            as="h2"
-                            variant={DSTextVariant.largeTitle}
-                            weight={DSTextWeight.bold}
-                            color={DSTextColor.white}
-                        >
-                            Clasic Fusion
-                        </DSText>
-                        <DSText
-                            as="p"
-                            variant={DSTextVariant.body}
-                            weight={DSTextWeight.regular}
-                            color={DSTextColor.white}
-                            className="p-1 max-w-xl hidden md:block"
-                        >
-                            Minimum order of 15 people. <br />
-                            Perfect for office lunches, family gatherings, or
-                            any occasion where you want to impress without the
-                            hassle of cooking.
-                        </DSText>
-                        <ul className="flex flex-col gap-2">
-                            {[
-                                "15 Crispy Chicken Burgers",
-                                "10 Sliders",
-                                "5 Sandwiches",
-                                "1 plate — Rice and Chicken",
-                            ].map((item) => (
-                                <li
-                                    key={item}
-                                    className="flex items-center gap-2"
-                                >
-                                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
-                                    <DSText
-                                        as="span"
-                                        variant={DSTextVariant.body}
-                                        color={DSTextColor.white}
+                    <div
+                        className="ds-bg-black w-full rounded-2xl overflow-hidden relative flex items-center"
+                        style={{ minHeight: "220px" }}
+                    >
+                        {/* Fading food image — tablet and above only */}
+                        <div className="block absolute right-0 top-0 bottom-0 w-3/4 pointer-events-none select-none">
+                            <img
+                                src="/images/catering/classic-fusion.webp"
+                                alt=""
+                                className="w-full h-full object-cover object-center"
+                            />
+                            <div
+                                className="absolute inset-0"
+                                style={{
+                                    background:
+                                        "linear-gradient(to right, var(--background-black) 0%, transparent 80%)",
+                                }}
+                            />
+                        </div>
+
+                        {/* Text content */}
+                        <div className="px-6 py-8 flex flex-col gap-4 relative z-10">
+                            <DSText
+                                as="h2"
+                                variant={DSTextVariant.largeTitle}
+                                weight={DSTextWeight.bold}
+                                color={DSTextColor.white}
+                            >
+                                Classic Fusion
+                            </DSText>
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.body}
+                                weight={DSTextWeight.semiBold}
+                                color={DSTextColor.white}
+                                className="max-w-md hidden md:block"
+                            >
+                                Minimum order of 15 people. Perfect for office
+                                lunches, family gatherings, or any occasion
+                                where you want to impress without the hassle of
+                                cooking.
+                            </DSText>
+                            <ul className="flex flex-col gap-2">
+                                {[
+                                    "15 Crispy Chicken Burgers",
+                                    "10 Sliders",
+                                    "5 Sandwiches",
+                                    "1 plate — Rice and Chicken",
+                                ].map((item) => (
+                                    <li
+                                        key={item}
+                                        className="flex items-center gap-2"
                                     >
-                                        {item}
-                                    </DSText>
-                                </li>
-                            ))}
-                        </ul>
+                                        <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                                        <DSText
+                                            as="span"
+                                            variant={DSTextVariant.body}
+                                            color={DSTextColor.white}
+                                        >
+                                            {item}
+                                        </DSText>
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className="flex items-center gap-4">
+                                <DSText
+                                    as="p"
+                                    variant={DSTextVariant.headline1}
+                                    weight={DSTextWeight.semiBold}
+                                    color={DSTextColor.senary}
+                                >
+                                    Rs. 5500
+                                </DSText>
+                                <TrackedWhatsAppAnchor
+                                    href="https://wa.me/923288288897"
+                                    className="inline-flex items-center gap-1.5 bg-white text-black font-semibold text-sm px-4 py-2 rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap"
+                                >
+                                    Order Now →
+                                </TrackedWhatsAppAnchor>
+                            </div>
+                        </div>
                     </div>
                 </RegularContainer>
             </ZeroSection>
