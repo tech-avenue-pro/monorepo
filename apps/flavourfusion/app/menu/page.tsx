@@ -62,11 +62,11 @@ export default function MenuPage() {
             <ZeroSection>
                 <RegularContainer>
                     <div
-                        className="ds-bg-black w-full rounded-2xl overflow-hidden relative flex items-center"
+                        className="ds-bg-black w-full md:max-w-4xl rounded-2xl overflow-hidden relative flex items-center"
                         style={{ minHeight: "220px" }}
                     >
                         {/* Fading food image — tablet and above only */}
-                        <div className="block absolute right-0 top-0 bottom-0 w-3/4 pointer-events-none select-none">
+                        <div className="hidden md:block absolute right-0 top-0 bottom-0 w-3/4 pointer-events-none select-none">
                             <img
                                 src="/images/catering/classic-fusion.webp"
                                 alt=""
@@ -76,12 +76,12 @@ export default function MenuPage() {
                                 className="absolute inset-0"
                                 style={{
                                     background:
-                                        "linear-gradient(to right, var(--background-black) 0%, transparent 80%)",
+                                        "linear-gradient(to right, var(--background-black) 0%, transparent 100%)",
                                 }}
                             />
                         </div>
 
-                        {/* Text content */}
+                        {/* Title */}
                         <div className="px-6 py-8 flex flex-col gap-4 relative z-10">
                             <DSText
                                 as="h2"
@@ -91,10 +91,21 @@ export default function MenuPage() {
                             >
                                 Classic Fusion
                             </DSText>
+                            {/* Short description for mobile*/}
                             <DSText
                                 as="p"
                                 variant={DSTextVariant.body}
-                                weight={DSTextWeight.semiBold}
+                                weight={DSTextWeight.regular}
+                                color={DSTextColor.white}
+                                className="max-w-md block md:hidden"
+                            >
+                                Minimum order of 15 people.
+                            </DSText>
+                            {/* Longer description for tablet and above */}
+                            <DSText
+                                as="p"
+                                variant={DSTextVariant.body}
+                                weight={DSTextWeight.regular}
                                 color={DSTextColor.white}
                                 className="max-w-md hidden md:block"
                             >
@@ -103,22 +114,25 @@ export default function MenuPage() {
                                 where you want to impress without the hassle of
                                 cooking.
                             </DSText>
-                            <ul className="flex flex-col gap-2">
+                            {/* Menu items */}
+                            <ul className="flex flex-wrap gap-x-4 gap-y-2 max-w-md">
                                 {[
                                     "15 Crispy Chicken Burgers",
                                     "10 Sliders",
                                     "5 Sandwiches",
-                                    "1 plate — Rice and Chicken",
+                                    "1 plate Rice and Chicken",
                                 ].map((item) => (
                                     <li
                                         key={item}
                                         className="flex items-center gap-2"
                                     >
-                                        <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                                        <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0 " />
                                         <DSText
                                             as="span"
                                             variant={DSTextVariant.body}
                                             color={DSTextColor.white}
+                                            weight={DSTextWeight.medium}
+                                            className=" [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]"
                                         >
                                             {item}
                                         </DSText>
