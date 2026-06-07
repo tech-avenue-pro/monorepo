@@ -1,0 +1,28 @@
+{
+    "sectionTitle": "A quiet, honest space to do the <span class=\"ds-text-color-tintTheme\">work that finally sticks</span>.",
+    "introText": "I spent years checking every box the world handed me — and still woke up feeling like a stranger in my own life. Coaching is what brought me back to myself. Now I do this work because I know what it costs to live on autopilot, and I know what becomes possible on the other side. My clients are thoughtful, capable women who have done the reading, tried the journaling apps, and still feel stuck. We move past insight into actual change.",
+    "src": "/images/annie-ali-about.webp",
+    "srcSet": "/images/annie-ali-about.webp",
+    "reasons": [
+        {
+            "id": 1,
+            "title": "6+ Years Coaching",
+            "description": "Over six years of dedicated coaching practice, helping women at every stage of life find clarity, confidence, and direction that lasts."
+        },
+        {
+            "id": 2,
+            "title": "ICF Certified",
+            "description": "Internationally recognized credentials grounded in rigorous ethics, evidence-informed methods, and a deep commitment to your growth."
+        },
+        {
+            "id": 3,
+            "title": "200+ Women Coached",
+            "description": "A growing community of women who have moved from stuck and overwhelmed to clear, grounded, and fully themselves."
+        },
+        {
+            "id": 4,
+            "title": "Zero Pretending",
+            "description": "No scripts, no fluff, no toxic positivity. Just real conversation, practical tools, and a space where honesty is always welcome."
+        }
+    ]
+}

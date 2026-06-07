@@ -12,6 +12,35 @@ import { HeroSectionBackgroundVisualContent } from "./hero-section-background-vi
 
 export type { HeroSectionBackgroundVisualContent };
 
+const themeClasses = {
+    dark: {
+        smallTitle: DSTextColor.white,
+        title: DSTextColor.white,
+        description: DSTextColor.whiteVariant1,
+        primaryButton: DSButtonVariant.primary,
+    },
+    light: {
+        smallTitle: DSTextColor.primary,
+        title: DSTextColor.primary,
+        description: DSTextColor.secondary,
+        primaryButton: DSButtonVariant.accent,
+    },
+};
+
+const alignClasses = {
+    left: { outer: "justify-start", inner: "text-left", buttons: "" },
+    center: {
+        outer: "justify-center",
+        inner: "text-center mx-auto",
+        buttons: "justify-center",
+    },
+    right: {
+        outer: "justify-end",
+        inner: "text-right ml-auto",
+        buttons: "justify-end",
+    },
+};
+
 export default function HeroSectionBackgroundVisual({
     smallTitle,
     title,
@@ -20,16 +49,22 @@ export default function HeroSectionBackgroundVisual({
     primaryCtaLink,
     secondaryCtaText,
     secondaryCtaLink,
+    textAlign = "center",
+    theme = "dark",
 }: HeroSectionBackgroundVisualContent) {
+    const align = alignClasses[textAlign];
+    const t = themeClasses[theme];
     return (
-        <div className="flex items-center justify-center h-full px-6 py-20 md:py-28">
-            <div className="text-center max-w-3xl mx-auto">
+        <div
+            className={`flex items-center ${align.outer} h-full px-6 py-20 md:py-28`}
+        >
+            <div className={`${align.inner} max-w-3xl`}>
                 {smallTitle?.trim() ? (
                     <DSMotion variant="fade-in">
                         <DSText
                             as="p"
                             variant={DSTextVariant.caption}
-                            color={DSTextColor.white}
+                            color={t.smallTitle}
                             weight={DSTextWeight.semiBold}
                             fontStyle={FontStyle.Body}
                             className="mb-4 uppercase tracking-widest opacity-90"
@@ -43,7 +78,7 @@ export default function HeroSectionBackgroundVisual({
                     <DSText
                         as="h1"
                         variant={DSTextVariant.largestTitle}
-                        color={DSTextColor.white}
+                        color={t.title}
                         weight={DSTextWeight.bold}
                         fontStyle={FontStyle.Heading}
                         className="mb-6"
@@ -56,7 +91,7 @@ export default function HeroSectionBackgroundVisual({
                     <DSText
                         as="p"
                         variant={DSTextVariant.bodyLarge}
-                        color={DSTextColor.whiteVariant1}
+                        color={t.description}
                         className="mb-10 leading-relaxed"
                     >
                         <span
@@ -66,10 +101,12 @@ export default function HeroSectionBackgroundVisual({
                 </DSMotion>
 
                 <DSMotion variant="fade-up">
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div
+                        className={`flex flex-col sm:flex-row gap-4 ${align.buttons}`}
+                    >
                         <DSLinkButton
                             href={primaryCtaLink}
-                            variant={DSButtonVariant.primary}
+                            variant={t.primaryButton}
                             glow={true}
                         >
                             {primaryCtaText}

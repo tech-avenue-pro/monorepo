@@ -1,0 +1,23 @@
+{
+    "title": "Not surface-level. Not a script.",
+    "description": "A real re-pattern — we move past insight into actual change using practical tools, real conversation, and zero pretending.",
+    "buttonTitle": "Book a Free Call",
+    "buttonLink": "#contact",
+    "steps": [
+        {
+            "id": "01",
+            "title": "Listen",
+            "description": "We start with where you actually are — not where you think you should be. No judgment, no script. Just an honest look at what's really going on."
+        },
+        {
+            "id": "02",
+            "title": "Uncover",
+            "description": "We map the patterns, beliefs, and quiet fears running the show. This is where everything starts to make sense and clarity finally arrives."
+        },
+        {
+            "id": "03",
+            "title": "Rebuild",
+            "description": "Together we install new ways of thinking, deciding, and showing up — and we practice them until they're genuinely yours to keep."
+        }
+    ]
+}
