@@ -42,6 +42,7 @@ interface StandardNavBarProps {
     background?: DSLayoutBackground;
     startingBackground?: DSLayoutBackground;
     stickyOnScrollOnly?: boolean;
+    isHeroFullScreen?: boolean;
 }
 
 const StandardNavBar = ({
@@ -59,9 +60,10 @@ const StandardNavBar = ({
     background = DSLayoutBackground.default,
     startingBackground = DSLayoutBackground.default,
     stickyOnScrollOnly = false,
+    isHeroFullScreen = false,
 }: StandardNavBarProps) => {
     const [nav, setNav] = useState("");
-    const [isSticky, setIsSticky] = useState(!stickyOnScrollOnly);
+    const [isSticky, setIsSticky] = useState(!stickyOnScrollOnly && !isHeroFullScreen);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [mobileMenuDirection, setMobileMenuDirection] = useState<
         "forward" | "back"
@@ -150,10 +152,43 @@ const StandardNavBar = ({
     }, [rootMobileLevel]);
 
     useEffect(() => {
-        if (!stickyOnScrollOnly) {
+        if (!stickyOnScrollOnly && !isHeroFullScreen) {
             document.body.classList.add("sticky");
             setIsSticky(true);
             return;
+        }
+
+        if (isHeroFullScreen) {
+            document.body.classList.add("hero-fullscreen");
+            document.body.classList.add("hero-fullscreen-overlay");
+
+            const heroSection = document.querySelector(".hero-section");
+            if (!heroSection) {
+                return;
+            }
+
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (!entry) {
+                        return;
+                    }
+                    const onHero = entry.isIntersecting;
+                    document.body.classList.toggle("hero-fullscreen-overlay", onHero);
+                    document.body.classList.toggle("sticky", !onHero);
+                    setIsSticky(!onHero);
+                },
+                { root: null, threshold: 0, rootMargin: "-48px" },
+            );
+
+            observer.observe(heroSection);
+
+            return () => {
+                observer.disconnect();
+                document.body.classList.remove("hero-fullscreen");
+                document.body.classList.remove("hero-fullscreen-overlay");
+                document.body.classList.remove("sticky");
+                setIsSticky(false);
+            };
         }
 
         const heroSection = document.querySelector(".hero-section");
@@ -185,9 +220,9 @@ const StandardNavBar = ({
             document.body.classList.remove("sticky");
             setIsSticky(false);
         };
-    }, [stickyOnScrollOnly]);
+    }, [stickyOnScrollOnly, isHeroFullScreen]);
 
-    const shouldShowBackground = !stickyOnScrollOnly || isSticky;
+    const shouldShowBackground = (!stickyOnScrollOnly && !isHeroFullScreen) || isSticky;
 
     return (
         <React.Fragment>

@@ -42,8 +42,9 @@ export default function MainNavBar() {
             logoSrc="icons/icon-40.png"
             name="Annie Ali Coaching"
             background={DSLayoutBackground.primary}
-            startingBackground={DSLayoutBackground.primaryLighter}
+            startingBackground={DSLayoutBackground.transparent}
             stickyOnScrollOnly={true}
+            isHeroFullScreen={true}
         />
     );
 }
