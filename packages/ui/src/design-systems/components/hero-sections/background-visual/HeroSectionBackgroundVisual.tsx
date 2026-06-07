@@ -28,16 +28,18 @@ const themeClasses = {
 };
 
 const alignClasses = {
-    left: { outer: "justify-start", inner: "text-left", buttons: "" },
+    left: { outer: "justify-start", inner: "text-left", buttons: "", padding: "pl-10 md:pl-20 pr-6" },
     center: {
         outer: "justify-center",
         inner: "text-center mx-auto",
         buttons: "justify-center",
+        padding: "px-6",
     },
     right: {
         outer: "justify-end",
         inner: "text-right ml-auto",
         buttons: "justify-end",
+        padding: "pr-10 md:pr-20 pl-6",
     },
 };
 
@@ -56,7 +58,7 @@ export default function HeroSectionBackgroundVisual({
     const t = themeClasses[theme];
     return (
         <div
-            className={`flex items-center ${align.outer} h-full px-6 py-20 md:py-28`}
+            className={`flex items-center ${align.outer} h-full ${align.padding} py-20 md:py-28`}
         >
             <div className={`${align.inner} max-w-3xl`}>
                 {smallTitle?.trim() ? (
