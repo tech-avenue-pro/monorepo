@@ -79,10 +79,14 @@ const StandardNavBar = ({
         rootMobileLevel,
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
+    const isMobileNavOpen = nav === "nav-open";
     const activeBackground = isSticky ? background : startingBackground;
     const activeColor = isSticky ? color : (startingColor ?? color);
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
+        const solidCssVar = isMobileNavOpen
+            ? (backgroundColorVars[background] ?? cssVar)
+            : cssVar;
         const style: React.CSSProperties & Record<string, string> = {};
 
         if (cssVar) {
@@ -90,7 +94,10 @@ const StandardNavBar = ({
                 `color-mix(in srgb, ${cssVar} 40%, transparent)`;
             style["--nav-bg-overlay"] =
                 `color-mix(in srgb, ${cssVar} 35%, transparent)`;
-            style["--nav-bg-solid"] = cssVar;
+        }
+
+        if (solidCssVar) {
+            style["--nav-bg-solid"] = solidCssVar;
         }
 
         if (hoverColor) {
@@ -102,7 +109,7 @@ const StandardNavBar = ({
         }
 
         return Object.keys(style).length ? style : undefined;
-    }, [activeBackground, hoverColor, activeColor]);
+    }, [activeBackground, hoverColor, activeColor, isMobileNavOpen, background]);
     const clearCloseTimeout = () => {
         if (closeTimeoutRef.current !== null) {
             window.clearTimeout(closeTimeoutRef.current);
@@ -132,7 +139,6 @@ const StandardNavBar = ({
         ? variantClasses[mobileTextVariant]
         : null;
 
-    const isMobileNavOpen = nav === "nav-open";
     const currentTextClassName =
         isMobileNavOpen && mobileTextClassName
             ? mobileTextClassName

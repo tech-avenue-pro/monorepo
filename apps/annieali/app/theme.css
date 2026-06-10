@@ -8,24 +8,26 @@
     color-scheme: light; /* tells browser UI (scrollbars, inputs) to stay light */
 
     /* Brand primary: warm dusty rose / mauve */
-    --primary: #efe1cd;
-    --primary-lighter: #fbf2e5;
-    --primary-darker: #ebd6b9;
-    --primary-button-hover: #d4bfa6;
-    --darkest-background: #d4bfa6;
-    --lightest-background: #efe8de;
+    --primary: #c76749;
+    --primary-lighter: #cd846e;
+    --primary-darker: #c75431;
+    --primary-button-hover: #c75431;
+    --darkest-background: #9a4227;
+    --lightest-background: #c59080;
 
-    --secondary: #8b6f52;
-    --secondary-lighter: #a98c6f;
-    --secondary-darker: #7a5e41;
+    /* Secondary: deep forest tea green */
+    --secondary: #4a7c58;
+    --secondary-lighter: #688f75;
+    --secondary-darker: #2a4c36;
     /* Accent: warm clay */
-    --accent: #c76749;
-    --accent-lighter: #cd846e;
-    --accent-darker: #c75431;
+    --accent: #f5efe5;
+    --accent-lighter: #faf5ed;
+    --accent-darker: #f5ead7;
 
     /* tintTheme = primary color used for inline highlights, links */
     --text-tint-theme: var(--primary-darker);
     --text-senary: var(--primary);
+    --text-septenary: var(--secondary-darker);
 }
 
 /* ── Opt out of dark mode ────────────────────────────────────────────────
@@ -42,11 +44,21 @@
         --lightest-background: #efe8de;
 
         /* Brand colors → keep annie light-mode values */
-        --primary: #efe1cd;
-        --primary-lighter: #fbf2e5;
-        --primary-darker: #ebd6b9;
-        --text-tint-theme: var(--primary-darker);
-        --text-senary: var(--primary);
+        --primary: #c76749;
+        --primary-lighter: #cd846e;
+        --primary-darker: #c75431;
+        --primary-button-hover: #c75431;
+        --darkest-background: #9a4227;
+        --lightest-background: #c59080;
+
+        /* Secondary: deep forest tea green */
+        --secondary: #4a7c58;
+        --secondary-lighter: #688f75;
+        --secondary-darker: #386247;
+        /* Accent: warm clay */
+        --accent: #efe1cd;
+        --accent-lighter: #fbf2e5;
+        --accent-darker: #ebd6b9;
 
         /* Text → stay dark-on-light */
         --text-primary: #333;
@@ -54,6 +66,7 @@
         --text-tertiary: #555;
         --text-quaternary: #777;
         --text-quinary: #bbb;
+        --text-septenary: var(--secondary-darker);
 
         /* Contrast button → stay dark */
         --contrast-bg: #000;

@@ -41,7 +41,7 @@ export default function Home() {
     return (
         <main>
             <MainNavBar />
-
+            {/* Hero Section */}
             <HeroSectionFullScreen
                 id="hero-section"
                 className="lg:h-[calc(100vh)]"
@@ -56,17 +56,8 @@ export default function Home() {
             </HeroSectionFullScreen>
 
             <RegularSection
-                id="stats-section"
-                background={DSLayoutBackground.primaryLighter}
-            >
-                <RegularContainer>
-                    <StatsView {...stats} />
-                </RegularContainer>
-            </RegularSection>
-
-            <RegularSection
                 id="about-section"
-                background={DSLayoutBackground.defaultVariation1}
+                background={DSLayoutBackground.accent}
             >
                 <RegularContainer>
                     <WhyChooseUs {...about} />
@@ -74,8 +65,17 @@ export default function Home() {
             </RegularSection>
 
             <RegularSection
+                id="stats-section"
+                background={DSLayoutBackground.accentDarker}
+            >
+                <RegularContainer>
+                    <StatsView {...stats} />
+                </RegularContainer>
+            </RegularSection>
+
+            <RegularSection
                 id="approach-section"
-                background={DSLayoutBackground.default}
+                background={DSLayoutBackground.accentLighter}
             >
                 <RegularContainer>
                     <HowItWorks {...approach} />
@@ -84,7 +84,7 @@ export default function Home() {
 
             <RegularSection
                 id="services-section"
-                background={DSLayoutBackground.defaultVariation1}
+                background={DSLayoutBackground.accent}
             >
                 <RegularContainer>
                     <ServiceSection {...services} />

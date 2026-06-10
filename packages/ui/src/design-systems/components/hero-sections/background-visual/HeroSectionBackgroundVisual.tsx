@@ -23,12 +23,17 @@ const themeClasses = {
         smallTitle: DSTextColor.primary,
         title: DSTextColor.primary,
         description: DSTextColor.secondary,
-        primaryButton: DSButtonVariant.accent,
+        primaryButton: DSButtonVariant.primary,
     },
 };
 
 const alignClasses = {
-    left: { outer: "justify-start", inner: "text-left", buttons: "", padding: "pl-10 md:pl-20 pr-6" },
+    left: {
+        outer: "justify-start",
+        inner: "text-left",
+        buttons: "",
+        padding: "pl-10 md:pl-20 pr-6",
+    },
     center: {
         outer: "justify-center",
         inner: "text-center mx-auto",

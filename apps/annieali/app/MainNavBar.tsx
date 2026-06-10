@@ -40,8 +40,8 @@ export default function MainNavBar() {
             mobileFontWeight={DSTextWeight.medium}
             mobileTextVariant={DSTextVariant.title2}
             logoSrc="icons/icon-40.png"
-            name="Annie Ali Coaching"
-            background={DSLayoutBackground.primary}
+            name=""
+            background={DSLayoutBackground.accentDarker}
             startingBackground={DSLayoutBackground.transparent}
             stickyOnScrollOnly={true}
             isHeroFullScreen={true}
