@@ -1,28 +1,29 @@
 {
-    "sectionTitle": "A quiet, honest space to do the <span class=\"ds-text-color-tintTheme\">work that finally sticks</span>.",
-    "introText": "I spent years checking every box the world handed me — and still woke up feeling like a stranger in my own life. Coaching is what brought me back to myself. Now I do this work because I know what it costs to live on autopilot, and I know what becomes possible on the other side. My clients are thoughtful, capable women who have done the reading, tried the journaling apps, and still feel stuck. We move past insight into actual change.",
-    "src": "/images/annie-ali-about.webp",
-    "srcSet": "/images/annie-ali-about.webp",
+    "sectionTitle": "Helping you find clarity, confidence, and a deeper connection to the life you want to live.",
+    "introText": "Life can look successful on the outside while still feeling uncertain on the inside. Many of us spend years meeting expectations, caring for others, and pushing through challenges without taking the time to truly listen to ourselves. Coaching offers a space to pause, reflect, and move forward with greater purpose.",
+    "src": "/images/about.png",
+    "srcSet": "/images/about.png",
+    "alt": "Annie Ali Coaching",
     "reasons": [
         {
             "id": 1,
-            "title": "6+ Years Coaching",
-            "description": "Over six years of dedicated coaching practice, helping women at every stage of life find clarity, confidence, and direction that lasts."
+            "title": "Personalized Coaching",
+            "description": "Every coaching journey is unique. Together, we’ll focus on your goals, challenges, and aspirations to create meaningful progress that feels authentic to you."
         },
         {
             "id": 2,
-            "title": "ICF Certified",
-            "description": "Internationally recognized credentials grounded in rigorous ethics, evidence-informed methods, and a deep commitment to your growth."
+            "title": "Compassionate Support",
+            "description": "A warm, judgment-free space where you can explore challenges openly, gain clarity, and move forward with greater confidence and self-trust."
         },
         {
             "id": 3,
-            "title": "200+ Women Coached",
-            "description": "A growing community of women who have moved from stuck and overwhelmed to clear, grounded, and fully themselves."
+            "title": "Growth & Self-Discovery",
+            "description": "Coaching is about more than solving problems. It’s an opportunity to better understand yourself, uncover your strengths, and create lasting positive change."
         },
         {
             "id": 4,
-            "title": "Zero Pretending",
-            "description": "No scripts, no fluff, no toxic positivity. Just real conversation, practical tools, and a space where honesty is always welcome."
+            "title": "Honest Conversations",
+            "description": "No pressure, no perfection, and no pretending. Just genuine conversations, practical guidance, and support that meets you where you are."
         }
     ]
 }

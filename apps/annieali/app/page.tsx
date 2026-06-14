@@ -13,6 +13,7 @@ import ServiceSection from "@repo/ui/design-systems/components/services/ServiceS
 import StatsView from "@repo/ui/design-systems/components/stats/StatsView";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
+import Script from "next/script";
 import {
     DSLinkButton,
     DSButtonVariant,
@@ -91,23 +92,25 @@ export default function Home() {
                 </RegularContainer>
             </RegularSection>
 
-            <SmallSection background={DSLayoutBackground.default}>
+            {/* Book appointment */}
+            <RegularSection
+                background={DSLayoutBackground.accentDarker}
+                id="contact"
+            >
                 <RegularContainer>
-                    <FinalCTAWithForm
-                        {...cta}
-                        form={
-                            <div className="flex items-center justify-center md:justify-end">
-                                <DSLinkButton
-                                    href="https://calendly.com/annieali"
-                                    variant={DSButtonVariant.primary}
-                                >
-                                    Book Your Free 30-Minute Call
-                                </DSLinkButton>
-                            </div>
-                        }
+                    <div
+                        style={{ width: "100%", height: "500px" }}
+                        data-fillout-id="nGDxnrtPQxus"
+                        data-fillout-embed-type="standard"
+                        data-fillout-inherit-parameters
+                        data-fillout-dynamic-resize
+                    />
+                    <Script
+                        src="https://server.fillout.com/embed/v1/"
+                        strategy="afterInteractive"
                     />
                 </RegularContainer>
-            </SmallSection>
+            </RegularSection>
 
             <hr className="my-0 border-gray-300" />
 
