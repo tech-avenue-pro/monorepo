@@ -27,8 +27,10 @@ import { getStatsContent } from "./content/stats/getStatsContent";
 import { getServicesContent } from "./content/services/getServicesContent";
 import { getCTAContent } from "./content/cta-section/getCTAContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
+import { getFAQContent } from "./content/faq/getFAQContent";
 import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero-sections/background-visual/HeroSectionBackgroundVisual";
 import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
+import FAQSection from "@repo/ui/design-systems/components/faq/FAQSection";
 
 export default function Home() {
     const hero = getHeroContent();
@@ -38,6 +40,7 @@ export default function Home() {
     const services = getServicesContent();
     const cta = getCTAContent();
     const footer = getFooterContent();
+    const faq = getFAQContent();
 
     return (
         <main>
@@ -89,6 +92,16 @@ export default function Home() {
             >
                 <RegularContainer>
                     <ServiceSection {...services} />
+                </RegularContainer>
+            </RegularSection>
+
+            {/* FAQ */}
+            <RegularSection
+                id="faq"
+                background={DSLayoutBackground.accentLighter}
+            >
+                <RegularContainer>
+                    <FAQSection {...faq} />
                 </RegularContainer>
             </RegularSection>
 
