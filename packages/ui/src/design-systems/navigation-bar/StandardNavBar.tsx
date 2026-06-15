@@ -79,12 +79,14 @@ const StandardNavBar = ({
         rootMobileLevel,
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
+    const navCloseTimeoutRef = useRef<number | null>(null);
+    const [isNavClosing, setIsNavClosing] = useState(false);
     const isMobileNavOpen = nav === "nav-open";
     const activeBackground = isSticky ? background : startingBackground;
     const activeColor = isSticky ? color : (startingColor ?? color);
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
-        const solidCssVar = isMobileNavOpen && (!cssVar || cssVar === "transparent")
+        const solidCssVar = (isMobileNavOpen || isNavClosing) && (!cssVar || cssVar === "transparent")
             ? backgroundColorVars[background]
             : cssVar;
         const style: React.CSSProperties & Record<string, string> = {};
@@ -109,7 +111,7 @@ const StandardNavBar = ({
         }
 
         return Object.keys(style).length ? style : undefined;
-    }, [activeBackground, hoverColor, activeColor, isMobileNavOpen, background]);
+    }, [activeBackground, hoverColor, activeColor, isMobileNavOpen, isNavClosing, background]);
     const clearCloseTimeout = () => {
         if (closeTimeoutRef.current !== null) {
             window.clearTimeout(closeTimeoutRef.current);
@@ -125,6 +127,14 @@ const StandardNavBar = ({
     };
 
     const closeNav = () => {
+        setIsNavClosing(true);
+        if (navCloseTimeoutRef.current !== null) {
+            window.clearTimeout(navCloseTimeoutRef.current);
+        }
+        navCloseTimeoutRef.current = window.setTimeout(() => {
+            setIsNavClosing(false);
+            navCloseTimeoutRef.current = null;
+        }, 300);
         setNav("");
         setOpenDropdown(null);
         setMobileMenuDirection("forward");
@@ -152,6 +162,14 @@ const StandardNavBar = ({
     const currentMobileLevel =
         mobileMenuStack[mobileMenuStack.length - 1] ?? rootMobileLevel;
     const canGoBack = mobileMenuStack.length > 1;
+
+    useEffect(() => {
+        return () => {
+            if (navCloseTimeoutRef.current !== null) {
+                window.clearTimeout(navCloseTimeoutRef.current);
+            }
+        };
+    }, []);
 
     useEffect(() => {
         setMobileMenuStack([rootMobileLevel]);
@@ -580,6 +598,11 @@ const StandardNavBar = ({
                         className="btn-mobile-nav"
                         onClick={(e) => {
                             if (nav === "") {
+                                if (navCloseTimeoutRef.current !== null) {
+                                    window.clearTimeout(navCloseTimeoutRef.current);
+                                    navCloseTimeoutRef.current = null;
+                                }
+                                setIsNavClosing(false);
                                 setNav("nav-open");
                                 setOpenDropdown(null);
                                 setMobileMenuDirection("forward");
