@@ -84,8 +84,8 @@ const StandardNavBar = ({
     const activeColor = isSticky ? color : (startingColor ?? color);
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
-        const solidCssVar = isMobileNavOpen
-            ? (backgroundColorVars[background] ?? cssVar)
+        const solidCssVar = isMobileNavOpen && (!cssVar || cssVar === "transparent")
+            ? backgroundColorVars[background]
             : cssVar;
         const style: React.CSSProperties & Record<string, string> = {};
 

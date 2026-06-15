@@ -10,12 +10,12 @@ import "./theme.css";
 const playfair = Playfair_Display({
     variable: "--font-heading",
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
+    weight: ["400", "700"],
 });
 
 const inter = Inter({
     variable: "--font-body",
-    weight: ["300", "400", "500", "600", "700", "800", "900"],
+    weight: ["400", "700"],
     subsets: ["latin"],
 });
 

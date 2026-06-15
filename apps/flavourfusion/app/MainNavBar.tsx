@@ -36,6 +36,7 @@ export default function MainNavBar() {
             background={DSLayoutBackground.default}
             startingBackground={DSLayoutBackground.blackVariation1}
             stickyOnScrollOnly={true}
+            isHeroFullScreen={true}
         />
     );
 }
