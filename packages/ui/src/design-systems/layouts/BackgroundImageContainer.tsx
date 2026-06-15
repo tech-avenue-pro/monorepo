@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import clsx from "clsx";
 
 interface BackgroundImageContainerProps
@@ -8,6 +9,7 @@ interface BackgroundImageContainerProps
     imageAlt?: string;
     className?: string;
     hideImageOnMobile?: boolean;
+    priority?: boolean;
 }
 
 export default function BackgroundImageContainer({
@@ -16,6 +18,7 @@ export default function BackgroundImageContainer({
     imageAlt = "",
     className,
     hideImageOnMobile = false,
+    priority = false,
     ...rest
 }: BackgroundImageContainerProps) {
     const imageVisibility = hideImageOnMobile ? "hidden lg:block" : "";
@@ -26,11 +29,13 @@ export default function BackgroundImageContainer({
             {...rest}
         >
             {/* Background image */}
-            <img
+            <Image
                 src={imageSrc}
                 alt={imageAlt}
+                fill
                 aria-hidden="true"
-                className={clsx("absolute inset-0 w-full h-full object-cover", imageVisibility)}
+                priority={priority}
+                className={clsx("object-cover", imageVisibility)}
             />
 
             {/* Radial gradient overlay: transparent at centre, 30% black at edges */}

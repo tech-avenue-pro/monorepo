@@ -25,6 +25,7 @@ import { getFAQContent } from "./content/faq/getFAQContent";
 import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero-sections/background-visual/HeroSectionBackgroundVisual";
 import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
 import FAQSection from "@repo/ui/design-systems/components/faq/FAQSection";
+import Image from "next/image";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 
 export default function Home() {
@@ -49,16 +50,19 @@ export default function Home() {
                     imageAlt="Flavour Fusion catering spread"
                     className="h-full"
                     hideImageOnMobile
+                    priority
                 >
                     <HeroSectionBackgroundVisual {...hero} />
                 </BackgroundImageContainer>
             </HeroSectionFullScreen>
 
             {/* Hero image for mobile/tablet only */}
-            <img
+            <Image
                 src="/images/hero-background.webp"
                 alt="Annie Ali"
-                className="block lg:hidden w-full object-cover"
+                width={1717}
+                height={916}
+                className="block lg:hidden w-full h-auto"
             />
 
             <RegularSection
