@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Parisienne } from "next/font/google";
 import "./globals.css";
 import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
@@ -17,6 +17,12 @@ const inter = Inter({
     variable: "--font-body",
     weight: ["300", "400", "500", "600", "700", "800", "900"],
     subsets: ["latin"],
+});
+
+const parisienne = Parisienne({
+    variable: "--font-accent",
+    subsets: ["latin"],
+    weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +47,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${playfair.variable} ${inter.variable} antialiased ds-bg-default`}
+                className={`${playfair.variable} ${inter.variable} ${parisienne.variable} antialiased ds-bg-default`}
             >
                 {children}
             </body>

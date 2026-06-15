@@ -25,6 +25,7 @@ import { getFAQContent } from "./content/faq/getFAQContent";
 import HeroSectionBackgroundVisual from "@repo/ui/design-systems/components/hero-sections/background-visual/HeroSectionBackgroundVisual";
 import BackgroundImageContainer from "@repo/ui/design-systems/layouts/BackgroundImageContainer";
 import FAQSection from "@repo/ui/design-systems/components/faq/FAQSection";
+import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 
 export default function Home() {
     const hero = getHeroContent();
@@ -40,16 +41,25 @@ export default function Home() {
             {/* Hero Section */}
             <HeroSectionFullScreen
                 id="hero-section"
+                background={DSLayoutBackground.accentLighter}
                 className="lg:h-[calc(100vh)]"
             >
                 <BackgroundImageContainer
                     imageSrc="/images/hero-background.webp"
                     imageAlt="Flavour Fusion catering spread"
                     className="h-full"
+                    hideImageOnMobile
                 >
                     <HeroSectionBackgroundVisual {...hero} />
                 </BackgroundImageContainer>
             </HeroSectionFullScreen>
+
+            {/* Hero image for mobile/tablet only */}
+            <img
+                src="/images/hero-background.webp"
+                alt="Annie Ali"
+                className="block lg:hidden w-full object-cover"
+            />
 
             <RegularSection
                 id="about-section"
@@ -89,7 +99,7 @@ export default function Home() {
             </RegularSection>
 
             {/* Book appointment */}
-            <RegularSection
+            <SmallSection
                 background={DSLayoutBackground.accentDarker}
                 id="contact"
             >
@@ -106,7 +116,7 @@ export default function Home() {
                         strategy="afterInteractive"
                     />
                 </RegularContainer>
-            </RegularSection>
+            </SmallSection>
 
             <hr className="my-0 border-gray-300" />
 

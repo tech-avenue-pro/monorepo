@@ -7,6 +7,7 @@ interface BackgroundImageContainerProps
     imageSrc: string;
     imageAlt?: string;
     className?: string;
+    hideImageOnMobile?: boolean;
 }
 
 export default function BackgroundImageContainer({
@@ -14,8 +15,11 @@ export default function BackgroundImageContainer({
     imageSrc,
     imageAlt = "",
     className,
+    hideImageOnMobile = false,
     ...rest
 }: BackgroundImageContainerProps) {
+    const imageVisibility = hideImageOnMobile ? "hidden lg:block" : "";
+
     return (
         <div
             className={clsx("relative w-full h-full overflow-hidden", className)}
@@ -26,12 +30,12 @@ export default function BackgroundImageContainer({
                 src={imageSrc}
                 alt={imageAlt}
                 aria-hidden="true"
-                className="absolute inset-0 w-full h-full object-cover"
+                className={clsx("absolute inset-0 w-full h-full object-cover", imageVisibility)}
             />
 
             {/* Radial gradient overlay: transparent at centre, 30% black at edges */}
             <div
-                className="absolute inset-0"
+                className={clsx("absolute inset-0", imageVisibility)}
                 style={{
                     background:
                         "radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.30) 100%)",
