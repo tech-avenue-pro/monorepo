@@ -19,7 +19,7 @@ export default function ServiceSection({
     services,
 }: ServiceSectionContent) {
     return (
-        <section className="mx-auto max-w-6xl px-4">
+        <section className="mx-auto ">
             <SectionTitleSplitMessageView
                 sectionTitle={sectionTitle}
                 sectionTagline={sectionTagline}

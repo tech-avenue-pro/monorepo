@@ -1,0 +1,38 @@
+{
+    "footerTitle": "",
+    "footerLogo": "/icons/icon-40.png",
+    "socialLinks": [],
+    "phoneNumber": "",
+    "emailAddress": "hello@annieali.ca",
+    "copyrightText": "Annie Ali Coaching. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Navigation",
+            "links": [
+                { "title": "Home", "link": "#hero-section" },
+                { "title": "About", "link": "#about-section" },
+                { "title": "Approach", "link": "#approach-section" },
+                { "title": "Services", "link": "#services-section" },
+                { "title": "Book a Call", "link": "#contact" }
+            ]
+        },
+        {
+            "title": "Coaching Areas",
+            "links": [
+                { "title": "Clarity & Purpose", "link": "#services-section" },
+                { "title": "Confidence Rebuild", "link": "#services-section" },
+                { "title": "Career Transitions", "link": "#services-section" },
+                { "title": "Emotional Mastery", "link": "#services-section" }
+            ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenue.pro"
+                }
+            ]
+        }
+    ]
+}

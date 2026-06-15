@@ -1,0 +1,29 @@
+{
+    "sectionTitle": "Helping you find clarity, confidence, and a deeper connection to the life you want to live.",
+    "introText": "Life can look successful on the outside while still feeling uncertain on the inside. Many of us spend years meeting expectations, caring for others, and pushing through challenges without taking the time to truly listen to ourselves. Coaching offers a space to pause, reflect, and move forward with greater purpose.",
+    "src": "/images/about.webp",
+    "srcSet": "/images/about.webp",
+    "alt": "Annie Ali Coaching",
+    "reasons": [
+        {
+            "id": 1,
+            "title": "Personalized Coaching",
+            "description": "Every coaching journey is unique. Together, we’ll focus on your goals, challenges, and aspirations to create meaningful progress that feels authentic to you."
+        },
+        {
+            "id": 2,
+            "title": "Compassionate Support",
+            "description": "A warm, judgment-free space where you can explore challenges openly, gain clarity, and move forward with greater confidence and self-trust."
+        },
+        {
+            "id": 3,
+            "title": "Growth & Self-Discovery",
+            "description": "Coaching is about more than solving problems. It’s an opportunity to better understand yourself, uncover your strengths, and create lasting positive change."
+        },
+        {
+            "id": 4,
+            "title": "Honest Conversations",
+            "description": "No pressure, no perfection, and no pretending. Just genuine conversations, practical guidance, and support that meets you where you are."
+        }
+    ]
+}
