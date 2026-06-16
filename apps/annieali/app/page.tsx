@@ -63,6 +63,7 @@ export default function Home() {
                 width={1717}
                 height={916}
                 className="block lg:hidden w-full h-auto"
+                loading="lazy"
             />
 
             <RegularSection
@@ -117,7 +118,7 @@ export default function Home() {
                     />
                     <Script
                         src="https://server.fillout.com/embed/v1/"
-                        strategy="afterInteractive"
+                        strategy="lazyOnload"
                     />
                 </RegularContainer>
             </SmallSection>
