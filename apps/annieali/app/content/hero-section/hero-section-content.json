@@ -2,6 +2,7 @@
     "smallTitle": "LIFE COACHING WITH ANNIE ALI",
     "title": "<span class=\"ds-text-color-septenary\">Clarity, Confidence</span>",
     "description": "<span class=\"ds-text-color-tertiary\">Personalized coaching to help you overcome challenges, gain clarity, and create a life that feels truly yours.</span>",
+    "descriptionWidthClass": "max-w-135",
     "primaryCtaText": "Book a Free Consultation",
     "primaryCtaLink": "#contact",
     "secondaryCtaText": "How It Works",

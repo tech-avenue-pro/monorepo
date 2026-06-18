@@ -8,6 +8,7 @@ export type DSMotionVariant =
     | "blur-in"
     | "fade-in"
     | "scale-in"
+    | "grow-x"
     | "slide-right"
     | "slide-left"
     | "none"
@@ -49,6 +50,10 @@ const variants: Record<
     "scale-in": {
         hidden: { opacity: 0, scale: 0.9 },
         visible: { opacity: 1, scale: 1 },
+    },
+    "grow-x": {
+        hidden: { opacity: 1, scaleX: 0 },
+        visible: { opacity: 1, scaleX: 1 },
     },
     "slide-right": {
         hidden: { opacity: 0, x: -24 },
