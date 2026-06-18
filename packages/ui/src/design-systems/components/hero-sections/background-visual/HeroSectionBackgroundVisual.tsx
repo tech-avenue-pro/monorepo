@@ -52,6 +52,8 @@ export default function HeroSectionBackgroundVisual({
     smallTitle,
     title,
     description,
+    descriptionWidthClass,
+    lineWidthClass,
     primaryCtaText,
     primaryCtaLink,
     secondaryCtaText,
@@ -61,6 +63,12 @@ export default function HeroSectionBackgroundVisual({
 }: HeroSectionBackgroundVisualContent) {
     const align = alignClasses[textAlign];
     const t = themeClasses[theme];
+    const lineOriginClass =
+        textAlign === "left"
+            ? "origin-left"
+            : textAlign === "right"
+              ? "origin-right"
+              : "origin-center";
     return (
         <div
             className={`flex items-center ${align.outer} h-full ${align.padding} py-20 md:py-28`}
@@ -74,10 +82,24 @@ export default function HeroSectionBackgroundVisual({
                             color={t.smallTitle}
                             weight={DSTextWeight.semiBold}
                             fontStyle={FontStyle.Body}
-                            className="mb-4 uppercase tracking-widest opacity-90"
+                            className="mb-1 uppercase tracking-widest opacity-90"
                         >
                             {smallTitle}
                         </DSText>
+                        {lineWidthClass?.trim() ? (
+                            <DSMotion
+                                variant="grow-x"
+                                duration={0.7}
+                                delay={0.15}
+                                className="mb-5"
+                            >
+                                <hr
+                                    className={`h-0.5 ds-bg-primary border-0 ${lineWidthClass} ${lineOriginClass}`}
+                                />
+                            </DSMotion>
+                        ) : (
+                            <div className="mb-4"></div>
+                        )}
                     </DSMotion>
                 ) : null}
 
@@ -99,7 +121,7 @@ export default function HeroSectionBackgroundVisual({
                         as="p"
                         variant={DSTextVariant.bodyLarge}
                         color={t.description}
-                        className="mb-10 leading-relaxed"
+                        className={`mb-10 leading-relaxed ${descriptionWidthClass ?? ""}`}
                     >
                         <span
                             dangerouslySetInnerHTML={{ __html: description }}
