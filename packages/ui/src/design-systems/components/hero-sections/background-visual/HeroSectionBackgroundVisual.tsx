@@ -53,6 +53,7 @@ export default function HeroSectionBackgroundVisual({
     title,
     description,
     descriptionWidthClass,
+    lineWidthClass,
     primaryCtaText,
     primaryCtaLink,
     secondaryCtaText,
@@ -85,16 +86,20 @@ export default function HeroSectionBackgroundVisual({
                         >
                             {smallTitle}
                         </DSText>
-                        <DSMotion
-                            variant="grow-x"
-                            duration={0.7}
-                            delay={0.15}
-                            className="mb-5"
-                        >
-                            <hr
-                                className={`w-55 lg:w-65 h-0.5 ds-bg-primary border-0 ${lineOriginClass}`}
-                            />
-                        </DSMotion>
+                        {lineWidthClass?.trim() ? (
+                            <DSMotion
+                                variant="grow-x"
+                                duration={0.7}
+                                delay={0.15}
+                                className="mb-5"
+                            >
+                                <hr
+                                    className={`h-0.5 ds-bg-primary border-0 ${lineWidthClass} ${lineOriginClass}`}
+                                />
+                            </DSMotion>
+                        ) : (
+                            <div className="mb-4"></div>
+                        )}
                     </DSMotion>
                 ) : null}
 
