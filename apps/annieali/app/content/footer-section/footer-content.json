@@ -1,7 +1,18 @@
 {
     "footerTitle": "",
     "footerLogo": "/icons/icon-40.png",
-    "socialLinks": [],
+    "socialLinks": [
+        {
+            "platform": "youtube",
+            "link": "https://www.youtube.com/@annie-ali",
+            "alt": "YouTube Annie Ali"
+        },
+        {
+            "platform": "instagram",
+            "link": "https://www.instagram.com/coachannieali",
+            "alt": "Instagram Annie Ali"
+        }
+    ],
     "phoneNumber": "",
     "emailAddress": "hello@annieali.ca",
     "copyrightText": "Annie Ali Coaching. All rights reserved.",

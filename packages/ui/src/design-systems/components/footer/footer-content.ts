@@ -1,8 +1,10 @@
+export type SocialPlatform = "facebook" | "instagram" | "youtube";
+
 export interface FooterContent {
     footerTitle: string;
     footerLogo: string;
     socialLinks: {
-        logo: string;
+        platform: SocialPlatform;
         link: string;
         alt: string;
     }[];
