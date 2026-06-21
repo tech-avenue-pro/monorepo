@@ -4,9 +4,18 @@ import {
     DSTextColor,
     DSTextVariant,
 } from "@repo/ui/design-systems/DSText";
-import { FooterContent } from "./footer-content";
+import FacebookIcon from "@repo/ui/icons/FacebookIcon";
+import InstagramIcon from "@repo/ui/icons/InstagramIcon";
+import YoutubeIcon from "@repo/ui/icons/YoutubeIcon";
+import { FooterContent, SocialPlatform } from "./footer-content";
 
 export type { FooterContent };
+
+const socialIcons: Record<SocialPlatform, typeof FacebookIcon> = {
+    facebook: FacebookIcon,
+    instagram: InstagramIcon,
+    youtube: YoutubeIcon,
+};
 
 export default function Footer({
     footerTitle,
@@ -53,20 +62,20 @@ export default function Footer({
                                 </div>
                                 {/* Social Links */}
                                 <div className="flex gap-8 mt-2">
-                                    {socialLinks.map((socialLink) => (
-                                        <a
-                                            target="_blank"
-                                            key={socialLink.link}
-                                            href={socialLink.link}
-                                            aria-label={socialLink.alt}
-                                        >
-                                            <img
-                                                src={socialLink.logo}
-                                                alt={socialLink.alt}
-                                                className="w-6 h-6"
-                                            />
-                                        </a>
-                                    ))}
+                                    {socialLinks.map((socialLink) => {
+                                        const Icon =
+                                            socialIcons[socialLink.platform];
+                                        return (
+                                            <a
+                                                target="_blank"
+                                                key={socialLink.link}
+                                                href={socialLink.link}
+                                                aria-label={socialLink.alt}
+                                            >
+                                                <Icon className="w-6 h-6" />
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">

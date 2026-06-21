@@ -1,7 +1,18 @@
 {
     "footerTitle": "",
     "footerLogo": "/icons/icon-40.png",
-    "socialLinks": [],
+    "socialLinks": [
+        {
+            "platform": "facebook",
+            "link": "https://www.facebook.com/profile.php?id=61585585133241",
+            "alt": "Facebook Tech Avenue Pro"
+        },
+        {
+            "platform": "instagram",
+            "link": "https://www.instagram.com/techavenuepro/",
+            "alt": "Instagram Tech Avenue Pro"
+        }
+    ],
     "phoneNumber": "",
     "emailAddress": "hello@annieali.ca",
     "copyrightText": "Annie Ali Coaching. All rights reserved.",

@@ -3,12 +3,12 @@
     "footerLogo": "/icons/tech-avenue-pro-navbar.png",
     "socialLinks": [
         {
-            "logo": "/icons/logo-facebook.svg",
+            "platform": "facebook",
             "link": "https://www.facebook.com/profile.php?id=61585585133241",
             "alt": "Facebook Tech Avenue Pro"
         },
         {
-            "logo": "/icons/logo-instagram.svg",
+            "platform": "instagram",
             "link": "https://www.instagram.com/techavenuepro/",
             "alt": "Instagram Tech Avenue Pro"
         }
