@@ -4,6 +4,7 @@ import {
     DSTextColor,
     DSTextVariant,
     DSTextWeight,
+    FontStyle,
 } from "@repo/ui/design-systems/DSText";
 import { WhyChooseUsContent, Reason } from "./why-choose-us";
 
@@ -26,6 +27,7 @@ export default function WhyChooseUs({
                         variant={DSTextVariant.largeTitle}
                         color={DSTextColor.primary}
                         weight={DSTextWeight.bold}
+                        fontStyle={FontStyle.Heading}
                         className="mb-8"
                     >
                         <span

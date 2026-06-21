@@ -4,6 +4,7 @@ import {
     DSTextColor,
     DSTextVariant,
     DSTextWeight,
+    FontStyle,
 } from "@repo/ui/design-systems/DSText";
 import {
     DSButtonVariant,
@@ -30,8 +31,9 @@ export default function HowItWorks({
                 <DSText
                     as="h2"
                     variant={DSTextVariant.largerTitle}
-                    weight={DSTextWeight.bold}
+                    weight={DSTextWeight.semiBold}
                     color={DSTextColor.primary}
+                    fontStyle={FontStyle.Heading}
                     className="text-center mb-6 shrink-0"
                 >
                     {title}

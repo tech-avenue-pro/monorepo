@@ -1,23 +1,23 @@
 {
-    "title": "The Journey to Lasting Change.",
-    "description": "Growth doesn’t happen overnight. It happens one conversation, one insight, and one intentional step at a time.",
+    "title": "Your Path Forward",
+    "description": "Meaningful change doesn’t happen all at once. It happens through honest reflection, new perspectives, and small steps that build lasting momentum.",
     "buttonTitle": "Book a Free Call",
     "buttonLink": "#contact",
     "steps": [
         {
             "id": "01",
-            "title": "Clarity",
-            "description": "Identify what’s holding you back and gain a deeper understanding of your thoughts, patterns, and priorities."
+            "title": "Discover",
+            "description": "Gain clarity about where you are today, what’s keeping you stuck, and what you truly want moving forward."
         },
         {
             "id": "02",
-            "title": "Alignment",
-            "description": "Reconnect with your values, strengths, and goals so your decisions feel more intentional and authentic."
+            "title": "Align",
+            "description": "Reconnect with your values, strengths, and priorities so your choices feel more intentional and authentic."
         },
         {
             "id": "03",
-            "title": "Transformation",
-            "description": "Create sustainable changes through practical action, supportive accountability, and a renewed sense of confidence."
+            "title": "Grow",
+            "description": "Create practical, sustainable changes that help you move forward with confidence and purpose."
         }
     ]
 }
