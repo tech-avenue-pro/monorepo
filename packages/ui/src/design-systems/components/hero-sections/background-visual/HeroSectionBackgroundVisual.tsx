@@ -82,7 +82,7 @@ export default function HeroSectionBackgroundVisual({
                             color={t.smallTitle}
                             weight={DSTextWeight.semiBold}
                             fontStyle={FontStyle.Body}
-                            className="mb-1 uppercase tracking-widest opacity-90"
+                            className="mb-1 mt-16 lg:mt-0 uppercase tracking-widest opacity-90"
                         >
                             {smallTitle}
                         </DSText>
