@@ -4,7 +4,7 @@ export interface FAQItem {
 }
 
 export interface FAQSectionContent {
-    sectionTitle: string;
+    sectionTitleTag?: string;
     title: string; // supports inline HTML for italic/bold words e.g. "Good questions, <em>honest</em> answers."
     items: FAQItem[];
 }

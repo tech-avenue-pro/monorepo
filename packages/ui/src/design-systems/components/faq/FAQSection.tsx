@@ -14,7 +14,7 @@ import type { FAQSectionContent, FAQItem } from "./faq";
 export type { FAQSectionContent, FAQItem };
 
 export default function FAQSection({
-    sectionTitle,
+    sectionTitleTag,
     title,
     items,
 }: FAQSectionContent) {
@@ -37,15 +37,17 @@ export default function FAQSection({
             <div className="flex flex-col md:flex-row md:gap-16 gap-8">
                 {/* Left: label + title */}
                 <div className="md:w-2/5 shrink-0">
-                    <DSText
-                        as="p"
-                        variant={DSTextVariant.caption}
-                        color={DSTextColor.tintTheme}
-                        weight={DSTextWeight.semiBold}
-                        className="tracking-widest uppercase mb-4"
-                    >
-                        {sectionTitle}
-                    </DSText>
+                    {sectionTitleTag && (
+                        <DSText
+                            as="p"
+                            variant={DSTextVariant.caption}
+                            color={DSTextColor.tintTheme}
+                            weight={DSTextWeight.semiBold}
+                            className="tracking-widest uppercase mb-4"
+                        >
+                            {sectionTitleTag}
+                        </DSText>
+                    )}
                     <DSText
                         as="h2"
                         variant={DSTextVariant.largeTitle}
