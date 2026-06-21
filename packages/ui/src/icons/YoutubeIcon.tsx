@@ -8,6 +8,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 
 const YoutubeIcon = ({ color, className, ...props }: IconProps) => {
     const colorClass = color ? colorClasses[color] : undefined;
+    const fill = color ? "currentColor" : "#FF0000";
 
     return (
         <svg
@@ -18,7 +19,8 @@ const YoutubeIcon = ({ color, className, ...props }: IconProps) => {
         >
             <title>Logo Youtube</title>
             <path
-                fill="currentColor"
+                fill={fill}
+                fillRule="evenodd"
                 d="M488 161.84a48 48 0 00-33.91-34C422.6 119.34 256 119.34 256 119.34s-166.6 0-198.09 8.5a48 48 0 00-33.91 34C16 193.32 16 256 16 256s0 62.68 8 94.16a48 48 0 0033.91 34c31.49 8.5 198.09 8.5 198.09 8.5s166.6 0 198.09-8.5a48 48 0 0033.91-34c8-31.48 8-94.16 8-94.16s0-62.68-8-94.16zM208 327.34v-142l142 71z"
             />
         </svg>

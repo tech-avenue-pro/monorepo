@@ -3,14 +3,14 @@
     "footerLogo": "/icons/icon-40.png",
     "socialLinks": [
         {
-            "platform": "facebook",
-            "link": "https://www.facebook.com/profile.php?id=61585585133241",
-            "alt": "Facebook Tech Avenue Pro"
+            "platform": "youtube",
+            "link": "https://www.youtube.com/@annie-ali",
+            "alt": "YouTube Annie Ali"
         },
         {
             "platform": "instagram",
-            "link": "https://www.instagram.com/techavenuepro/",
-            "alt": "Instagram Tech Avenue Pro"
+            "link": "https://www.instagram.com/coachannieali",
+            "alt": "Instagram Annie Ali"
         }
     ],
     "phoneNumber": "",
