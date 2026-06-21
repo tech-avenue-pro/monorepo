@@ -16,6 +16,7 @@ import type { HowItWorks, HowItWorksStep } from "./how-it-works";
 export type { HowItWorks, HowItWorksStep };
 
 export default function HowItWorks({
+    sectionTitleTag,
     title,
     description,
     buttonTitle,
@@ -24,6 +25,22 @@ export default function HowItWorks({
 }: HowItWorks) {
     return (
         <section className="mx-auto px-4 ">
+            <DSMotion
+                variant="fade-up"
+                className="flex flex-start align-top md:justify-between items-start gap-1 md:gap-16 flex-col md:flex-row"
+            >
+                {sectionTitleTag && (
+                    <DSText
+                        as="p"
+                        variant={DSTextVariant.caption}
+                        color={DSTextColor.tintTheme}
+                        weight={DSTextWeight.semiBold}
+                        className="tracking-widest mb-4"
+                    >
+                        {sectionTitleTag}
+                    </DSText>
+                )}
+            </DSMotion>
             <DSMotion
                 variant="fade-up"
                 className="flex flex-start align-top md:justify-between mb-8 items-start gap-1 md:gap-16 flex-col md:flex-row"

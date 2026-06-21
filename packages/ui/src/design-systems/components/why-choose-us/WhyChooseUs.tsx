@@ -11,6 +11,7 @@ import { WhyChooseUsContent, Reason } from "./why-choose-us";
 export type { WhyChooseUsContent, Reason };
 
 export default function WhyChooseUs({
+    sectionTitleTag,
     sectionTitle,
     introText,
     src,
@@ -19,6 +20,17 @@ export default function WhyChooseUs({
 }: WhyChooseUsContent) {
     return (
         <div className="mx-auto">
+            {sectionTitleTag && (
+                <DSText
+                    as="p"
+                    variant={DSTextVariant.caption}
+                    color={DSTextColor.tintTheme}
+                    weight={DSTextWeight.semiBold}
+                    className="tracking-widest mb-4"
+                >
+                    {sectionTitleTag}
+                </DSText>
+            )}
             <div className="grid gap-10 md:grid-cols-2">
                 {/* Left */}
                 <div>

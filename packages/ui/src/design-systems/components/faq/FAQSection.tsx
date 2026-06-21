@@ -43,7 +43,7 @@ export default function FAQSection({
                             variant={DSTextVariant.caption}
                             color={DSTextColor.tintTheme}
                             weight={DSTextWeight.semiBold}
-                            className="tracking-widest uppercase mb-4"
+                            className="tracking-widest mb-4"
                         >
                             {sectionTitleTag}
                         </DSText>
