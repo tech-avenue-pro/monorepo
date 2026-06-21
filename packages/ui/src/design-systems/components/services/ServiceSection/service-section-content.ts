@@ -1,6 +1,7 @@
 import { ServiceCardTopVisualContent } from "../service-card-top-visual/service-card-top-visual-content";
 
 export interface ServiceSectionContent {
+    sectionTitleTag?: string;
     sectionTitle: string;
     sectionTagline: string;
     sectionTagDescription: string;

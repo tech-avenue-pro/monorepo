@@ -1,15 +1,15 @@
 {
-    "sectionTitle": "Coaching Areas",
-    "sectionTagline": "Coaching, shaped to the season of life you're actually in.",
-    "sectionTagDescription": "Every container is one-on-one and custom-built. These are the conversations I'm in most often — but if your thing isn't here, it probably still belongs.",
+    "sectionTitleTag": "Services",
+    "sectionTitle": "How I Can Support You.",
+    "sectionTagDescription": "Life brings different challenges in different seasons. Together, we’ll focus on the areas that matter most to you right now.",
     "linkTitle": "Learn more",
     "services": [
         {
             "id": 1,
             "title": "Clarity & Purpose",
             "description": "Cut through the noise. Reconnect with what actually matters and design a life that feels like your own — not one you inherited or performed.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/clarity-purpose.webp",
+            "srcSet": "/images/services/clarity-purpose.webp",
             "alt": "Clarity and Purpose Coaching",
             "href": "#contact",
             "linkTitle": "Start here"
@@ -18,8 +18,8 @@
             "id": 2,
             "title": "Confidence Rebuild",
             "description": "Release the self-doubt running in the background. Step into rooms — and decisions — with quiet authority and trust in your own judgment.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/confidence-rebuild.webp",
+            "srcSet": "/images/services/confidence-rebuild.webp",
             "alt": "Confidence Rebuild Coaching",
             "href": "#contact",
             "linkTitle": "Start here"
@@ -28,8 +28,8 @@
             "id": 3,
             "title": "Relationships & Boundaries",
             "description": "Heal the patterns that keep repeating. Learn to communicate, hold space, and choose yourself without guilt or overexplaining.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/relationships-boundaries.webp",
+            "srcSet": "/images/services/relationships-boundaries.webp",
             "alt": "Relationships and Boundaries Coaching",
             "href": "#contact",
             "linkTitle": "Start here"
@@ -38,8 +38,8 @@
             "id": 4,
             "title": "Career Transitions",
             "description": "Whether you're pivoting, building, or finally leaving — get a roadmap that respects both your ambition and your soul.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/career-transitions.webp",
+            "srcSet": "/images/services/career-transitions.webp",
             "alt": "Career Transition Coaching",
             "href": "#contact",
             "linkTitle": "Start here"
@@ -48,8 +48,8 @@
             "id": 5,
             "title": "Emotional Mastery",
             "description": "Move from reacting to responding. Build tools you'll use for the rest of your life — not just for our sessions together.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/emotional-mastery.webp",
+            "srcSet": "/images/services/emotional-mastery.webp",
             "alt": "Emotional Mastery Coaching",
             "href": "#contact",
             "linkTitle": "Start here"
@@ -58,8 +58,8 @@
             "id": 6,
             "title": "Motherhood & Identity",
             "description": "Reclaim the woman underneath the roles. Coaching for the season of life that asks the most of you — and gives the most back.",
-            "image": "/images/coming-soon.webp",
-            "srcSet": "/images/coming-soon.webp",
+            "image": "/images/services/motherhood-identity.webp",
+            "srcSet": "/images/services/motherhood-identity.webp",
             "alt": "Motherhood and Identity Coaching",
             "href": "#contact",
             "linkTitle": "Start here"

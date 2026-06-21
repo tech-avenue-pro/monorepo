@@ -78,10 +78,19 @@ export function DSMotion({
     trigger = "self",
 }: DSMotionProps) {
     const shouldReduceMotion = useReducedMotion();
-    const hasIntersectionObserver =
-        typeof window !== "undefined" && "IntersectionObserver" in window;
+    const [supportsIntersectionObserver, setSupportsIntersectionObserver] =
+        React.useState(true);
+
+    React.useEffect(() => {
+        if (!("IntersectionObserver" in window)) {
+            setSupportsIntersectionObserver(false);
+        }
+    }, []);
+
     const shouldAnimate =
-        !shouldReduceMotion && hasIntersectionObserver && variant !== "none";
+        !shouldReduceMotion &&
+        supportsIntersectionObserver &&
+        variant !== "none";
 
     if (!shouldAnimate) {
         const Tag = as as any;
@@ -150,9 +159,16 @@ export function DSStagger({
     once = true,
 }: DSStaggerProps) {
     const shouldReduceMotion = useReducedMotion();
-    const hasIntersectionObserver =
-        typeof window !== "undefined" && "IntersectionObserver" in window;
-    const shouldAnimate = !shouldReduceMotion && hasIntersectionObserver;
+    const [supportsIntersectionObserver, setSupportsIntersectionObserver] =
+        React.useState(true);
+
+    React.useEffect(() => {
+        if (!("IntersectionObserver" in window)) {
+            setSupportsIntersectionObserver(false);
+        }
+    }, []);
+
+    const shouldAnimate = !shouldReduceMotion && supportsIntersectionObserver;
 
     if (!shouldAnimate) {
         const Tag = as as any;

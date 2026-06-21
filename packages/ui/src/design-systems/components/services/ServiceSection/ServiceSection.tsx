@@ -3,6 +3,7 @@
 import { ServiceCardTopVisual } from "../service-card-top-visual/ServiceCardTopVisual";
 import {
     DSText,
+    DSTextColor,
     DSTextVariant,
     DSTextWeight,
     FontStyle,
@@ -12,6 +13,7 @@ import { ServiceSectionContent } from "./service-section-content";
 import SectionTitleSplitMessageView from "../../section-title/split-messages/SectionTitleSplitMessageView";
 
 export default function ServiceSection({
+    sectionTitleTag,
     sectionTitle,
     sectionTagline,
     sectionTagDescription,
@@ -20,6 +22,17 @@ export default function ServiceSection({
 }: ServiceSectionContent) {
     return (
         <section className="mx-auto ">
+            {sectionTitleTag && (
+                <DSText
+                    as="p"
+                    color={DSTextColor.tintTheme}
+                    variant={DSTextVariant.caption}
+                    weight={DSTextWeight.semiBold}
+                    className="tracking-widest mb-4"
+                >
+                    {sectionTitleTag}
+                </DSText>
+            )}
             <SectionTitleSplitMessageView
                 sectionTitle={sectionTitle}
                 sectionTagline={sectionTagline}
