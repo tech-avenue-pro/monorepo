@@ -26,16 +26,39 @@ const parisienne = Parisienne({
 });
 
 export const metadata: Metadata = {
-    title: "Annie Ali — Life Coach for Women",
+    title: "Annie Ali | Life Coaching for Clarity, Confidence & Growth",
+
     description:
-        "ICF Certified life coach Annie Ali helps thoughtful women cut through the noise, rebuild confidence, and design a life that feels honest from the inside out.",
+        "Personalized life coaching to help you gain clarity, build confidence, navigate life's transitions, and create meaningful, lasting change.",
+
     openGraph: {
-        title: "Annie Ali — Life Coach for Women",
+        title: "Annie Ali | Life Coaching for Clarity, Confidence & Growth",
+
         description:
-            "ICF Certified life coach helping women find clarity, confidence, and a life that feels truly their own.",
+            "Gain clarity, build confidence, and create meaningful change through personalized life coaching with Annie Ali.",
+
         url: "https://annieali.ca",
+
         siteName: "Annie Ali Coaching",
+
         type: "website",
+
+        images: [
+            {
+                url: "/images/hero-background.webp",
+                width: 1200,
+                height: 630,
+                alt: "Annie Ali Coaching",
+            },
+        ],
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "Annie Ali | Life Coaching for Clarity, Confidence & Growth",
+        description:
+            "Gain clarity, build confidence, and create meaningful change through personalized life coaching with Annie Ali.",
+        images: ["/images/hero-background.webp"],
     },
 };
 
