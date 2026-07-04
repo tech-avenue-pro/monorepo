@@ -20,7 +20,7 @@ export default function SectionTitleSplitMessageView(
                     as="h2"
                     variant={DSTextVariant.largerTitle}
                     weight={DSTextWeight.semiBold}
-                    className="text-left mb-6 shrink-0 whitespace-nowrap"
+                    className="text-left mb-6 shrink-0 md:whitespace-nowrap"
                     fontStyle={FontStyle.Heading}
                 >
                     {sectionTitle}
