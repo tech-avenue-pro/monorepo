@@ -24,10 +24,6 @@ export default function SecondaryNavBar() {
                     href: "#section-approach",
                 },
                 {
-                    label: "Services",
-                    href: "#services-section",
-                },
-                {
                     label: "Book a Call",
                     href: "#contact",
                 },
