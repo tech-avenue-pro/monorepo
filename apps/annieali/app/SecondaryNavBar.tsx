@@ -7,25 +7,21 @@ import {
 import StandardNavBar from "@repo/ui/design-systems/navigation-bar/StandardNavBar";
 import React from "react";
 
-export default function MainNavBar() {
+export default function SecondaryNavBar() {
     return (
         <StandardNavBar
             links={[
                 {
                     label: "Home",
-                    href: "#hero-section",
+                    href: "/",
                 },
                 {
-                    label: "About",
-                    href: "#about-section",
+                    label: "Your Experience",
+                    href: "#section-experience",
                 },
                 {
-                    label: "Approach",
-                    href: "#approach-section",
-                },
-                {
-                    label: "Services",
-                    href: "#services-section",
+                    label: "What It's For",
+                    href: "#section-approach",
                 },
                 {
                     label: "Book a Call",
@@ -43,8 +39,8 @@ export default function MainNavBar() {
             name=""
             background={DSLayoutBackground.accentDarker}
             startingBackground={DSLayoutBackground.transparent}
-            stickyOnScrollOnly={true}
-            isHeroFullScreen={true}
+            stickyOnScrollOnly={false}
+            isHeroFullScreen={false}
         />
     );
 }

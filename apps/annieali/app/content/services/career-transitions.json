@@ -1,0 +1,72 @@
+{
+    "slug": "career-transitions",
+    "navTitle": "Career Transitions",
+    "seoTitle": "Career Transition Coaching | Annie Ali",
+    "seoDescription": "Whether you're pivoting, building, or finally leaving \u2014 get a roadmap that respects both your ambition and your soul.",
+    "hero": {
+        "title": "Career Transitions",
+        "summary": "Whether you're pivoting, building, or finally leaving \u2014 get a roadmap that respects both your ambition and your soul.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/career-transitions.webp",
+            "srcSet": "/images/services/career-transitions.webp",
+            "alt": "Career Transition Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/career-transitions.webp",
+            "srcSet": "/images/services/career-transitions.webp",
+            "alt": "Career Transition Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "compass",
+                "title": "Get Honest About the Path",
+                "description": "Clarify whether you're pivoting, building, or ready to finally leave \u2014 without the noise of what you 'should' do."
+            },
+            {
+                "icon": "star",
+                "title": "Build a Real Roadmap",
+                "description": "Turn ambition into a concrete plan with milestones you can actually act on."
+            },
+            {
+                "icon": "book",
+                "title": "Navigate the In-Between",
+                "description": "Move through uncertainty and setbacks with a strategy instead of panic."
+            },
+            {
+                "icon": "leaf",
+                "title": "Land Somewhere Aligned",
+                "description": "Step into work that respects both your ambition and your wellbeing."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Feel stuck or burnt out in your current role",
+            "Are considering a pivot but don't know where to start",
+            "Want ambition without sacrificing your wellbeing",
+            "Need a plan, not just motivation"
+        ],
+        "image": {
+            "src": "/images/services/career-transitions.webp",
+            "srcSet": "/images/services/career-transitions.webp",
+            "alt": "Person planning a new career direction"
+        }
+    },
+    "quote": {
+        "quote": "The right career move isn't the safest one. It's the one that's actually yours.",
+        "attribution": "Annie Ali"
+    }
+}
