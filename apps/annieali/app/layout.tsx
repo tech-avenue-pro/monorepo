@@ -70,7 +70,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${playfair.variable} ${inter.variable} ${parisienne.variable} antialiased ds-bg-default`}
+                className={`${playfair.variable} ${inter.variable} ${parisienne.variable} antialiased ds-bg-accent`}
             >
                 {children}
             </body>
