@@ -39,7 +39,7 @@ export default function SecondaryNavBar() {
             fontWeight={DSTextWeight.medium}
             mobileFontWeight={DSTextWeight.medium}
             mobileTextVariant={DSTextVariant.title2}
-            logoSrc="icons/icon-40.png"
+            logoSrc="/icons/icon-40.png"
             name=""
             background={DSLayoutBackground.accentDarker}
             startingBackground={DSLayoutBackground.transparent}
