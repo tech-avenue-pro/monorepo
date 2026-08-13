@@ -137,3 +137,27 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
 - [Configuration Options](https://turborepo.com/docs/reference/configuration)
 - [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+
+## Running individual websites
+
+Each app runs on its own fixed port. From the monorepo root, use `pnpm dev --filter=<app>`, or `cd` into the app folder and run `pnpm dev` directly.
+
+| App | Command (from repo root) | Port |
+|-----|---------------------------|------|
+| `web` (techavenue.pro) | `pnpm dev --filter=web` | [http://localhost:3000](http://localhost:3000) |
+| `docs` | `pnpm dev --filter=docs` | [http://localhost:3001](http://localhost:3001) |
+| `chathaclinic` (chathaclinic.com) | `pnpm dev --filter=chathaclinic` | [http://localhost:3001](http://localhost:3001) |
+| `flavourfusion` | `pnpm dev --filter=flavourfusion` | [http://localhost:3002](http://localhost:3002) |
+| `annieali` (annieali.ca) | `pnpm dev --filter=annieali` | [http://localhost:3003](http://localhost:3003) |
+
+> [!NOTE]
+> `docs` and `chathaclinic` are both configured to run on port 3001, so don't run them at the same time — stop one before starting the other.
+
+Example, to run just the Annie Ali website:
+
+```sh
+cd apps/annieali
+pnpm dev
+```
+
+Then open [http://localhost:3003](http://localhost:3003).
