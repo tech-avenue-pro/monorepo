@@ -1,0 +1,72 @@
+{
+    "slug": "clarity-purpose",
+    "navTitle": "Clarity & Purpose",
+    "seoTitle": "Clarity & Purpose Coaching | Annie Ali",
+    "seoDescription": "Cut through the noise. Reconnect with what actually matters and design a life that feels like your own \u2014 not one you inherited or performed.",
+    "hero": {
+        "title": "Clarity & Purpose",
+        "summary": "Cut through the noise. Reconnect with what actually matters and design a life that feels like your own \u2014 not one you inherited or performed.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/clarity-purpose.webp",
+            "srcSet": "/images/services/clarity-purpose.webp",
+            "alt": "Clarity and Purpose Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/clarity-purpose.webp",
+            "srcSet": "/images/services/clarity-purpose.webp",
+            "alt": "Clarity and Purpose Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "compass",
+                "title": "Cut Through the Noise",
+                "description": "Separate what's actually yours from what you've inherited, absorbed, or performed for others."
+            },
+            {
+                "icon": "star",
+                "title": "Reconnect With What Matters",
+                "description": "Get honest about your values and priorities, and let them guide your next decisions."
+            },
+            {
+                "icon": "book",
+                "title": "Design a Real Plan",
+                "description": "Turn clarity into a concrete direction \u2014 one you can actually act on, not just think about."
+            },
+            {
+                "icon": "leaf",
+                "title": "Live It Out Loud",
+                "description": "Build a life and routine that reflect who you are now, not who you used to be."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Feel unsure what you actually want",
+            "Keep chasing goals that don't feel like yours",
+            "Are tired of living on autopilot",
+            "Want a life that feels aligned, not performed"
+        ],
+        "image": {
+            "src": "/images/services/clarity-purpose.webp",
+            "srcSet": "/images/services/clarity-purpose.webp",
+            "alt": "Reflective moment representing clarity and purpose work"
+        }
+    },
+    "quote": {
+        "quote": "Clarity doesn't arrive from thinking harder. It arrives from getting honest.",
+        "attribution": "Annie Ali"
+    }
+}

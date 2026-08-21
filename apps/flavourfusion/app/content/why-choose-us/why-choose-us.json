@@ -1,0 +1,53 @@
+{
+    "sectionTitle": "What We Believe In",
+    "introText": "These are the principles that guide every dish we prepare and every gathering we serve.",
+    "src": "/images/what-we-believe.webp",
+    "srcSet": "",
+    "reasons": [
+        {
+            "id": 1,
+            "title": "Quality Over Quantity",
+            "description": "Intentional portions crafted with care — every dish earns its place on the table."
+        },
+        {
+            "id": 2,
+            "title": "Balanced Flavour",
+            "description": "Bold yet refined. We pursue the perfect balance in every recipe we develop."
+        },
+        {
+            "id": 3,
+            "title": "Attention to Detail",
+            "description": "From ingredient selection to plating, no detail is too small to matter."
+        },
+        {
+            "id": 4,
+            "title": "Food as Connection",
+            "description": "Great food brings people together. We craft experiences, not just meals."
+        },
+        {
+            "id": 5,
+            "title": "The Power of Simplicity",
+            "description": "Clean, honest flavours done exceptionally well — that is our standard."
+        },
+        {
+            "id": 6,
+            "title": "Consistent Excellence",
+            "description": "Every order, every gathering — the same level of dedication and quality."
+        },
+        {
+            "id": 7,
+            "title": "Premium Ingredients",
+            "description": "We source carefully and cook intentionally. Quality starts with what goes in."
+        },
+        {
+            "id": 8,
+            "title": "Professional Service",
+            "description": "Seamless, thoughtful, and personal — from first inquiry to final bite."
+        },
+        {
+            "id": 9,
+            "title": "Food as Storytelling",
+            "description": "Every menu tells a story. We help your gathering write a memorable one."
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "slug": "confidence-rebuild",
+    "navTitle": "Confidence Rebuild",
+    "seoTitle": "Confidence Rebuild Coaching | Annie Ali",
+    "seoDescription": "Release the self-doubt running in the background. Step into rooms \u2014 and decisions \u2014 with quiet authority and trust in your own judgment.",
+    "hero": {
+        "title": "Confidence Rebuild",
+        "summary": "Release the self-doubt running in the background. Step into rooms \u2014 and decisions \u2014 with quiet authority and trust in your own judgment.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/confidence-rebuild.webp",
+            "srcSet": "/images/services/confidence-rebuild.webp",
+            "alt": "Confidence Rebuild Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/confidence-rebuild.webp",
+            "srcSet": "/images/services/confidence-rebuild.webp",
+            "alt": "Confidence Rebuild Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "heart",
+                "title": "Quiet the Inner Critic",
+                "description": "Identify the patterns that undermine your confidence and learn to reframe them with compassion."
+            },
+            {
+                "icon": "star",
+                "title": "Build Self-Trust",
+                "description": "Strengthen your decision-making and reconnect with your intuition and inner wisdom."
+            },
+            {
+                "icon": "book",
+                "title": "Show Up Fully",
+                "description": "Step into opportunities and relationships with presence, clarity, and confidence."
+            },
+            {
+                "icon": "leaf",
+                "title": "Lead Your Life",
+                "description": "Make choices that are aligned with who you are and the life you want to create."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Second-guess yourself frequently",
+            "Struggle to speak up or be seen",
+            "Avoid opportunities due to fear of judgment",
+            "Want to feel more confident in your decisions"
+        ],
+        "image": {
+            "src": "/images/services/confidence-rebuild.webp",
+            "srcSet": "/images/services/confidence-rebuild.webp",
+            "alt": "Journal and pen representing reflection and confidence work"
+        }
+    },
+    "quote": {
+        "quote": "Confidence isn't about being the loudest in the room. It's about trusting yourself when no one's watching.",
+        "attribution": "Annie Ali"
+    }
+}

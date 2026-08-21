@@ -5,6 +5,7 @@ export interface Reason {
 }
 
 export interface WhyChooseUsContent {
+    sectionTitleTag?: string;
     sectionTitle: string;
     introText: string;
     src: string;

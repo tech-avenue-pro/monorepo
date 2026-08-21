@@ -5,11 +5,13 @@ import { trackMetaPixelEvent } from "../../utils/meta-pixel";
 interface FloatingWhatsAppButtonProps {
     phoneNumber: string;
     message?: string;
+    onClick?: () => void;
 }
 
 export default function FloatingWhatsAppButton({
     phoneNumber,
     message = "",
+    onClick,
 }: FloatingWhatsAppButtonProps) {
     const cleaned = phoneNumber.replace(/[^+\d]/g, "");
     const href = `https://wa.me/${cleaned}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
@@ -20,11 +22,12 @@ export default function FloatingWhatsAppButton({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            onClick={() =>
+            onClick={() => {
                 trackMetaPixelEvent("Contact", {
                     content_name: "WhatsApp Floating Button",
-                })
-            }
+                });
+                onClick?.();
+            }}
             style={{
                 position: "fixed",
                 bottom: "24px",

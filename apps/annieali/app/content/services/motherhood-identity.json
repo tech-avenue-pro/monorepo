@@ -1,0 +1,72 @@
+{
+    "slug": "motherhood-identity",
+    "navTitle": "Motherhood & Identity",
+    "seoTitle": "Motherhood & Identity Coaching | Annie Ali",
+    "seoDescription": "Reclaim the woman underneath the roles. Coaching for the season of life that asks the most of you \u2014 and gives the most back.",
+    "hero": {
+        "title": "Motherhood & Identity",
+        "summary": "Reclaim the woman underneath the roles. Coaching for the season of life that asks the most of you \u2014 and gives the most back.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/motherhood-identity.webp",
+            "srcSet": "/images/services/motherhood-identity.webp",
+            "alt": "Motherhood and Identity Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/motherhood-identity.webp",
+            "srcSet": "/images/services/motherhood-identity.webp",
+            "alt": "Motherhood and Identity Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "heart",
+                "title": "Reclaim Who You Are",
+                "description": "Reconnect with the woman underneath the roles of mother, partner, and provider."
+            },
+            {
+                "icon": "star",
+                "title": "Make Space for Yourself",
+                "description": "Learn to hold your own needs alongside everyone else's, without guilt."
+            },
+            {
+                "icon": "book",
+                "title": "Redefine This Season",
+                "description": "Find language and structure for a season of life that doesn't come with a manual."
+            },
+            {
+                "icon": "leaf",
+                "title": "Feel Whole Again",
+                "description": "Move from surviving the day-to-day to feeling like yourself again."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Feel like you've lost yourself in motherhood",
+            "Struggle to make space for your own needs",
+            "Want to feel like 'you' again, not just a role",
+            "Are navigating a season that asks a lot of you"
+        ],
+        "image": {
+            "src": "/images/services/motherhood-identity.webp",
+            "srcSet": "/images/services/motherhood-identity.webp",
+            "alt": "Quiet moment representing motherhood and identity"
+        }
+    },
+    "quote": {
+        "quote": "You can love this season and still miss yourself in it. Both are true.",
+        "attribution": "Annie Ali"
+    }
+}

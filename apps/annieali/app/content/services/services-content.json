@@ -1,0 +1,74 @@
+{
+    "sectionTitleTag": "Services",
+    "sectionTitle": "How I Can Support You.",
+    "sectionTagDescription": "Life brings different challenges in different seasons. Together, we’ll focus on the areas that matter most to you right now.",
+    "linkTitle": "Learn more",
+    "services": [
+        {
+            "id": 1,
+            "slug": "clarity-purpose",
+            "title": "Clarity & Purpose",
+            "description": "Cut through the noise. Reconnect with what actually matters and design a life that feels like your own — not one you inherited or performed.",
+            "image": "/images/services/clarity-purpose.webp",
+            "srcSet": "/images/services/clarity-purpose.webp",
+            "alt": "Clarity and Purpose Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        },
+        {
+            "id": 2,
+            "slug": "confidence-rebuild",
+            "title": "Confidence Rebuild",
+            "description": "Release the self-doubt running in the background. Step into rooms — and decisions — with quiet authority and trust in your own judgment.",
+            "image": "/images/services/confidence-rebuild.webp",
+            "srcSet": "/images/services/confidence-rebuild.webp",
+            "alt": "Confidence Rebuild Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        },
+        {
+            "id": 3,
+            "slug": "relationships-boundaries",
+            "title": "Relationships & Boundaries",
+            "description": "Heal the patterns that keep repeating. Learn to communicate, hold space, and choose yourself without guilt or overexplaining.",
+            "image": "/images/services/relationships-boundaries.webp",
+            "srcSet": "/images/services/relationships-boundaries.webp",
+            "alt": "Relationships and Boundaries Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        },
+        {
+            "id": 4,
+            "slug": "career-transitions",
+            "title": "Career Transitions",
+            "description": "Whether you're pivoting, building, or finally leaving — get a roadmap that respects both your ambition and your soul.",
+            "image": "/images/services/career-transitions.webp",
+            "srcSet": "/images/services/career-transitions.webp",
+            "alt": "Career Transition Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        },
+        {
+            "id": 5,
+            "slug": "emotional-mastery",
+            "title": "Emotional Mastery",
+            "description": "Move from reacting to responding. Build tools you'll use for the rest of your life — not just for our sessions together.",
+            "image": "/images/services/emotional-mastery.webp",
+            "srcSet": "/images/services/emotional-mastery.webp",
+            "alt": "Emotional Mastery Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        },
+        {
+            "id": 6,
+            "slug": "motherhood-identity",
+            "title": "Motherhood & Identity",
+            "description": "Reclaim the woman underneath the roles. Coaching for the season of life that asks the most of you — and gives the most back.",
+            "image": "/images/services/motherhood-identity.webp",
+            "srcSet": "/images/services/motherhood-identity.webp",
+            "alt": "Motherhood and Identity Coaching",
+            "href": "#contact",
+            "linkTitle": "Learn more"
+        }
+    ]
+}

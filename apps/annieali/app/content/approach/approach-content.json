@@ -1,0 +1,24 @@
+{
+    "sectionTitleTag": "Approach",
+    "title": "Your Path Forward",
+    "description": "Meaningful change doesn’t happen all at once. It happens through honest reflection, new perspectives, and small steps that build lasting momentum.",
+    "buttonTitle": "Book a Free Call",
+    "buttonLink": "#contact",
+    "steps": [
+        {
+            "id": "01",
+            "title": "Discover",
+            "description": "Gain clarity about where you are today, what’s keeping you stuck, and what you truly want moving forward."
+        },
+        {
+            "id": "02",
+            "title": "Align",
+            "description": "Reconnect with your values, strengths, and priorities so your choices feel more intentional and authentic."
+        },
+        {
+            "id": "03",
+            "title": "Grow",
+            "description": "Create practical, sustainable changes that help you move forward with confidence and purpose."
+        }
+    ]
+}

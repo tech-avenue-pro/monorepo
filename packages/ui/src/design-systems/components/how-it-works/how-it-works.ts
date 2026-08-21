@@ -5,6 +5,7 @@ export interface HowItWorksStep {
 }
 
 export interface HowItWorks {
+    sectionTitleTag?: string;
     title: string;
     description: string;
     buttonTitle: string;

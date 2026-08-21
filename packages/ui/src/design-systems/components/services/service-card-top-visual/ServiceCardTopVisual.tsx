@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { DSText, DSTextVariant } from "../../../DSText";
 import { DSLink, DSTextColor, DSTextWeight } from "../../../DSLink";
 import type { ServiceCardTopVisualContent } from "./service-card-top-visual-content";
@@ -27,8 +28,8 @@ export function ServiceCardTopVisual({
             ].join(" ")}
         >
             {image && (
-                <div className="mb-4 overflow-hidden h-48 [&>img]:h-full [&>img]:w-full [&>img]:object-cover rounded-t-2xl">
-                    <img src={image} alt={alt || ""} srcSet={srcSet || ""} />
+                <div className="relative mb-4 overflow-hidden h-48 rounded-t-2xl">
+                    <Image fill src={image} alt={alt || ""} className="object-cover" />
                 </div>
             )}
 

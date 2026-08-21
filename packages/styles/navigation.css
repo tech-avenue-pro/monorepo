@@ -53,6 +53,15 @@
 .sticky .hero-section {
     margin-top: 4rem; /* matches header */
 }
+.hero-fullscreen .hero-section {
+    margin-top: 0;
+}
+.hero-fullscreen-overlay .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .navigation-margin-bottom {
     /* height: 4rem; */
     /* margin-bottom: 0rem; */

@@ -8,6 +8,7 @@ export type DSMotionVariant =
     | "blur-in"
     | "fade-in"
     | "scale-in"
+    | "grow-x"
     | "slide-right"
     | "slide-left"
     | "none"
@@ -50,6 +51,10 @@ const variants: Record<
         hidden: { opacity: 0, scale: 0.9 },
         visible: { opacity: 1, scale: 1 },
     },
+    "grow-x": {
+        hidden: { opacity: 1, scaleX: 0 },
+        visible: { opacity: 1, scaleX: 1 },
+    },
     "slide-right": {
         hidden: { opacity: 0, x: -24 },
         visible: { opacity: 1, x: 0 },
@@ -73,10 +78,19 @@ export function DSMotion({
     trigger = "self",
 }: DSMotionProps) {
     const shouldReduceMotion = useReducedMotion();
-    const hasIntersectionObserver =
-        typeof window !== "undefined" && "IntersectionObserver" in window;
+    const [supportsIntersectionObserver, setSupportsIntersectionObserver] =
+        React.useState(true);
+
+    React.useEffect(() => {
+        if (!("IntersectionObserver" in window)) {
+            setSupportsIntersectionObserver(false);
+        }
+    }, []);
+
     const shouldAnimate =
-        !shouldReduceMotion && hasIntersectionObserver && variant !== "none";
+        !shouldReduceMotion &&
+        supportsIntersectionObserver &&
+        variant !== "none";
 
     if (!shouldAnimate) {
         const Tag = as as any;
@@ -145,9 +159,16 @@ export function DSStagger({
     once = true,
 }: DSStaggerProps) {
     const shouldReduceMotion = useReducedMotion();
-    const hasIntersectionObserver =
-        typeof window !== "undefined" && "IntersectionObserver" in window;
-    const shouldAnimate = !shouldReduceMotion && hasIntersectionObserver;
+    const [supportsIntersectionObserver, setSupportsIntersectionObserver] =
+        React.useState(true);
+
+    React.useEffect(() => {
+        if (!("IntersectionObserver" in window)) {
+            setSupportsIntersectionObserver(false);
+        }
+    }, []);
+
+    const shouldAnimate = !shouldReduceMotion && supportsIntersectionObserver;
 
     if (!shouldAnimate) {
         const Tag = as as any;

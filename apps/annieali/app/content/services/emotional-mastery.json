@@ -1,0 +1,72 @@
+{
+    "slug": "emotional-mastery",
+    "navTitle": "Emotional Mastery",
+    "seoTitle": "Emotional Mastery Coaching | Annie Ali",
+    "seoDescription": "Move from reacting to responding. Build tools you'll use for the rest of your life \u2014 not just for our sessions together.",
+    "hero": {
+        "title": "Emotional Mastery",
+        "summary": "Move from reacting to responding. Build tools you'll use for the rest of your life \u2014 not just for our sessions together.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/emotional-mastery.webp",
+            "srcSet": "/images/services/emotional-mastery.webp",
+            "alt": "Emotional Mastery Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/emotional-mastery.webp",
+            "srcSet": "/images/services/emotional-mastery.webp",
+            "alt": "Emotional Mastery Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "spark",
+                "title": "Understand Your Triggers",
+                "description": "Learn what's really underneath your biggest emotional reactions \u2014 and why."
+            },
+            {
+                "icon": "heart",
+                "title": "Respond, Don't React",
+                "description": "Build the pause between feeling and action so you can choose how you show up."
+            },
+            {
+                "icon": "book",
+                "title": "Build Lasting Tools",
+                "description": "Practice techniques you'll use well beyond our sessions together."
+            },
+            {
+                "icon": "leaf",
+                "title": "Feel More Steady",
+                "description": "Move through hard moments with a sense of groundedness instead of overwhelm."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Feel like your emotions run the show",
+            "React in ways you later regret",
+            "Struggle to stay calm under pressure",
+            "Want lifelong tools, not a quick fix"
+        ],
+        "image": {
+            "src": "/images/services/emotional-mastery.webp",
+            "srcSet": "/images/services/emotional-mastery.webp",
+            "alt": "Calm moment representing emotional regulation"
+        }
+    },
+    "quote": {
+        "quote": "You don't need to control every feeling. You need the tools to move through them.",
+        "attribution": "Annie Ali"
+    }
+}

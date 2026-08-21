@@ -1,0 +1,79 @@
+/*
+  Annie Ali Coaching — color overrides
+  Redefines only the CSS variables that differ from the shared design system.
+  This file is imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light; /* tells browser UI (scrollbars, inputs) to stay light */
+
+    /* Brand primary: warm dusty rose / mauve */
+    --primary: #c76749;
+    --primary-lighter: #cd846e;
+    --primary-darker: #c75431;
+    --primary-button-hover: #c75431;
+    --darkest-background: #9a4227;
+    --lightest-background: #c59080;
+
+    /* Secondary: deep forest tea green */
+    --secondary: #4a7c58;
+    --secondary-lighter: #688f75;
+    --secondary-darker: #2a4c36;
+    /* Accent: warm clay */
+    --accent: #f5efe5;
+    --accent-lighter: #faf5ed;
+    --accent-darker: #f5ead7;
+
+    /* tintTheme = primary color used for inline highlights, links */
+    --text-tint-theme: var(--primary-darker);
+    --text-senary: var(--primary);
+    --text-septenary: var(--secondary-darker);
+}
+
+/* ── Opt out of dark mode ────────────────────────────────────────────────
+   Resets every variable that design-systems.css changes in its dark block.
+   theme.css loads last, so these win the cascade on dark-mode OS settings.
+   ─────────────────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Backgrounds → stay white/light */
+        --default-background: #ffffff;
+        --default-background-variation1: #faf7f9;
+        --default-background-variation2: #f5eef3;
+        --default-background-variation3: #ecdce7;
+        --lightest-background: #efe8de;
+
+        /* Brand colors → keep annie light-mode values */
+        --primary: #c76749;
+        --primary-lighter: #cd846e;
+        --primary-darker: #c75431;
+        --primary-button-hover: #c75431;
+        --darkest-background: #9a4227;
+        --lightest-background: #c59080;
+
+        /* Secondary: deep forest tea green */
+        --secondary: #4a7c58;
+        --secondary-lighter: #688f75;
+        --secondary-darker: #386247;
+        /* Accent: warm clay */
+        --accent: #efe1cd;
+        --accent-lighter: #fbf2e5;
+        --accent-darker: #ebd6b9;
+
+        /* Text → stay dark-on-light */
+        --text-primary: #333;
+        --text-secondary: #444;
+        --text-tertiary: #555;
+        --text-quaternary: #777;
+        --text-quinary: #bbb;
+        --text-septenary: var(--secondary-darker);
+
+        /* Contrast button → stay dark */
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        /* Input background → stay light */
+        --text-box-bg: #f7f0f4;
+    }
+}

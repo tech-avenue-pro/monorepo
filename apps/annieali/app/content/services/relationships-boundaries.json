@@ -1,0 +1,72 @@
+{
+    "slug": "relationships-boundaries",
+    "navTitle": "Relationships & Boundaries",
+    "seoTitle": "Relationships & Boundaries Coaching | Annie Ali",
+    "seoDescription": "Heal the patterns that keep repeating. Learn to communicate, hold space, and choose yourself without guilt or overexplaining.",
+    "hero": {
+        "title": "Relationships & Boundaries",
+        "summary": "Heal the patterns that keep repeating. Learn to communicate, hold space, and choose yourself without guilt or overexplaining.",
+        "primaryCta": {
+            "label": "Book a Call",
+            "href": "#contact"
+        },
+        "secondaryCta": {
+            "label": "Learn more about coaching",
+            "href": "#experience"
+        },
+        "secondaryCtaVariant": "secondary",
+        "image": {
+            "src": "/images/services/relationships-boundaries.webp",
+            "srcSet": "/images/services/relationships-boundaries.webp",
+            "alt": "Relationships and Boundaries Coaching"
+        },
+        "smallScreenImage": {
+            "src": "/images/services/relationships-boundaries.webp",
+            "srcSet": "/images/services/relationships-boundaries.webp",
+            "alt": "Relationships and Boundaries Coaching"
+        }
+    },
+    "experience": {
+        "sectionTitle": "What You'll Experience",
+        "items": [
+            {
+                "icon": "heart",
+                "title": "Break Repeating Patterns",
+                "description": "Understand the roots of the dynamics that keep showing up in your relationships."
+            },
+            {
+                "icon": "shield",
+                "title": "Set Real Boundaries",
+                "description": "Learn to say no, hold the line, and protect your energy without guilt."
+            },
+            {
+                "icon": "book",
+                "title": "Communicate With Clarity",
+                "description": "Speak up for your needs directly, without over-explaining or over-apologizing."
+            },
+            {
+                "icon": "leaf",
+                "title": "Choose Yourself",
+                "description": "Build relationships that are mutual, respectful, and rooted in who you really are."
+            }
+        ]
+    },
+    "checklist": {
+        "sectionTitle": "This Is For You If You...",
+        "items": [
+            "Struggle to say no without guilt",
+            "Keep attracting the same relationship patterns",
+            "Overexplain yourself to keep the peace",
+            "Want relationships that feel mutual, not draining"
+        ],
+        "image": {
+            "src": "/images/services/relationships-boundaries.webp",
+            "srcSet": "/images/services/relationships-boundaries.webp",
+            "alt": "Moment of calm reflection representing healthy boundaries"
+        }
+    },
+    "quote": {
+        "quote": "A boundary isn't a wall. It's the shape of your self-respect.",
+        "attribution": "Annie Ali"
+    }
+}

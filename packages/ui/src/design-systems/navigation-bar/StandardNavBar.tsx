@@ -42,6 +42,7 @@ interface StandardNavBarProps {
     background?: DSLayoutBackground;
     startingBackground?: DSLayoutBackground;
     stickyOnScrollOnly?: boolean;
+    isHeroFullScreen?: boolean;
 }
 
 const StandardNavBar = ({
@@ -59,9 +60,10 @@ const StandardNavBar = ({
     background = DSLayoutBackground.default,
     startingBackground = DSLayoutBackground.default,
     stickyOnScrollOnly = false,
+    isHeroFullScreen = false,
 }: StandardNavBarProps) => {
     const [nav, setNav] = useState("");
-    const [isSticky, setIsSticky] = useState(!stickyOnScrollOnly);
+    const [isSticky, setIsSticky] = useState(!stickyOnScrollOnly && !isHeroFullScreen);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [mobileMenuDirection, setMobileMenuDirection] = useState<
         "forward" | "back"
@@ -77,10 +79,16 @@ const StandardNavBar = ({
         rootMobileLevel,
     ]);
     const closeTimeoutRef = useRef<number | null>(null);
+    const navCloseTimeoutRef = useRef<number | null>(null);
+    const [isNavClosing, setIsNavClosing] = useState(false);
+    const isMobileNavOpen = nav === "nav-open";
     const activeBackground = isSticky ? background : startingBackground;
     const activeColor = isSticky ? color : (startingColor ?? color);
     const customBackgroundStyle = useMemo(() => {
         const cssVar = backgroundColorVars[activeBackground];
+        const solidCssVar = (isMobileNavOpen || isNavClosing) && (!cssVar || cssVar === "transparent")
+            ? backgroundColorVars[background]
+            : cssVar;
         const style: React.CSSProperties & Record<string, string> = {};
 
         if (cssVar) {
@@ -88,7 +96,10 @@ const StandardNavBar = ({
                 `color-mix(in srgb, ${cssVar} 40%, transparent)`;
             style["--nav-bg-overlay"] =
                 `color-mix(in srgb, ${cssVar} 35%, transparent)`;
-            style["--nav-bg-solid"] = cssVar;
+        }
+
+        if (solidCssVar) {
+            style["--nav-bg-solid"] = solidCssVar;
         }
 
         if (hoverColor) {
@@ -100,7 +111,7 @@ const StandardNavBar = ({
         }
 
         return Object.keys(style).length ? style : undefined;
-    }, [activeBackground, hoverColor, activeColor]);
+    }, [activeBackground, hoverColor, activeColor, isMobileNavOpen, isNavClosing, background]);
     const clearCloseTimeout = () => {
         if (closeTimeoutRef.current !== null) {
             window.clearTimeout(closeTimeoutRef.current);
@@ -116,6 +127,14 @@ const StandardNavBar = ({
     };
 
     const closeNav = () => {
+        setIsNavClosing(true);
+        if (navCloseTimeoutRef.current !== null) {
+            window.clearTimeout(navCloseTimeoutRef.current);
+        }
+        navCloseTimeoutRef.current = window.setTimeout(() => {
+            setIsNavClosing(false);
+            navCloseTimeoutRef.current = null;
+        }, 300);
         setNav("");
         setOpenDropdown(null);
         setMobileMenuDirection("forward");
@@ -130,7 +149,6 @@ const StandardNavBar = ({
         ? variantClasses[mobileTextVariant]
         : null;
 
-    const isMobileNavOpen = nav === "nav-open";
     const currentTextClassName =
         isMobileNavOpen && mobileTextClassName
             ? mobileTextClassName
@@ -146,14 +164,55 @@ const StandardNavBar = ({
     const canGoBack = mobileMenuStack.length > 1;
 
     useEffect(() => {
+        return () => {
+            if (navCloseTimeoutRef.current !== null) {
+                window.clearTimeout(navCloseTimeoutRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
         setMobileMenuStack([rootMobileLevel]);
     }, [rootMobileLevel]);
 
     useEffect(() => {
-        if (!stickyOnScrollOnly) {
+        if (!stickyOnScrollOnly && !isHeroFullScreen) {
             document.body.classList.add("sticky");
             setIsSticky(true);
             return;
+        }
+
+        if (isHeroFullScreen) {
+            document.body.classList.add("hero-fullscreen");
+            document.body.classList.add("hero-fullscreen-overlay");
+
+            const heroSection = document.querySelector(".hero-section");
+            if (!heroSection) {
+                return;
+            }
+
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (!entry) {
+                        return;
+                    }
+                    const onHero = entry.isIntersecting;
+                    document.body.classList.toggle("hero-fullscreen-overlay", onHero);
+                    document.body.classList.toggle("sticky", !onHero);
+                    setIsSticky(!onHero);
+                },
+                { root: null, threshold: 0, rootMargin: "-48px" },
+            );
+
+            observer.observe(heroSection);
+
+            return () => {
+                observer.disconnect();
+                document.body.classList.remove("hero-fullscreen");
+                document.body.classList.remove("hero-fullscreen-overlay");
+                document.body.classList.remove("sticky");
+                setIsSticky(false);
+            };
         }
 
         const heroSection = document.querySelector(".hero-section");
@@ -185,9 +244,9 @@ const StandardNavBar = ({
             document.body.classList.remove("sticky");
             setIsSticky(false);
         };
-    }, [stickyOnScrollOnly]);
+    }, [stickyOnScrollOnly, isHeroFullScreen]);
 
-    const shouldShowBackground = !stickyOnScrollOnly || isSticky;
+    const shouldShowBackground = (!stickyOnScrollOnly && !isHeroFullScreen) || isSticky;
 
     return (
         <React.Fragment>
@@ -539,6 +598,11 @@ const StandardNavBar = ({
                         className="btn-mobile-nav"
                         onClick={(e) => {
                             if (nav === "") {
+                                if (navCloseTimeoutRef.current !== null) {
+                                    window.clearTimeout(navCloseTimeoutRef.current);
+                                    navCloseTimeoutRef.current = null;
+                                }
+                                setIsNavClosing(false);
                                 setNav("nav-open");
                                 setOpenDropdown(null);
                                 setMobileMenuDirection("forward");
