@@ -1,0 +1,67 @@
+/*
+  Dine — color overrides
+  Deep tandoori red + saffron gold palette for a warm, fire-cooked restaurant brand.
+  Imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light;
+
+    /* Brand primary: deep tandoori red */
+    --primary: #a3282c;
+    --primary-lighter: #f7e2e1;
+    --primary-darker: #7a1c1f;
+    --primary-button-hover: #7a1c1f;
+    --darkest-background: #241012;
+    --lightest-background: #fdf6ee;
+
+    /* Secondary Colors: warm mustard gold */
+    --secondary: #b8860b;
+    --secondary-lighter: #fbf1dd;
+    --secondary-darker: #7a580a;
+
+    /* Accent: saffron */
+    --accent: #e0a52c;
+    --accent-lighter: #f6d98a;
+    --accent-darker: #a97914;
+
+    --text-tint-theme: var(--secondary-darker);
+    --text-senary: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-background: #ffffff;
+        --default-background-variation1: #faf5f0;
+        --default-background-variation2: #f2e9df;
+        --default-background-variation3: #e8dccb;
+        --lightest-background: #fdf6ee;
+
+        --primary: #a3282c;
+        --primary-lighter: #f7e2e1;
+        --primary-darker: #7a1c1f;
+        --primary-button-hover: #7a1c1f;
+        --darkest-background: #241012;
+
+        /* Secondary Colors */
+        --secondary: #b8860b;
+        --secondary-lighter: #fbf1dd;
+        --secondary-darker: #7a580a;
+
+        /* Accent: saffron */
+        --accent: #e0a52c;
+        --accent-lighter: #f6d98a;
+        --accent-darker: #a97914;
+        --text-primary: #333;
+        --text-secondary: #444;
+        --text-tertiary: #555;
+        --text-quaternary: #777;
+        --text-quinary: #bbb;
+
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        --text-box-bg: #f1f1f1;
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "footerTitle": "Dine",
+    "footerLogo": "/icons/logo.svg",
+    "socialLinks": [],
+    "phoneNumber": "+1 416 000 0000",
+    "emailAddress": "hello@dine-restaurant.example",
+    "copyrightText": "Dine. All rights reserved.",
+    "footerLinks": [
+        {
+            "title": "Navigation",
+            "links": [
+                { "title": "Home", "link": "/" },
+                { "title": "Menu", "link": "/menu" }
+            ]
+        },
+        {
+            "title": "Contact",
+            "links": [
+                {
+                    "title": "WhatsApp Us",
+                    "link": "https://wa.me/14160000000"
+                },
+                { "title": "123 Food Street, Toronto, ON", "link": "#" }
+            ]
+        },
+        {
+            "title": "Designed & Developed by",
+            "links": [
+                {
+                    "title": "Tech Avenue Pro",
+                    "link": "https://techavenue.pro"
+                }
+            ]
+        }
+    ]
+}
