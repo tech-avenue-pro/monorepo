@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { DSMotion, DSStagger } from "../../DSMotion";
 import {
@@ -7,6 +9,7 @@ import {
     DSTextWeight,
     FontStyle,
 } from "../../DSText";
+import { trackMetaPixelEvent } from "../../utils/meta-pixel";
 import {
     LocationsSectionContent,
     LocationItemContent,
@@ -69,6 +72,12 @@ function LocationCard({
                 <a
                     href={`tel:${cleanPhone}`}
                     className="flex items-center gap-2 mb-4"
+                    onClick={() =>
+                        trackMetaPixelEvent("Contact", {
+                            content_name: "Location Phone Call",
+                            location: name,
+                        })
+                    }
                 >
                     <svg
                         className="w-4 h-4 shrink-0 ds-text-color-tintTheme"
@@ -99,6 +108,11 @@ function LocationCard({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1"
+                        onClick={() =>
+                            trackMetaPixelEvent("FindLocation", {
+                                content_name: name,
+                            })
+                        }
                     >
                         <DSText
                             as="span"

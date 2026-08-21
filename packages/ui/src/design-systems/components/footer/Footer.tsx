@@ -1,9 +1,12 @@
+"use client";
+
 import { DSLink } from "@repo/ui/design-systems/DSLink";
 import {
     DSText,
     DSTextColor,
     DSTextVariant,
 } from "@repo/ui/design-systems/DSText";
+import { trackMetaPixelEvent } from "@repo/ui/design-systems/utils/meta-pixel.ts";
 import { FooterContent } from "./footer-content";
 
 export type { FooterContent };
@@ -76,6 +79,11 @@ export default function Footer({
                                     href={phoneHref}
                                     className="mt-4"
                                     showBottomLine={false}
+                                    onClick={() =>
+                                        trackMetaPixelEvent("Contact", {
+                                            content_name: "Footer Phone Call",
+                                        })
+                                    }
                                 >
                                     {phoneNumber}
                                 </DSLink>
