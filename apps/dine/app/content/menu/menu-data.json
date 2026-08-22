@@ -6,38 +6,50 @@
                 {
                     "name": "Afghani Platter",
                     "price": "$18.99",
-                    "description": "Chicken seekh kabab and chicken tikka served over fragrant rice with fried carrots and raisins.",
+                    "description": "One chicken Seekh Kabab and four pieces of chicken tikka served in an oval shaped platter filled with rice seasoned with fried grated carrots and raisins",
                     "image": "/images/tandoori-corner/afghan-platter.png"
                 },
                 {
                     "name": "Tandoori Style Chinese",
                     "price": "$16.99",
-                    "description": "Grilled chicken tikka tossed with peppers, onions and tomatoes in tandoori sauce, served with biryani rice and salad.",
+                    "description": "Pan fried grilled chicken tikka mixed with green pepper, tomatoes, onions and special tandoori sauce. Served with biryani rice and Garden salad. Please order medium, mild or spicy",
                     "image": "/images/tandoori-corner/tandoori-style-chineese.png"
                 },
                 {
                     "name": "Chicken Tikka",
                     "price": "$13.99",
-                    "description": "Nuggets of marinated chicken cooked in the clay oven, served with naan or rice.",
-                    "image": ""
+                    "description": "Nuggets of marinated chicken cooked in a clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/chicken-tikka.png"
                 },
                 {
                     "name": "Half Tandoori Chicken",
                     "price": "$14.99",
-                    "description": "Marinated in traditional spices and cooked in the clay oven, served with naan or rice.",
-                    "image": ""
+                    "description": "Marinated in traditional spices and cooked in clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/half-tandoori-chicken.png"
                 },
                 {
-                    "name": "Chicken Seekh Kabab",
-                    "price": "$12.99",
-                    "description": "Minced chicken skewers with onions and spices, cooked in the clay oven, served with naan or rice.",
-                    "image": ""
+                    "name": "Quarter Chicken Leg",
+                    "price": "$14.99",
+                    "description": "Marinated in traditional spices and cooked in clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/quarter-chicken-leg.png"
+                },
+                {
+                    "name": "Chicken Breast",
+                    "price": "$14.99",
+                    "description": "Marinated in traditional spices and cooked in clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/chicken-breast.png"
                 },
                 {
                     "name": "Beef Seekh Kabab",
                     "price": "$13.99",
-                    "description": "Minced beef skewers with onions and spices, cooked in the clay oven, served with naan or rice.",
-                    "image": ""
+                    "description": "3 pieces of minced beef mixed with onions and spices cooked in a clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/beef-seekh-kabab.png"
+                },
+                {
+                    "name": "Chicken Seekh Kabab",
+                    "price": "$12.99",
+                    "description": "3 pieces of minced chicken mixed with onions and spices cooked in a clay oven, includes Naan or Rice.",
+                    "image": "/images/tandoori-corner/chicken-seekh-kabab.png"
                 }
             ]
         },
@@ -45,46 +57,94 @@
             "category": "Curries",
             "items": [
                 {
-                    "name": "Butter Chicken",
+                    "name": "Chicken Jalfrezi",
                     "price": "$14.99",
-                    "description": "Boneless tandoori chicken simmered in a velvety tomato, butter and cream sauce.",
-                    "image": ""
-                },
-                {
-                    "name": "Chicken Tikka Masala",
-                    "price": "$14.99",
-                    "description": "Chunks of chicken tikka cooked in a thick, spiced tomato gravy.",
-                    "image": ""
-                },
-                {
-                    "name": "Chicken Karahi",
-                    "price": "$15.99",
-                    "description": "Wok-cooked boneless chicken in spicy tomato gravy with fresh herbs.",
+                    "description": "Boneless chicken in gravy with onions, tomatoes and green peppers, includes naan or rice.",
                     "image": ""
                 },
                 {
                     "name": "Boneless Lamb Karahi",
                     "price": "$18.99",
-                    "description": "Wok-cooked boneless lamb in spicy tomato gravy and fresh herbs.",
-                    "image": ""
+                    "description": "Wok-cooked boneless lamb in spicy tomato gravy and fresh herbs, includes naan or rice.",
+                    "image": "/images/curries/boneless-lamb-karahi.png"
                 },
                 {
-                    "name": "Nihari",
+                    "name": "Murgh Chana",
                     "price": "$13.99",
-                    "description": "Slow-cooked beef in a thick, traditional curry with warming spices.",
-                    "image": ""
+                    "description": "Boneless chicken cooked with chickpeas in a popular blend of spices, includes naan or rice.",
+                    "image": "/images/curries/chana.png"
                 },
                 {
-                    "name": "Haleem",
-                    "price": "$13.99",
-                    "description": "Beef and lentils simmered together for hours into a rich, hearty stew.",
-                    "image": ""
+                    "name": "Chicken Tikka Masala",
+                    "price": "$14.99",
+                    "description": "Boneless chunks of chicken tikka cooked in a thick, spicy sauce, includes naan or rice.",
+                    "image": "/images/curries/chicken-tikka-masala.png"
+                },
+                {
+                    "name": "Thali (Non-Veg)",
+                    "price": "$19.99",
+                    "description": "A generous portion of chicken karahi, chana masala and seekh kabab, served with garden salad, mint chutney, and naan or rice.",
+                    "image": "/images/curries/thali-non-veg.png"
+                },
+                {
+                    "name": "Karahi Gosht",
+                    "price": "$18.99",
+                    "description": "Ontario fresh baby lamb, wok-cooked with tomatoes and traditional spices, includes naan or rice.",
+                    "image": "/images/curries/karahi-gosht.png"
+                },
+                {
+                    "name": "Butter Chicken",
+                    "price": "$14.99",
+                    "description": "Boneless tandoori chicken simmered in a special gravy of butter, tomato sauce and cream, includes naan or rice.",
+                    "image": "/images/curries/butter-chicken.png"
+                },
+                {
+                    "name": "Chilli Chicken",
+                    "price": "$14.99",
+                    "description": "Baked boneless chicken cooked in spices with green chillies, onion and tomatoes, includes naan or rice.",
+                    "image": "/images/curries/chilli-chicken.png"
+                },
+                {
+                    "name": "Beef Kabab Masala",
+                    "price": "$15.99",
+                    "description": "Tandoori beef seekh kabab simmered in a rich curry sauce, includes naan or rice.",
+                    "image": "/images/curries/beef-kabab-masala.png"
+                },
+                {
+                    "name": "Chicken Palak",
+                    "price": "$14.99",
+                    "description": "Boneless chicken cooked in curry sauce with fresh spinach, includes naan or rice.",
+                    "image": "/images/curries/chicken-palak.png"
                 },
                 {
                     "name": "Palak Gosht",
                     "price": "$17.99",
-                    "description": "Boneless lamb cooked in curry sauce with fresh spinach.",
-                    "image": ""
+                    "description": "Boneless lamb cooked in curry sauce with fresh spinach, includes naan or rice.",
+                    "image": "/images/curries/palak-gosht.png"
+                },
+                {
+                    "name": "Haleem",
+                    "price": "$13.99",
+                    "description": "Beef and a variety of lentils, slow-cooked together into a thick, hearty sauce, includes naan or rice.",
+                    "image": "/images/curries/haleem.png"
+                },
+                {
+                    "name": "Nihari",
+                    "price": "$13.99",
+                    "description": "Tender chunks of beef cooked in a thick curry sauce with traditional herbs and spices, includes naan or rice.",
+                    "image": "/images/curries/nihari.png"
+                },
+                {
+                    "name": "Boneless Chicken Karahi",
+                    "price": "$15.99",
+                    "description": "Wok-cooked boneless chicken in spicy tomato gravy with fresh herbs, includes naan or rice.",
+                    "image": "/images/curries/boneless-chicken-karahi.png"
+                },
+                {
+                    "name": "Chana",
+                    "price": "$11.99",
+                    "description": "Chickpeas simmered in a blend of traditional spices, includes naan or rice.",
+                    "image": "/images/curries/chana.png"
                 }
             ]
         },
@@ -113,7 +173,7 @@
                     "name": "Vegetable Biryani",
                     "price": "$12.99",
                     "description": "Mixed vegetables layered with fragrant rice, mint and fresh herbs.",
-                    "image": ""
+                    "image": "/images/curries/chana.png"
                 }
             ]
         },

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Baloo_2, Inter } from "next/font/google";
+import { Baloo_2, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
@@ -17,6 +17,12 @@ const inter = Inter({
     variable: "--font-body",
     weight: ["300", "400", "500", "600", "700", "800", "900"],
     subsets: ["latin"],
+});
+
+const playfairDisplay = Playfair_Display({
+    variable: "--font-serif",
+    subsets: ["latin"],
+    weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +46,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${baloo2.variable} ${inter.variable} antialiased ds-bg-default`}
+                className={`${baloo2.variable} ${inter.variable} ${playfairDisplay.variable} antialiased ds-bg-default`}
             >
                 {children}
             </body>
