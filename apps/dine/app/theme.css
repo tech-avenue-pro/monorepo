@@ -1,67 +1,78 @@
 /*
   Dine — color overrides
-  Deep tandoori red + saffron gold palette for a warm, fire-cooked restaurant brand.
+  Warm cream background with a bold citrus-orange accent — friendly,
+  appetite-forward palette.
   Imported after design-systems.css so it wins the cascade.
 */
 
 :root {
     color-scheme: light;
 
-    /* Brand primary: deep tandoori red */
-    --primary: #a3282c;
-    --primary-lighter: #f7e2e1;
-    --primary-darker: #7a1c1f;
-    --primary-button-hover: #7a1c1f;
-    --darkest-background: #241012;
-    --lightest-background: #fdf6ee;
+    --default-background: #fff8ed;
+    --default-background-variation1: #fff0d9;
+    --default-background-variation2: #fce4be;
+    --default-background-variation3: #f3d29b;
+    --lightest-background: #fffdf8;
 
-    /* Secondary Colors: warm mustard gold */
-    --secondary: #b8860b;
-    --secondary-lighter: #fbf1dd;
-    --secondary-darker: #7a580a;
+    /* Brand primary: citrus orange */
+    --primary: #f4a125;
+    --primary-lighter: #fff0d6;
+    --primary-darker: #d9860a;
+    --primary-button-hover: #d9860a;
+    --darkest-background: #2b1b0e;
 
-    /* Accent: saffron */
-    --accent: #e0a52c;
-    --accent-lighter: #f6d98a;
-    --accent-darker: #a97914;
+    /* Secondary Colors: warm terracotta brown */
+    --secondary: #a6672e;
+    --secondary-lighter: #fbeedd;
+    --secondary-darker: #6b4218;
 
-    --text-tint-theme: var(--secondary-darker);
+    /* Accent: fresh olive green */
+    --accent: #7c9a54;
+    --accent-lighter: #eaf1df;
+    --accent-darker: #52672f;
+
+    --text-primary: #2b1b0e;
+    --text-secondary: #4a3b2c;
+    --text-tertiary: #6b5b4a;
+
+    --text-tint-theme: var(--primary-darker);
     --text-senary: var(--primary);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --default-background: #ffffff;
-        --default-background-variation1: #faf5f0;
-        --default-background-variation2: #f2e9df;
-        --default-background-variation3: #e8dccb;
-        --lightest-background: #fdf6ee;
+        --default-background: #fff8ed;
+        --default-background-variation1: #fff0d9;
+        --default-background-variation2: #fce4be;
+        --default-background-variation3: #f3d29b;
+        --lightest-background: #fffdf8;
 
-        --primary: #a3282c;
-        --primary-lighter: #f7e2e1;
-        --primary-darker: #7a1c1f;
-        --primary-button-hover: #7a1c1f;
-        --darkest-background: #241012;
+        --primary: #f4a125;
+        --primary-lighter: #fff0d6;
+        --primary-darker: #d9860a;
+        --primary-button-hover: #d9860a;
+        --darkest-background: #2b1b0e;
 
         /* Secondary Colors */
-        --secondary: #b8860b;
-        --secondary-lighter: #fbf1dd;
-        --secondary-darker: #7a580a;
+        --secondary: #a6672e;
+        --secondary-lighter: #fbeedd;
+        --secondary-darker: #6b4218;
 
-        /* Accent: saffron */
-        --accent: #e0a52c;
-        --accent-lighter: #f6d98a;
-        --accent-darker: #a97914;
-        --text-primary: #333;
-        --text-secondary: #444;
-        --text-tertiary: #555;
-        --text-quaternary: #777;
-        --text-quinary: #bbb;
+        /* Accent */
+        --accent: #7c9a54;
+        --accent-lighter: #eaf1df;
+        --accent-darker: #52672f;
+
+        --text-primary: #2b1b0e;
+        --text-secondary: #4a3b2c;
+        --text-tertiary: #6b5b4a;
+        --text-quaternary: #8a7a68;
+        --text-quinary: #c9bba9;
 
         --contrast-bg: #000;
         --contrast-border: #222;
         --contrast-text: #fff;
 
-        --text-box-bg: #f1f1f1;
+        --text-box-bg: #fff0d9;
     }
 }

@@ -30,7 +30,7 @@ export default function Home() {
 
             <HeroSection
                 id="hero-section"
-                background={DSLayoutBackground.darkestBackground}
+                background={DSLayoutBackground.default}
             >
                 <HeroContainer>
                     <Hero {...hero} />

@@ -13,13 +13,13 @@
                     "name": "Tandoori Style Chinese",
                     "price": "$16.99",
                     "description": "Grilled chicken tikka tossed with peppers, onions and tomatoes in tandoori sauce, served with biryani rice and salad.",
-                    "image": "/images/tandoori-corner/tandoori-style-chinese.png"
+                    "image": "/images/tandoori-corner/tandoori-style-chineese.png"
                 },
                 {
                     "name": "Chicken Tikka",
                     "price": "$13.99",
                     "description": "Nuggets of marinated chicken cooked in the clay oven, served with naan or rice.",
-                    "image": "/images/tandoori-corner/chicken-tikka.jpg"
+                    "image": ""
                 },
                 {
                     "name": "Half Tandoori Chicken",

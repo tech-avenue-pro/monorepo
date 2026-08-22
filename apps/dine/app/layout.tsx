@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Baloo_2, Inter } from "next/font/google";
 import "./globals.css";
 import "@repo/styles/design-systems.css";
 import "@repo/styles/animations.css";
@@ -7,10 +7,10 @@ import "@repo/styles/navigation.css";
 import "@repo/styles/backgrounds.css";
 import "./theme.css";
 
-const poppins = Poppins({
+const baloo2 = Baloo_2({
     variable: "--font-heading",
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
+    weight: ["500", "600", "700", "800"],
 });
 
 const inter = Inter({
@@ -40,7 +40,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${poppins.variable} ${inter.variable} antialiased ds-bg-default`}
+                className={`${baloo2.variable} ${inter.variable} antialiased ds-bg-default`}
             >
                 {children}
             </body>
