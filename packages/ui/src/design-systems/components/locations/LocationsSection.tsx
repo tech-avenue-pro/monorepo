@@ -132,7 +132,7 @@ function LocationCard({
                                 color={DSTextColor.primary}
                                 weight={DSTextWeight.semiBold}
                             >
-                                Clinic Hours
+                                Business Hours
                             </DSText>
                         </div>
                         <div className="flex flex-col gap-1">

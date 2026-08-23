@@ -6,6 +6,7 @@ import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
 import Hero from "./Hero";
 import StatsView from "@repo/ui/design-systems/components/stats/StatsView";
 import Footer from "@repo/ui/design-systems/components/footer/Footer";
+import LocationDetailSection from "@repo/ui/design-systems/components/locations/LocationDetailSection";
 import { TrackedWhatsAppButton } from "./WhatsAppButton";
 
 import MainNavBar from "./MainNavBar";
@@ -16,11 +17,13 @@ import Testimonials from "./Testimonials";
 import { getHeroContent } from "./content/hero-section/getHeroContent";
 import { getStatsContent } from "./content/stats/getStatsContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
+import { getLocationDetailContent } from "./content/locations/getLocationDetailContent";
 
 export default function Home() {
     const hero = getHeroContent();
     const stats = getStatsContent();
     const footer = getFooterContent();
+    const locationDetail = getLocationDetailContent();
 
     return (
         <main>
@@ -77,6 +80,15 @@ export default function Home() {
             >
                 <RegularContainer>
                     <Testimonials />
+                </RegularContainer>
+            </RegularSection>
+
+            <RegularSection
+                id="location-section"
+                background={DSLayoutBackground.default}
+            >
+                <RegularContainer>
+                    <LocationDetailSection {...locationDetail} />
                 </RegularContainer>
             </RegularSection>
 

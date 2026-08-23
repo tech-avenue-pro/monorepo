@@ -59,12 +59,10 @@ export default function Hero({
                             {ctaText}
                         </DSLinkButton>
                         <DSLinkButton
-                            href="https://wa.me/14160000000"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="#location-section"
                             variant={DSButtonVariant.outlined}
                         >
-                            Reserve a Table
+                            Our Location
                         </DSLinkButton>
                     </div>
                 </div>
