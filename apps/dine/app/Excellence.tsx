@@ -46,9 +46,9 @@ export default function Excellence() {
                         className="md:pt-16"
                     >
                         We began with a single clay tandoor — a promise to
-                        marinate patiently, cook over real fire, and never
-                        rush what heat is meant to teach. Years later, that
-                        promise hasn&apos;t changed.
+                        marinate patiently, cook over real fire, and never rush
+                        what heat is meant to teach. Years later, that promise
+                        hasn&apos;t changed.
                     </DSText>
                 </DSMotion>
             </div>
@@ -56,7 +56,7 @@ export default function Excellence() {
             <DSMotion variant="blur-in" duration={1}>
                 <div className="rounded-2xl overflow-hidden aspect-[16/8]">
                     <img
-                        src="/images/tandoori-corner/tandoori-style-chineese.png"
+                        src="/images/hero.png"
                         alt="Tandoori style chicken tossed with peppers and served with rice"
                         className="w-full h-full object-cover"
                     />

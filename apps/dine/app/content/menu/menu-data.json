@@ -168,12 +168,6 @@
                     "price": "$10.99",
                     "description": "Creamy washed split lentils simmered with warm spices.",
                     "image": ""
-                },
-                {
-                    "name": "Vegetable Biryani",
-                    "price": "$12.99",
-                    "description": "Mixed vegetables layered with fragrant rice, mint and fresh herbs.",
-                    "image": "/images/curries/chana.png"
                 }
             ]
         },
@@ -183,20 +177,26 @@
                 {
                     "name": "Chicken Biryani",
                     "price": "$12.99",
-                    "description": "Stewed chicken layered with fragrant rice, mint and fresh herbs.",
-                    "image": ""
+                    "description": "Stewed chicken flavoured with mint and fresh herbs, layered with rice and cooked to perfection.",
+                    "image": "/images/biryani/chicken-biryani.png"
                 },
                 {
                     "name": "Lamb Biryani",
                     "price": "$16.99",
-                    "description": "Stewed lamb layered with fragrant rice, mint and fresh herbs.",
-                    "image": ""
+                    "description": "Stewed lamb flavoured with mint and fresh herbs, layered with rice and cooked to perfection.",
+                    "image": "/images/biryani/lamb-biryani.png"
                 },
                 {
                     "name": "Shrimp Biryani",
                     "price": "$18.99",
-                    "description": "Shrimp layered with fragrant rice, mint and fresh herbs.",
-                    "image": ""
+                    "description": "Shrimp layered with rice and flavoured with mint and fresh herbs.",
+                    "image": "/images/biryani/shrimp-biryani.png"
+                },
+                {
+                    "name": "Vegetable Biryani",
+                    "price": "$12.99",
+                    "description": "Mixed vegetables flavoured with mint and fresh herbs, layered with rice and cooked to perfection.",
+                    "image": "/images/biryani/vegetable-biryani.png"
                 }
             ]
         },
@@ -207,25 +207,25 @@
                     "name": "Chicken Kabab Roll",
                     "price": "$11.99",
                     "description": "Two pieces of chicken kabab rolled in naan with salad and mint sauce.",
-                    "image": ""
+                    "image": "/images/tandoori-rolls/chicken-kabab-roll.png"
                 },
                 {
                     "name": "Beef Kabab Roll",
                     "price": "$12.99",
                     "description": "Two pieces of seekh kabab rolled in naan with salad and mint sauce.",
-                    "image": ""
+                    "image": "/images/tandoori-rolls/beef-kabab-roll.png"
                 },
                 {
                     "name": "Chicken Tikka Roll",
                     "price": "$11.99",
                     "description": "Bite-size chicken tikka pieces rolled in naan with salad and mint sauce.",
-                    "image": ""
+                    "image": "/images/tandoori-rolls/chicken-tikka-roll.png"
                 },
                 {
                     "name": "Chappati Roll",
                     "price": "$9.99",
                     "description": "Chicken kabab and garden salad rolled in a fresh chappati.",
-                    "image": ""
+                    "image": "/images/tandoori-rolls/chappati-roll.png"
                 }
             ]
         },
@@ -236,25 +236,31 @@
                     "name": "Fish Tikka",
                     "price": "$16.99",
                     "description": "Boneless marinated fish cooked in the clay oven, served with naan or rice.",
-                    "image": ""
+                    "image": "/images/fisherman-net/fish-tikka.png"
                 },
                 {
                     "name": "Fried Fish",
                     "price": "$15.99",
                     "description": "Crispy, spiced deep-fried fish served with naan or rice.",
-                    "image": ""
+                    "image": "/images/fisherman-net/fried-fish.png"
+                },
+                {
+                    "name": "Fish Masala",
+                    "price": "$16.99",
+                    "description": "Fish simmered in a rich, spiced curry sauce, served with naan or rice.",
+                    "image": "/images/fisherman-net/fish-masala.png"
                 },
                 {
                     "name": "Prawn Masala",
                     "price": "$19.99",
                     "description": "Large prawns cooked with onions, tomatoes and spices, served with naan or rice.",
-                    "image": ""
+                    "image": "/images/fisherman-net/prawn-masala.png"
                 },
                 {
                     "name": "Prawn Jalfrezi",
                     "price": "$19.99",
                     "description": "Large prawns tossed with fresh vegetables and spices, served with naan or rice.",
-                    "image": ""
+                    "image": "/images/fisherman-net/prawn-jalfrezi.png"
                 }
             ]
         },
@@ -265,30 +271,36 @@
                     "name": "Vegetable Samosa",
                     "price": "$5.99",
                     "description": "Two crispy turnovers filled with spiced potatoes and peas.",
-                    "image": ""
+                    "image": "/images/appetizers/vegetable-samosa.png"
                 },
                 {
                     "name": "Vegetable Pakora",
                     "price": "$6.99",
                     "description": "Assorted vegetables dipped in spiced batter and deep-fried.",
-                    "image": ""
+                    "image": "/images/appetizers/vegetable-pakora.png"
                 },
                 {
                     "name": "Fish Pakora",
                     "price": "$9.99",
                     "description": "Boneless fish battered in gram flour and traditional herbs, fried golden.",
-                    "image": ""
+                    "image": "/images/appetizers/fish-pakora.png"
                 },
                 {
                     "name": "Aloo Chana Chaat",
                     "price": "$7.99",
                     "description": "Potatoes and chickpeas tossed in spices, topped with yogurt and tamarind chutney.",
-                    "image": ""
+                    "image": "/images/appetizers/aloo-chana-chaat.png"
+                },
+                {
+                    "name": "Papri Chaat",
+                    "price": "$7.99",
+                    "description": "Chickpeas, crunchy wafers and potatoes topped with yogurt and tamarind sauce.",
+                    "image": "/images/appetizers/papri-chat.png"
                 },
                 {
                     "name": "Chicken Wings",
                     "description": "Seasoned chicken wings, oven-baked to perfection.",
-                    "image": "",
+                    "image": "/images/appetizers/chicken-wings.png",
                     "variants": [
                         { "label": "6 piece", "price": "$8.99" },
                         { "label": "12 piece", "price": "$15.99" }
@@ -298,7 +310,7 @@
                     "name": "Shami Kabab",
                     "price": "$6.99",
                     "description": "Two pan-fried patties of spiced minced meat, potatoes and lentils.",
-                    "image": ""
+                    "image": "/images/appetizers/shami-kabab.png"
                 }
             ]
         },
@@ -309,7 +321,7 @@
                     "name": "Tandoori Roti",
                     "price": "$1.99",
                     "description": "Whole wheat bread baked fresh in the clay oven.",
-                    "image": ""
+                    "image": "/images/tandoori-breads/tandoori-roti.png"
                 },
                 {
                     "name": "Tandoori Naan",
@@ -321,25 +333,25 @@
                     "name": "Garlic Naan",
                     "price": "$3.49",
                     "description": "Naan topped with garlic and fresh coriander.",
-                    "image": ""
+                    "image": "/images/tandoori-breads/garlic-naan.png"
                 },
                 {
                     "name": "Roghani Naan",
                     "price": "$3.49",
                     "description": "Naan baked with a rich, buttery finish.",
-                    "image": ""
+                    "image": "/images/tandoori-breads/roghani-naan.png"
                 },
                 {
                     "name": "Aloo Naan",
                     "price": "$3.99",
                     "description": "Naan stuffed with deliciously spiced potatoes.",
-                    "image": ""
+                    "image": "/images/tandoori-breads/aloo-naan.png"
                 },
                 {
                     "name": "Keema Naan",
                     "price": "$4.99",
                     "description": "Naan stuffed with spiced minced beef or chicken.",
-                    "image": ""
+                    "image": "/images/tandoori-breads/keema-naan.png"
                 }
             ]
         },
@@ -347,33 +359,39 @@
             "category": "Desserts",
             "items": [
                 {
+                    "name": "Shahi Tukra",
+                    "price": "$5.99",
+                    "description": "Fried bread soaked in sweetened, cardamom-spiced milk and topped with pistachios.",
+                    "image": "/images/desserts/shahi-tukra.png"
+                },
+                {
                     "name": "Gulab Jamun",
                     "price": "$5.99",
                     "description": "Soft milk dumplings soaked in rose-scented sugar syrup.",
-                    "image": ""
+                    "image": "/images/desserts/gulab-jamun.png"
                 },
                 {
                     "name": "Rasmalai",
                     "price": "$6.99",
                     "description": "Delicate cheese patties in sweetened, cardamom-spiced milk.",
-                    "image": ""
+                    "image": "/images/desserts/rasmalai.png"
                 },
                 {
                     "name": "Kheer",
                     "price": "$4.99",
                     "description": "Traditional rice pudding garnished with nuts.",
-                    "image": ""
+                    "image": "/images/desserts/kheer.png"
                 },
                 {
                     "name": "Zarda",
                     "price": "$4.99",
                     "description": "Sweet saffron rice garnished with fruits and nuts.",
-                    "image": ""
+                    "image": "/images/desserts/zarda.png"
                 },
                 {
                     "name": "Kulfi",
                     "description": "Rich, slow-churned traditional ice cream.",
-                    "image": "",
+                    "image": "/images/desserts/kulfi.png",
                     "variants": [
                         { "label": "Pistachio", "price": "$4.99" },
                         { "label": "Mango", "price": "$4.99" }
@@ -388,7 +406,7 @@
                     "name": "Regular Tea",
                     "price": "$2.49",
                     "description": "Classic hot tea, served fresh.",
-                    "image": ""
+                    "image": "/images/beverages/regular-tea.png"
                 },
                 {
                     "name": "Masala Chai",
@@ -397,15 +415,9 @@
                     "image": ""
                 },
                 {
-                    "name": "Mango Lassi",
-                    "price": "$4.99",
-                    "description": "Sweet yogurt drink blended with fresh mango.",
-                    "image": ""
-                },
-                {
                     "name": "Lassi",
                     "description": "Traditional churned yogurt drink.",
-                    "image": "",
+                    "image": "/images/beverages/lassi.png",
                     "variants": [
                         { "label": "Sweet", "price": "$4.49" },
                         { "label": "Salty", "price": "$4.49" }
@@ -415,7 +427,13 @@
                     "name": "Mango Shake",
                     "price": "$5.49",
                     "description": "Fresh mango blended with milk.",
-                    "image": ""
+                    "image": "/images/beverages/mango-shake.png"
+                },
+                {
+                    "name": "Mango Drink",
+                    "price": "$4.49",
+                    "description": "A refreshing chilled mango drink.",
+                    "image": "/images/beverages/mango-drink.png"
                 },
                 {
                     "name": "Soft Drinks",

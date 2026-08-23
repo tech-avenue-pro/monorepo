@@ -1,6 +1,5 @@
 import { DSLayoutBackground } from "@repo/ui/design-systems/DSLayout";
 import HeroSection from "@repo/ui/design-systems/layouts/HeroSection";
-import HeroContainer from "@repo/ui/design-systems/layouts/HeroContainer";
 import SmallSection from "@repo/ui/design-systems/layouts/SmallSection";
 import RegularSection from "@repo/ui/design-systems/layouts/RegularSection";
 import RegularContainer from "@repo/ui/design-systems/layouts/RegularContainer";
@@ -31,9 +30,9 @@ export default function Home() {
                 id="hero-section"
                 background={DSLayoutBackground.default}
             >
-                <HeroContainer>
+                <RegularContainer>
                     <Hero {...hero} />
-                </HeroContainer>
+                </RegularContainer>
             </HeroSection>
 
             <RegularSection

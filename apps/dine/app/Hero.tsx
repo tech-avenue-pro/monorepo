@@ -25,7 +25,7 @@ export default function Hero({
         <div className="grid md:grid-cols-2 gap-12 items-center py-12 md:py-20">
             <div className="text-left">
                 {smallTitle?.trim() ? (
-                    <span className="inline-block bg-[var(--primary-lighter)] text-[var(--primary-darker)] text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                    <span className="block w-fit bg-[var(--primary-lighter)] text-[var(--primary-darker)] text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
                         {smallTitle}
                     </span>
                 ) : null}
