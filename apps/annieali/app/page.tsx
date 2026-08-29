@@ -58,7 +58,7 @@ export default function Home() {
 
             {/* Hero image for mobile/tablet only */}
             <Image
-                src="/images/hero-background.webp"
+                src="/images/hero-background-mobile.webp"
                 alt="Annie Ali"
                 width={1717}
                 height={916}
