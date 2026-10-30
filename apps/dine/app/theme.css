@@ -1,0 +1,78 @@
+/*
+  Dine — color overrides
+  Warm cream background with a bold citrus-orange accent — friendly,
+  appetite-forward palette.
+  Imported after design-systems.css so it wins the cascade.
+*/
+
+:root {
+    color-scheme: light;
+
+    --default-background: #fff8ed;
+    --default-background-variation1: #fff0d9;
+    --default-background-variation2: #fce4be;
+    --default-background-variation3: #f3d29b;
+    --lightest-background: #fffdf8;
+
+    /* Brand primary: citrus orange */
+    --primary: #f4a125;
+    --primary-lighter: #fff0d6;
+    --primary-darker: #d9860a;
+    --primary-button-hover: #d9860a;
+    --darkest-background: #2b1b0e;
+
+    /* Secondary Colors: warm terracotta brown */
+    --secondary: #a6672e;
+    --secondary-lighter: #fbeedd;
+    --secondary-darker: #6b4218;
+
+    /* Accent: fresh olive green */
+    --accent: #7c9a54;
+    --accent-lighter: #eaf1df;
+    --accent-darker: #52672f;
+
+    --text-primary: #2b1b0e;
+    --text-secondary: #4a3b2c;
+    --text-tertiary: #6b5b4a;
+
+    --text-tint-theme: var(--primary-darker);
+    --text-senary: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-background: #fff8ed;
+        --default-background-variation1: #fff0d9;
+        --default-background-variation2: #fce4be;
+        --default-background-variation3: #f3d29b;
+        --lightest-background: #fffdf8;
+
+        --primary: #f4a125;
+        --primary-lighter: #fff0d6;
+        --primary-darker: #d9860a;
+        --primary-button-hover: #d9860a;
+        --darkest-background: #2b1b0e;
+
+        /* Secondary Colors */
+        --secondary: #a6672e;
+        --secondary-lighter: #fbeedd;
+        --secondary-darker: #6b4218;
+
+        /* Accent */
+        --accent: #7c9a54;
+        --accent-lighter: #eaf1df;
+        --accent-darker: #52672f;
+
+        --text-primary: #2b1b0e;
+        --text-secondary: #4a3b2c;
+        --text-tertiary: #6b5b4a;
+        --text-quaternary: #8a7a68;
+        --text-quinary: #c9bba9;
+
+        --contrast-bg: #000;
+        --contrast-border: #222;
+        --contrast-text: #fff;
+
+        --text-box-bg: #fff0d9;
+    }
+}

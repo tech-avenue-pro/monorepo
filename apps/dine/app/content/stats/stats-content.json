@@ -1,0 +1,10 @@
+{
+    "title": "Loved by Food Lovers",
+    "description": "Numbers that reflect our commitment to quality and flavour.",
+    "items": [
+        { "number": "15+", "description": "Signature Dishes" },
+        { "number": "5+", "description": "Years of Flavour" },
+        { "number": "1000+", "description": "Happy Guests" },
+        { "number": "100%", "description": "Halal Ingredients" }
+    ]
+}

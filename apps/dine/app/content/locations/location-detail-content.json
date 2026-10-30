@@ -1,0 +1,17 @@
+{
+    "eyebrow": "Find Us",
+    "sectionTitle": "Location of Our Restaurant",
+    "sectionDescription": "We'd love to welcome you! Find us in the heart of the city, surrounded by great company and good vibes.",
+    "directionsLabel": "Get Directions",
+    "mapPinSubLabel": "Restaurant",
+    "location": {
+        "name": "Dine",
+        "address": "30 Melanie Dr #3\nBrampton, ON L6T 4L4",
+        "phone": "+1 416 000 0000",
+        "email": "hello@dine-restaurant.example",
+        "website": "www.dine-restaurant.example",
+        "mapLink": "https://maps.app.goo.gl/EYKvyMQ7t4fMGcvw5",
+        "mapEmbedUrl": "https://www.google.com/maps?q=30%20Melanie%20Dr%20%233%2C%20Brampton%2C%20ON%20L6T%204L4&output=embed",
+        "schedule": [{ "day": "Mon – Sun", "hours": "11:00 AM – 10:00 PM" }]
+    }
+}
