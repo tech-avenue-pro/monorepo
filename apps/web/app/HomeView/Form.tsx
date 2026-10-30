@@ -16,10 +16,12 @@ export default function Form({ email }: FormProps) {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
+        if (status === "loading") return;
+        const form = e.currentTarget;
         setStatus("loading");
         setErrorMessage("");
 
-        const formData = new FormData(e.currentTarget);
+        const formData = new FormData(form);
         const payload = {
             businessName: formData.get("businessName") as string,
             message: formData.get("message") as string,
@@ -42,7 +44,7 @@ export default function Form({ email }: FormProps) {
             }
 
             setStatus("success");
-            (e.target as HTMLFormElement).reset();
+            form.reset();
         } catch (err) {
             setStatus("error");
             setErrorMessage(
@@ -76,35 +78,36 @@ export default function Form({ email }: FormProps) {
                 required
             />
             <input
-                type="text"
+                type="email"
                 className="text-field"
                 placeholder="Email"
                 name="email"
-                pattern="(^\+?[0-9()\s-]{7,}$)|(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
-                title="Enter a valid  email"
+                title="Enter a valid email address."
                 required
             />
             <input
-                type="text"
+                type="tel"
                 className="text-field"
                 placeholder="Phone"
                 name="phone"
-                pattern="(^\+?[0-9()\s-]{7,}$)|(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
                 title="Enter a valid phone number."
                 required
             />
 
             {status === "success" && (
-                <p className="text-sm text-green-600">
+                <p role="status" className="text-sm text-green-600">
                     Message sent! We&apos;ll be in touch soon.
                 </p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-600">{errorMessage}</p>
+                <p role="alert" className="text-sm text-red-600">
+                    {errorMessage}
+                </p>
             )}
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <DSButton
+                    type="submit"
                     variant={DSButtonVariant.primary}
                     loading={status === "loading"}
                 >

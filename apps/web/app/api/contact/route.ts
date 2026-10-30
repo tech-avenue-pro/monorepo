@@ -1,45 +1,101 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendContactEmail } from "@repo/email";
+import { sendContactEmail, type ContactFormData } from "@repo/email";
+
+export const runtime = "nodejs";
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: NextRequest) {
-    const body = (await req.json()) as {
-        businessName: string;
-        message: string;
-        name: string;
-        phone: string;
-        email: string;
-        receiverEmail: string;
-    };
-
-    const { businessName, message, name, phone, email, receiverEmail } = body;
-
-    if (!receiverEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(receiverEmail)) {
+    let body: unknown;
+    try {
+        body = await req.json();
+    } catch {
         return NextResponse.json(
-            { error: "Invalid recipient email." },
+            { error: "Invalid form data." },
             { status: 400 },
         );
     }
-    console.log("SMTP_HOST:", process.env.SMTP_HOST);
-    console.log("SMTP_PORT:", process.env.SMTP_PORT);
-    console.log("SMTP_SECURE:", process.env.SMTP_SECURE);
-    console.log("SMTP_USER:", process.env.SMTP_USER);
-    console.log("SMTP_PASS:", process.env.SMTP_PASS);
+
+    const fields = [
+        "businessName",
+        "message",
+        "name",
+        "phone",
+        "email",
+        "receiverEmail",
+    ] as const;
+    if (
+        !body ||
+        typeof body !== "object" ||
+        !fields.every((field) => {
+            const value = (body as Record<string, unknown>)[field];
+            return typeof value === "string" && value.trim().length > 0;
+        })
+    ) {
+        return NextResponse.json(
+            { error: "Please complete all required fields." },
+            { status: 400 },
+        );
+    }
+    const { businessName, message, name, phone, email, receiverEmail } =
+        body as ContactFormData & { receiverEmail: string };
+
+    if (!emailPattern.test(email) || !emailPattern.test(receiverEmail)) {
+        return NextResponse.json(
+            { error: "Please provide a valid email address." },
+            { status: 400 },
+        );
+    }
+    const host = process.env.SMTP_HOST;
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    const port = Number(process.env.SMTP_PORT || 465);
+    const secureSetting = process.env.SMTP_SECURE;
+    if (
+        !host ||
+        !user ||
+        !pass ||
+        !Number.isInteger(port) ||
+        port < 1 ||
+        port > 65535 ||
+        (secureSetting !== undefined &&
+            secureSetting !== "true" &&
+            secureSetting !== "false")
+    ) {
+        console.error(
+            "Contact email: SMTP configuration is missing or invalid.",
+        );
+        return NextResponse.json(
+            {
+                error: "Email delivery is unavailable. Please contact us directly or use WhatsApp.",
+            },
+            { status: 503 },
+        );
+    }
 
     try {
         await sendContactEmail(
             receiverEmail,
             { businessName, name, phone, email, message },
             {
-                host: process.env.SMTP_HOST!,
-                port: Number(process.env.SMTP_PORT) || 465,
-                secure: true,
-                user: process.env.SMTP_USER!,
-                pass: process.env.SMTP_PASS!,
-                from: process.env.SMTP_USER,
+                host,
+                port,
+                secure:
+                    secureSetting === undefined
+                        ? port === 465
+                        : secureSetting === "true",
+                user,
+                pass,
+                from: user,
             },
         );
     } catch (err) {
-        console.error("Failed to send email:", err);
+        console.error("Contact email delivery failed:", {
+            code:
+                err && typeof err === "object" && "code" in err
+                    ? err.code
+                    : "UNKNOWN",
+        });
         return NextResponse.json(
             { error: "Failed to send email. Please try again later." },
             { status: 500 },

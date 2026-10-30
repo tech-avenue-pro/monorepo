@@ -140,18 +140,16 @@ Learn more about the power of Turborepo:
 
 ## Running individual websites
 
-Each app runs on its own fixed port. From the monorepo root, use `pnpm dev --filter=<app>`, or `cd` into the app folder and run `pnpm dev` directly.
+Each app runs on its own fixed port for both `dev` and `start`. Run `pnpm dev` from the monorepo root to develop all apps at once. To develop one app, use `pnpm dev --filter=<app>`, or `cd` into the app folder and run `pnpm dev` directly. For a production server, build the app first with `pnpm --filter <app> build`, then run `pnpm --filter <app> start`.
 
 | App | Command (from repo root) | Port |
 |-----|---------------------------|------|
 | `web` (techavenue.pro) | `pnpm dev --filter=web` | [http://localhost:3000](http://localhost:3000) |
-| `docs` | `pnpm dev --filter=docs` | [http://localhost:3001](http://localhost:3001) |
 | `chathaclinic` (chathaclinic.com) | `pnpm dev --filter=chathaclinic` | [http://localhost:3001](http://localhost:3001) |
 | `flavourfusion` | `pnpm dev --filter=flavourfusion` | [http://localhost:3002](http://localhost:3002) |
 | `annieali` (annieali.ca) | `pnpm dev --filter=annieali` | [http://localhost:3003](http://localhost:3003) |
-
-> [!NOTE]
-> `docs` and `chathaclinic` are both configured to run on port 3001, so don't run them at the same time — stop one before starting the other.
+| `dine` | `pnpm dev --filter=dine` | [http://localhost:3004](http://localhost:3004) |
+| `docs` | `pnpm dev --filter=docs` | [http://localhost:3005](http://localhost:3005) |
 
 Example, to run just the Annie Ali website:
 
