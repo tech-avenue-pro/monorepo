@@ -6,11 +6,12 @@ import WhatsAppButton from "./WhatsAppButton";
 
 interface FormProps {
     email: string;
+    whatsappPhone: string;
 }
 
 type Status = "idle" | "loading" | "success" | "error";
 
-export default function Form({ email }: FormProps) {
+export default function Form({ email, whatsappPhone }: FormProps) {
     const [status, setStatus] = useState<Status>("idle");
     const [errorMessage, setErrorMessage] = useState("");
 
@@ -113,7 +114,7 @@ export default function Form({ email }: FormProps) {
                 >
                     {status === "loading" ? "Sending…" : "Submit"}
                 </DSButton>
-                <WhatsAppButton phone="14374483374" />
+                <WhatsAppButton phone={whatsappPhone} />
             </div>
         </form>
     );

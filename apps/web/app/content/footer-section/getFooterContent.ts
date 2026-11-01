@@ -1,11 +1,18 @@
-import { FooterContent } from "@repo/ui/design-systems/components/footer/Footer";
+import type { FooterContent } from "@repo/ui/design-systems/components/footer/Footer";
+import footerData from "./footer-content.json";
+import secondaryFooterData from "./secondary-footer-content.json";
+import { getMarketConfig } from "../markets/config";
 
 export function getFooterContent(): FooterContent {
-    const footerData = require("./footer-content.json");
-    return footerData as FooterContent;
+    return {
+        ...footerData,
+        phoneNumber: getMarketConfig().phoneNumber,
+    } as FooterContent;
 }
 
 export function getSecondaryFooterContent(): FooterContent {
-    const footerData = require("./secondary-footer-content.json");
-    return footerData as FooterContent;
+    return {
+        ...secondaryFooterData,
+        phoneNumber: getMarketConfig().phoneNumber,
+    } as FooterContent;
 }

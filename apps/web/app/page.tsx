@@ -36,6 +36,11 @@ import Form from "./HomeView/Form";
 import FinalCTAWithForm from "@repo/ui/design-systems/components/cta/FinalCTAWithForm";
 import { getCTASectionContent } from "./content/cta-section/getCTASectionContent";
 import { getFooterContent } from "./content/footer-section/getFooterContent";
+import { getMarketConfig, getMarketAlternates } from "./content/markets/config";
+
+export const metadata = {
+    alternates: getMarketAlternates("/"),
+};
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -54,6 +59,7 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
+    const market = getMarketConfig();
     const services = getServices();
     const heroContent = getHeroSectionContent();
     const whyChooseUs = getWhyChooseUsContent();
@@ -104,7 +110,12 @@ export default function Home() {
             >
                 <RegularContainer>
                     <FinalCTAWithForm
-                        form={<Form email="ali.zaffar@gmail.com" />}
+                        form={
+                            <Form
+                                email="ali.zaffar@gmail.com"
+                                whatsappPhone={market.whatsappPhone}
+                            />
+                        }
                         {...getCTASectionContent()}
                     />
                 </RegularContainer>

@@ -19,6 +19,10 @@ import Form from "../../HomeView/Form";
 import { getCTASectionContent } from "../../content/cta-section/getCTASectionContent";
 import { ServiceDetails } from "@repo/ui/design-systems/components/services/service-detail-page/ServiceDetails";
 import { ServiceDetailPageContent } from "@repo/ui/design-systems/components/services/service-detail-page/service-detail-page-content.ts";
+import {
+    getMarketConfig,
+    getMarketAlternates,
+} from "../../content/markets/config";
 
 interface ServicePageProps {
     params: Promise<{ slug: string }>;
@@ -29,9 +33,11 @@ export async function generateMetadata({
 }: ServicePageProps): Promise<Metadata> {
     const { slug } = await params;
     const service: ServiceDetailPageContent = getServiceBySlug(slug);
-    const url = `https://techavenue.pro/services/${slug}`;
+    const market = getMarketConfig();
+    const alternates = getMarketAlternates(`/services/${slug}`);
 
     return {
+        alternates,
         title: service.seoTitle ?? service.navTitle ?? "Tech Avenue Pro",
         description:
             service.seoDescription ??
@@ -43,7 +49,8 @@ export async function generateMetadata({
                 service.seoDescription ??
                 service.hero.summary ??
                 "Your digital partner for innovative tech solutions.",
-            url,
+            url: alternates.canonical,
+            locale: market.locale.replace("-", "_"),
             siteName: "Tech Avenue Pro",
             type: "website",
             images: [
@@ -54,6 +61,7 @@ export async function generateMetadata({
 }
 
 export default async function ServicePage({ params }: ServicePageProps) {
+    const market = getMarketConfig();
     const { slug } = await params;
     const service = getServiceBySlug(slug);
     return (
@@ -66,7 +74,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
             >
                 <RegularContainer>
                     <FinalCTAWithForm
-                        form={<Form email="ali.zaffar@gmail.com" />}
+                        form={
+                            <Form
+                                email="ali.zaffar@gmail.com"
+                                whatsappPhone={market.whatsappPhone}
+                            />
+                        }
                         {...getCTASectionContent()}
                     />
                 </RegularContainer>
